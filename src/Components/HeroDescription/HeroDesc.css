@@ -1,0 +1,110 @@
+.heroDescriptions {
+	height: 100vh;
+	position: relative;
+	background-color: var(--bg-dark);
+}
+.descriptionsCta {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+/* .first {
+	font-size: 45px;
+	width: 75%;
+	line-height: 1.05;
+	text-align: center;
+	background: linear-gradient(
+		91.36deg,
+		#52f0c8 0%,
+		#49d6b3 13.02%,
+		#63c9d6 25.52%,
+		#a58de3 37.5%,
+		#56abec 49.48%,
+		#737eb7 63.02%,
+		rgb(73, 185, 189) 72.92%,
+		#57acdd 84.38%,
+		#515fdf 97.92%
+	);
+	background-size: 200% 200%;
+	-webkit-background-clip: text;
+	background-clip: text;
+	margin-top: 300px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	letter-spacing: -0.045em;
+	-webkit-text-fill-color: transparent;
+	animation: intro-gradient 7.5s infinite ease both;
+	-webkit-animation: intro-gradient 7.5s infinite ease both;
+	-moz-animation: intro-gradient 7.5s infinite ease both;
+} */
+/* .second h2 {
+	font-size: 22px;
+	padding-top: 170px;
+	font-size: 42px;
+	padding-top: 170px;
+	background: linear-gradient(
+		91.36deg,
+		#eca658 0%,
+		#f391a6 13.02%,
+		#e188c3 25.52%,
+		#a58de3 37.5%,
+		#56abec 49.48%,
+		#737eb7 63.02%,
+		#c8638c 72.92%,
+		#dd5d57 84.38%,
+		#df6c51 97.92%
+	);
+	background-size: 200% 200%;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	background-clip: text;
+	-moz-background-clip: text;
+	-webkit-animation: intro-gradient 10s infinite ease both;
+	-moz-animation: intro-gradient 10s infinite ease both;
+	animation: intro-gradient 10s infinite ease both;
+} */
+
+@-webkit-keyframes intro-gradient {
+	0% {
+		background-position: 0% 4%;
+	}
+
+	50% {
+		background-position: 100% 97%;
+	}
+
+	100% {
+		background-position: 0% 4%;
+	}
+}
+
+@-moz-keyframes intro-gradient {
+	0% {
+		background-position: 0% 4%;
+	}
+
+	50% {
+		background-position: 100% 97%;
+	}
+
+	100% {
+		background-position: 0% 4%;
+	}
+}
+
+@keyframes intro-gradient {
+	0% {
+		background-position: 0% 4%;
+	}
+
+	50% {
+		background-position: 100% 97%;
+	}
+
+	100% {
+		background-position: 0% 4%;
+	}
+}

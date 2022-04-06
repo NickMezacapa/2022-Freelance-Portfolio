@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Inter", sans-serif;
+}
+.navbar {
+	width: 100%;
+	background-color: rgba(29, 29, 31, 0.7);
+	backdrop-filter: saturate(180%) blur(20px);
+	color: var(--textColor-dark);
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: auto;
+	border-bottom: 1px solid #e2e2e23d;
+	-webkit-font-smoothing: antialiased;
+	z-index: 1000;
+}
+a,
+a:visited {
+	text-decoration: none;
+	list-style: none;
+	color: var(--textColor-dark);
+	transition: 0.4s ease;
+	/* font-size: 18px; */
+}
+a:hover {
+	cursor: pointer;
+	color: var(--blue-dark);
+}
+.navCta {
+	position: relative;
+	text-align: center;
+	display: flex;
+	width: 100%;
+	height: 3.5rem;
+	justify-content: space-evenly;
+}
+.navLogo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: 600;
+	margin-left: 35px;
+}
+.navLogo a:hover {
+	color: var(--textColor-dark);
+	text-shadow: 0 0 20px var(--textColor-dark);
+}
+.navMenu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 16.8px;
+	margin-left: -10px;
+}
+.navMenu a {
+	margin-right: 25px;
+	padding-right: 5px;
+}
+.contactLink {
+	display: flex;
+	align-items: center;
+	color: var(--blue-dark);
+	font-size: 16px;
+	font-weight: 500;
+	margin-right: 60px;
+}
+.contactLink:hover,
+.contactLink-icon:hover {
+	text-decoration: underline;
+}
+.contactLink-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-left: 5px;
+	padding-top: 2px;
+}

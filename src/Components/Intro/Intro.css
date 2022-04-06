@@ -1,0 +1,335 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: 100%;
+}
+body {
+	overflow-y: scroll;
+	scroll-behavior: smooth;
+}
+/* body::-webkit-scrollbar {
+	display: none;
+} */
+.hero-scroll-wrap {
+	position: relative;
+}
+.hero-scroll-trigger {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: auto;
+	z-index: -1;
+	height: 100vh;
+}
+.sticky-wrap {
+	height: 60vh;
+	min-height: 100vh;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+.overflow-wrap {
+	overflow: hidden;
+	height: 100%;
+}
+/* .hero {
+	display: flex;
+	align-items: center;
+	height: 100vh;
+	-webkit-box-align: center;
+	will-change: transform;
+	transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+		rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+	transform: scale(1);
+	transform-style: preserve-3d;
+	animation: macHero 6s ease;
+	animation-iteration-count: 1;
+	animation-fill-mode: backwards;
+	animation-delay: 4s;
+}
+.hero-ui {
+	position: relative;
+	left: 50%;
+	z-index: 1;
+	width: 16.9em;
+	max-width: none;
+	margin-top: 3.2em;
+	margin-left: -8.45em;
+	font-size: 10vw;
+	display: inline-block;
+	vertical-align: middle;
+	will-change: opacity;
+	opacity: 0;
+	animation: heroUIimg 6s ease;
+	animation-iteration-count: 1;
+	animation-fill-mode: backwards;
+	animation-delay: 4s;
+} */
+/* .testDiv {
+	position: relative;
+	border: 1px solid red;
+	height: 100vh;
+	z-index: 1;
+} */
+
+.heroCta {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: auto;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	height: 100vh;
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+	max-width: none;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+}
+.heroWrapper {
+	position: relative;
+	/* height: 100%;
+	width: 100%; */
+	border-radius: 50%;
+	z-index: 2;
+	will-change: opacity;
+	animation: heroImgWrap 0.8s ease;
+	animation-iteration-count: 1;
+	animation-fill-mode: backwards;
+	animation-delay: 0.8s;
+	width: 25vw;
+	height: 25vw;
+	max-height: 40vh;
+	max-width: 40vh;
+	min-height: 350px;
+	min-width: 350px;
+	/* margin-bottom: 64px; */
+}
+.hero-img-container {
+	position: relative;
+	z-index: 3;
+	width: 100%;
+	height: 100%;
+	border: 1px solid hsla(0, 0%, 100%, 0.3);
+	background-color: hsla(0, 0%, 84%, 0.5);
+	object-fit: cover;
+	-o-object-fit: cover;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.hero-img {
+	height: 93%;
+	width: 93%;
+	border-radius: 50%;
+	will-change: transform;
+	animation: heroImgScale 0.8s ease;
+	animation-iteration-count: 1;
+	animation-fill-mode: backwards;
+	animation-delay: 0.8s;
+}
+.hero-img-shadow-wrap {
+	position: absolute;
+	left: -20%;
+	top: -20%;
+	right: 0;
+	bottom: 0;
+	width: 140%;
+	height: 140%;
+	padding: 20%;
+	border-radius: 50%;
+	filter: blur(20px);
+}
+.hero-img-shadow-wrap.hero-img-shadow-wrap--intro {
+	z-index: 1;
+}
+.hero-img-shadow {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-image: radial-gradient(
+			circle farthest-side at 100% 100%,
+			#9873ff,
+			rgba(152, 115, 255, 0)
+		),
+		radial-gradient(
+			circle farthest-side at 100% 0,
+			#0ba5f7,
+			rgba(85, 196, 255, 0)
+		),
+		radial-gradient(circle farthest-side at 0 0, #ff763c, rgba(255, 176, 60, 0)),
+		radial-gradient(
+			circle farthest-side at 0 100%,
+			#ff5aaa,
+			rgba(255, 90, 170, 0)
+		);
+}
+#hero-img-shadow-1 {
+	will-change: opacity;
+	animation: heroImgShadow1 0.8s ease;
+	animation-iteration-count: 1;
+	animation-fill-mode: backwards;
+	animation-delay: 1.5s;
+}
+#hero-img-shadow-2 {
+	will-change: opacity, transform;
+	animation: heroImgShadow2 1.2s cubic-bezier(0.65, 0, 0.35, 1);
+	animation-iteration-count: 1;
+	animation-fill-mode: both;
+	animation-delay: 1.5s;
+}
+.hero__header {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+.hero-eyebrow {
+	font-size: 25px;
+	line-height: 1.2;
+	letter-spacing: -0.03em;
+	font-weight: 600;
+	text-align: center;
+	will-change: transform, opacity;
+	animation: fadeIn 0.8s ease;
+	animation-iteration-count: 1;
+	animation-fill-mode: backwards;
+	animation-delay: 0.4s;
+	display: block;
+	margin-block-start: 0.83em;
+	margin-block-end: 0.83em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	margin-top: 4rem;
+}
+.hero-heading {
+	width: 100vw;
+	text-align: center;
+	font-size: 92px;
+	line-height: 1.05;
+	letter-spacing: -0.045em;
+	font-weight: 600;
+	will-change: transform, opacity;
+	animation: fadeIn 0.8s ease;
+	animation-iteration-count: 1;
+	animation-fill-mode: backwards;
+	animation-delay: 0.5s;
+}
+.hero-link {
+	display: flex;
+	justify-content: center;
+	color: var(--blue-dark);
+	font-size: 23px;
+	font-weight: 500;
+	letter-spacing: -0.025em;
+	white-space: nowrap;
+	text-align: center;
+	margin-top: 2rem;
+	will-change: transform, opacity;
+	animation: fadeIn 0.8s ease;
+	animation-iteration-count: 1;
+	animation-fill-mode: backwards;
+	animation-delay: 0.6s;
+}
+.hero-link a {
+	transition: 0.4s ease;
+}
+.hero-link-icon {
+	padding-top: 4px;
+}
+.hero-link:hover {
+	text-decoration: underline;
+	color: var(--blue-dark);
+}
+.sticky-gap {
+	height: 100vh;
+}
+
+@keyframes heroImgScale {
+	from {
+		opacity: 0;
+		transform: scale(2, 2);
+	}
+
+	to {
+		opacity: 1;
+		transform: scale(1, 1);
+	}
+}
+@keyframes heroImgShadow1 {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@keyframes heroImgShadow2 {
+	0% {
+		opacity: 1;
+		transform: scale(1, 1);
+	}
+	99% {
+		opacity: 0;
+		transform: scale(6, 6);
+		height: 140%;
+	}
+	100% {
+		height: 0%;
+		opacity: 0;
+	}
+}
+@keyframes heroImgWrap {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(100px);
+	}
+	to {
+		opacity: auto;
+		transform: translateY(0px);
+	}
+}
+@keyframes macHero {
+	from {
+		transform: scale3d(1, 1, 1);
+	}
+	to {
+		transform: scale3d(0.360058, 0.360058, 1);
+	}
+}
+@keyframes heroUIimg {
+	0% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 1;
+	}
+}

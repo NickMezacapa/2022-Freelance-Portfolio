@@ -1,0 +1,29 @@
+.settingsCta {
+	height: 100%;
+	width: 100%;
+	padding: 13px 26px;
+	background-color: hsla(0, 0%, 59.2%, 0.3);
+	border-radius: 24px;
+	border: none;
+	cursor: pointer;
+	transition: box-shadow 0.35s ease;
+}
+.settingsCta:hover {
+	cursor: pointer;
+	box-shadow: 0px 0px 7px 0.5px var(--textColor-dark);
+}
+.settings {
+	height: 44px;
+	width: 72px;
+	z-index: 1001;
+	position: absolute;
+	top: 93%;
+	left: 1.75%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 24px;
+	position: fixed;
+	background-color: var(--bg-dark);
+	backdrop-filter: blur(20px);
+}
