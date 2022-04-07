@@ -7,6 +7,7 @@ import HeroDesc from "./Components/HeroDescription/HeroDesc";
 import Glimpse from "./Components/QuickGlimpse/Glimpse";
 import Showcase from "./Components/Showcase/Showcase";
 import Projects from "./Components/Projects/Projects";
+import DevProcess from "./Components/DevProcess/DevProcess";
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
 		<Glimpse />
 		<Showcase />
 		<Projects />
+		<DevProcess />
 		</>
 	)
 }

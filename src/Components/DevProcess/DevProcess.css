@@ -1,0 +1,228 @@
+* {
+    box-sizing: border-box;
+}
+.process-scroll-wrap {
+    height: 300vh;
+    background-color: black;
+    color: white;
+}
+.sticky-wrap {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.process-section {
+    overflow: hidden;
+    height: 100vh;
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+.workflow-container {
+    position: relative;
+    display: flex;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 90%;
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+.header-workflow {
+    position: absolute;
+    width: 100%;
+    max-width: 980px;
+    margin-left: -20rem;
+    margin-bottom: 142px;
+    text-align: left;
+    will-change: transform, opacity;
+    transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    opacity: 1;
+}
+.header-workflow h2 {
+    max-width: 890px;
+    margin-top: -4rem;
+    margin-bottom: 0;
+    font-size: 64px;
+    line-height: 1.1;
+    letter-spacing: -0.045em;
+    font-weight: 600;
+}
+.header-workflow h4 {
+    max-width: 890px;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    font-size: 32px;
+    line-height: 1.1;
+    letter-spacing: -0.045em;
+    font-weight: 600;
+    opacity: 0.75;
+}
+.cards-wrap {
+    position: relative;
+    display: flex;
+    margin-top: 8rem;
+    width: 100%;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.process-card1 {
+    will-change: transform, opacity;
+    transform: translate3d(0px, -15%, 0px) scale3d(0.800014, 0.800014, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    opacity: 1;
+    position: absolute;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 380px;
+    max-width: 750px;
+    padding: 65px 80px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-radius: 28px;
+    background-color: #1d1d1f;
+    box-shadow: inset 0 0 0 1px hsl(0deg 0% 59% / 20%);
+    -webkit-transform-origin: 50% 0%;
+    -ms-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+}
+/* .process-card2 {
+    will-change: transform, opacity;
+    transform: translate3d(0px, -10%, 0px) scale3d(0.850015, 0.850015, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    opacity: 1;
+    position: absolute;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 380px;
+    max-width: 750px;
+    padding: 65px 80px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-radius: 28px;
+    background-color: #1d1d1f;
+    box-shadow: inset 0 0 0 1px hsl(0deg 0% 59% / 20%);
+    -webkit-transform-origin: 50% 0%;
+    -ms-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+}
+.process-card3 {
+    will-change: transform, opacity;
+    transform: translate3d(0px, -5%, 0px) scale3d(0.900015, 0.900015, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    opacity: 1;
+    position: absolute;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 380px;
+    max-width: 750px;
+    padding: 65px 80px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-radius: 28px;
+    background-color: #1d1d1f;
+    box-shadow: inset 0 0 0 1px hsl(0deg 0% 59% / 20%);
+    -webkit-transform-origin: 50% 0%;
+    -ms-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+}
+.process-card4 {
+    will-change: transform, opacity;
+    transform: translate3d(0px, 0%, 0px) scale3d(0.950015, 0.950015, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    opacity: 1;
+    position: absolute;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 380px;
+    max-width: 750px;
+    padding: 65px 80px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-radius: 28px;
+    background-color: #1d1d1f;
+    box-shadow: inset 0 0 0 1px hsl(0deg 0% 59% / 20%);
+    -webkit-transform-origin: 50% 0%;
+    -ms-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+}
+.process-card5 {
+    will-change: opacity, transform;
+    opacity: 1;
+    transform: translate3d(0px, 5.0345%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    position: absolute;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 380px;
+    max-width: 750px;
+    padding: 65px 80px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-radius: 28px;
+    background-color: #1d1d1f;
+    box-shadow: inset 0 0 0 1px hsl(0deg 0% 59% / 20%);
+    -webkit-transform-origin: 50% 0%;
+    -ms-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+} */

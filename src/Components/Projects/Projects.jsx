@@ -45,7 +45,7 @@ const Projects = () => {
                 </div>
                 <div className="project-section-container">
                     <div className="project-display">
-                        <div className="project"></div>
+                        <div id='algo-path' className="project"></div>
                         <div className="project"></div>
                         <div className="project"></div>
                     </div>

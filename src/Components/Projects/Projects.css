@@ -108,5 +108,13 @@
 	background-image: url("../../Images/Showcase/bug-tracker-sc.png");
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center;
+	background-position: 0rem center;
+	position: static;
+}
+#algo-path {
+	background-image: url("../../Images/Showcase/pa2.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: -11rem center;
+	position: static;
 }

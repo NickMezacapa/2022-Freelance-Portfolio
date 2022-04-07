@@ -249,3 +249,10 @@
 .indent2 {
 	margin-left: 15px;
 }
+
+/* @media  (min-width: 1500px) {
+	.animations-heroContent {
+		top: 2.3%;
+	}
+}
+ */
