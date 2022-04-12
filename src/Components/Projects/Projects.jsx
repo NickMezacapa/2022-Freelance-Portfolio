@@ -26,7 +26,7 @@ const Projects = () => {
                     </div>
                 </div>
                 <div className="project-section-title">
-                    <h4>ReactJS Projects</h4>
+                    <h4>Javascript Projects</h4>
                 </div>
                 <div className="project-section-container">
                     <div className="project-display">
@@ -37,7 +37,7 @@ const Projects = () => {
                     <div className="project-subheader">
                         <div className="ps-1">Google Search Engine Rebuild</div>
                         <div className="ps-2">Ecommerce Store</div>
-                        <div className="ps-3">Bug Tracker App</div>
+                        <div className="ps-3">Cryptocurrency Trading Bot</div>
                     </div>
                 </div>
                 <div className="project-section-title">

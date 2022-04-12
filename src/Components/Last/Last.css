@@ -1,0 +1,118 @@
+.last-body {
+    height: 100vh;
+    background-color: #1d1d1f;
+    position: relative;
+}
+.overflow-container {
+	width: 100%;
+	max-width: 1450px;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 28px;
+	padding-right: 28px;
+}
+.last-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.last-text {
+    background: linear-gradient(91.36deg, #52f0c8 0%, #49d6b3 13.02%, #63c9d6 25.52%, #A58DE3 37.5%, #56ABEC 49.48%, #737EB7 63.02%, rgb(73, 185, 189) 72.92%, #57acdd 84.38%, #515fdf 97.92%);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+    -moz-background-clip: text;
+    -webkit-animation: intro-gradient 7.5s infinite ease both;
+    -moz-animation: intro-gradient 7.5s infinite ease both;
+    animation: intro-gradient 7.5s infinite ease both;
+    font-size: 92px;
+    line-height: 1.1;
+    letter-spacing: -0.045em;
+    font-weight: 600;
+    max-width: 900px;
+    text-align: center;
+}
+.contact-container {
+    display: flex;
+    margin-top: 4rem;
+    font-size: 24px;
+    color: var(--blue-dark);
+}
+.contact-container a {
+    text-decoration: none;
+    list-style: none;
+    color: var(--blue-dark);
+}
+.contact-container a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.contact-container a:visited {
+    text-decoration: none;
+    list-style: none;
+    color: var(--blue-dark);
+}
+.contact-arrow {
+    margin-top: 3px;
+    margin-left: 5px;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 70%;
+    left: 14.5%;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid gray;
+    padding: 16px;
+    opacity: 0.55;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+@-webkit-keyframes intro-gradient {
+	0% {
+		background-position: 0% 4%;
+	}
+
+	50% {
+		background-position: 100% 97%;
+	}
+
+	100% {
+		background-position: 0% 4%;
+	}
+}
+
+@-moz-keyframes intro-gradient {
+	0% {
+		background-position: 0% 4%;
+	}
+
+	50% {
+		background-position: 100% 97%;
+	}
+
+	100% {
+		background-position: 0% 4%;
+	}
+}
+
+@keyframes intro-gradient {
+	0% {
+		background-position: 0% 4%;
+	}
+
+	50% {
+		background-position: 100% 97%;
+	}
+
+	100% {
+		background-position: 0% 4%;
+	}
+}

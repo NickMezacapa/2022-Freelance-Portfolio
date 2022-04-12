@@ -52,7 +52,7 @@ const Glimpse = () => {
                     AI Fanatic.
                 </h2>
                 <p className='bioContent'>
-                    I develop web and mobile apps using a wide spectrum of different technologies. Currently I am freelancing, assisting startups in creating growth-driven products and brands. I believe the best software is created user-first and provides an <span className='bio-span'>experience</span> they want to come back to. I'm passionate about dynamic design and I'm fascinated by artificial intelligence.
+                    I develop web and mobile apps using a wide spectrum of different technologies. Currently I am freelancing, assisting startups in creating growth-driven products and brands. I believe the best software is created user-first and provides an <span className='bio-span'>experience</span> users are eager to come back to. I'm passionate about dynamic design and I develop AI applications in my free time.
                 </p>
             </div>
 

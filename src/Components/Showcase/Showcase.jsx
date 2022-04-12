@@ -4,7 +4,7 @@ import './Showcase.css';
 import BlankHero from '../../Images/blank-display.png';
 import AnimationsMovie from '../../Images/earth-recording-threeJS.mov';
 import LoadTimes from '../../Images/Showcase/load-times.png';
-import AppImgs from '../../Images/Showcase/app-imgs2.png';
+import AppImgs from '../../Images/Showcase/app-imgs3.png';
 import Responsive from '../../Images/Showcase/responsive.png';
 
 
