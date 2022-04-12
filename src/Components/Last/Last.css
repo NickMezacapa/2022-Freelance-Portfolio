@@ -61,6 +61,13 @@
     margin-top: 3px;
     margin-left: 5px;
 }
+.last-avatar {
+    position: absolute;
+    top: 45%;
+    left: 0%;
+    max-width: 450px;
+    transform: translateX(-90px) rotate(45deg);
+}
 footer {
     position: absolute;
     bottom: 0;

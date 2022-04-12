@@ -1,5 +1,6 @@
 import React from 'react';
 import { MdKeyboardArrowRight } from 'react-icons/md';
+import Avatar from '../../Images/Showcase/avatar.png';
 import './Last.css';
 
 const Last = () => {
@@ -14,6 +15,7 @@ const Last = () => {
                 </span>
                 </div>
             </div>
+            <img className='last-avatar' src={Avatar} alt="avatar emoji of Nick Mezacapa" />
             <footer>
                 &copy; 2022 Nick Mezacapa. All rights reserved.
             </footer>
