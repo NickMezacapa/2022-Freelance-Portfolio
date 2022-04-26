@@ -18,6 +18,7 @@
 	border-bottom: 1px solid #e2e2e23d;
 	-webkit-font-smoothing: antialiased;
 	z-index: 1000;
+	transition: 0.4s ease;
 }
 a,
 a:visited {
@@ -30,6 +31,19 @@ a:visited {
 a:hover {
 	cursor: pointer;
 	color: var(--blue-dark);
+}
+.nav-light-active {
+	background-color: #ffffffb8;
+	transition: 0.4s ease;
+	backdrop-filter: saturate(180%) blur(20px);
+	color: #1d1d1f;
+}
+.nav-light-active a, 
+.nav-light-active a:visited {
+	color: #1d1d1fb9;
+	text-decoration: none;
+	list-style: none;
+	transition: 0.4s ease;
 }
 .navCta {
 	position: relative;
@@ -65,13 +79,17 @@ a:hover {
 	margin-right: 25px;
 	padding-right: 5px;
 }
-.contactLink {
+.contactLink, 
+.contactLink:visited {
 	display: flex;
 	align-items: center;
 	color: var(--blue-dark);
 	font-size: 16px;
 	font-weight: 500;
 	margin-right: 60px;
+}
+.nav-light-active #contactLink-text {
+	color: var(--blue-dark);
 }
 .contactLink:hover,
 .contactLink-icon:hover {

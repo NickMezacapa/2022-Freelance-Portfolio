@@ -254,7 +254,6 @@ letter-spacing: -0.015em;
 }
 .canvas {
     position: absolute;
-    border: 1px solid red;
     width: 80%;
     height: 70%;
     z-index: 50;

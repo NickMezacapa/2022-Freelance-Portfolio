@@ -1,61 +1,55 @@
 import React from 'react';
 import './Projects.css';
+import { MdKeyboardArrowRight } from 'react-icons/md';
+import iPhone from './assets/iphone.png';
 
 const Projects = () => {
+// Add an event listener for when the top of '.projectsCta' is intersecting with the top of '.navbar'. When they are both equal to each other, add the active class '.nav-light-active' to '.navbar'. When the navbar is not intersecting with the projectsCta, remove the active class '.nav-light-active' from '.navbar'.
+    const handleScroll = () => {
+        const el = document.querySelector(".projectsCta");
+        const nav = document.querySelector(".navbar");
+        if (el && nav) {
+            const rect = el.getBoundingClientRect();
+            const navRect = nav.getBoundingClientRect();
+            if (rect.top < navRect.top && rect.bottom > navRect.top) {
+                nav.classList.add("nav-light-active");
+            } else {
+                nav.classList.remove("nav-light-active");
+            }
+        }
+    }
+    window.addEventListener("scroll", handleScroll);
+
+
+
+
+
   return (
     <div>
         <section className="projectsCta">
             <div className="projects-overflow">
                 <div className="projects-content">
                 <header className="project-header">
-                    <h1 className="projects-header-title">Selected Projects</h1>
+                    <div className="projects-header-space"></div>
                 </header>
-                <div className="project-section-title">
-                    <h4>AI Projects</h4>
-                </div>
-                <div className="project-section-container">
-                    <div className="project-display">
-                        <div id='ai-1' className="project"></div>
-                        <div id='ai-2' className="project"></div>
-                        <div id='ai-3' className="project"></div>
+                <section className="proj-sticky-intro">
+                    <h1 className="proj-mainTitle">Selected Projects</h1>
+                    <div className="proj-intro-summary">
+                        <span className="pss1">Just a drop in the ocean of my true potential. </span>
+                        <span className="pss2">
+                            From the moment I produced "Hello World" in the console of my first application, I knew I was hooked to the engaging challenges and rewarding outcomes of software development. What started with a simple "Hello World" has become a full-fledged passion to improve the quality of life by creating high-quality and complex software solutions to everyday problems.
+                        </span>
                     </div>
-                    <div className="project-subheader">
-                        <div className="ps-1">Biomedical Image Analysis with TensorFlow</div>
-                        <div className="ps-2">Control Cursor with Hand Position Detection</div>
-                        <div className="ps-3">Face and Emotion Recognition with TensorFlow</div>
+                    <div className="link-moreProjects">
+                        <span className="ls1">Alternatively, view all public projects here</span>
+                        <span className="ls2">
+                            <MdKeyboardArrowRight />
+                        </span>
                     </div>
-                </div>
-                <div className="project-section-title">
-                    <h4>Javascript Projects</h4>
-                </div>
-                <div className="project-section-container">
-                    <div className="project-display">
-                        <div id='google-showcase' className="project"></div>
-                        <div className="project"></div>
-                        <div id='bug' className="project"></div>
-                    </div>
-                    <div className="project-subheader">
-                        <div className="ps-1">Google Search Engine Rebuild</div>
-                        <div className="ps-2">Ecommerce Store</div>
-                        <div className="ps-3">Cryptocurrency Trading Bot</div>
-                    </div>
-                </div>
-                <div className="project-section-title">
-                    <h4 className="DA">Data Structures & Algorithms</h4>
-                </div>
-                <div className="project-section-container">
-                    <div className="project-display">
-                        <div id='algo-path' className="project"></div>
-                        <div className="project"></div>
-                        <div className="project"></div>
-                    </div>
-                    <div className="project-subheader" id='DA-scroll-trigger'>
-                        <div className="ps-1">Pathfinding Algorithm Visualizer</div>
-                        <div className="ps-2">Sorting Algorithm Visualizer</div>
-                        <div className="ps-3">Procedural Plant Generation with L-Systems</div>
-                    </div>
-                </div>
+                    <img src={iPhone} alt="screenshot of GitHub Repositories" className="ip-hero" />
+                </section>
 
+            
 
 
                 </div>

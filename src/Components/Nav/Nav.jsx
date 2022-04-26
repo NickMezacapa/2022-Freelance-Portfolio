@@ -19,7 +19,7 @@ const Nav = () => {
           <a id='a' href="/" className='navLink'>Blog</a>
         </div>
         <a href="#" className='contactLink' id="a">
-          <div className="contactLink-text">Contact</div>
+          <div className="contactLink-text" id="contactLink-text">Contact</div>
           <div className="contactLink-icon">
           <MdKeyboardArrowRight />
           </div>

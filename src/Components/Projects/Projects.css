@@ -1,7 +1,8 @@
 .projectsCta {
-	height: 205vh;
+	height: 305vh;
 	width: 100%;
-	background-color: #1d1d1f;
+	background-color: #fff;
+	color: #1d1d1f;
 	position: relative;
 }
 .projects-overflow {
@@ -19,17 +20,88 @@
 	margin-left: auto;
 	margin-right: auto;
 }
-.projects-header-title {
+/* .projects-header-space {
 	font-size: 64px;
 	font-weight: 600;
-	width: 100%;
+	max-width: 1450px;
+	width: 1450px;
 	margin-left: auto;
 	margin-right: auto;
 	padding-left: 10px;
 	margin-top: -2rem;
-	padding-top: 4rem;
+	padding-top: 14rem;
+	border: 1px solid red;
+	position: absolute;
+	top: 2rem;
+} */
+.project-header {
+	display: flex;
+	height: 8rem;
+	width: 100%;
 }
-.project-section-title {
+.proj-sticky-intro {
+	width: 100%;
+	position: sticky;
+	top: 0;
+}
+.proj-mainTitle {
+	font-size: 80px;
+	font-weight: 600;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 10px;
+	padding-top: 10rem;
+}
+.proj-intro-summary {
+	width: 45%;
+	padding-top: 2rem;
+	padding-left: 10px;
+}
+.pss1 {
+	font-size: 22px;
+	color: #1d1d1f;
+	font-weight: 500;
+}
+.pss2 {
+	font-size: 22px;
+	color: #86868B;
+	font-weight: 400;
+}
+.link-moreProjects {
+	color: var(--blue-dark);
+	padding-top: 4rem;
+	padding-left: 10px;
+	display: flex;
+	width: 30%;
+}
+.link-moreProjects:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+.ls2 {
+	padding-top: 3px;
+	padding-left: 3px;
+}
+.ip-hero {
+	position: absolute;
+	top: 15%;
+	right: 0;
+	width: 45%;
+	max-width: 45%;
+	min-width: 45%;
+	/* border-bottom: 0.5px solid rgba(128, 128, 128, 0.221); */
+}
+
+
+
+
+
+
+
+
+
+
+/* .project-section-title {
 	margin-top: 4rem;
 	font-size: 20px;
 	opacity: 0.7;
@@ -116,4 +188,4 @@
 	background-size: cover;
 	background-position: -11rem center;
 	position: static;
-}
+} */
