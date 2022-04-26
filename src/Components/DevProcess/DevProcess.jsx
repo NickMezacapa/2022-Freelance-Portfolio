@@ -1,9 +1,16 @@
-import React from 'react';
+import React from "react";
 import Plx from 'react-plx/lib/Plx';
 import './DevProcess.css';
+import Canvas from "./Canvas";
 
-const DevProcess = () => {
+
+
+
+export default function DevProcess() {
+
+
   return (
+    
     <div>
         <div className="process-scroll-wrap">
             <div className="sticky-wrap">
@@ -229,13 +236,17 @@ const DevProcess = () => {
                                 </p>
                             </div>
             </Plx>
+            
                         </div>
+                        <>
+                        
+                      </> 
                     </div>
                 </section>
-            </div>
+                <Canvas />
+            </div> 
         </div>
     </div>
   )
 }
 
-export default DevProcess

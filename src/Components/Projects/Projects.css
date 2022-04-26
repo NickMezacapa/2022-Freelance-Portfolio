@@ -1,7 +1,7 @@
 .projectsCta {
 	height: 205vh;
 	width: 100%;
-	background-color: black;
+	background-color: #1d1d1f;
 	position: relative;
 }
 .projects-overflow {
@@ -27,6 +27,7 @@
 	margin-right: auto;
 	padding-left: 10px;
 	margin-top: -2rem;
+	padding-top: 4rem;
 }
 .project-section-title {
 	margin-top: 4rem;
@@ -38,8 +39,6 @@
 	height: 450px;
 	width: 100%;
 	border-radius: 24px;
-	background-color: var(--bg-dark);
-	border: 1px solid hsla(0, 0%, 51.4%, 0.16);
 	margin-top: 2rem;
 	display: flex;
 	flex-direction: column;

@@ -41,7 +41,7 @@ const Projects = () => {
                     </div>
                 </div>
                 <div className="project-section-title">
-                    <h4>Data Structures & Algorithms</h4>
+                    <h4 className="DA">Data Structures & Algorithms</h4>
                 </div>
                 <div className="project-section-container">
                     <div className="project-display">
@@ -49,7 +49,7 @@ const Projects = () => {
                         <div className="project"></div>
                         <div className="project"></div>
                     </div>
-                    <div className="project-subheader">
+                    <div className="project-subheader" id='DA-scroll-trigger'>
                         <div className="ps-1">Pathfinding Algorithm Visualizer</div>
                         <div className="ps-2">Sorting Algorithm Visualizer</div>
                         <div className="ps-3">Procedural Plant Generation with L-Systems</div>

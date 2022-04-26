@@ -252,3 +252,11 @@ letter-spacing: -0.015em;
     margin-bottom: 0;
 
 }
+.canvas {
+    position: absolute;
+    border: 1px solid red;
+    width: 80%;
+    height: 70%;
+    z-index: 50;
+    top: 35%;
+}
