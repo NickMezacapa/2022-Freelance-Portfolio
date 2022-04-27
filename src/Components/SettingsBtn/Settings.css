@@ -26,4 +26,8 @@
 	position: fixed;
 	background-color: var(--bg-dark);
 	backdrop-filter: blur(20px);
+	transition: 0.7s ease;
+}
+.settings-active {
+	background-color: #aaa9a933;
 }

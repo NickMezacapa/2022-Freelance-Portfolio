@@ -6,7 +6,7 @@ const Settings = () => {
   return (
     <div className='settings'>
         <button className="settingsCta">
-            <BsFillGearFill color='white' size={17} />
+            <BsFillGearFill color='white' size={17} className="setting-icon-el" />
         </button>
     </div>
   )

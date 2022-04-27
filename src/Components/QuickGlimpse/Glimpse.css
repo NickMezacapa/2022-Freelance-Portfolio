@@ -1,6 +1,6 @@
 .glimpseCta {
 	height: 110vh;
-	background-color: black;
+	background-color: rgba(10, 10, 10);
 	position: relative;
 }
 .title {

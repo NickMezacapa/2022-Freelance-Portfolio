@@ -33,8 +33,8 @@ a:hover {
 	color: var(--blue-dark);
 }
 .nav-light-active {
-	background-color: #ffffffb8;
-	transition: 0.4s ease;
+	background-color: #ffffffa8;
+	transition: 0.65s ease;
 	backdrop-filter: saturate(180%) blur(20px);
 	color: #1d1d1f;
 }

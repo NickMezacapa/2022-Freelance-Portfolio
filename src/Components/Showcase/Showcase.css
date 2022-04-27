@@ -249,6 +249,17 @@
 .indent2 {
 	margin-left: 15px;
 }
+.dd-time-cta {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 48px;
+	margin-top: 3rem;
+}
+#dd-weeks {
+	opacity: 0;
+}
 
 /* @media  (min-width: 1500px) {
 	.animations-heroContent {

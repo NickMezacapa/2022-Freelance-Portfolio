@@ -79,6 +79,10 @@ const Showcase = () => {
             <div className="showcase-small">
                 <div className="dev-duration">
                     <h2>Development Duration</h2>
+                    <div className="dd-time-cta">
+                    <h3 className="dd-months">Months</h3>
+                    <h3 id="dd-weeks">Weeks</h3>
+                    </div>
                 </div>
                 <div className="clean-code">
                     <h2>Clean Code</h2>
