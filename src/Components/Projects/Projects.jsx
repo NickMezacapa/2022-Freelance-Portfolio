@@ -77,7 +77,6 @@ const Projects = () => {
                 </section>
                 <section className="proj-1-ai">
                     <div className="proj-section-wrapper">
-                        <section className="section">Hello</section>
                     </div>
                 </section>
             
