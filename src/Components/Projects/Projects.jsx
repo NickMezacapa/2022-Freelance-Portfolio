@@ -52,7 +52,7 @@ const Projects = () => {
                     <div className="proj-intro-summary">
                         <span className="pss1">A small drop in the ocean of my true potential. </span>
                         <span className="pss2">
-                            From the moment I produced "Hello World" in the console of my first application, I knew I was hooked to the engaging challenges and rewarding outcomes of software development. What started with a simple "Hello World" has become a full-fledged passion to improve the quality of life by creating high-quality and complex software solutions to everyday problems.
+                            From the moment I produced "Hello World" in the console of my first application, I knew I was hooked to the engaging challenges and rewarding outcomes of software development. What started with a simple "Hello World" has become a full-fledged passion to improve the quality of life by creating high-quality solutions to everyday problems.
                         </span>
                     </div>
                     <div className="link-moreProjects">
@@ -77,7 +77,7 @@ const Projects = () => {
                 </section>
                 <section className="proj-1-ai">
                     <div className="proj-section-wrapper">
-
+                        <section className="section">Hello</section>
                     </div>
                 </section>
             
