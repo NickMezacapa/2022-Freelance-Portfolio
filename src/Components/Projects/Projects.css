@@ -1,5 +1,5 @@
 .projectsCta {
-	height: 305vh;
+	height: 425vh;
 	width: 100%;
 	background-color: #fff;
 	color: #1d1d1f;
@@ -16,7 +16,7 @@
 }
 .projects-content {
 	width: 96%;
-	height: 215vh;
+	height: 175vh;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -36,7 +36,7 @@
 	margin-left: auto;
 	margin-right: auto;
 	padding-left: 10px;
-	padding-top: 10rem;
+	padding-top: 15rem;
 }
 .proj-intro-summary {
 	width: 45%;
@@ -74,7 +74,7 @@
 }
 .ip-hero {
 	position: absolute;
-	top: 5%;
+	top: 7%;
 	right: 0;
 	width: 45%;
 	max-width: 45%;
@@ -114,9 +114,129 @@
 	padding-left: 3px;
 }
 .proj-1-ai {
-	width: 100%;
+	max-width: 1450px;
+	width: 1450px;
 	height: 900px;
 	position: absolute;
+}
+.braintumor-cta {
+	width: 75%;
+	height: 450px;
+	background-color: #F5F5F7;
+	border-radius: 24px;
+	border: 1px solid hsla(0, 0%, 51.4%, 0.16);
+	margin-top: 14rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	left: 0;
+}
+.braintumor-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 55%;
+}
+.btc-heading {
+	width: 90%;
+	height: 45%;
+	margin-left: 1rem;
+}
+.btc-p {
+	width: 90%;
+	margin-top: 1.5rem;
+	font-weight: 500;
+	margin-left: 1rem;
+}
+.braintumor-subheading {
+	color: #86868baa;
+}
+.braintumor-cta img {
+	max-width: 40%;
+	width: 40%;
+	margin-top: 1.25rem;
+	margin-left: -2rem;
+}
+.proj-title {
+	font-size: 32px;
+	background: linear-gradient(
+		91.36deg,
+		#eca658 0%,
+		#f391a6 13.02%,
+		#e188c3 25.52%,
+		#a58de3 37.5%,
+		#56abec 49.48%,
+		#737eb7 63.02%,
+		#c8638c 72.92%
+	);
+	background-size: 200% 200%;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	background-clip: text;
+	-moz-background-clip: text;
+	-webkit-animation: intro-gradient 10s infinite ease both;
+	-moz-animation: intro-gradient 10s infinite ease both;
+	animation: intro-gradient 10s infinite ease both;
+	font-weight: 700;
+}
+.braintumor-links {
+	color: #3997f7 !important;
+	width: 90%;
+	margin-top: 0.5rem;
+	display: flex;
+	gap: 1rem;
+	margin-left: 1rem;
+}
+.braintumor-links > #bt-linkspan-1 > p,
+.braintumor-links > #bt-linkspan-2 > p {
+	color: #3997f7 !important;
+	padding-right: 1rem;
+	padding-top: 2rem;
+	font-weight: 400;
+}
+.arrow-proj {
+	padding-top: 5px;
+}
+.eye-detection-cta {
+	width: 75%;
+	height: 450px;
+	background-color: #F5F5F7;
+	border-radius: 24px;
+	border: 1px solid hsla(0, 0%, 51.4%, 0.16);
+	margin-top: 4rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	right: 0;
+}
+.proj3-cta {
+	width: 75%;
+	height: 450px;
+	background-color: #F5F5F7;
+	border-radius: 24px;
+	border: 1px solid hsla(0, 0%, 51.4%, 0.16);
+	margin-top: 36rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	left: 0;
+}
+.proj4-cta {
+	width: 75%;
+	height: 450px;
+	background-color: #F5F5F7;
+	border-radius: 24px;
+	border: 1px solid hsla(0, 0%, 51.4%, 0.16);
+	margin-top: 68rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	right: 0;
 }
 @keyframes proj-link-animation {
 	0% {

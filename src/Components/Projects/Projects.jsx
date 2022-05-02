@@ -1,7 +1,8 @@
 import React from 'react';
 import './Projects.css';
 import { MdKeyboardArrowRight } from 'react-icons/md';
-import display from './assets/large_2x.mp4'
+import display from './assets/large_2x.mp4';
+import braintumor from './assets/download.png';
 
 const Projects = () => {
 // Add an event listener for when the top of '.projectsCta' is intersecting with the top of '.navbar'. When they are both equal to each other, add the active class '.nav-light-active' to '.navbar'. When the navbar is not intersecting with the projectsCta, remove the active class '.nav-light-active' from '.navbar'.
@@ -75,14 +76,50 @@ const Projects = () => {
                     </div>
 
                 </section>
-                <section className="proj-1-ai">
-                    <div className="proj-section-wrapper">
-                    </div>
-                </section>
+
             
 
 
                 </div>
+                <section className="proj-1-ai">
+                    <div className="proj-section-wrapper">
+                        <div className="braintumor-cta">
+                                <img src={braintumor} alt="Brain Tumor Detection AI Project" className="braintumor-img" />
+                                <div className="braintumor-content">
+                                    <div className="btc-heading">
+                                    <h1 className="proj-title">AI Brain Tumor Detection</h1>
+                                    <h3 className="braintumor-subheading">Image Classification Machine Learning Model</h3>
+                                    </div>
+                                    <div className="btc-p">
+                                    <p className="braintumor-para">
+                                    A Deep Convolutional Generative Adversarial Network (DCGAN) to classify 3D MRI brain scans as tumorous or non-tumorous. This is a python machine learning project using TensorFlow to instantiate and train the model.
+                                    Using deep learning classifiers in medicine, we have the potential to integrate cell and region specific annotations with clinical, genetic, and molecular data - providing unbiased data for clinical studies that will enhance research in pathology. 
+                                    </p>
+                                    </div>
+                                    <div className="braintumor-links">
+                                        <div id="bt-linkspan-1">
+                                            <p>
+                                            Go to code repository
+                                            <MdKeyboardArrowRight className="arrow-proj" />
+                                            </p>
+                                        </div>
+                                        <div id="bt-linkspan-2">
+                                            <p>
+                                            Launch live demo
+                                            <MdKeyboardArrowRight className="arrow-proj" />
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div className="eye-detection-cta">
+
+                        </div>
+                        <div className="proj3-cta"></div>
+                        <div className="proj4-cta"></div>
+                        <div className="DA"></div>
+                    </div>
+                </section>
             </div>
         </section>
     </div>
