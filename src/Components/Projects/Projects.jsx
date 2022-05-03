@@ -151,8 +151,8 @@ const Projects = () => {
                                     </div>
                                     <div className="btc-p">
                                     <p className="braintumor-para">
-                                    A Deep Convolutional Generative Adversarial Network (DCGAN) to classify 3D MRI brain scans as tumorous or non-tumorous. This is a python machine learning project using TensorFlow to instantiate and train the model.
-                                    Using deep learning classifiers in medicine, we have the potential to integrate cell and region specific annotations with clinical, genetic, and molecular data - providing unbiased data for clinical studies that will enhance research in pathology. 
+                                    Seamlessly take control of your online privacy without any tradeoffs. This is an internet search engine that emphasizes protecting searchers' privacy and avoiding the filter bubble of personalized search results.<br /><br />
+                                    The project is a full-stack web application that utilizes a RESTful API (Google Custom Search API) to store and retrieve data. The frontend is built with React and Tailwind CSS, and the backend is built with Node.js and Firebase integration.
                                     </p>
                                     </div>
                                     <div className="braintumor-links">
@@ -179,8 +179,8 @@ const Projects = () => {
                                     </div>
                                     <div className="btc-p">
                                     <p className="braintumor-para">
-                                    A Deep Convolutional Generative Adversarial Network (DCGAN) to classify 3D MRI brain scans as tumorous or non-tumorous. This is a python machine learning project using TensorFlow to instantiate and train the model.
-                                    Using deep learning classifiers in medicine, we have the potential to integrate cell and region specific annotations with clinical, genetic, and molecular data - providing unbiased data for clinical studies that will enhance research in pathology. 
+                                    This is a sytem I built to feed my fish, hands-free, where ever I am at the click of a button. I built a web interface using Vanilla JS that sends messages to an Arduino Uno Rev3 which is used to control a motor that drops fish food. Using the interface I can also keep track of remote feedings by date and time.<br /><br />
+                                    An Arduino Uno and a motor are used to spin an auger mechanism that is attached to the top of the aquarium. The web interface sends a request to the Pubnub API, which sends programmed instructions to the Arduino. The motor then turns for a predetermined length of time to dispense the fish food.
                                     </p>
                                     </div>
                                     <div className="braintumor-links">
@@ -209,8 +209,8 @@ const Projects = () => {
                                     </div>
                                     <div className="btc-p">
                                     <p className="braintumor-para">
-                                    A Deep Convolutional Generative Adversarial Network (DCGAN) to classify 3D MRI brain scans as tumorous or non-tumorous. This is a python machine learning project using TensorFlow to instantiate and train the model. Deployment via TensorFlow.js conversion and React frontend integration.<br /><br />
-                                    Using deep learning classifiers in medicine, we have the potential to integrate cell and region specific annotations with clinical, genetic, and molecular data - providing unbiased data for clinical studies that will enhance research in pathology. 
+                                    This is a React project demonstrating Dijkstra's Algorithm in real time. The algorithm is used for finding the shortest path between nodes in a graph, which may represent, for example, road networks in real-life applications. Many delivery, scheduling, and ride-sharing apps use this algorithm to find optimal routing paths.<br /><br />
+                                    In this app you can draw "walls" on a graph and visualize a car finding the shortest path to its house.
                                     </p>
                                     </div>
                                     <div className="braintumor-links">
