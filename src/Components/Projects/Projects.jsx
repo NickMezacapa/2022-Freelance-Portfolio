@@ -53,7 +53,7 @@ const Projects = () => {
                     <div className="proj-intro-summary">
                         <span className="pss1">A small drop in the ocean of my true potential. </span>
                         <span className="pss2">
-                            From the moment I produced "Hello World" in the console of my first application, I knew I was hooked to the engaging challenges and rewarding outcomes of software development. What started with a simple "Hello World" has become a full-fledged passion to improve the quality of life by creating high-quality solutions to everyday problems.
+                            From the moment I produced "Hello World" in the console of my first application, I knew I was hooked to the engaging challenges and rewarding outcomes of software development. What started with a simple "Hello World" has become a full-fledged passion to improve the quality of life by creating high-quality, automated solutions to everyday problems.
                         </span>
                     </div>
                     <div className="link-moreProjects">
@@ -92,7 +92,7 @@ const Projects = () => {
                                     </div>
                                     <div className="btc-p">
                                     <p className="braintumor-para">
-                                    A Deep Convolutional Generative Adversarial Network (DCGAN) to classify 3D MRI brain scans as tumorous or non-tumorous. This is a python machine learning project using TensorFlow to instantiate and train the model.
+                                    A Deep Convolutional Generative Adversarial Network (DCGAN) to classify 3D MRI brain scans as tumorous or non-tumorous. This is a python machine learning project using TensorFlow to instantiate and train the model. Deployment via TensorFlow.js conversion and React frontend integration.<br /><br />
                                     Using deep learning classifiers in medicine, we have the potential to integrate cell and region specific annotations with clinical, genetic, and molecular data - providing unbiased data for clinical studies that will enhance research in pathology. 
                                     </p>
                                     </div>
@@ -113,10 +113,128 @@ const Projects = () => {
                                 </div>
                         </div>
                         <div className="eye-detection-cta">
-
+                                <div className="braintumor-content">
+                                    <div className="btc-heading">
+                                    <h1 className="proj-title2">Assisted Webpage Scrolling with Iris Detection AI</h1>
+                                    <h3 className="braintumor-subheading">Chrome Extension for enhanced accessability</h3>
+                                    </div>
+                                    <div className="btc-p">
+                                    <p className="braintumor-para">
+                                    Realtime eye-detection and landmark-extraction via webcam and client-side inference. It is an end-to-end Machine Learning project that spans data collection, data augmentation, model design, customized training, and model optimization. Deployment via TensorFlow.js conversion and React frontend integration.
+                                    <br /><br />
+                                    The result is an intelligent interface for controlling the scrolling action of a document by the user's blinking action. Inspired by the difficulties faced by individuals suffering from body paralysis and movement impairments. 
+                                    </p>
+                                    </div>
+                                    <div className="braintumor-links">
+                                        <div id="bt-linkspan-1">
+                                            <p>
+                                            Go to code repository
+                                            <MdKeyboardArrowRight className="arrow-proj" />
+                                            </p>
+                                        </div>
+                                        <div id="bt-linkspan-2">
+                                            <p>
+                                            Launch live demo
+                                            <MdKeyboardArrowRight className="arrow-proj" />
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src={braintumor} alt="Brain Tumor Detection AI Project" className="braintumor-img" />
                         </div>
-                        <div className="proj3-cta"></div>
-                        <div className="proj4-cta"></div>
+                        <div className="proj3-cta">
+                        <img src={braintumor} alt="Brain Tumor Detection AI Project" className="braintumor-img" />
+                                <div className="braintumor-content">
+                                    <div className="btc-heading">
+                                    <h1 className="proj-title3">Full-Stack Private Search Engine</h1>
+                                    <h3 className="braintumor-subheading">A non-intrusive way to browse the internet</h3>
+                                    </div>
+                                    <div className="btc-p">
+                                    <p className="braintumor-para">
+                                    A Deep Convolutional Generative Adversarial Network (DCGAN) to classify 3D MRI brain scans as tumorous or non-tumorous. This is a python machine learning project using TensorFlow to instantiate and train the model.
+                                    Using deep learning classifiers in medicine, we have the potential to integrate cell and region specific annotations with clinical, genetic, and molecular data - providing unbiased data for clinical studies that will enhance research in pathology. 
+                                    </p>
+                                    </div>
+                                    <div className="braintumor-links">
+                                        <div id="bt-linkspan-1">
+                                            <p>
+                                            Go to code repository
+                                            <MdKeyboardArrowRight className="arrow-proj" />
+                                            </p>
+                                        </div>
+                                        <div id="bt-linkspan-2">
+                                            <p>
+                                            Launch live demo
+                                            <MdKeyboardArrowRight className="arrow-proj" />
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div className="proj4-cta">
+                        <div className="braintumor-content">
+                                    <div className="btc-heading">
+                                    <h1 className="proj-title4">Automated Fish Feeder App</h1>
+                                    <h3 className="braintumor-subheading">Feed your fish over the internet using an Arduino Uno Rev3</h3>
+                                    </div>
+                                    <div className="btc-p">
+                                    <p className="braintumor-para">
+                                    A Deep Convolutional Generative Adversarial Network (DCGAN) to classify 3D MRI brain scans as tumorous or non-tumorous. This is a python machine learning project using TensorFlow to instantiate and train the model.
+                                    Using deep learning classifiers in medicine, we have the potential to integrate cell and region specific annotations with clinical, genetic, and molecular data - providing unbiased data for clinical studies that will enhance research in pathology. 
+                                    </p>
+                                    </div>
+                                    <div className="braintumor-links">
+                                        <div id="bt-linkspan-1">
+                                            <p>
+                                            Go to code repository
+                                            <MdKeyboardArrowRight className="arrow-proj" />
+                                            </p>
+                                        </div>
+                                        <div id="bt-linkspan-2">
+                                            <p>
+                                            Launch live demo
+                                            <MdKeyboardArrowRight className="arrow-proj" />
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src={braintumor} alt="Brain Tumor Detection AI Project" className="braintumor-img" />
+                        </div>
+                        <div className="proj5-cta">
+                                <img src={braintumor} alt="Brain Tumor Detection AI Project" className="braintumor-img" />
+                                <div className="braintumor-content">
+                                    <div className="btc-heading">
+                                    <h1 className="proj-title">Pathfinding Algorithm Visualizer</h1>
+                                    <h3 className="braintumor-subheading">A visualization model for Dijkstra's Algorithm</h3>
+                                    </div>
+                                    <div className="btc-p">
+                                    <p className="braintumor-para">
+                                    A Deep Convolutional Generative Adversarial Network (DCGAN) to classify 3D MRI brain scans as tumorous or non-tumorous. This is a python machine learning project using TensorFlow to instantiate and train the model. Deployment via TensorFlow.js conversion and React frontend integration.<br /><br />
+                                    Using deep learning classifiers in medicine, we have the potential to integrate cell and region specific annotations with clinical, genetic, and molecular data - providing unbiased data for clinical studies that will enhance research in pathology. 
+                                    </p>
+                                    </div>
+                                    <div className="braintumor-links">
+                                        <div id="bt-linkspan-1">
+                                            <p>
+                                            Go to code repository
+                                            <MdKeyboardArrowRight className="arrow-proj" />
+                                            </p>
+                                        </div>
+                                        <div id="bt-linkspan-2">
+                                            <p>
+                                            Launch live demo
+                                            <MdKeyboardArrowRight className="arrow-proj" />
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div className="proj-seeMore">
+                            <button className="psm-button">
+                                See more projects
+                                <MdKeyboardArrowRight className="arrow-proj" />
+                            </button>
+                        </div>
                         <div className="DA"></div>
                     </div>
                 </section>
