@@ -3,6 +3,9 @@ import './Projects.css';
 import { MdKeyboardArrowRight } from 'react-icons/md';
 import display from './assets/large_2x.mp4';
 import braintumor from './assets/download.png';
+import pathfinder from './assets/pa3.png';
+import feeder from './assets/feeder.png';
+import scroller from './assets/scroller.png';
 
 const Projects = () => {
 // Add an event listener for when the top of '.projectsCta' is intersecting with the top of '.navbar'. When they are both equal to each other, add the active class '.nav-light-active' to '.navbar'. When the navbar is not intersecting with the projectsCta, remove the active class '.nav-light-active' from '.navbar'.
@@ -113,7 +116,7 @@ const Projects = () => {
                                 </div>
                         </div>
                         <div className="eye-detection-cta">
-                                <div className="braintumor-content">
+                                <div className="braintumor-content scroller-content">
                                     <div className="btc-heading">
                                     <h1 className="proj-title2">Assisted Webpage Scrolling with Iris Detection AI</h1>
                                     <h3 className="braintumor-subheading">Chrome Extension for enhanced accessability</h3>
@@ -125,7 +128,7 @@ const Projects = () => {
                                     The result is an intelligent interface for controlling the scrolling action of a document by the user's blinking action. Inspired by the difficulties faced by individuals suffering from body paralysis and movement impairments. 
                                     </p>
                                     </div>
-                                    <div className="braintumor-links">
+                                    <div className="braintumor-links scroller-links">
                                         <div id="bt-linkspan-1">
                                             <p>
                                             Go to code repository
@@ -140,7 +143,7 @@ const Projects = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <img src={braintumor} alt="Brain Tumor Detection AI Project" className="braintumor-img" />
+                                <img src={scroller} alt="Brain Tumor Detection AI Project" className="scroller-img" />
                         </div>
                         <div className="proj3-cta">
                         <img src={braintumor} alt="Brain Tumor Detection AI Project" className="braintumor-img" />
@@ -172,7 +175,7 @@ const Projects = () => {
                                 </div>
                         </div>
                         <div className="proj4-cta">
-                        <div className="braintumor-content">
+                        <div className="braintumor-content feeder-content">
                                     <div className="btc-heading">
                                     <h1 className="proj-title4">Automated Fish Feeder App</h1>
                                     <h3 className="braintumor-subheading">Feed your fish over the internet using an Arduino Uno Rev3</h3>
@@ -180,7 +183,7 @@ const Projects = () => {
                                     <div className="btc-p">
                                     <p className="braintumor-para">
                                     This is a sytem I built to feed my fish, hands-free, where ever I am at the click of a button. I built a web interface using Vanilla JS that sends messages to an Arduino Uno Rev3 which is used to control a motor that drops fish food. Using the interface I can also keep track of remote feedings by date and time.<br /><br />
-                                    An Arduino Uno and a motor are used to spin an auger mechanism that is attached to the top of the aquarium. The web interface sends a request to the Pubnub API, which sends programmed instructions to the Arduino. The motor then turns for a predetermined length of time to dispense the fish food.
+                                    An Arduino Uno and a motor are used to spin an auger mechanism that is attached to the top of the aquarium. The web interface sends a request to the Pubnub API, which then sends programmed instructions to the Arduino. The motor then turns for a predetermined length of time to dispense the fish food.
                                     </p>
                                     </div>
                                     <div className="braintumor-links">
@@ -198,10 +201,10 @@ const Projects = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <img src={braintumor} alt="Brain Tumor Detection AI Project" className="braintumor-img" />
+                                <img src={feeder} alt="Brain Tumor Detection AI Project" className="feeder-img" />
                         </div>
                         <div className="proj5-cta">
-                                <img src={braintumor} alt="Brain Tumor Detection AI Project" className="braintumor-img" />
+                                <img src={pathfinder} alt="Brain Tumor Detection AI Project" className="pathfinder-img" />
                                 <div className="braintumor-content">
                                     <div className="btc-heading">
                                     <h1 className="proj-title">Pathfinding Algorithm Visualizer</h1>
@@ -210,7 +213,7 @@ const Projects = () => {
                                     <div className="btc-p">
                                     <p className="braintumor-para">
                                     This is a React project demonstrating Dijkstra's Algorithm in real time. The algorithm is used for finding the shortest path between nodes in a graph, which may represent, for example, road networks in real-life applications. Many delivery, scheduling, and ride-sharing apps use this algorithm to find optimal routing paths.<br /><br />
-                                    In this app you can draw "walls" on a graph and visualize a car finding the shortest path to its house.
+                                    In this web application you can draw "walls" on a graph and visualize a car finding the shortest path to its house.
                                     </p>
                                     </div>
                                     <div className="braintumor-links">

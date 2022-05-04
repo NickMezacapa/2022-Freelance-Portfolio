@@ -9,6 +9,32 @@ import Responsive from '../../Images/Showcase/responsive.png';
 
 
 const Showcase = () => {
+    // Add an event listener for when the top of '#dd-trigger' enters the viewport. Once it enters, add the active class '.dd-months-strike' to '.dd-months'.
+    // Add an event listener for when the top of '#dd-trigger' enters the viewport. Once it enters, add the active class '.dd-months-strike' to '.dd-months'.
+
+    const handleScroll3 = () => {
+        const trigger = document.querySelector('#dd-trigger');
+        const months = document.querySelector('.dd-months');
+        const weeks = document.querySelector('#dd-weeks');
+        const viewport_height = window.innerHeight;
+        if (trigger && months) {
+            const triggerRect = trigger.getBoundingClientRect();
+           // once the top of trigger enters the viewport, add the active class
+            if (triggerRect.top <= viewport_height) {
+                months.classList.add('dd-months-strike');
+                months.classList.add('dd-months-gray');
+                weeks.classList.add('dd-weeks-active');
+            } else {
+                months.classList.remove('dd-months-strike');
+                months.classList.remove('dd-months-gray');
+                weeks.classList.remove('dd-weeks-active');
+            }
+        }
+    }
+    window.addEventListener('scroll', handleScroll3);
+
+
+
   return (
     <div className='showcaseCta'>
         <div className="overflow-container">
@@ -85,7 +111,7 @@ const Showcase = () => {
                     </div>
                 </div>
                 <div className="clean-code">
-                    <h2>Clean Code</h2>
+                    <h2 id='dd-trigger'>Clean Code</h2>
                     <div className="clean-code-content">
                         <span className="bracket">&#60;</span>
                         <span className="identifier">main</span>

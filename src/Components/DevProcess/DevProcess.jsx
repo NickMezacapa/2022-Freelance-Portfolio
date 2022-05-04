@@ -16,10 +16,10 @@ export default function DevProcess() {
             <div className="sticky-wrap">
                 <section className="process-section">
                     <div className="workflow-container">
-                        <div className="header-workflow">
-                            <h2 className="process-heading">Development Process</h2>
-                            <h4>Hassle-free. Guaranteed.</h4>
-                        </div>
+                    <div className="header-workflow">
+                  <h2 className="process-heading">Development Process</h2>
+                  <h4>Hassle-free. Guaranteed.</h4>
+              </div>
                         <div className="cards-wrap">
                         <Plx
              parallaxData={[

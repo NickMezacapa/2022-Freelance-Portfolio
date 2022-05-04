@@ -259,11 +259,68 @@
 }
 #dd-weeks {
 	opacity: 0;
+	background-image: linear-gradient(-70deg,#ed4e50,#9867f0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.dd-weeks-active {
+	animation: riseup 1s 1s cubic-bezier(.55, 0, .1, 1) forwards;
+}
+.dd-months {
+	display: inline-block;
+	position: relative;
+	transition: all 0.5s cubic-bezier(.55, 0, .1, 1);
+}
+.dd-months-strike:after {
+	content: '';
+	position: absolute;
+	display: block;
+	width: 110%;
+	height: 8px;
+	margin-left: -10px;
+	border-radius: 24px;
+	box-shadow: 0 1px rgba(255,255,255,0.6);
+	margin-top: -0.6em;
+	background: #fff;
+	transform-origin: center left;
+	animation: strikethrough 1s cubic-bezier(.55, 0, .1, 1) forwards;
+	transition: transform 0.5s cubic-bezier(.55, 0, .1, 1);
+}
+.dd-months-strike:before {
+	display: inline-block;
+	position: relative;
+	transition: all 0.5s cubic-bezier(.55, 0, .1, 1);
+}
+.dd-months-gray {
+	animation: grayfade 1s 1s cubic-bezier(.55, 0, .1, 1) forwards;
 }
 
-/* @media  (min-width: 1500px) {
-	.animations-heroContent {
-		top: 2.3%;
+@keyframes strikethrough {
+	from {
+		transform: scaleX(0);
+	}
+	to {
+		transform: scaleX(1);
 	}
 }
- */
+@keyframes grayfade {
+	from {
+		opacity: 1;
+		transform: translateY(0) scale(1);
+	}
+	to {
+		opacity: 0.5;
+		transform: translateY(-50px) scale(0.7)
+	}
+}
+@keyframes riseup {
+	from {
+		opacity: 0;
+		transform: translateY(0);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(-50px);
+	}
+}

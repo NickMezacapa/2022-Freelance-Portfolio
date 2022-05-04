@@ -21,7 +21,7 @@ const Nav = () => {
         <a href="#" className='contactLink' id="a">
           <div className="contactLink-text" id="contactLink-text">Contact</div>
           <div className="contactLink-icon">
-          <MdKeyboardArrowRight />
+          <MdKeyboardArrowRight className="contact-arrow-nav" />
           </div>
         </a>
       </div>

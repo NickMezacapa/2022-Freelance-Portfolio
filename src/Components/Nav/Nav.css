@@ -45,6 +45,20 @@ a:hover {
 	list-style: none;
 	transition: 0.4s ease;
 }
+.nav-light-active a:hover {
+	cursor: pointer;
+	color: var(--blue-dark);
+}
+.nav-light-active .contact-arrow-nav {
+	color: var(--blue-dark);
+}
+.nav-light-active .navLogoLink {
+	color: #1d1d1f;
+}
+.nav-light-active .navLogo a:hover {
+	color: #1d1d1fb9;
+	text-shadow: 0 0 20px var(--blue-dark);
+}
 .navCta {
 	position: relative;
 	text-align: center;

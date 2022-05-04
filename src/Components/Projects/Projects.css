@@ -302,6 +302,29 @@
 	position: absolute;
 	left: 0;
 }
+.project-img {
+	display: block;
+	block-size: 300px;
+	max-block-size: 300px;
+}
+.pathfinder-img {
+	display: block;
+	block-size: 275px;
+	max-block-size: 275px;
+}
+.feeder-img {
+	display: block;
+	block-size: 375px;
+	max-block-size: 375px;
+	padding-left: 2rem;
+	margin-left: 4rem;
+}
+.scroller-img {
+	display: block;
+	block-size: 350px;
+	max-block-size: 350px;
+	margin-left: 2rem;
+}
 .proj-seeMore {
 	height: 100px;
 	width: 100%;
@@ -324,6 +347,15 @@
 .psm-button:hover {
 	text-decoration: underline;
 	cursor: pointer;
+}
+.feeder-content {
+	margin-left: -2rem;
+}
+.scroller-content {
+	margin-left: -2rem;
+}
+.scroller-links {
+	margin-top: -0.5rem;
 }
 @keyframes proj-link-animation {
 	0% {
