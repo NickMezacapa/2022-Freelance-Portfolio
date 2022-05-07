@@ -96,7 +96,7 @@ const Projects = () => {
                                     <div className="btc-p">
                                     <p className="braintumor-para">
                                     A Deep Convolutional Generative Adversarial Network (DCGAN) to classify 3D MRI brain scans as tumorous or non-tumorous. This is a python machine learning project using TensorFlow to instantiate and train the model. Deployment via TensorFlow.js conversion and React frontend integration.<br /><br />
-                                    Using deep learning classifiers in medicine, we have the potential to integrate cell and region specific annotations with clinical, genetic, and molecular data - providing unbiased data for clinical studies that will enhance research in pathology. 
+                                    Using deep learning classifiers in medicine, we have the potential to integrate cell and region-specific annotations with clinical, genetic, and molecular data - providing unbiased data for clinical studies that will enhance research in pathology. 
                                     </p>
                                     </div>
                                     <div className="braintumor-links">
@@ -182,7 +182,7 @@ const Projects = () => {
                                     </div>
                                     <div className="btc-p">
                                     <p className="braintumor-para">
-                                    This is a sytem I built to feed my fish, hands-free, where ever I am at the click of a button. I built a web interface using Vanilla JS that sends messages to an Arduino Uno Rev3 which is used to control a motor that drops fish food. Using the interface I can also keep track of remote feedings by date and time.<br /><br />
+                                    This is a system I built to feed my fish, hands-free, wherever I am at the click of a button. I built a web interface using Vanilla JS that sends messages to an Arduino Uno Rev3 which is used to control a motor that drops fish food. Using the interface, I can also keep track of remote feedings by date and time.<br /><br />
                                     An Arduino Uno and a motor are used to spin an auger mechanism that is attached to the top of the aquarium. The web interface sends a request to the Pubnub API, which then sends programmed instructions to the Arduino. The motor then turns for a predetermined length of time to dispense the fish food.
                                     </p>
                                     </div>
