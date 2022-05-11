@@ -12,6 +12,9 @@
 	margin-right: auto;
 	padding-left: 28px;
 	padding-right: 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .separator {
     width: 90%;
@@ -29,9 +32,27 @@
     line-height: 1.1;
     letter-spacing: -0.045em;
     font-weight: 500;
+    margin-top: -1rem;
 }
-.test1 {
-    height: 200px;
-    width: 400px;
-    background-color: red;
+.flipping-container {
+    width: 90%;
+    max-width: 980px;
+    margin-top: 4rem;
+}
+.card-flip-row-1 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.card-flip-row-2 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.card-flip-row-3 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 2rem;
 }
