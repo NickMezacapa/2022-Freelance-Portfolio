@@ -36,7 +36,7 @@ const Faq = () => {
 {/* row3 start */}
 <div className="card-flip-row-3">
                 <Card5 />
-                <Card6 />
+                <Card6 className='card6-trigger' />
 </div>
 {/* row3 end */}
             </div>

@@ -11,6 +11,7 @@ import DevProcess from "./Components/DevProcess/DevProcess";
 /* import Canvas from "./Components/DevProcess/Canvas"; */
 import Faq from "./Components/FAQ/Faq";
 import Last from "./Components/Last/Last";
+/* import Contact from './Components/Contact/ContactForm'; */
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
 		{/* <Canvas /> */}
 		<Faq />
 		<Last />
+{/* 		<Contact /> */}
 		</>
 	)
 }
