@@ -16,6 +16,7 @@ function App() {
 
 	return(
 		<>
+		
 		<Nav />
 		<Settings />
 		<Intro />

@@ -8,6 +8,17 @@ import Canvas from "./Canvas";
 
 export default function DevProcess() {
 
+  function getMousePosition(event) {
+    let x = event.clientX;
+    let y = event.clientY;
+    let rect = event.target.getBoundingClientRect();
+     x = x - rect.left;
+     y = y - rect.top;
+    console.log( {x: x, y: y} );
+}
+// Run this function when the user clicks anywhere on the page
+document.addEventListener('click', getMousePosition)
+
 
   return (
     
@@ -24,8 +35,8 @@ export default function DevProcess() {
                         <Plx
              parallaxData={[
                 {
-                  start: "7500px",
-                  end: "7800px",
+                  start: "10500px",
+                  end: "10700px",
                   easing: "ease-in",
                   properties: [
                     {
@@ -64,11 +75,11 @@ export default function DevProcess() {
                                 </p>
                             </div>
              </Plx>
-             <Plx
+            <Plx
              parallaxData={[
                 {
-                  start: "7850px",
-                  end: "8050px",
+                  start: "10850px",
+                  end: "11050px",
                   easing: "ease-in",
                   properties: [
                     {
@@ -110,8 +121,8 @@ export default function DevProcess() {
             <Plx
              parallaxData={[
                 {
-                  start: "8100px",
-                  end: "8400px",
+                  start: "11200px",
+                  end: "11400px",
                   easing: "ease-in",
                   properties: [
                     {
@@ -153,8 +164,8 @@ export default function DevProcess() {
             <Plx
              parallaxData={[
                 {
-                  start: "8450px",
-                  end: "8750px",
+                  start: "11550px",
+                  end: "11750px",
                   easing: "ease-in",
                   properties: [
                     {
@@ -193,11 +204,12 @@ export default function DevProcess() {
                                 </p>
                             </div>
             </Plx>
+
             <Plx
              parallaxData={[
                 {
-                  start: "8800px",
-                  end: "9100px",
+                  start: "11900px",
+                  end: "12100px",
                   easing: "ease-in",
                   properties: [
                     {
@@ -236,7 +248,6 @@ export default function DevProcess() {
                                 </p>
                             </div>
             </Plx>
-            
                         </div>
                         <>
                         

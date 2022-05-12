@@ -115,7 +115,7 @@
 }
 .proj-1-ai {
 	max-width: 1450px;
-	width: 100%;
+	width: 90%;
 	height: 900px;
 	position: absolute;
 }
@@ -261,7 +261,7 @@
 	justify-content: center;
 	align-items: center;
 	position: absolute;
-	right: 0;
+	right: -2%;
 }
 .proj3-cta {
 	width: 75%;
@@ -269,7 +269,7 @@
 	background-color: #F5F5F7;
 	border-radius: 24px;
 	border: 1px solid hsla(0, 0%, 51.4%, 0.16);
-	margin-top: 40rem;
+	margin-top: 39.5rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -282,12 +282,12 @@
 	background-color: #F5F5F7;
 	border-radius: 24px;
 	border: 1px solid hsla(0, 0%, 51.4%, 0.16);
-	margin-top: 74rem;
+	margin-top: 73.5rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	position: absolute;
-	right: 0;
+	right: -2%;
 }
 .proj5-cta {
 	width: 75%;
@@ -295,7 +295,7 @@
 	background-color: #F5F5F7;
 	border-radius: 24px;
 	border: 1px solid hsla(0, 0%, 51.4%, 0.16);
-	margin-top: 108rem;
+	margin-top: 107.5rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -356,6 +356,10 @@
 }
 .scroller-links {
 	margin-top: -0.5rem;
+}
+.DA {
+	position: absolute;
+	bottom: 0;
 }
 @keyframes proj-link-animation {
 	0% {

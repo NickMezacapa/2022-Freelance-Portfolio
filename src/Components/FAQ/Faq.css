@@ -33,6 +33,11 @@
     letter-spacing: -0.045em;
     font-weight: 500;
     margin-top: -1rem;
+    transition: all 0.35s ease;
+}
+.faq-title:hover {
+    cursor: pointer;
+    text-shadow: 0 2px 20px var(--blue-dark);
 }
 .flipping-container {
     width: 90%;

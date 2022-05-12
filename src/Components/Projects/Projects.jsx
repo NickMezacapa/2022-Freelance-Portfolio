@@ -42,6 +42,22 @@ const Projects = () => {
     }
     window.addEventListener("scroll", handleScroll);
 
+    const handleClick = () => {
+        window.open("https://github.com/NickMezacapa", "_blank");
+    }
+    const handleClick_btRepo = () => {
+        window.open("https://github.com/NickMezacapa/AI-Brain-Tumor-Detection-DCGAN-implementation", "_blank");
+    } 
+    const handleClick_ffRepo = () => {
+        window.open("https://github.com/NickMezacapa/Automated-Fish-Feeder-with-JS-and-Arduino-Uno-Rev3", "_blank");
+    } 
+    const handleClick_pvRepo = () => {
+        window.open("https://github.com/NickMezacapa/ReactJS-Pathfinding-Visualizer--Dijkstras-Algorithm", "_blank");
+    } 
+
+    // Create a function so that when a button is clicked, the Contact component will be rendered without reloading the page.
+
+
 
   return (
     <div>
@@ -60,7 +76,7 @@ const Projects = () => {
                         </span>
                     </div>
                     <div className="link-moreProjects">
-                        <span className="ls1">Alternatively, view all public projects here</span>
+                        <span className="ls1" onClick={handleClick}>Alternatively, view all public projects here</span>
                         <span className="ls2">
                             <MdKeyboardArrowRight />
                         </span>
@@ -101,7 +117,7 @@ const Projects = () => {
                                     </div>
                                     <div className="braintumor-links">
                                         <div id="bt-linkspan-1">
-                                            <p>
+                                            <p onClick={handleClick_btRepo}>
                                             Go to code repository
                                             <MdKeyboardArrowRight className="arrow-proj" />
                                             </p>
@@ -188,7 +204,7 @@ const Projects = () => {
                                     </div>
                                     <div className="braintumor-links">
                                         <div id="bt-linkspan-1">
-                                            <p>
+                                            <p onClick={handleClick_ffRepo}>
                                             Go to code repository
                                             <MdKeyboardArrowRight className="arrow-proj" />
                                             </p>
@@ -218,7 +234,7 @@ const Projects = () => {
                                     </div>
                                     <div className="braintumor-links">
                                         <div id="bt-linkspan-1">
-                                            <p>
+                                            <p onClick={handleClick_pvRepo}>
                                             Go to code repository
                                             <MdKeyboardArrowRight className="arrow-proj" />
                                             </p>
@@ -233,12 +249,13 @@ const Projects = () => {
                                 </div>
                         </div>
                         <div className="proj-seeMore">
-                            <button className="psm-button">
+                            <button className="psm-button" onClick={handleClick}>
                                 See more projects
                                 <MdKeyboardArrowRight className="arrow-proj" />
                             </button>
+                            <div className="DA"></div>
                         </div>
-                        <div className="DA"></div>
+                        
                     </div>
                 </section>
             </div>
