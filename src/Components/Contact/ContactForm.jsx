@@ -37,7 +37,7 @@ const ContactForm = () => {
                 nameInput.classList.remove('error-active');
                 nameInput.style.border = 'none';
                 nameInput.placeholder = '';
-            }, 3000);
+            }, 2000);
         }
         if (emailInput.value === '') {
             e.preventDefault();
@@ -49,7 +49,7 @@ const ContactForm = () => {
                 emailInput.classList.remove('error-active');
                 emailInput.style.border = 'none';
                 emailInput.placeholder = '';
-            }, 3000);
+            }, 2000);
         }
         if (messageInput.value === '') {
             e.preventDefault();
@@ -61,7 +61,7 @@ const ContactForm = () => {
                 messageInput.classList.remove('error-active');
                 messageInput.style.border = 'none';
                 messageInput.placeholder = 'Enter your message here...';
-            }, 3000);
+            }, 2000);
         }
 };
 
