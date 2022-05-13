@@ -15,7 +15,7 @@ const Card6 = () => {
   return (
      <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
         <div className='card-flip12' onClick={handleClick}>
-          <p className='card-flip-content card-flip-front'>I need to automate tasks.</p>
+          <p className='card-flip-content card-flip-front'>What development tools do you use?</p>
           <AiOutlinePlus className='card-flip-icon' size={22} />
         </div>
 

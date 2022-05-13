@@ -23,6 +23,9 @@ const ContactForm = () => {
         const messageInput = document.getElementById('contact-form-message-input');
         if (nameInput.value !== '' && emailInput.value !== '' && messageInput.value !== '') {
             sendEmail(e);
+            nameInput.value = '';
+            emailInput.value = '';
+            messageInput.value = '';
         }
         if (nameInput.value === '') {
             e.preventDefault();
@@ -34,7 +37,7 @@ const ContactForm = () => {
                 nameInput.classList.remove('error-active');
                 nameInput.style.border = 'none';
                 nameInput.placeholder = '';
-            }, 5000);
+            }, 3000);
         }
         if (emailInput.value === '') {
             e.preventDefault();
@@ -46,7 +49,7 @@ const ContactForm = () => {
                 emailInput.classList.remove('error-active');
                 emailInput.style.border = 'none';
                 emailInput.placeholder = '';
-            }, 5000);
+            }, 3000);
         }
         if (messageInput.value === '') {
             e.preventDefault();
@@ -58,9 +61,8 @@ const ContactForm = () => {
                 messageInput.classList.remove('error-active');
                 messageInput.style.border = 'none';
                 messageInput.placeholder = 'Enter your message here...';
-            }, 5000);
+            }, 3000);
         }
-
 };
 
   return (

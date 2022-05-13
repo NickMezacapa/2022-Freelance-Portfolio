@@ -170,7 +170,7 @@ const Projects = () => {
                                     </div>
                                     <div className="btc-p">
                                     <p className="braintumor-para">
-                                    Seamlessly take control of your online privacy without any tradeoffs. This is an internet search engine that emphasizes protecting searchers' privacy and avoiding the filter bubble of personalized search results.<br /><br />
+                                    Seamlessly take control of your online privacy without any tradeoffs. This is an internet search engine that emphasizes protecting searchers' privacy and avoiding the filter bubble of personalized search results. User search data is never stored nor tracked.<br /><br />
                                     The project is a full-stack web application that utilizes a RESTful API (Google Custom Search API) to store and retrieve data. The frontend is built with React and Tailwind CSS, and the backend is built with Node.js and Firebase integration.
                                     </p>
                                     </div>

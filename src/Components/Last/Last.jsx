@@ -10,9 +10,9 @@ const Last = () => {
         const navbar = document.querySelector('.navbar');
         const lastBodyTop = lastBody.getBoundingClientRect().top;
         const navbarBottom = navbar.getBoundingClientRect().bottom;
-        if (lastBodyTop - 125 <= navbarBottom) {
+        if (lastBodyTop - 330 <= navbarBottom) {
             lastAvatar.classList.add('avatar-active');
-        } else if (lastBodyTop - 800 < navbarBottom) {
+        } else {
             lastAvatar.classList.remove('avatar-active');
         }
     };

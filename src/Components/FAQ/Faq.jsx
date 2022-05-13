@@ -28,15 +28,15 @@ const Faq = () => {
 
 {/* row2 start */}
 <div className="card-flip-row-2">
-                <Card3 />
-                <Card4 />
+                <Card6 />
+                <Card5 />
               </div>
 {/* row2 end */}
 
 {/* row3 start */}
 <div className="card-flip-row-3">
-                <Card5 />
-                <Card6 className='card6-trigger' />
+                <Card3 />
+                <Card4 className='card6-trigger' />
 </div>
 {/* row3 end */}
             </div>
