@@ -4,22 +4,86 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1000000;
+    visibility: hidden;
 }
 .popup-inner {
     position: relative;
     padding: 32px;
     width: 100%;
-    max-width: 600px;
+    max-width: 900px;
+    height: 100%;
+    max-height: 500px;
+    border-radius: 24px;
     background-color: #fff;
     color: #1d1d1f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0.7);
+    box-shadow: 0px 0px 80px rgba(255, 255, 255, 0.623);
 }
-.popup-inner .close-btn {
+.close-pop-btn {
     position: absolute;
-    top: 16px;
-    right: 16px;
+    top: 4%;
+    right: 4%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    transition: transform 0.4s ease;
+}
+.checkmark-popup-icon {
+    position: absolute;
+    top: 4%;
+    left: 4%;
+}
+.close-pop-btn:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.popup-active {
+    visibility: visible;
+}
+.popup-active .popup-inner {
+    animation: pop-grow 0.6s ease-out forwards;
+}
+.popup-inner p {
+    text-align: center;
+    width: 80%;
+    margin-top: 2rem;
+}
+.popup-inner h1 {
+    background: linear-gradient(
+		91.36deg,
+		#eca658 0%,
+		#f391a6 13.02%,
+		#e188c3 25.52%,
+		#a58de3 37.5%,
+		#56abec 49.48%,
+		#737eb7 63.02%,
+		#c8638c 72.92%
+	);
+	background-size: 200% 200%;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	background-clip: text;
+	-moz-background-clip: text;
+	-webkit-animation: intro-gradient 10s infinite ease both;
+	-moz-animation: intro-gradient 10s infinite ease both;
+	animation: intro-gradient 10s infinite ease both;
+	font-weight: 700;
+    font-size: 92px;
+}
+@keyframes pop-grow {
+    from {
+        transform: scale(0.7);
+    }
+    to {
+        transform: scale(1);
+    }
 }

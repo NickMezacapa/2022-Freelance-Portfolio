@@ -11,9 +11,18 @@ import DevProcess from "./Components/DevProcess/DevProcess";
 /* import Canvas from "./Components/DevProcess/Canvas"; */
 import Faq from "./Components/FAQ/Faq";
 import Last from "./Components/Last/Last";
-/* import Contact from './Components/Contact/ContactForm'; */
+import Popup from './Components/SuccessPopup/Popup';
 
 function App() {
+	const popup = document.querySelector('.popup');
+    const pop_inner = document.querySelector('.popup-inner');
+
+    // When the user clicks inside pop_inner, close the popup.
+    window.addEventListener('click', (e) => {
+        if (e.target === pop_inner) {
+            popup.style.visibility = 'hidden';
+        }
+    });
 
 	return(
 		<>
@@ -29,7 +38,11 @@ function App() {
 		{/* <Canvas /> */}
 		<Faq />
 		<Last />
-{/* 		<Contact /> */}
+		<Popup trigger={true}>
+			<h1>Thank You</h1>
+			<p>Your message was directly sent to my email and you should expect a response within 24-48 hours. I'm excited to work with you!
+			</p>
+		</Popup>
 		</>
 	)
 }

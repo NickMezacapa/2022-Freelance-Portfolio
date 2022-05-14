@@ -7,27 +7,36 @@ const ContactForm = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs.sendForm('default_service', 'template_8egb67s', form.current, 'Vc-dF9cNNHNh9C3kK')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
           console.log(error.text);
       });
-      e.target.reset();
+      /* e.target.reset(); */
   };
+
+  const clearForm = (e) => {
+    form.current.reset();
+    };
 
   const handleClick_submit = (e) => {
         const nameInput = document.getElementById('contact-form-name-input');
         const emailInput = document.getElementById('contact-form-email-input');
         const messageInput = document.getElementById('contact-form-message-input');
-        if (nameInput.value !== '' && emailInput.value !== '' && messageInput.value !== '') {
+        const subPopup = document.querySelector('.popup');
+        if (nameInput.value !== '' && emailInput.value !== '' && messageInput.value !== '' && emailInput.value.indexOf('@') !== -1) {
+            // Send the email and clear the form.
             sendEmail(e);
-            nameInput.value = '';
-            emailInput.value = '';
-            messageInput.value = '';
-        }
-        if (nameInput.value === '') {
+            clearForm(e);
+            subPopup.classList.add('popup-active');
+/*             setTimeout(() => {
+                subPopup.classList.remove('popup-active');
+            }
+            , 3000); */
+            
+        } else {
+         if (nameInput.value === '') {
             e.preventDefault();
             nameInput.focus();
             nameInput.placeholder = 'required';
@@ -39,7 +48,7 @@ const ContactForm = () => {
                 nameInput.placeholder = '';
             }, 2000);
         }
-        if (emailInput.value === '') {
+        if (emailInput.value === '' || emailInput.value.indexOf('@') === -1) {
             e.preventDefault();
             emailInput.focus();
             emailInput.placeholder = 'required';
@@ -63,6 +72,7 @@ const ContactForm = () => {
                 messageInput.placeholder = 'Enter your message here...';
             }, 2000);
         }
+    }
 };
 
   return (
