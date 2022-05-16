@@ -39,6 +39,7 @@
 	border-radius: 24px;
 	border: 1px solid hsla(0, 0%, 51.4%, 0.16);
 	background-color: var(--bg-dark);
+	transition: 0.4s ease;
 }
 .bio-span {
 	background-image: linear-gradient(120deg, #ec787e, #ad7fee);
@@ -76,7 +77,18 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	transition: 0.4s ease;
 }
+.card1:hover,
+.card2:hover,
+.card3:hover,
+.card4:hover {
+	transform: scale(0.9);
+}
+.bio:hover {
+	transform: scale(0.97);
+}
+
 .bioTitle {
 	font-size: 32px;
 	width: 60%;
