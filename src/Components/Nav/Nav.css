@@ -108,6 +108,7 @@ a:hover {
 .contactLink:hover,
 .contactLink-icon:hover {
 	text-decoration: underline;
+	cursor: pointer;
 }
 .contactLink-icon {
 	display: flex;

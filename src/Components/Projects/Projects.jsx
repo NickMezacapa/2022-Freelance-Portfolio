@@ -55,7 +55,7 @@ const Projects = () => {
         window.open("https://github.com/NickMezacapa/ReactJS-Pathfinding-Visualizer--Dijkstras-Algorithm", "_blank");
     } 
 
-    // Create a function so that when a button is clicked, the Contact component will be rendered without reloading the page.
+
 
 
 
@@ -72,7 +72,7 @@ const Projects = () => {
                     <div className="proj-intro-summary">
                         <span className="pss1">A small drop in the ocean of my true potential. </span>
                         <span className="pss2">
-                            From the moment I produced "Hello World" in the console of my first application, I knew I was hooked to the engaging challenges and rewarding outcomes of software development. What started with a simple "Hello World" has become a full-fledged passion to improve the quality of life by creating high-quality, automated solutions to everyday problems.
+                            From the moment I produced "Hello World" in the console of my first application, I knew I was hooked to the engaging challenges and rewarding outcomes of software development. What started with a simple "Hello World" has become a full-fledged passion to build high-quality, automated solutions to everyday problems.
                         </span>
                     </div>
                     <div className="link-moreProjects">

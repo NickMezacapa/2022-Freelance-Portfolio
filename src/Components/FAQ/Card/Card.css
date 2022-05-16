@@ -25,3 +25,6 @@
 .card-flip-front {
     font-weight: 600;
 }
+#smaller-font-card-flip {
+    font-size: 15px;
+}

@@ -7,6 +7,48 @@ import './Intro.css';
 
 const Intro = () => {
 
+  window.addEventListener('click', (e) => {
+    if (e.target.className === 'hero-link-text') {
+      if (document.querySelector('.hero-link-text')) {
+        e.preventDefault();
+        window.scrollTo({
+          top: document.querySelector('.last-body').offsetTop,
+          behavior: 'smooth',
+        });
+      }
+    }
+    if (e.target === document.getElementById('launch-trigger')) {
+      if (document.getElementById('launch-trigger')) {
+        e.preventDefault();
+        window.scrollTo({
+          top: document.querySelector('.last-body').offsetTop,
+          behavior: 'smooth',
+        });
+      }
+    }
+  })
+  window.addEventListener('click', (e) => {
+    if (e.target === document.querySelector('.letsLaunchArrowRt')) {
+      if (document.querySelector('.letsLaunchArrowRt')) {
+        e.preventDefault();
+        window.scrollTo({
+          top: document.querySelector('.last-body').offsetTop,
+          behavior: 'smooth',
+        });
+      }
+    }
+  })
+  window.addEventListener('click', (e) => {
+    if (e.target === document.querySelector('.hero-link-icon')) {
+      if (document.querySelector('.hero-link-icon')) {
+        e.preventDefault();
+        window.scrollTo({
+          top: document.querySelector('.last-body').offsetTop,
+          behavior: 'smooth',
+        });
+      }
+    }
+  })
 
   return (
     <>
@@ -102,12 +144,12 @@ const Intro = () => {
           <h1 className='hero-heading'>Software Developer</h1>
         </div>
 
-        <a id='a' href="#" className='hero-link'>
+        <p id='launch-trigger' className='hero-link'>
           <div className="hero-link-text">Let's launch</div>
           <div className="hero-link-icon">
-            <MdKeyboardArrowRight />
+            <MdKeyboardArrowRight className="letsLaunchArrowRt" />
           </div>
-        </a>
+        </p>
       </div>
           </header>
           </Plx>
