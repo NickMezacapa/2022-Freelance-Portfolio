@@ -67,6 +67,25 @@
 	animation: intro-gradient 10s infinite ease both;
 } */
 
+/* Create a media query for when the user is on a mobile device. The text size should be resposive. */
+@media screen and (max-width: 768px) {
+	.first h2 {
+		font-size: 37px;
+		align-items: center;
+		text-align: center;
+		width: 100%;
+		opacity: 1;
+	}
+	.second h2 {
+		display: none;
+	}
+	.heroDescriptions {
+		height: 40vh;
+		position: relative;
+	}
+}
+
+
 @-webkit-keyframes intro-gradient {
 	0% {
 		background-position: 0% 4%;

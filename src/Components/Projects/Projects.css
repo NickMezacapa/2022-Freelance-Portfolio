@@ -381,99 +381,251 @@
 }
 
 
-
-
-
-
-
-
-
-/* .project-section-title {
-	margin-top: 4rem;
-	font-size: 20px;
-	opacity: 0.7;
-	margin-left: 4rem;
-}
-.project-section-container {
-	height: 450px;
-	width: 100%;
-	border-radius: 24px;
-	margin-top: 2rem;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-.project-display {
-	height: 75%;
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: space-evenly;
-}
-.project {
-	height: 100%;
-	width: 30%;
-	max-width: 30%;
-	border-radius: 24px;
-	background-color: black;
-	margin-top: 3rem;
-	transition: 0.5s ease-in;
-}
-.project:hover {
-	border: 1px solid var(--blue-dark);
-	cursor: pointer;
-}
-.project-subheader {
-	display: flex;
-	align-items: center;
-	justify-content: space-evenly;
-	height: 25%;
-	width: 100%;
-}
-.ps-1,
-.ps-2,
-.ps-3 {
-	height: 100%;
-	width: 30%;
-	font-size: 14px;
-	margin-top: 7rem;
-	text-align: center;
-}
-#ai-1 {
-	background-image: url("../../Images/Showcase/bia.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-#ai-2 {
-	background-image: url("../../Images/Showcase/hand-showcase.png");
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: center;
-}
-#ai-3 {
-	background-image: url("../../Images/Showcase/face-recog-showcase.png");
-	background-repeat: no-repeat;
-	background-size: cover;
+@media screen and (max-width: 768px) {
+/* 	.projectsCta {
+		border: 1px solid red;
+	} */
+	.projects-overflow {
+		width: 90%;
+	}
+	.proj-sticky-intro {
+		margin-top: -2rem;
+		border: 1px solid transparent;
+	}
+	.proj-mainTitle {
+		font-size: 55px;
+		margin-top: -4rem;
+		margin-left: -2rem;
+	}
+	.display-proj-hero-wrap {
+		position: absolute;
+		right: -17%;
+		top: 8%;
+		width: 125%;
+	}
+	.proj-intro-summary {
+		width: 100%;
+		margin-left: -2rem;
+	}
+	.link-moreProjects {
+		width: 100%;
+	}
+	.ls1 {
+		width: 95%;
+		margin-left: -2rem;
+	}
+	.ls2 {
+		margin-left: -1rem;
+	}
+	.proj-1-ai {
+		width: 100%;
+		margin-left: -2rem;	
+	}
+	.braintumor-cta, .eye-detection-cta {
+		width: 91.5%;
+		display: flex;
+		font-size: 14px;
+		margin-top: 0;
+		box-shadow: 0px 0px 20px rgba(166, 166, 166, 0.32);
+	}
+	.braintumor-cta .proj-title {
+		width: 100%;
+		position: absolute;
+		left: 5%;
+		top: 5%;
+	}
+	.braintumor-cta .braintumor-subheading {
+		width: 100%;
+		position: absolute;
+		left: 5%;
+		top: 15%;
+	}
+	.braintumor-cta .braintumor-para {
+		margin-top: 4rem;
+		position: relative;
+		left: 2%;
+	}
+	.braintumor-cta img {
+		margin-top: -4rem;
+		left: 2.5%;
+		position: relative;
+	}
+	.braintumor-cta .braintumor-links {
+		position: absolute;
+		left: 3%;
+		top: 60%;
+		display: flex;
+		flex-direction: column;
+	}
+	.eye-detection-cta {
+		margin-top: 4rem;
+		position: absolute;
+		left: 0;
+		font-size: 14px;
+		display: flex;
+		flex-direction: column;
+		height: auto;
+	}
+	.eye-detection-cta .proj-title2 {
+		width: 96%;
+		position: absolute;
+		left: 5%;
+		top: 5%;
+	}
+	.eye-detection-cta img {
+		margin-top: 0.2rem;
+		right: 2.5%;
+		position: absolute;
+		width: 44%;
+		height: auto;
+	}
+	.eye-detection-cta .braintumor-subheading {
+		width: 100%;
+		position: absolute;
+		left: 5%;
+		top: 25.5%;
+	}
+	.eye-detection-cta .braintumor-para {
+		position: relative;
+		margin-top: 80%;
+		margin-left: -5rem;
+		margin-top: 11rem;
+		width: 91%;
+		padding-bottom: 30px;
+	}
+	.eye-detection-cta .braintumor-links {
+		position: absolute;
+		right: -48.5%;
+		top: 71%;
+		display: flex;
+		flex-direction: column;
+	}
+	/*  */
+	.proj3-cta {
+		width: 91.5%;
+		height: auto;
+		display: flex;
+		font-size: 14px;
+		margin-top: 45.75rem;
+		box-shadow: 0px 0px 20px rgba(166, 166, 166, 0.32);
+	}
+	.proj3-cta .proj-title3 {
+		width: 100%;
+		position: absolute;
+		left: 5%;
+		top: 5%;
+	}
+	.proj3-cta img {
+		margin-top: 0;
+		left: 0;
+		position: relative;
+		width: 44%;
+		height: auto;
+	}
+	.proj3-cta .braintumor-subheading {
+		width: 100%;
+		position: absolute;
+		left: 5%;
+		top: 23%;
+	}
+	.proj3-cta .braintumor-para {
+		margin-top: 8rem;
+		position: relative;
+		left: -3%;
+		padding-bottom: 30px;
+	}
+	.proj3-cta .braintumor-links {
+		position: absolute;
+		left: 3%;
+		top: 65%;
+		display: flex;
+		flex-direction: column;
+	}
+	/*  */
+	.proj4-cta {
+		width: 91.5%;
+		display: flex;
+		font-size: 14px;
+		margin-top: 80.5rem;
+		box-shadow: 0px 0px 20px rgba(166, 166, 166, 0.32);
+		position: absolute;
+		left: 0;
+		flex-direction: column;
+		height: auto;
+	}
+	.proj4-cta .proj-title4 {
+		width: 95%;
+		position: absolute;
+		left: 5%;
+		top: 5%;
+	}
+	.proj4-cta .braintumor-subheading {
+		width: 95%;
+		position: absolute;
+		left: 5%;
+		top: 19%;
+	}
+	.proj4-cta img {
+		margin-top: -3.5rem;
+		right: 3.5%;
+		position: absolute;
+		width: 48%;
+		height: auto;
+	}
+	.proj4-cta .braintumor-para {
+		position: relative;
+		margin-top: 80%;
+		margin-left: -5rem;
+		margin-top: 10rem;
+		width: 91%;
+		padding-bottom: 30px;
+	}
+	.proj4-cta .braintumor-links {
+		position: absolute;
+		right: -48.5%;
+		top: 69%;
+		display: flex;
+		flex-direction: column;
+	}
+	/*  */
+	.proj5-cta {
+		width: 91.5%;
+		display: flex;
+		font-size: 14px;
+		margin-top: 124.5rem;
+		box-shadow: 0px 0px 20px rgba(166, 166, 166, 0.32);
+	}
+	.proj5-cta .proj-title {
+		width: 100%;
+		position: absolute;
+		left: 5%;
+		top: 5%;
+	}
+	.proj5-cta .braintumor-subheading {
+		width: 100%;
+		position: absolute;
+		left: 5%;
+		top: 24%;
+	}
+	.proj5-cta .braintumor-para {
+		margin-top: 7rem;
+		position: relative;
+		left: 0%;
+	}
+	.proj5-cta img {
+		margin-top: 0;
+		left: 2.5%;
+		position: relative;
+		width: 44%;
+		height: auto;
+	}
+	.proj5-cta .braintumor-links {
+		position: absolute;
+		left: 3%;
+		top: 63%;
+		display: flex;
+		flex-direction: column;
+	}
 	
 }
-#google-showcase {
-	background-image: url("../../Images/Showcase/google-showcase.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-}
-#bug {
-	background-image: url("../../Images/Showcase/bug-tracker-sc.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: 0rem center;
-	position: static;
-}
-#algo-path {
-	background-image: url("../../Images/Showcase/pa2.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: -11rem center;
-	position: static;
-} */
 

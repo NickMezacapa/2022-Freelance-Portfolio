@@ -28,3 +28,14 @@
 #smaller-font-card-flip {
     font-size: 15px;
 }
+
+@media screen and (max-width: 768px) {
+    .card-flip12 {
+        width: 100%;
+    }
+    #smaller-font-card-flip {
+        font-size: 14px;
+        line-height: 1.5;
+        font-weight: 500;
+    }
+}

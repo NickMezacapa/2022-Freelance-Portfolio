@@ -48,7 +48,7 @@ const Showcase = () => {
                 </div>
             </div>
             <div className="animations-hero">
-                <img src={ BlankHero } alt="Animations display" />
+                <img src={ BlankHero } alt="Animations display" id='blankhero-img' />
                 
                 <div className="animations-heroContent">
                     
@@ -68,7 +68,7 @@ const Showcase = () => {
                 },
               ]}
               style={{
-                height: "100%",
+                height: "70%",
                 width: "100%",
                 zIndex: 3,
                 objectFit: "cover",
@@ -77,7 +77,7 @@ const Showcase = () => {
                 willChange: "opacity",
                 opacity: 0.9,
                 position: "absolute",
-                top: 0
+                top: '2.25rem'
               }}
             >
                     <div className="overlay"></div>

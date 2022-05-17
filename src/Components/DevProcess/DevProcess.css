@@ -260,3 +260,56 @@ letter-spacing: -0.015em;
     z-index: 50;
     top: 35%;
 }
+
+@media screen and (max-width: 768px) {
+
+    .process-scroll-wrap h2 {
+        position: absolute;
+        top: 0;
+        left: 35%;
+        font-size: 32px;
+        width: 100%;
+    }
+
+    .process-scroll-wrap #hassle-free {
+        position: relative;
+        top: 0;
+        left: 35%;
+        font-size: 24px;
+        width: 100%;
+        margin-top: -1.5rem;
+    }
+
+    .cards-wrap .process-card1 p,
+    .cards-wrap .process-card2 p,
+    .cards-wrap .process-card3 p,
+    .cards-wrap .process-card4 p,
+    .cards-wrap .process-card5 p {
+        font-size: 18px;
+    }
+
+    .cards-wrap .process-card1 .process-card-heading,
+    .cards-wrap .process-card1 p,
+    .cards-wrap .process-card2 .process-card-heading,
+    .cards-wrap .process-card2 p,
+    .cards-wrap .process-card3 .process-card-heading,
+    .cards-wrap .process-card3 p,
+    .cards-wrap .process-card4 .process-card-heading,
+    .cards-wrap .process-card4 p,
+    .cards-wrap .process-card5 .process-card-heading,
+    .cards-wrap .process-card5 p {
+        width: 120%;
+        position: relative;
+        margin: 0 auto;
+        margin-left: -2rem;
+    }
+    .process-card1 .card-step,
+    .process-card2 .card-step,
+    .process-card3 .card-step,
+    .process-card4 .card-step,
+    .process-card5 .card-step {
+        position: relative;
+        top: -5%;
+        left: -12%;
+    }
+}

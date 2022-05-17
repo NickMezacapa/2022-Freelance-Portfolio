@@ -117,7 +117,7 @@
 	width: 80%;
 	margin-left: 3rem;
 	margin-right: auto;
-	margin-top: 4rem;
+	margin-top: 3rem;
 	font-size: 20px;
 	opacity: 0.85;
 }
@@ -235,6 +235,69 @@
 	margin-right: auto;
 	padding-left: 28px;
 	padding-right: 28px;
+}
+/* Create a media query for when the user is on a mobile device. The elements of this component should be responsive. */
+@media screen and (max-width: 800px) {
+	.glimpseCta {
+		height: 150vh;
+		width: 100%;
+		max-width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 0;
+		padding-right: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.overflow-cta {
+		padding-left: 0;
+		padding-right: 0;
+		margin-left: -0.5rem;
+	}
+	.container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		height: 100%;
+		margin-top: -8rem;
+		max-width: 90%;
+	}
+	.bio {
+		width: 100%;
+		align-items: center;
+		margin-left: auto;
+		margin-right: auto;
+		height: 40rem;
+	}
+	.cardsCta {
+		width: 100%;
+		height: 25rem;
+		align-items: center;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: -8rem;
+	}
+	.description {
+		display: none;
+	}
+	.bioTitle {
+		width: 90%;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.bioContent {
+		width: 82%;
+		text-justify: distribute;
+		text-align-last: left;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.card1-desc, .card2-desc {
+		position: relative;
+		top: -1.75rem;
+	}
 }
 
 @-webkit-keyframes intro-gradient {

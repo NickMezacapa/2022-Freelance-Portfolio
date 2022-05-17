@@ -65,7 +65,7 @@
 	z-index: 2;
 	object-fit: cover;
 	overflow: hidden;
-	background-color: rgba(0, 0, 0, 0.8);
+	/* background-color: rgba(0, 0, 0, 0.8); */
 }
 .animations-heroContent video {
 	height: 100%;
@@ -190,7 +190,7 @@
 }
 .responsive {
 	width: 68%;
-	min-width: 850px;
+	/* min-width: 850px; */
 	height: 100%;
 	background-image: linear-gradient(45deg, #16327c, #1ebf98);
 	border-radius: 24px;
@@ -294,6 +294,119 @@
 }
 .dd-months-gray {
 	animation: grayfade 1s 1s cubic-bezier(.55, 0, .1, 1) forwards;
+}
+
+/* Create a media query for when the user is on a mobile device. When they are, change the width of the container. */
+@media screen and (max-width: 800px) {
+	.showcaseCta {
+		height: auto;
+	}
+	.animations-hero {
+		position: relative;
+		width: 80%;
+		height: 55%;
+		margin-top: 15rem;
+		
+	}
+	.animations-hero #blankhero-img {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		margin-top: 2rem;
+	}
+	.animations-heroContent {
+		position: relative;
+		/* border: 1px solid red; */
+		width: 100%;
+		margin-top: -0.25rem;
+	}
+	.overlay {
+		margin-top: 2rem;
+	}
+	.animations-heroContent video {
+		object-fit: cover;
+		z-index: 2;
+		opacity: 1;
+		position: absolute;
+		left: 0.25%;
+		height: 74%;
+		width: 98%;
+		top: 0;
+		object-position: center;
+		margin-top: 2.25rem;
+	}
+	.showcase-animations {
+		display: flex;
+		flex-direction: column;
+		height: auto;
+		padding-bottom: 50px;
+	}
+	.animations-heading {
+		position: absolute;
+		top: 5%;
+		left: 5%;
+		font-size: 22px;
+	}
+	.animations-subheading {
+		position: absolute;
+		top: 5%;
+		left: 5%;
+		font-size: 18px;
+		max-width: 75%;
+	}
+	.showcase1 {
+		display: flex;
+		flex-direction: column;
+		height: auto;
+	}
+	.loadTimes {
+		width: 100%;
+		height: 530px;
+	}
+	.latest-tech {
+		width: 100%;
+		height: 400px;
+		margin-top: 2rem;
+	}
+	.showcase2 {
+		display: flex;
+		flex-direction: column;
+		height: auto;
+	}
+	.showcase-small {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+		width: 100%;
+	}
+	.dev-duration, .clean-code {
+		width: 100%;
+	}
+	.clean-code {
+		margin-top: 2rem;
+		height: 275px;
+		margin-bottom: 2rem;
+	}
+	.responsive {
+		width: 100%;
+		height: auto;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 2rem;
+	}
+	.responsive img {
+		width: 100%;
+		min-height: 250px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 20px;
+		margin-bottom: 15px;
+	}
+	.responsive h2 {
+		margin-top: 20px;
+	}
 }
 
 @keyframes strikethrough {

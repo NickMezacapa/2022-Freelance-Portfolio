@@ -131,6 +131,10 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	transition: transform 0.4s ease;
+}
+.hero-img-container:hover {
+	transform: scale(0.9);
 }
 .hero-img {
 	height: 93%;
@@ -264,6 +268,22 @@ body {
 }
 .sticky-gap {
 	height: 100vh;
+}
+
+/* Create a media query for when the user is using a mobile device. The .hero-ui element should be moved down 2rem. */
+@media screen and (max-width: 768px) {
+	.hero-ui {
+		margin-top: 10rem;
+		max-width: none;
+		transform: scale(0.75);
+	}
+	.hero-heading {
+		font-size: 48px;
+		font-weight: 700;
+	}
+	.hero-scroll-trigger {
+		height: 60vh;
+	}
 }
 
 @keyframes heroImgScale {
