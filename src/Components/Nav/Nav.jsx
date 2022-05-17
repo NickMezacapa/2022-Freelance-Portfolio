@@ -5,6 +5,18 @@ import { MdKeyboardArrowRight } from 'react-icons/md';
 
 
 const Nav = () => {
+/*   window.addEventListener('scroll', () => {
+    const navbar = document.querySelector('.navbar');
+    const navbarTop = navbar.getBoundingClientRect().top;
+    if (navbarTop > 0) {
+      // disable scrolling higher 
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      });
+    }
+  }); */
+
 
 window.addEventListener('click', (e) => {
   if (e.target.className === 'navLogoLink') {

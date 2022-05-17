@@ -24,6 +24,20 @@ function App() {
         }
     });
 
+	// Add a scroll event listener for when the user reaches the bottom of the footer. When they have, they cannot scroll any further.
+	window.addEventListener('scroll', () => {
+		const footer = document.querySelector('footer');
+		const footerBottom = footer.getBoundingClientRect().bottom;
+		const windowHeight = window.innerHeight;
+		if (footerBottom === windowHeight) {
+			// disable scrolling any further down the y axis
+			window.scrollTo(0, window.scrollY + 1);
+		} else console.log('something did not happen.')
+	});
+
+
+
+
 	return(
 		<>
 		

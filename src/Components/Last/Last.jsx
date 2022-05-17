@@ -18,11 +18,13 @@ const Last = () => {
     };
     window.addEventListener('scroll', handleScroll_last_animations);
 
+   
+
   return (
     <div className="last-body">
         <div className="overflow-container">
             <div className="last-container">
-                <h4 className="last-text">Interested in working with me<span className="animated-q-mark">?</span></h4>
+                <h4 className="last-text">Interested in working with me?</h4>
                 <div className="form-placement">
                     <Contact />
                 </div>

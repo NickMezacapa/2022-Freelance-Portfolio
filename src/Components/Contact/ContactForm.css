@@ -173,5 +173,54 @@
       }
 }
 
+@media screen and (max-width: 768px) {
+    .contact-form-cta {
+        margin-top: -3rem;
+        max-height: 50vh;
+    }
+    .contact-form-c1 {
+        display: flex;
+        flex-direction: column;
+    }
+    .small-inputs {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 6rem;
+    }
+    .contact-textarea {
+        margin-top: -2rem;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+    .contact-message-label-cta {
+        display: flex;
+        height: auto;
+    }
+    .contact-textarea label {
+        width: 100%;
+        margin-left: 0rem;
+        text-align: center;
+    }
+    .contact-message-content textarea {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 1rem;
+        height: 12rem;
+    }
+    .contact-submit input {
+        position: relative;
+        top: 4rem;
+        left: 1rem;
+        background-color: #585859;
+        color: #fff;
+    }
+
+
+}
+
 
 
