@@ -218,6 +218,11 @@
         background-color: #585859;
         color: #fff;
     }
+    .contact-submit input:hover {
+        background-color: rgba(255, 255, 255, 0.721);
+        backdrop-filter: saturate(180%) blur(20px);
+        color: #1d1d1f;
+    }
 
 
 }

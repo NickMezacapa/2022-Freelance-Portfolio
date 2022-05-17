@@ -379,6 +379,21 @@
 		transform: translateY(0px) scale(1);
 	}
 }
+.braintumor-cta,
+.eye-detection-cta,
+.proj3-cta,
+.proj4-cta,
+.proj5-cta {
+	transition: 0.4s ease;
+	box-shadow: 0px 0px 20px rgba(166, 166, 166, 0.32);
+}
+.braintumor-cta:hover,
+.eye-detection-cta:hover,
+.proj3-cta:hover,
+.proj4-cta:hover,
+.proj5-cta:hover {
+	transform: scale(0.96);
+}
 
 
 @media screen and (max-width: 768px) {
