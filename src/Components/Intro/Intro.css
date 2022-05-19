@@ -9,6 +9,9 @@ body {
 	overflow-y: scroll;
 	scroll-behavior: smooth;
 }
+.hidden-element-active {
+	display: none;
+}
 /* body::-webkit-scrollbar {
 	display: none;
 } */
@@ -285,6 +288,7 @@ body {
 		height: 60vh;
 	}
 }
+/* End media query medium */
 
 @keyframes heroImgScale {
 	from {
@@ -355,5 +359,27 @@ body {
 	}
 	100% {
 		opacity: 1;
+	}
+}
+
+
+/* ************************ */
+/* Media queires iphone se */
+/* ************************ */
+
+@media screen and (max-width: 375px) {
+	.hero-scroll-wrap {
+		height: 200vh;
+	}
+	.hero-ui {
+		margin-top: 15rem;
+		transform: scale(0.75);
+	}
+	.heroWrapper {
+		transform: scale(0.8);
+		margin-top: -1rem;
+	}
+	.hero__header {
+		margin-top: -4rem;
 	}
 }

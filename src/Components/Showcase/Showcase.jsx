@@ -55,12 +55,14 @@ const Showcase = () => {
                     <Plx
              parallaxData={[
                 {
-                  start: "3035px",
-                  end: "3195px",
+/*                   start: "3035px",
+                  end: "3195px", */
+                  start: "self",
+                  duration: "300px",
                   easing: "ease-in",
                   properties: [
                     {
-                      startValue: 0.85,
+                      startValue: 1,
                       endValue: 0,
                       property: "opacity",
                     },
@@ -68,16 +70,16 @@ const Showcase = () => {
                 },
               ]}
               style={{
-                height: "70%",
+                height: "100%",
                 width: "100%",
                 zIndex: 3,
                 objectFit: "cover",
                 overflow: "hidden",
                 backgroundColor: "rgba(0, 0, 0, 1)",
                 willChange: "opacity",
-                opacity: 0.9,
+                opacity: 1,
                 position: "absolute",
-                top: '2.25rem'
+                top: '0.25rem'
               }}
             >
                     <div className="overlay"></div>
@@ -90,7 +92,7 @@ const Showcase = () => {
         </section>
         <section className="showcase1">
             <div className="loadTimes">
-                <h2>
+                <h2 className="fastDelivery">
                     Fast Delivery.<br />
                     Faster load times.
                 </h2>

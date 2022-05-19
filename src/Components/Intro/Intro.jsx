@@ -7,6 +7,16 @@ import './Intro.css';
 
 const Intro = () => {
 
+    if (window.innerWidth <= 375) {
+      // remove all PLX elements
+      const plxElements = document.querySelectorAll('Plx');
+      plxElements.forEach(element => {
+        element.parentNode.removeChild(element);
+      }
+      );
+    }
+
+
   window.addEventListener('click', (e) => {
     if (e.target.className === 'hero-link-text') {
       if (document.querySelector('.hero-link-text')) {
@@ -58,6 +68,7 @@ const Intro = () => {
         <div className="overflow-wrap">
           {/* Begin code for hero animation */}
           <Plx
+          className='PLX-heroImg'
           parallaxData={[
             {
               start: 0,
@@ -120,6 +131,7 @@ const Intro = () => {
               willChange: "opacity",
               opacity: 0
             }}
+            
             >
             <img src={HeroImg} alt="iMac" className="hero-ui" />
            </Plx>

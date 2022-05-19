@@ -117,7 +117,9 @@ a:hover {
 	padding-left: 5px;
 	padding-top: 2px;
 }
-/* Create a media query for the nav bar when the user is using a mobile device. */
+/* **************************************************** */
+/* Media Queries medium
+/* **************************************************** */
 @media screen and (max-width: 768px) {
 
 	.navCta {
@@ -169,4 +171,27 @@ a:hover {
 		padding-top: 2px;
 	}
 }
-/* When the user is using a mobile device, turn the navbar into a hamburger menu */
+/* **************************************************** */
+/* Media Queries iPhone SE */
+/* **************************************************** */
+@media screen and (max-width: 375px) {
+	.navCta {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 100%;
+	}
+	.navbar {
+		width: 100vw;
+		position: fixed !important;
+		z-index: 1000000;
+		top: 0;
+		left: 0;
+	}
+	.navLogo {
+		margin-left: 20px;
+	}
+	.contactLink {
+		margin-right: 20px;
+	}
+}

@@ -127,3 +127,19 @@
 		background-position: 0% 4%;
 	}
 }
+
+/* ***************** */
+/* Begin media query for iphone se */
+/* ***************** */
+
+@media screen and (max-width: 375px) {
+	.first h2 {
+		font-size: 29px;
+		align-items: center;
+		text-align: center;
+		width: 100%;
+		opacity: 1;
+		margin-top: 6rem;
+	}
+}
+

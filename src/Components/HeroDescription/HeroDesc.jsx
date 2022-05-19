@@ -9,8 +9,10 @@ const HeroDesc = () => {
             <Plx
              parallaxData={[
                 {
-                  start: "1300px",
-                  end: "1600px",
+/*                   start: "1300px",
+                  end: "1600px", */
+                  start: "self",
+                  duration: "350px",
                   easing: "ease-in",
                   properties: [
                     {

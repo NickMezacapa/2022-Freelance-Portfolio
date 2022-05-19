@@ -236,7 +236,51 @@
 	padding-left: 28px;
 	padding-right: 28px;
 }
-/* Create a media query for when the user is on a mobile device. The elements of this component should be responsive. */
+@-webkit-keyframes intro-gradient {
+	0% {
+		background-position: 0% 4%;
+	}
+
+	50% {
+		background-position: 100% 97%;
+	}
+
+	100% {
+		background-position: 0% 4%;
+	}
+}
+
+@-moz-keyframes intro-gradient {
+	0% {
+		background-position: 0% 4%;
+	}
+
+	50% {
+		background-position: 100% 97%;
+	}
+
+	100% {
+		background-position: 0% 4%;
+	}
+}
+
+@keyframes intro-gradient {
+	0% {
+		background-position: 0% 4%;
+	}
+
+	50% {
+		background-position: 100% 97%;
+	}
+
+	100% {
+		background-position: 0% 4%;
+	}
+}
+
+/* ************************************************* */
+/*  Begin media queries for medium screen */
+/* ************************************************* */
 @media screen and (max-width: 800px) {
 	.glimpseCta {
 		height: 150vh;
@@ -299,45 +343,117 @@
 		top: -1.75rem;
 	}
 }
+/* ************************************************* */
+/*  End media queries for medium screen */
+/* ************************************************* */
 
-@-webkit-keyframes intro-gradient {
-	0% {
-		background-position: 0% 4%;
-	}
+/* ************************************************* */
+/*  Begin media queries for iPhone SE */
+/* ************************************************* */
 
-	50% {
-		background-position: 100% 97%;
+@media screen and (max-width: 375px) {
+	.glimpseCta {
+		height: 200vh;
+		width: 100%;
+		max-width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 0;
+		padding-right: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
+	.overflow-cta {
+		width: 97%;
+	}
+	.title {
+		align-items: center;
+		padding-top: 0rem;
+		padding-left: 0rem;
+		margin-top: 4rem;
+		display: flex;
+		justify-content: center;
+		position: absolute;
+		width: 105%;
+	}
+	.description {
+		display: block;
+		opacity: 1;
+		transform: translateX(0px);
+		font-size: 32px;
+		text-align: center;
+		position: relative;
+		top: 6rem;
+		right: 7.5rem;
+		width: 155%;
+		letter-spacing: -0.045em;
+		padding-bottom: 1rem;
+	}
+	.container {
+		margin-top: 3rem;
+	}
+	.bio {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: -10rem;
+		height: fit-content;
+	}
+	.bioTitle {
+		width: 95%;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 26px;
+	}
+	.bioContent {
+		padding-bottom: 4rem;
+		text-align: left;
+		width: 85%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-left: 1.8rem;
+		margin-right: auto;
+	}
+	.secondThought {
+		margin-top: 1rem;
+	}
+	/*  */
+	.cardsCta {
+		margin-top: -12rem;
+	}
+	.card1 .card1-info {
+		margin-left: 0.75rem;
+	}
+	.card1 .card1-info .card1-number,
+	.card2 .card2-info .card2-number, 
+	.card3 .card3-info .card3-number, 
+	.card4 .card4-info .card4-number {
+		font-size: 50px;
+	}
+	.card1 .card1-info .card1-desc,
+	.card2 .card2-info .card2-desc,
+	.card3 .card3-info .card3-desc,
+	.card4 .card4-info .card4-desc {
+		font-size: 35px;
+	}
+	.card2 .card2-info {
+		margin-top: 1rem;
+		margin-left: 1rem;
+	}
+	.card2 .card2-subheading {
+		text-align: center;
+	}
+	.card4 .card4-info {
+		margin-left: -0.5rem;
+	}
+	.card4 .card4-info .card4-desc {
+		font-size: 28px;
+		padding-top: 2rem;
+		position: relative;
+	}
+	
 
-	100% {
-		background-position: 0% 4%;
-	}
-}
-
-@-moz-keyframes intro-gradient {
-	0% {
-		background-position: 0% 4%;
-	}
-
-	50% {
-		background-position: 100% 97%;
-	}
-
-	100% {
-		background-position: 0% 4%;
-	}
-}
-
-@keyframes intro-gradient {
-	0% {
-		background-position: 0% 4%;
-	}
-
-	50% {
-		background-position: 100% 97%;
-	}
-
-	100% {
-		background-position: 0% 4%;
-	}
 }

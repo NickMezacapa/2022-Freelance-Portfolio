@@ -296,7 +296,40 @@
 	animation: grayfade 1s 1s cubic-bezier(.55, 0, .1, 1) forwards;
 }
 
-/* Create a media query for when the user is on a mobile device. When they are, change the width of the container. */
+
+
+@keyframes strikethrough {
+	from {
+		transform: scaleX(0);
+	}
+	to {
+		transform: scaleX(1);
+	}
+}
+@keyframes grayfade {
+	from {
+		opacity: 1;
+		transform: translateY(0) scale(1);
+	}
+	to {
+		opacity: 0.5;
+		transform: translateY(-50px) scale(0.7)
+	}
+}
+@keyframes riseup {
+	from {
+		opacity: 0;
+		transform: translateY(0);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(-50px);
+	}
+}
+
+/* ********************************************* */
+/* Begin media queries for medium screen */
+/* ********************************************* */
 @media screen and (max-width: 800px) {
 	.showcaseCta {
 		height: auto;
@@ -304,25 +337,26 @@
 	.animations-hero {
 		position: relative;
 		width: 80%;
-		height: 55%;
-		margin-top: 15rem;
-		
+		height: 185px;
+		margin-top: 18rem;
 	}
 	.animations-hero #blankhero-img {
 		width: 100%;
-		height: 100%;
+		height: auto;
 		position: absolute;
 		top: 0;
-		margin-top: 2rem;
+		margin-top: 0rem;
 	}
 	.animations-heroContent {
 		position: relative;
 		/* border: 1px solid red; */
 		width: 100%;
+		height: 100%;
 		margin-top: -0.25rem;
+		z-index: 10;
 	}
 	.overlay {
-		margin-top: 2rem;
+		margin-top: -4rem;
 	}
 	.animations-heroContent video {
 		object-fit: cover;
@@ -330,17 +364,17 @@
 		opacity: 1;
 		position: absolute;
 		left: 0.25%;
-		height: 74%;
-		width: 98%;
+		height: 100%;
+		width: 99%;
 		top: 0;
 		object-position: center;
-		margin-top: 2.25rem;
+		margin-top: 0rem;
 	}
 	.showcase-animations {
 		display: flex;
 		flex-direction: column;
 		height: auto;
-		padding-bottom: 50px;
+		padding-bottom: 110px;
 	}
 	.animations-heading {
 		position: absolute;
@@ -408,32 +442,102 @@
 		margin-top: 20px;
 	}
 }
+/* ********************************************* */
+/* End media queries for medium screen */
+/* ********************************************* */
 
-@keyframes strikethrough {
-	from {
-		transform: scaleX(0);
+/* ********************************************* */
+/* Begin media queries for iphone se */
+/* ********************************************* */
+@media screen and (max-width: 375px) {
+	.showcaseCta {
+		height: auto;
+		position: relative;
 	}
-	to {
-		transform: scaleX(1);
-	}
-}
-@keyframes grayfade {
-	from {
+	.animations-heroContent video {
+		object-fit: cover;
+		z-index: 2;
 		opacity: 1;
-		transform: translateY(0) scale(1);
+		/* position: absolute; */
+		/* left: -12%; */
+		height: 100%;
+		width: 100%;
+		object-position: center;
+		margin-top: 0rem;
 	}
-	to {
-		opacity: 0.5;
-		transform: translateY(-50px) scale(0.7)
+	.animations-heading {
+		margin-top: -5rem;
 	}
-}
-@keyframes riseup {
-	from {
-		opacity: 0;
-		transform: translateY(0);
+	.animations-description .animations-subheading {
+		width: 70%;
+		margin-top: -1rem;
 	}
-	to {
-		opacity: 1;
-		transform: translateY(-50px);
+	.animations-hero #blankhero-img {
+		width: 90%;	
+		height: auto;
+		margin-top: 4rem;
+	}
+	.animations-heroContent {
+		position: relative;
+		width: 88%;
+		height: 155px;
+		margin-top: 10rem;
+		/* background-color: rgba(0, 0, 0, 0.8); */
+	}
+	.overlay {
+		height: 100%;
+		width: 100%;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	.animations-hero {
+		width: 100%;
+		margin-top: 16rem;
+		padding-bottom: 4rem;
+	}
+	.loadTimes .fastDelivery {
+		margin-left: 2rem;
+		font-size: 1.5rem;
+	}
+	.loadTimes img {
+		transform: scale(1.35);
+		margin-left: -2rem;
+		margin-top: 2rem;
+	}
+	.latest-tech h2 {
+		text-align: center;
+		margin-top: 3rem;
+		font-size: 1.5rem;
+		padding-bottom: 4rem;
+	}
+	.latest-tech {
+		display: flex;
+		flex-direction: column;
+		height: auto;
+	}
+	.clean-code h2 {
+		margin-bottom: 1rem;
+	}
+	.clean-code-content {
+		width: 110%;
+		height: auto;
+		font-size: 14px;
+		margin-left: 3.5rem;
+	}
+	.responsive {
+		margin-bottom: 8rem;
+	}
+	.responsive img {
+		margin-top: 2rem;
+		width: 100%;
+		padding-bottom: 4rem;
+		height: auto;
+	}
+	.responsive h2 {
+		padding-top: 2rem;
+		text-align: center;
+		margin-left: -0.7rem;
+		width: 100%;
+		padding-bottom: 1rem;
 	}
 }
