@@ -5,5 +5,36 @@ body {
     .navbar {
         position: fixed;
     }
+    body {
+        overflow-x: hidden !important;
+        overflow-y: scroll !important;
+    }
+    ::-webkit-scrollbar-thumb,
+    ::-webkit-scrollbar,
+    ::-webkit-scrollbar-track,
+    ::-webkit-slider-thumb,
+    ::-webkit-progress-bar,
+    ::-webkit-progress-value,
+    ::-webkit-progress-track,
+    ::-webkit-slider-runnable-track {
+        background-color: transparent !important;
+    }
+    * {
+        scrollbar-color: transparent !important;
+    }
+    *::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        background-color: transparent;
+    }
+    
+    *::-webkit-scrollbar {
+        width: 6px;
+        background-color: transparent;
+    }
+    
+    *::-webkit-scrollbar-thumb {
+        background-color: #000000;
+    }
 }
 

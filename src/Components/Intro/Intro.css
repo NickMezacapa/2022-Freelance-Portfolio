@@ -372,14 +372,39 @@ body {
 		height: 200vh;
 	}
 	.hero-ui {
-		margin-top: 15rem;
-		transform: scale(0.75);
+		margin-top: 8rem;
+		transform: scale(0.6);
 	}
 	.heroWrapper {
 		transform: scale(0.8);
-		margin-top: -1rem;
+		margin-top: -2rem;
 	}
 	.hero__header {
-		margin-top: -4rem;
+		margin-top: -3rem;
+	}
+	.hero-heading {
+		font-size: 36px;
+		font-weight: 600;
+	}
+	.hero-link-text {
+		font-size: 18px;
+	}
+	.overflow-wrap {
+		overflow: hidden;
+	}
+	.letsLaunchArrowRt {
+		font-size: 18px;
+		margin-bottom: 1rem;
+		font-weight: 600;
+	}
+	*::-webkit-scrollbar {
+		display: none;
+	}
+	*::-webkit-scrollbar-thumb {
+		display: none;
+	}
+	.hero-eyebrow {
+		font-weight: 500;
+		font-size: 20px;
 	}
 }

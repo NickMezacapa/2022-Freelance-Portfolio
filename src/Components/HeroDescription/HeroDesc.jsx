@@ -12,7 +12,7 @@ const HeroDesc = () => {
 /*                   start: "1300px",
                   end: "1600px", */
                   start: "self",
-                  duration: "350px",
+                  duration: "360px",
                   easing: "ease-in",
                   properties: [
                     {

@@ -650,3 +650,39 @@
 	
 }
 
+/* ****************************** */
+/* Begin media queries iphone se */
+/* **************************** */
+@media screen and (max-width: 375px) {
+	.proj-mainTitle {
+		font-size: 2.5rem;
+	}
+	.proj-sticky-intro {
+		width: 100%;
+		position: sticky !important;
+		top: -10%;
+	}
+	.pss1, .pss2 {
+		font-size: 1rem;
+	}
+	.display-proj-hero-wrap {
+		margin-top: 2rem;
+	}
+	.link-moreProjects {
+		margin-top: -1rem;
+	}
+	.ls1 {
+		font-size: 0.81rem;
+		width: 100%;
+	}
+	.ls2 {
+		position: absolute;
+		bottom: -4%;
+		right: 6%;
+		font-size: 0.81rem;
+	}
+	.projects-content {
+		height: 200vh;
+	}
+}
+

@@ -510,6 +510,9 @@
 		margin-left: -2rem;
 		margin-top: 2rem;
 	}
+	.loadTimes img:hover {
+		transform: scale(1.7);
+	}
 	.latest-tech h2 {
 		text-align: center;
 		margin-top: 3rem;
@@ -534,16 +537,21 @@
 		margin-bottom: 8rem;
 	}
 	.responsive img {
-		margin-top: 2rem;
+		margin-top: 9rem;
 		width: 100%;
-		padding-bottom: 4rem;
+		padding-bottom: 3.5rem;
 		height: auto;
+		position: relative;
+		top: 0;
+		left: 0;
 	}
 	.responsive h2 {
-		padding-top: 2rem;
+		/* padding-top: 2rem; */
 		text-align: center;
 		margin-left: -0.7rem;
 		width: 100%;
 		padding-bottom: 1rem;
+		position: absolute;
+		top: 2%;
 	}
 }

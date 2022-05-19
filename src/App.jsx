@@ -14,6 +14,7 @@ import Last from "./Components/Last/Last";
 import Popup from './Components/SuccessPopup/Popup';
 
 function App() {
+
 	const popup = document.querySelector('.popup');
     const pop_inner = document.querySelector('.popup-inner');
 

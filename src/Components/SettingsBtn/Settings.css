@@ -31,3 +31,13 @@
 .settings-active {
 	background-color: #aaa9a933;
 }
+
+/* ****************************** */
+/* Begin media queries iphone se */
+/* **************************** */
+@media screen and (max-width: 375px) {
+	.settings {
+		transform: scale(0.9);
+		top: 92%;
+	}
+}
