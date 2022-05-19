@@ -135,6 +135,12 @@
 	-o-object-position: 0% 50%;
 	object-position: 0% 50%;
 	margin-top: 1.5rem;
+	transition: 0.4s ease;
+}
+.loadTimes img:hover {
+	-webkit-transform: scale(1.4);
+	-ms-transform: scale(1.4);
+	transform: scale(1.4);
 }
 .latest-tech {
 	height: 100%;
