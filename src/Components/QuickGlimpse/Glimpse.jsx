@@ -10,8 +10,10 @@ const Glimpse = () => {
         <Plx
                 parallaxData={[
                     {
-                      start: "1900px",
-                      end: "2200px",
+                      /* start: "1900px",
+                      end: "2200px", */
+                      start: "self",
+                      duration: "350px",
                       easing: "ease-in",
                       properties: [
                         {

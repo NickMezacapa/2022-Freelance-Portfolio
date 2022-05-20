@@ -87,3 +87,45 @@
         transform: scale(1);
     }
 }
+
+/* ****************************** */
+/* Begin media queries iphone se */
+/* **************************** */
+@media screen and (max-width: 375px) {
+    .popup-inner {
+        width: 80%;
+    }
+    .popup-inner h1 {
+        font-size: 72px;
+        text-align: center;
+    }
+}
+/* ****************************** */
+/*  End media queries iphone se  */
+/* **************************** */
+
+/* ********************************** */
+/* Begin media queries medium screen */
+/* ******************************** */
+@media screen and (max-width: 768px) {
+    .popup-inner {
+        width: 80%;
+    }
+    .popup-inner h1 {
+        font-size: 72px;
+        text-align: center;
+    }
+}
+/* ********************************** */
+/*  End media queries medium screen  */
+/* ******************************** */
+@media screen and (min-width: 414px) and (max-width: 500px) {
+    .popup-inner h1 {
+        font-size: 44px;
+        text-align: center;
+        margin-top: 2rem;
+    }
+    .popup-inner {
+        height: 40%;
+    }
+}

@@ -9,8 +9,7 @@ import Responsive from '../../Images/Showcase/responsive.png';
 
 
 const Showcase = () => {
-    // Add an event listener for when the top of '#dd-trigger' enters the viewport. Once it enters, add the active class '.dd-months-strike' to '.dd-months'.
-    // Add an event listener for when the top of '#dd-trigger' enters the viewport. Once it enters, add the active class '.dd-months-strike' to '.dd-months'.
+    
 
     const handleScroll3 = () => {
         const trigger = document.querySelector('#dd-trigger');
@@ -96,7 +95,7 @@ const Showcase = () => {
                     Fast Delivery.<br />
                     Faster load times.
                 </h2>
-                <img src={LoadTimes} loading="lazy" sizes="(max-width: 479px) 86vw, (max-width: 767px) 79vw, 600px" alt="Screenshot of a custom website showing a performance score of 100 points"></img>
+                <img src={LoadTimes} loading="lazy" sizes="(max-width: 479px) 86vw, (max-width: 767px) 79vw, 600px" alt="Screenshot of a custom website showing a performance score of 100 points" id='loadTimes-img'></img>
             </div>
             <div className="latest-tech">
                 <img src={AppImgs} alt="Technology used by Nick Mezacapa" />

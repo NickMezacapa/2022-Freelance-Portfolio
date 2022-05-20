@@ -20,7 +20,7 @@ const Card = () => {
         </div>
 
         <div className='card-flip12' onClick={handleClick}>
-        <p className='card-flip-content'>My services include but are not limited to: web and mobile application development, SEO optimization, design consulting, and business analytics with python.</p>
+        <p className='card-flip-content' id='first-flipping'>My services include but are not limited to: web and mobile application development, SEO optimization, design consulting, and business analytics with python.</p>
         <TiArrowBack className='card-flip-icon' size={22} />
         </div>
       </ReactCardFlip>

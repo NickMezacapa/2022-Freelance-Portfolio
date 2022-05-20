@@ -457,3 +457,54 @@
 	
 
 }
+
+/* ************************************************* */
+/*  Begin media queries for iphone xr */
+/* ************************************************* */
+@media screen and (min-width: 414px) and (max-width: 500px) {
+	.title {
+		text-align: center;
+		padding-top: 0rem;
+		padding-left: 0rem;
+		margin-top: 4rem;
+		display: flex;
+		justify-content: center;
+		position: absolute;
+		width: 105%;
+	}
+	.description {
+		display: block;
+		opacity: 1;
+		transform: translateX(0px);
+		font-size: 32px;
+		text-align: center;
+		position: relative;
+		top: 6rem;
+		right: 8.55rem;
+		width: 155%;
+		letter-spacing: -0.045em;
+		padding-bottom: 1rem;
+	}
+	.container {
+		margin-top: -1rem;
+	}
+	.bioTitle {
+		width: 95%;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 30px;
+	}
+	.bioContent {
+		height: 100%;
+		width: 90%;
+		font-size: 20px;
+		margin-left: 2rem;
+	}
+	.secondThought {
+		margin-top: 4rem;
+		position: absolute;
+		left: 9.5%;
+		width: 80%;
+	}
+}

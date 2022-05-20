@@ -261,6 +261,9 @@ letter-spacing: -0.015em;
     top: 35%;
 }
 
+/* ********************************** */
+/* Begin media queries medium screen */
+/* ******************************** */
 @media screen and (max-width: 768px) {
 
     .process-scroll-wrap h2 {
@@ -312,4 +315,74 @@ letter-spacing: -0.015em;
         top: -5%;
         left: -12%;
     }
+}
+/* ********************************** */
+/*  End media queries medium screen  */
+/* ******************************** */
+
+/* ****************************** */
+/* Begin media queries iphone se */
+/* **************************** */
+@media screen and (max-width: 375px) {
+.process-scroll-wrap {
+    height: 424vh;
+}
+#dev_process_h2 {
+    font-size: 1.5rem;
+}
+.process-scroll-wrap #hassle-free {
+    font-size: 1rem;
+    margin-top: -2rem;
+}
+.header-workflow {
+    margin-left: -14.5rem;
+    margin-top: 0.5rem;
+}
+.cards-wrap {
+    margin-top: 6rem;
+    transform: scale(0.8);
+}
+.process-card1,
+.process-card2,
+.process-card3,
+.process-card4,
+.process-card5 {
+    width: 120%;
+    margin-left: -2rem;
+}
+}
+/* ****************************** */
+/* End media queries iphone se */
+/* **************************** */
+
+/* ****************************** */
+/* Begin media queries iphone xr */
+/* **************************** */
+@media screen and (min-width: 414px) and (max-width: 500px) {
+.process-scroll-wrap {
+    height: 250vh;
+}
+#dev_process_h2 {
+    font-size: 2rem;
+}
+.process-scroll-wrap #hassle-free {
+    font-size: 1.5rem;
+    margin-top: -2rem;
+}
+.header-workflow {
+    margin-left: -14.5rem;
+    margin-top: 0.5rem;
+}
+.cards-wrap {
+    margin-top: 0rem;
+    transform: scale(0.8);
+}
+.process-card1,
+.process-card2,
+.process-card3,
+.process-card4,
+.process-card5 {
+    width: 120%;
+    margin-left: -2rem;
+}
 }

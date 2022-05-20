@@ -108,29 +108,6 @@ footer {
     margin-bottom: -3rem;
 }
 
-@media screen and (max-width: 768px) {
-    .last-text {
-        font-size: 54px;
-        width: 100%;
-        left: -0.4%;
-    }
-    .last-avatar {
-        max-width: 250px;
-        transform: translateX(-50px) rotate(45deg);
-        top: 72%;
-        z-index: 2;
-    }
-    .last-body {
-        max-height: 100vh;
-        height: 100vh;
-        overflow: hidden;
-    }
-    footer {
-        margin-bottom: 0rem;
-        z-index: 1;
-    }
-}
-
 
 @keyframes animated-q {
     0% { transform: rotate(0deg); }
@@ -197,4 +174,72 @@ footer {
 	100% {
 		background-position: 0% 4%;
 	}
+}
+
+/* ********************************** */
+/* Begin media queries medium screen */
+/* ******************************** */
+@media screen and (max-width: 768px) {
+    .last-text {
+        font-size: 54px;
+        width: 100%;
+        left: -0.4%;
+    }
+    .last-avatar {
+        max-width: 250px;
+        transform: translateX(-50px) rotate(45deg);
+        top: 73%;
+        z-index: 2;
+    }
+    .last-body {
+        max-height: 100vh;
+        height: 100vh;
+        overflow: hidden;
+    }
+    footer {
+        margin-bottom: 0rem;
+        z-index: 1;
+    }
+}
+/* ********************************** */
+/*  End media queries medium screen  */
+/* ******************************** */
+
+/* ********************************** */
+/*   Begin media queries iPhone se   */
+/* ******************************** */
+@media screen and (max-width: 375px) {
+    .last-text {
+        font-size: 42px;
+    }
+    .last-avatar {
+        max-width: 170px;
+        transform: translateX(-32px) rotate(46deg);
+        top: 75%;
+        z-index: 2;
+    }
+    footer {
+        transform: scale(0.8);
+    }
+}
+/* ********************************** */
+/*    End media queries iPhone se    */
+/* ******************************** */
+
+/* ********************************** */
+/*   Begin media queries iPhone xr   */
+/* ******************************** */
+@media screen and (min-width: 414px) and (max-width: 500px){
+    .last-text {
+        font-size: 40px;
+    }
+    .last-avatar {
+        max-width: 190px;
+        transform: translateX(-32px) rotate(46deg);
+        top: 75%;
+        z-index: 2;
+    }
+    footer {
+        transform: scale(0.8);
+    }
 }

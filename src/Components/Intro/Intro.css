@@ -408,3 +408,27 @@ body {
 		font-size: 20px;
 	}
 }
+
+/* ************************ */
+/* Media queires iphone xr */
+/* ************************ */
+@media screen and (min-width: 414px) {
+	.hero__header {
+		margin-top: 1rem;
+	}
+	.hero-heading {
+		font-size: 44px;
+		font-weight: 600;
+	}
+	.heroWrapper {
+		margin-top: -2rem;
+		transform: scale(0.95);
+	}
+	.hero-eyebrow {
+		font-weight: 500;
+		font-size: 24px;
+	}
+	.hero-link-text {
+		font-size: 22px;
+	}
+}

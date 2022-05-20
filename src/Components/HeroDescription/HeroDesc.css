@@ -142,4 +142,12 @@
 		margin-top: 6rem;
 	}
 }
+/* ***************** */
+/* Begin media query for iphone xr */
+/* ***************** */
+@media screen and (min-width: 414px) and (max-width: 500px) {
+	.first h2 {
+		font-size: 32px;
+	}
+}
 

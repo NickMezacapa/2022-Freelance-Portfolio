@@ -226,6 +226,19 @@
 
 
 }
+@media screen and (max-width: 375px) {
+    .contact-form-cta {
+        transform: scale(0.8);
+    }
+    .contact-submit {
+        margin-top: 6rem;
+    }
+}
+@media screen and (min-width: 414px) and (max-width: 500px) {
+    .contact-form-cta {
+        margin-top: -6rem;
+    }
+}
 
 
 

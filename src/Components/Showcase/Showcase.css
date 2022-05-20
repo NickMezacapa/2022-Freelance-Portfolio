@@ -333,6 +333,7 @@
 	}
 }
 
+
 /* ********************************************* */
 /* Begin media queries for medium screen */
 /* ********************************************* */
@@ -553,5 +554,92 @@
 		padding-bottom: 1rem;
 		position: absolute;
 		top: 2%;
+	}
+}
+
+/* ********************************************* */
+/* Begin media queries for iphone xr */
+/* ********************************************* */
+@media screen and (min-width: 414px) and (max-width: 500px) {
+	.animations-description .animations-subheading {
+		width: 70%;
+	}
+	.animations-hero #blankhero-img {
+		width: 90%;	
+		height: auto;
+		margin-top: 2rem;
+	}
+	.overlay {
+		height: 100%;
+		width: 100%;
+		margin-bottom: 0;
+	}
+	.animations-heroContent {
+		position: relative;
+		width: 93%;
+		height: 155px;
+		margin-top: 0rem;
+		/* background-color: rgba(0, 0, 0, 0.8); */
+	}
+	.animations-heroContent video {
+		object-fit: cover;
+		z-index: 2;
+		opacity: 1;
+		/* position: absolute; */
+		/* left: -12%; */
+		height: 100%;
+		width: 100%;
+		object-position: center;
+		margin-top: -0.13rem;
+	}
+	.loadTimes .fastDelivery {
+		margin-left: 2rem;
+		font-size: 1.6rem;
+	}
+	.loadTimes img {
+		margin-top: 2rem;
+		transform: scale(1.1);
+	}
+	.loadTimes {
+		display: flex;
+		flex-direction: column;
+		height: auto;
+		padding-bottom: 6rem;
+	}
+	.latest-tech {
+		display: flex;
+		flex-direction: column;
+		height: auto;
+	}
+	.latest-tech h2 {
+		text-align: center;
+		margin-top: 3rem;
+		font-size: 1.7em;
+		padding-bottom: 3rem;
+	}
+	.latest-tech img {
+		width: 100%;
+		height: auto;
+	}
+	.responsive {
+		margin-bottom: 6rem;
+	}
+	.responsive h2 {
+		/* padding-top: 2rem; */
+		text-align: center;
+		margin-left: -0.7rem;
+		width: 100%;
+		padding-bottom: 1rem;
+		position: absolute;
+		top: 2%;
+	}
+	.responsive img {
+		margin-top: 9rem;
+		width: 100%;
+		padding-bottom: 3.5rem;
+		height: auto;
+		position: relative;
+		top: 0;
+		left: 0;
 	}
 }

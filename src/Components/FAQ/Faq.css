@@ -62,10 +62,13 @@
     margin-top: 2rem;
 }
 
+/* ****************************** */
+/* Begin media queries medium screen */
+/* **************************** */
 @media screen and (max-width: 768px) {
     .separator {
-        width: 90%;
-        height: 3px;
+        width: 95%;
+        height: 1px;
         /* min-width: 768px; */
         margin-bottom: 140px;
         margin-left: auto;
@@ -95,5 +98,34 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+}
+/* ****************************** */
+/* End media queries medium screen */
+/* **************************** */
+
+/* ****************************** */
+/* Begin media queries iphone se */
+/* **************************** */
+@media screen and (max-width: 375px) {
+    .faq-body {
+        height: 175vh;
+    }
+    .faq-title {
+        font-size: 48px;
+        margin-top: -3rem;
+    }
+}
+/* ****************************** */
+/*  End media queries iphone se  */
+/* **************************** */
+
+/* ****************************** */
+/* Begin media queries iphone xr */
+/* **************************** */
+@media screen and (min-width: 414px) and (max-width: 500px) {
+    .faq-title {
+        font-size: 48px;
+        margin-top: -3rem;
     }
 }
