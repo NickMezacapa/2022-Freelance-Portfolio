@@ -231,7 +231,8 @@ footer {
 /* ******************************** */
 @media screen and (min-width: 414px) and (max-width: 500px){
     .last-text {
-        font-size: 40px;
+        font-size: 42px;
+        margin-top: 1rem;
     }
     .last-avatar {
         max-width: 190px;
