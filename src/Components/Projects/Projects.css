@@ -4,6 +4,7 @@
 	background-color: #fff;
 	color: #1d1d1f;
 	position: relative;
+	z-index: 300000000;
 }
 .projects-overflow {
 	width: 100%;
@@ -793,7 +794,7 @@
 /* ****************************** */
 /* Begin media queries iphone xr */
 /* **************************** */
-@media screen and (min-width: 414px) and (max-width: 500px) {
+@media screen and (min-width: 412px) and (max-width: 414px) {
 	.proj-mainTitle {
 		font-size: 2.5rem;
 	}
@@ -971,6 +972,225 @@
 	.psm-button {
 		margin-top: 22rem;
 		margin-right: 0.6rem;
+	}
+}
+
+/* ****************************** */
+/* Begin media queries iphone 12 pro */
+/* **************************** */
+@media screen and (min-width: 390px) and (max-width: 393px) {
+	.proj-mainTitle {
+		font-size: 2.5rem;
+	}
+	.proj-intro-summary {
+		margin-top: 1rem;
+		width: 120%;
+	}
+	.ip-hero {
+		margin-top: 1rem;
+	}
+	.pss1,
+	.pss2 {
+		font-size: 1.2rem;
+	}
+	.proj-sticky-intro {
+		width: 100%;
+		top: -5%;
+		margin-top: -4rem;
+		position: sticky;
+		position:-webkit-sticky;
+	}
+	.link-moreProjects {
+		font-size: 1rem;
+	}
+	.projects-content {
+		height: 150vh;
+	}
+	.ls2 {
+		font-size: 1rem;
+		position: relative;
+		right: 1rem;
+	}
+	.braintumor-links {
+		width: 100%;
+	}
+	#first_proj_container {
+		padding-bottom: 2rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: auto;
+	}
+	#bt-sub {
+		margin-top: 1.5rem;
+		width: 90%;
+	}
+	#first_proj_container img {
+		position: absolute;
+		top: 42%;
+		left: 10%;
+		margin-left: -1.6rem;
+		width: 100%;
+		object-fit: contain;
+		display: flex;
+		transform: scale(1.2);
+	}
+	#btc-p-contain {
+		width: 100%;
+		margin-left: 9rem;
+		margin-top: 3rem;
+		padding-bottom: 10rem;
+	}
+	#para_bt {
+		margin-top: 8rem;
+		margin-left: 1.5rem;
+	}
+	#btc-secondThought {
+		position: absolute;
+		width: 200%;
+		left: -95%;
+		margin-right: 10rem;
+		margin-top: 0rem;
+	}
+
+	#first_proj_links {
+		margin-top: 9rem;
+		flex-direction: row;
+		left: 0;
+	}
+	#scroller-sub {
+		width: 90%;
+		margin-top: 0rem;
+	}
+	#eye-detection-para {
+		margin-left: -4rem;
+		font-size: 0.9em;
+		margin-top: 12rem;
+	}
+	#scroller-secondThought {
+		position: absolute;
+		width: 200%;
+		left: 0%;
+		margin-top: 0rem;
+	}
+	#scroller-img {
+		top: 14rem;
+	}
+	#scroller-contain {
+		padding-bottom: 8rem;
+		margin-top: 2rem;
+		margin-right: 0.5rem;
+	}
+	#scroller-links {
+		flex-direction: row;
+		margin-top: 5rem;
+		width: 100%;
+		position: absolute;
+		left: 1%;
+	}
+	#fse-para {
+		font-size: 0.9em;
+		margin-left: -0.1rem;
+		margin-top: 10rem;
+	}
+	#fse-links {
+		left: 0.5rem;
+		position: absolute;
+		flex-direction: row;
+		margin-top: 5rem;
+	}
+	#fse-sub {
+		width: 90%;
+	}
+	#fse-secondThought {
+		position: absolute;
+		width: 185%;
+		left: -85%;
+		margin-top: 0rem;
+	}
+	#fse-contain {
+		padding-bottom: 8rem;
+		margin-top: 1rem;
+	}
+	#fse-img {
+		margin-top: 0rem;
+	}
+/* 	.projectsCta {
+		height: 540vh;
+	} */
+	.proj4-cta {
+		margin-top: 81rem;
+	}
+	#feeder-para {
+		font-size: 0.9em;
+		margin-left: -4rem;
+		margin-top: 12rem;
+	}
+	#feeder-sub {
+		margin-top: 1rem;
+	}
+	#feeder-secondThought {
+		position: absolute;
+		width: 200%;
+		left: 0%;
+		margin-top: 0rem;
+	}
+	#feeder-contain {
+		padding-bottom: 10rem;
+		margin-top: -0.5rem;
+	}
+	#feeder-img {
+		margin-top: -2rem;
+	}
+	#feeder-links {
+		flex-direction: row;
+		margin-top: 5rem;
+		width: 100%;
+		position: absolute;
+		left: 1%;
+	}
+	.proj5-cta {
+		margin-top: 121.5rem;
+		height: auto;
+		padding-bottom: 4rem;
+	}
+	#proj5-title {
+		width: 95%;
+	}
+	#path-sub {
+		width: 90%;
+		margin-top: 0rem;
+	}
+	#path-para {
+		margin-top: 6rem;
+		font-size: 0.8rem;
+	}
+	#path-para-contain {
+		margin-top: 6rem;
+		padding-bottom: 4rem;
+	}
+	#path-links {
+		padding-bottom: 8rem;
+		left: 2%;
+		margin-top: 6.5rem;
+		flex-direction: row;
+	}
+	#path-img {
+		margin-top: 2.5rem;
+	}
+	#path-secondThought {
+		position: absolute;
+		width: 180%;
+		left: -85%;
+		margin-top: 0rem;
+	}
+	.psm-button {
+		margin-top: 22rem;
+		margin-right: 0.6rem;
+	}
+	.projectsCta {
+		height: 545vh;
 	}
 }
 

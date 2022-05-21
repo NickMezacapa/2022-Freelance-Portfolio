@@ -47,7 +47,7 @@
         font-size: 11px;
     }
 }
-@media screen and (min-width: 414px) and (max-width: 500px) {
+@media screen and (min-width: 414px) and (max-width: 414px) {
     .card-flip-content {
         font-size: 14px;
     }
@@ -56,5 +56,16 @@
     }
     #smaller-font-card-flip {
         font-size: 11.5px;
+    }
+}
+@media screen and (min-width: 390px) and (max-width: 393px) {
+    .card-flip-content {
+        font-size: 13px;
+    }
+    .card-flip-front {
+        font-size: 15px;
+    }
+    #smaller-font-card-flip {
+        font-size: 11px;
     }
 }

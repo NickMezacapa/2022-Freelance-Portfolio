@@ -5,11 +5,12 @@
     height: 310vh;
     background-color: black;
     color: white;
+	z-index: 300000000;
 }
 .sticky-wrap {
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 300000000;
 }
 .process-section {
     overflow: hidden;
@@ -358,7 +359,7 @@ letter-spacing: -0.015em;
 /* ****************************** */
 /* Begin media queries iphone xr */
 /* **************************** */
-@media screen and (min-width: 414px) and (max-width: 500px) {
+@media screen and (min-width: 412px) and (max-width: 414px) {
 .process-scroll-wrap {
     height: 250vh;
 }
@@ -385,4 +386,36 @@ letter-spacing: -0.015em;
     width: 120%;
     margin-left: -2rem;
 }
+}
+
+/* ****************************** */
+/* Begin media queries iphone 12 pro */
+/* **************************** */
+@media screen and (min-width: 390px) and (max-width: 393px) {
+    .process-scroll-wrap {
+        height: 300vh;
+    }
+    #dev_process_h2 {
+        font-size: 2rem;
+    }
+    .process-scroll-wrap #hassle-free {
+        font-size: 1.5rem;
+        margin-top: -2rem;
+    }
+    .header-workflow {
+        margin-left: -14.5rem;
+        margin-top: 0.5rem;
+    }
+    .cards-wrap {
+        margin-top: 0rem;
+        transform: scale(0.8);
+    }
+    .process-card1,
+    .process-card2,
+    .process-card3,
+    .process-card4,
+    .process-card5 {
+        width: 120%;
+        margin-left: -2rem;
+    }
 }

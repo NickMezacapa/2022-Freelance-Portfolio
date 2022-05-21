@@ -119,7 +119,17 @@
 /* ********************************** */
 /*  End media queries medium screen  */
 /* ******************************** */
-@media screen and (min-width: 414px) and (max-width: 500px) {
+@media screen and (min-width: 412px) and (max-width: 414px) {
+    .popup-inner h1 {
+        font-size: 44px;
+        text-align: center;
+        margin-top: 2rem;
+    }
+    .popup-inner {
+        height: 40%;
+    }
+}
+@media screen and (min-width: 390px) and (max-width: 393px) {
     .popup-inner h1 {
         font-size: 44px;
         text-align: center;

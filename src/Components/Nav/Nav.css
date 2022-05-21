@@ -17,7 +17,7 @@
 	bottom: auto;
 	border-bottom: 1px solid #e2e2e23d;
 	-webkit-font-smoothing: antialiased;
-	z-index: 1000;
+	z-index: 400000000;
 	transition: 0.4s ease;
 }
 a,

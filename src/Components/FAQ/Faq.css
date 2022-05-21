@@ -3,6 +3,7 @@
     background-color: black;
     color: white;
     position: relative;
+    z-index: 300000000;
 }
 .overflow-container {
 	width: 100%;
@@ -19,6 +20,7 @@
 .separator {
     width: 90%;
     height: 1px;
+    z-index: 300000000;
     max-width: 980px;
     margin-right: auto;
     margin-bottom: 140px;
@@ -123,12 +125,25 @@
 /* ****************************** */
 /* Begin media queries iphone xr */
 /* **************************** */
-@media screen and (min-width: 414px) and (max-width: 500px) {
+@media screen and (min-width: 412px) and (max-width: 414px) {
     .faq-title {
         font-size: 48px;
         margin-top: -3rem;
     }
     .faq-body {
         height: 130vh;
+    }
+}
+
+/* ****************************** */
+/* Begin media queries iphone 12 pro */
+/* **************************** */
+@media screen and (min-width: 390px) and (max-width: 393px) {
+    .faq-title {
+        font-size: 48px;
+        margin-top: -3rem;
+    }
+    .faq-body {
+        height: 135vh;
     }
 }

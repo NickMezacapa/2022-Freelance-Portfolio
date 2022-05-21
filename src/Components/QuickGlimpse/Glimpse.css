@@ -2,6 +2,7 @@
 	height: 110vh;
 	background-color: black;
 	position: relative;
+	z-index: 300000000;
 }
 .title {
 	font-size: 28px;
@@ -461,7 +462,7 @@
 /* ************************************************* */
 /*  Begin media queries for iphone xr */
 /* ************************************************* */
-@media screen and (min-width: 414px) and (max-width: 500px) {
+@media screen and (min-width: 412px) and (max-width: 414px) {
 	.title {
 		text-align: center;
 		padding-top: 0rem;
@@ -506,5 +507,91 @@
 		position: absolute;
 		left: 9.5%;
 		width: 80%;
+	}
+}
+/* ************************************************* */
+/*  Begin media queries for iphone 12 pro */
+/* ************************************************* */
+@media screen and (min-width: 390px) and (max-width: 393px) {
+	.title {
+		text-align: center;
+		padding-top: 0rem;
+		padding-left: 0rem;
+		margin-top: 4rem;
+		display: flex;
+		justify-content: center;
+		position: absolute;
+		width: 105%;
+	}
+	.description {
+		display: block;
+		opacity: 1;
+		transform: translateX(0px);
+		font-size: 32px;
+		text-align: center;
+		position: relative;
+		top: 6rem;
+		right: 8.55rem;
+		width: 155%;
+		letter-spacing: -0.045em;
+		padding-bottom: 1rem;
+	}
+	.container {
+		margin-top: -1.5rem;
+	}
+	.bioTitle {
+		width: 95%;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 30px;
+	}
+	.bioContent {
+		height: 100%;
+		width: 90%;
+		font-size: 20px;
+		margin-left: 2rem;
+	}
+	.secondThought {
+		margin-top: 4rem;
+		position: absolute;
+		left: 9.5%;
+		width: 80%;
+	}
+	.cardsCta {
+		margin-top: -7rem;
+	}
+	.glimpseCta {
+		height: 158vh;
+	}
+	.card1-subheading,
+	.card2-subheading,
+	.card3-subheading,
+	.card4-subheading {
+		font-size: 14px;
+	}
+	.card1 .card1-info .card1-number,
+	.card2 .card2-info .card2-number,
+	.card3 .card3-info .card3-number,
+	.card4 .card4-info .card4-number {
+		font-size: 50px;
+	}
+	.card1 .card1-info .card1-desc,
+	.card2 .card2-info .card2-desc,
+	.card3 .card3-info .card3-desc {
+		font-size: 35px;
+	}
+	.card4 .card4-info .card4-desc {
+		font-size: 30px;
+	}
+	.card1,
+	.card2,
+	.card3,
+	.card4 {
+		height: 90%;
+	}
+	.card3,
+	.card4 {
+		margin-top: -3rem;
 	}
 }

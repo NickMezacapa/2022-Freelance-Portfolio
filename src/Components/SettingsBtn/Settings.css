@@ -15,7 +15,7 @@
 .settings {
 	height: 44px;
 	width: 72px;
-	z-index: 1001;
+	z-index: 400000000;
 	position: absolute;
 	top: 93%;
 	left: 1.75%;
@@ -26,7 +26,6 @@
 	position: fixed;
 	background-color: var(--bg-dark);
 	backdrop-filter: blur(20px);
-	transition: 0.7s ease;
 }
 .settings-active {
 	background-color: #aaa9a933;

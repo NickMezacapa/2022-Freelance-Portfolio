@@ -3,6 +3,7 @@
 	height: 215vh;
 	background-color: black;
 	color: var(--textColor-dark);
+	z-index: 300000000;
 }
 .showcase-animations {
 	height: 500px;
@@ -560,7 +561,7 @@
 /* ********************************************* */
 /* Begin media queries for iphone xr */
 /* ********************************************* */
-@media screen and (min-width: 414px) and (max-width: 500px) {
+@media screen and (min-width: 412px) and (max-width: 414px) {
 	.animations-description .animations-subheading {
 		width: 70%;
 	}
@@ -641,5 +642,102 @@
 		position: relative;
 		top: 0;
 		left: 0;
+	}
+}
+
+/* ********************************************* */
+/* Begin media queries for iphone xr */
+/* ********************************************* */
+@media screen and (min-width: 390px) and (max-width: 393px) {
+	.animations-heading {
+		font-size: 1.3rem;
+		margin-top: -6rem;
+		font-weight: 500;
+	}
+	.animations-subheading {
+		margin-top: -3rem;
+		width: 60%;
+	}
+	.animations-hero #blankhero-img {
+		width: 100%;	
+		height: auto;
+		margin-top: -1rem;
+		/* transform: scale(1.1); */
+	}
+	.animations-hero {
+		width: 90%;
+	}
+	.animations-heroContent {
+		position: relative;
+		width: 110%;
+		height: 165px;
+		margin-top: -4rem;
+		/* background-color: rgba(0, 0, 0, 0.8); */
+	}
+	.showcase-animations {
+		padding-bottom: 35px;
+	}
+	.overlay {
+		height: 100%;
+		width: 100%;
+		margin-bottom: 0;
+	}
+	.loadTimes .fastDelivery {
+		margin-left: 2rem;
+		font-size: 1.5rem;
+	}
+	.loadTimes {
+		display: flex;
+		flex-direction: column;
+		height: auto;
+		padding-bottom: 6rem;
+	}
+	.loadTimes img {
+		transform: scale(1.1);
+		margin-left: -4rem;
+		margin-top: 2rem;
+	}
+	.latest-tech {
+		display: flex;
+		flex-direction: column;
+		height: auto;
+	}
+	.latest-tech h2 {
+		text-align: center;
+		margin-top: 3rem;
+		font-size: 1.5rem;
+		padding-bottom: 4rem;
+	}
+	.latest-tech img {
+		width: 100%;
+		height: auto;
+	}
+	.clean-code-content {
+		width: 110%;
+		height: auto;
+		font-size: 14px;
+		margin-left: 4.5rem;
+	}
+	.responsive {
+		margin-bottom: 6rem;
+	}
+	.responsive h2 {
+		/* padding-top: 2rem; */
+		text-align: center;
+		margin-left: -0.7rem;
+		width: 100%;
+		padding-bottom: 1rem;
+		position: absolute;
+		top: 2%;
+	}
+	.responsive img {
+		margin-top: 10rem;
+		width: 100%;
+		padding-bottom: 3.5rem;
+		height: auto;
+		position: relative;
+		top: 0;
+		left: 0;
+		transform: scale(1.06);
 	}
 }

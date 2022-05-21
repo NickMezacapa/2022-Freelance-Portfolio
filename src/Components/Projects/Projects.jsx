@@ -169,7 +169,7 @@ const Projects = () => {
                                 <div className="braintumor-content">
                                     <div className="btc-heading">
                                     <h1 className="proj-title3">Full-Stack Private Search Engine</h1>
-                                    <h3 className="braintumor-subheading">A non-intrusive way to browse the internet</h3>
+                                    <h3 className="braintumor-subheading" id='fse-sub'>A non-intrusive way to browse the internet</h3>
                                     </div>
                                     <div className="btc-p" id='fse-contain'>
                                     <p className="braintumor-para" id='fse-para'>
@@ -232,8 +232,8 @@ const Projects = () => {
                                     </div>
                                     <div className="btc-p" id='path-para-contain'>
                                     <p className="braintumor-para" id='path-para'>
-                                    This is a React project demonstrating Dijkstra's Algorithm in real time. The algorithm is used for finding the shortest path between nodes in a graph, which may represent, for example, road networks in real-life applications. Many delivery, scheduling, and ride-sharing apps use this algorithm to find optimal routing paths.<br /><br />
-                                    In this web application you can draw "walls" on a graph and visualize a car finding the shortest path to its house.
+                                    This is a React project demonstrating Dijkstra's Algorithm in real time. The algorithm is used for finding the shortest path between nodes in a graph, which may represent, for example, road networks in real-life applications. Many delivery, scheduling, and ride-sharing apps use this algorithm to find optimal routing paths.<br /><br /><span id='path-secondThought'>
+                                    In this web application you can draw "walls" on a graph and visualize a car finding the shortest path to its house.</span>
                                     </p>
                                     </div>
                                     <div className="braintumor-links" id='path-links'>

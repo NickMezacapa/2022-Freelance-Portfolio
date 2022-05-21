@@ -1,0 +1,213 @@
+.SP_popup {
+    height: 55%;
+    width: 25%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 300000000;
+}
+.SP_popup-inner {
+    height: 55%;
+    width: 25%;
+    max-width: 310px;
+    min-width: 295px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    border: 1px solid hsla(0, 0%, 51.4%, 0.16);
+    margin-bottom: 1.2rem;
+    margin-left: 1.3rem;
+    border-radius: 24px;
+    background-color: hsla(0,0%,59.2%,.3);
+    backdrop-filter: blur(30px);
+    transition: 0.5s ease;
+    padding: 12px 18px;
+    transform: translateY(120px) translateX(-40px) scale(0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    animation: popup 0.4s ease-out;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    z-index: 400000000;
+}
+.SP_close {
+    display: none;
+}
+.sp-title {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+}
+.sp_component-container {
+    width: 100%;
+    height: 28%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    z-index: 400000000;
+}
+.calender-sp,
+.weather-sp {
+    width: 49%;
+    height: 100%;
+    border-radius: 12px;
+    display: flex;
+}
+#cal-img {
+    width: 100%;
+    height: 100%;
+}
+.music-player-container {
+    width: 100%;
+    height: 35%;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid hsla(0, 0%, 51.4%, 0.16);
+    padding: 12px;
+    background-color: hsla(0,0%,59.2%,.3);
+    border-radius: 12px;
+    z-index: 400000000;
+}
+.mp-progressBar {
+    height: 2%;
+    width: 100%;
+    background-color: #3b3b3c;
+}
+.mp-pastProgress {
+    height: 100%;
+    width: 41%;
+    background-color: #7c7c7e;
+}
+.mp-timer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 10px;
+    padding-top: 2px;
+}
+.mp-title-container {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+.song-title {
+    color: rgb(17, 16, 16);
+    font-weight: 600;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 0.5rem;
+}
+.song-artist {
+    color: rgb(17, 16, 16);
+    font-weight: 500;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+.mp-controls {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    margin-top: 0rem;
+    z-index: 400000000;
+}
+.sp_links-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    z-index: 400000000;
+}
+.sp_links-title {
+    font-size: 16px;
+    font-weight: 500;
+}
+.sp_links-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 0.5rem;
+    background-color: hsla(0,0%,59.2%,.3);
+    height: auto;
+    padding: 16px;
+    border-radius: 8px;
+    z-index: 400000000;
+}
+.close-sp-container {
+    position: fixed;
+    top: 2%;
+    left: 4%;
+    height: 28px;
+    width: 28px;
+    background-color: hsla(0,0%,59.2%,.3);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s ease;
+    z-index: 400000000;
+}
+#close-sp-icon {
+    z-index: 400000000;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.close-sp-container:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.482);
+}
+
+.linked-sp-icon,
+.github-sp-icon,
+.facebook-sp-icon,
+.mp-backIcon,
+.mp-playIcon,
+.mp-forwardIcon {
+    transition: 0.4s ease;
+}
+
+.linked-sp-icon:hover,
+.github-sp-icon:hover,
+.facebook-sp-icon:hover,
+.mp-backIcon:hover,
+.mp-playIcon:hover,
+.mp-forwardIcon:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+@keyframes popup {
+    0% {
+        opacity: 0;
+        transform: translateY(120px) translateX(-40px) scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px) translateX(0px) scale(1);
+    }
+}

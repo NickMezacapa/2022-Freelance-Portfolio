@@ -412,7 +412,7 @@ body {
 /* ************************ */
 /* Media queires iphone xr */
 /* ************************ */
-@media screen and (min-width: 414px) {
+@media screen and (min-width: 412px) and (max-width: 414px){
 	.hero__header {
 		margin-top: 1rem;
 	}
@@ -430,5 +430,25 @@ body {
 	}
 	.hero-link-text {
 		font-size: 22px;
+	}
+}
+/* ************************ */
+/* Media queires iphone 12 pro */
+/* ************************ */
+@media screen and (min-width: 390px) and (max-width: 393px){
+	.hero-heading {
+		font-size: 41px;
+		font-weight: 600;
+	}
+	.hero-eyebrow {
+		font-weight: 500;
+		font-size: 24px;
+	}
+	.hero-link-text {
+		font-size: 22px;
+	}
+	.heroWrapper {
+		margin-top: -2rem;
+		transform: scale(0.95);
 	}
 }
