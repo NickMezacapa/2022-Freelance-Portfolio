@@ -12,11 +12,14 @@ import Faq from "./Components/FAQ/Faq";
 import Last from "./Components/Last/Last";
 import Popup from './Components/SuccessPopup/Popup';
 import SpPopup from "./Components/SettingsPopup/SP";
-import CalImg from './Images/Settings-images/cal-test.png';
-import WeatherImg from './Images/Settings-images/weather-icon-test.png';
 import { AiFillBackward, AiFillCaretRight, AiFillFacebook, AiFillForward } from "react-icons/ai";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import { IoMdClose } from "react-icons/io";
+import { RiRotateLockFill } from "react-icons/ri";
+import { AiOutlineCalculator } from "react-icons/ai";
+import { BsFillBrightnessHighFill, BsFillVolumeUpFill } from "react-icons/bs";
+import Cal from './Components/Widgets/Cal/Cal';
+import Weather from './Components/Widgets/Weather/Weather';
 
 
 function App() {
@@ -52,6 +55,8 @@ function App() {
 		}
 	})
 
+	
+
 
 
 
@@ -78,15 +83,48 @@ function App() {
 		</Popup>
 		<SpPopup trigger={true}>
 			<h1 className='sp-title'>Settings</h1>
-			{/* weather and calender components */}
+
+			{/* weather, calendar, brightness, volume components */}
 			<div className="sp_component-container">
-				<div className="calender-sp">
-					<img src={CalImg} alt="Calender UI" id='cal-img' />
-				</div>
-				<div className="weather-sp">
-					<img src={WeatherImg} alt="Weather UI" id='weather-img' />
-				</div>
+
+				{/* widgets */}
+				<section className="sp_comp-widgets">
+					<div className="sp_calendar-widget">
+						<Cal />
+					</div>
+					<div className="sp_weather-widget">
+						<Weather />
+					</div>
+				</section>
+
+				{/* controls */}
+				<section className="sp_quick-controls">
+					{/* slider controls */}
+					<div className="sp_slider-controls">
+						<div className="sp_brightness-slider">
+							<div className="brightness-icon">
+							<BsFillBrightnessHighFill id="brightness-icon" size={24} color='#1d1d1fba' />
+							</div>
+						</div>
+						<div className="sp_volume-slider">
+							<div className="volume-icon">
+							<BsFillVolumeUpFill id='volume-icon' size={24} color='#1d1d1fba' />
+							</div>
+						</div>
+					</div>
+					{/* tap controls */}
+					<div className="sp_tap-controls">
+						<div className="sp_orientation-lock">
+							<RiRotateLockFill size={28} className="sp_orientLock-icon" />
+						</div>
+						<div className="sp_calc">
+							<AiOutlineCalculator size={28} className="sp_calc-icon" />
+						</div>
+					</div>
+				</section>
+
 			</div>
+
 			{/* Music player component */}
 			<div className="music-player-container">
 				<div className="mp-progressBar">
