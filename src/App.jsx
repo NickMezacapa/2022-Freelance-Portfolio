@@ -41,7 +41,7 @@ function App() {
 		if (footerBottom === windowHeight) {
 			// disable scrolling any further down the y axis
 			window.scrollTo(0, window.scrollY + 1);
-		} else console.log('something did not happen.')
+		} 
 	});
 
 	window.addEventListener('click', (e) => {
@@ -55,7 +55,17 @@ function App() {
 		}
 	})
 
+	// When the user clicks inside the .sp_orientation-lock, add a square div to the top right of the page. The div should have a red border, it should be draggable, and it will not affect the position of any other element on the screen.
+	// When the user clicks on the square div, it should disappear.
+
 	
+
+	
+
+	
+
+	
+
 
 
 
@@ -104,18 +114,22 @@ function App() {
 						<div className="sp_brightness-slider">
 							<div className="brightness-icon">
 							<BsFillBrightnessHighFill id="brightness-icon" size={24} color='#1d1d1fba' />
+
 							</div>
+							<div className="slidebar1" /* draggable="true" */></div>
+
 						</div>
 						<div className="sp_volume-slider">
 							<div className="volume-icon">
 							<BsFillVolumeUpFill id='volume-icon' size={24} color='#1d1d1fba' />
 							</div>
+							<div className="slidebar2"></div>
 						</div>
 					</div>
 					{/* tap controls */}
 					<div className="sp_tap-controls">
 						<div className="sp_orientation-lock">
-							<RiRotateLockFill size={28} className="sp_orientLock-icon" />
+							<RiRotateLockFill size={28} className="sp_orientLock-icon" id='sp_orientLock-icon' />
 						</div>
 						<div className="sp_calc">
 							<AiOutlineCalculator size={28} className="sp_calc-icon" />

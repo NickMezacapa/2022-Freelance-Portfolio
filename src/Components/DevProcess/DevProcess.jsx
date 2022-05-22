@@ -8,7 +8,7 @@ import Canvas from "./Canvas";
 
 export default function DevProcess() {
 
-  function getMousePosition(event) {
+/*   function getMousePosition(event) {
     let x = event.clientX;
     let y = event.clientY;
     let rect = event.target.getBoundingClientRect();
@@ -16,8 +16,7 @@ export default function DevProcess() {
      y = y - rect.top;
     console.log( {x: x, y: y} );
 }
-// Run this function when the user clicks anywhere on the page
-document.addEventListener('click', getMousePosition)
+document.addEventListener('click', getMousePosition) */
 
 
   return (
