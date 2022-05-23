@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import NumberFormat from 'react-number-format';
-import './Calc.css';
+import './Calc.css'
+import { useState, useEffect } from "react";
+import NumberFormat from "react-number-format";
 
 const Calc = () => {
     const [preState, setPreState] = useState("");
@@ -39,6 +39,9 @@ const Calc = () => {
         setPreState(curState);
         setCurState("");
       }
+      // set the border to black when the user clicks on the operator
+      const targetOperand = e.target;
+        targetOperand.style.border = '2px solid black';
     };
   
     const equals = (e) => {
@@ -54,7 +57,7 @@ const Calc = () => {
         case "+":
           cal = String(parseFloat(preState) + parseFloat(curState));
           break;
-        case "X":
+        case "x":
           cal = String(parseFloat(preState) * parseFloat(curState));
           break;
         case "-":
@@ -66,6 +69,10 @@ const Calc = () => {
       setInput("");
       setPreState(cal);
       setCurState("");
+      const orangeBtns = document.querySelectorAll('.cc-orange');
+        orangeBtns.forEach(btn => {
+            btn.style.border = '0.5px solid #323234';
+            });
     };
   
     const minusPlus = () => {
@@ -86,86 +93,122 @@ const Calc = () => {
       setPreState("");
       setCurState("");
       setInput("0");
+      const orangeBtns = document.querySelectorAll('.cc-orange');
+      orangeBtns.forEach(btn => {
+          btn.style.border = '0.5px solid #323234';
+          });
     };
-
-
-  return (
-    <div className='calc__wrapper'>
-        <div className="calc__screen">
-        {input !== "" || input === "0" ? (
-            <NumberFormat
-              value={input}
-              displayType={"text"}
-              thousandSeparator={true}
-            />
-          ) : (
-            <NumberFormat
-              value={preState}
-              displayType={"text"}
-              thousandSeparator={true}
-            />
-          )}
+    return (
+      <div className='cc-container'>
+        <div className='cc-wrapper'>
+          <div className='cc-screen'>
+            {input !== "" || input === "0" ? (
+              <NumberFormat
+                value={input}
+                displayType={"text"}
+                thousandSeparator={true}
+              />
+            ) : (
+              <NumberFormat
+                value={preState}
+                displayType={"text"}
+                thousandSeparator={true}
+              />
+            )}
+          </div>
+          <div className="cc-body">
+              <div className="cc-row">
+          <div className='cc-btn cc-dark-gray cc-reset' onClick={reset}>
+            AC
+          </div>
+          <div className='cc-btn cc-dark-gray' onClick={minusPlus}>
+            +/-
+          </div>
+          <div className='cc-btn cc-dark-gray' onClick={percent}>
+            %
+          </div>
+          <div className='cc-btn cc-orange' onClick={operatorType}>
+          /
+          </div>
         </div>
-            <div className="calc__body">
-                <div className="calc__row1">
-                <div className="calc__btn calc__dark-gray calc__AC" onclick={(e)=>{
-                    reset();
-                }}>AC</div>
-                <div className="calc__btn calc__dark-gray" onclick={(e)=>{
-                    percent();
-                }}>%</div>
-                <div className="calc__btn calc__dark-gray" onclick={(e)=>{
-                    minusPlus();
-                }}>+/-</div>
-                <div className="calc__btn calc__orange calc__divide" onclick={(e)=>{
-                    operatorType(e);
-                }}>&#247;</div>
-                </div>
-                <div className="calc__row2">
-                <div className="calc__btn calc__light-gray" onclick={(e)=>{
-                    inputNum({target:{innerText:"7"}});
-                }}>7</div>
-                <div className="calc__btn calc__light-gray" onclick={inputNum}>8</div>
-                <div className="calc__btn calc__light-gray" onclick={inputNum}>9</div>
-                <div className="calc__btn calc__orange" onclick={(e)=>{
-                    operatorType(e);
-                }}>x</div>
-                </div>
-                <div className="calc__row3">
-                <div className="calc__btn calc__light-gray" onclick={inputNum}>4</div>
-                <div className="calc__btn calc__light-gray" onclick={inputNum}>5</div>
-                <div className="calc__btn calc__light-gray" onclick={inputNum}>6</div>
-                <div className="calc__btn calc__orange" onclick={(e)=>{
-                    operatorType(e);
-                }}>+</div>
-                </div>
-                <div className="calc__row4">
-                <div className="calc__btn calc__light-gray" onclick={inputNum}>1</div>
-                <div className="calc__btn calc__light-gray" onclick={inputNum}>2</div>
-                <div className="calc__btn calc__light-gray" onclick={inputNum}>3</div>
-                <div className="calc__btn calc__orange" onclick={(e)=>{
-                    operatorType(e);
-                }}>-</div>
-                </div>
-                <div className="calc__row5">
-                <div className="calc__btn calc__light-gray calc__zero" onclick={inputNum}>0</div>
-                <div className="calc__btn calc__light-gray" onclick={inputNum}>.</div>
-                <div className="calc__btn calc__orange calc__equals" onclick={equals}>=</div>
-                </div>
-            </div>
+        <div className="cc-row">
+          <div className='cc-btn cc-light-gray' onClick={inputNum}>
+            7
+          </div>
+          <div className='cc-btn cc-light-gray' onClick={inputNum}>
+            8
+          </div>
+          <div className='cc-btn cc-light-gray' onClick={inputNum}>
+            9
+          </div>
+          <div className='cc-btn cc-orange' onClick={operatorType}>
+            x
+          </div>
+        </div>
+        <div className="cc-row">
+          <div className='cc-btn cc-light-gray' onClick={inputNum}>
+            4
+          </div>
+          <div className='cc-btn cc-light-gray' onClick={inputNum}>
+            5
+          </div>
+          <div className='cc-btn cc-light-gray' onClick={inputNum}>
+            6
+          </div>
+          <div className='cc-btn cc-orange' onClick={operatorType}>
+            -
+          </div>
+        </div>
+        <div className="cc-row">
+          <div className='cc-btn cc-light-gray' onClick={inputNum}>
+            1
+          </div>
+          <div className='cc-btn cc-light-gray' onClick={inputNum}>
+            2
+          </div>
+          <div className='cc-btn cc-light-gray' onClick={inputNum}>
+            3
+          </div>
+          <div className='cc-btn cc-orange' onClick={operatorType}>
+            +
+          </div>
+        </div>
+        <div className="cc-row">
+          <div className='cc-btn cc-zero cc-light-gray' onClick={inputNum}>
+            0
+          </div>
+          <div className='cc-btn cc-light-gray' onClick={inputNum}>
+            .
+          </div>
+          <div className='cc-btn cc-orange cc-equals' onClick={equals}>
+            =
+          </div>
+          </div>
+        </div>
         <div className="calc__circleCloseContainer">
-            <div className="calc__circle calc__circle1">
+            <div className="calc__circle calc__circle1" onClick={(e)=>{
+                const dragging__div = document.querySelector('.Dragging');
+                const calc__icon = document.querySelector('.sp_calc-icon');
+                dragging__div.classList.toggle('Dragging_active');
+                calc__icon.classList.toggle('sp_calc-icon__active');
+            }}>
                 <p>x</p>
                 </div>
-            <div className="calc__circle calc__circle2">
+            <div className="calc__circle calc__circle2" onClick={(e)=>{
+							const dragging__div = document.querySelector('.Dragging');
+							const calc__icon = document.querySelector('.sp_calc-icon');
+							dragging__div.classList.toggle('Dragging_active');
+							calc__icon.classList.toggle('sp_calc-icon__active');
+						}}>
                 <p>-</p>
             </div>
             <div className="calc__circle calc__circle3">
                 <p>+</p>
             </div>
         </div>
-    </div>
-  )
+        </div>
+      </div>
+    );
 }
 
 export default Calc
