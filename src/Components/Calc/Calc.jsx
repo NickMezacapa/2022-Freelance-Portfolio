@@ -50,7 +50,7 @@ const Calc = () => {
       }
       let cal;
       switch (operator) {
-        case "/":
+        case "÷":
           cal = String(parseFloat(preState) / parseFloat(curState));
           break;
   
@@ -100,6 +100,7 @@ const Calc = () => {
     };
     return (
       <div className='cc-container'>
+          
         <div className='cc-wrapper'>
           <div className='cc-screen'>
             {input !== "" || input === "0" ? (
@@ -107,12 +108,14 @@ const Calc = () => {
                 value={input}
                 displayType={"text"}
                 thousandSeparator={true}
+                decimalScale={2}
               />
             ) : (
               <NumberFormat
                 value={preState}
                 displayType={"text"}
                 thousandSeparator={true}
+                decimalScale={2}
               />
             )}
           </div>
@@ -128,7 +131,7 @@ const Calc = () => {
             %
           </div>
           <div className='cc-btn cc-orange' onClick={operatorType}>
-          /
+          ÷
           </div>
         </div>
         <div className="cc-row">
@@ -197,8 +200,12 @@ const Calc = () => {
             <div className="calc__circle calc__circle2" onClick={(e)=>{
 							const dragging__div = document.querySelector('.Dragging');
 							const calc__icon = document.querySelector('.sp_calc-icon');
-							dragging__div.classList.toggle('Dragging_active');
+                            dragging__div.classList.add('Dragging-min-anim');
 							calc__icon.classList.toggle('sp_calc-icon__active');
+                            setTimeout(() => {
+                                dragging__div.classList.remove('Dragging-min-anim');
+                                dragging__div.classList.toggle('Dragging_active');
+                            }, 2000);
 						}}>
                 <p>-</p>
             </div>

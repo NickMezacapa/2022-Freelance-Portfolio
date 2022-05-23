@@ -14,7 +14,7 @@ const Glimpse = () => {
                       end: "2200px", */
                       start: "self",
                       duration: "350px",
-                      easing: "ease-in",
+                      easing: "ease",
                       properties: [
                         {
                           startValue: -140,

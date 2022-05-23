@@ -54,21 +54,7 @@ function App() {
 			stgPopup.style.display = 'none';
 			stgBtn.style.visibility = 'visible';
 		}
-	})
-
-	
-
-	
-
-	
-
-	
-
-
-
-
-
-
+	});
 
 
 	return(
@@ -115,7 +101,7 @@ function App() {
 							<BsFillBrightnessHighFill id="brightness-icon" size={24} color='#1d1d1fba' />
 
 							</div>
-							<div className="slidebar1" /* draggable="true" */></div>
+							<div className="slidebar1" draggable="true"></div>
 
 						</div>
 						<div className="sp_volume-slider">

@@ -7,6 +7,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
+    backdrop-filter: blur(10px);
   }
   
   .cc-wrapper {
@@ -55,6 +56,7 @@
       height: 20%;
       display: flex;
         flex-direction: row;
+        gap: 0px;
   }
   
   .cc-btn {
@@ -63,7 +65,8 @@
     color: white;
     cursor: pointer;
     border: 0.5px solid #323234;
-    font-size: 20px;
+    backdrop-filter: blur(30px);
+    font-size: 22px;
     font-weight: 600;
     height: 100%;
     width: 25%;
@@ -73,13 +76,14 @@
   }
   
   .cc-light-gray {
-    background-color: hsla(240, 1%, 47%, 0.791);
-    backdrop-filter: blur(30px);
+    background-color: hsla(240, 1%, 50%, 0.725);
+    backdrop-filter: blur(1px);
   }
   .cc-dark-gray {
-    background-color: hsla(240, 3%, 29%, 0.856);
-    backdrop-filter: blur(30px);
+    background-color: hsla(240, 3%, 29%, 0.876);
+    backdrop-filter: blur(10px);
     border-bottom: 0.5px solid #1d1d1f;
+    font-size: 18px;
   }
   
   .cc-orange {

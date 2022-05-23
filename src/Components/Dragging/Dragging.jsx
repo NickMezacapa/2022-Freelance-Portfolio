@@ -46,6 +46,7 @@ export default class Dragging extends Component {
         return (
             <div className={classes} style={this.state.styles} onMouseDown={this._dragStart} onMouseMove={this._dragging} onMouseUp={this._dragEnd}>
                 <Calc />
+                <div className="shortPcalc"> This calculator is draggable.</div>
             </div>
         );
     }
