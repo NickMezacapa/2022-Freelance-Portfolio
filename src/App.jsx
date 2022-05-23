@@ -20,6 +20,7 @@ import { AiOutlineCalculator } from "react-icons/ai";
 import { BsFillBrightnessHighFill, BsFillVolumeUpFill } from "react-icons/bs";
 import Cal from './Components/Widgets/Cal/Cal';
 import Weather from './Components/Widgets/Weather/Weather';
+import Dragging from './Components/Dragging/Dragging';
 
 
 function App() {
@@ -55,9 +56,6 @@ function App() {
 		}
 	})
 
-	// When the user clicks inside the .sp_orientation-lock, add a square div to the top right of the page. The div should have a red border, it should be draggable, and it will not affect the position of any other element on the screen.
-	// When the user clicks on the square div, it should disappear.
-
 	
 
 	
@@ -75,6 +73,7 @@ function App() {
 
 	return(
 		<>
+		<Dragging />
 		<Nav />
 		<Settings />
 		<Intro />
@@ -128,11 +127,19 @@ function App() {
 					</div>
 					{/* tap controls */}
 					<div className="sp_tap-controls">
-						<div className="sp_orientation-lock">
+						<div className="sp_orientation-lock" onClick={(e)=>{
+							const lock__icon = document.querySelector('.sp_orientLock-icon');
+							lock__icon.classList.toggle('sp_orientLock-icon__active');
+						}} >
 							<RiRotateLockFill size={28} className="sp_orientLock-icon" id='sp_orientLock-icon' />
 						</div>
-						<div className="sp_calc">
-							<AiOutlineCalculator size={28} className="sp_calc-icon" />
+						<div className="sp_calc" onClick={(e)=>{
+							const dragging__div = document.querySelector('.Dragging');
+							const calc__icon = document.querySelector('.sp_calc-icon');
+							dragging__div.classList.toggle('Dragging_active');
+							calc__icon.classList.toggle('sp_calc-icon__active');
+						}}>
+							<AiOutlineCalculator size={28} className="sp_calc-icon" id='sp_calc-icon' />
 						</div>
 					</div>
 				</section>
@@ -166,9 +173,15 @@ function App() {
 			<div className="sp_links-container">
 				<h4 className="sp_links-title">Links</h4>
 				<div className="sp_links-wrapper">
-					<AiFillLinkedin className="linked-sp-icon" size={28} />
-					<AiFillGithub className="github-sp-icon" size={28} />
-					<AiFillFacebook className="facebook-sp-icon" size={28} />
+					<AiFillLinkedin className="linked-sp-icon" size={28} onClick={(e)=>{
+						window.open('https://www.linkedin.com/in/nick-mezacapa/', '_blank');
+					}} />
+					<AiFillGithub className="github-sp-icon" size={28} onClick={(e)=>{
+						window.open('https://github.com/NickMezacapa', '_blank');
+					}} />
+					<AiFillFacebook className="facebook-sp-icon" size={28} onClick={(e)=>{
+						window.open('https://www.facebook.com/nmezacapa1/', '_blank');
+					}} />
 				</div>
 			</div>
 			<div className="close-sp-container">

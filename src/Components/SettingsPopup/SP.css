@@ -101,13 +101,23 @@
     transition: 0.4s ease;
     z-index: 500000000;
 }
-.sp_orientation-lock {
+/* .sp_orientation-lock {
     border: 1px solid red;
-}
+} */
 .sp_orientation-lock:hover,
 .sp_calc:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     cursor: pointer;
+}
+#sp_orientLock-icon,
+#sp_calc-icon {
+    transition: 0.3s ease;
+}
+.sp_orientLock-icon__active {
+    color: rgba(255, 0, 0, 0.923);
+}
+.sp_calc-icon__active {
+    color: rgba(255, 153, 0, 0.923);
 }
 .sp_comp-widgets {
     display: flex;

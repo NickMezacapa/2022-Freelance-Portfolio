@@ -1,0 +1,19 @@
+.Dragging {
+    width: 22%;
+    height: 40%;
+    position: absolute;
+    top: 9%;
+    right: 5%;
+    max-width: 240px;
+    min-width: 240px;
+    z-index: 999000000;
+    display: none;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px hsla(0,0%,59.2%,.1);
+}
+.Dragging_active {
+    display: block;
+}
+.closeButtonTest {
+    border: 1px solid red;
+}
