@@ -33,7 +33,10 @@ const Cal = () => {
         dowDynamic.innerHTML = dayOfWeek[day];
         todayDateDynamic.innerHTML = dd;
 
-
+        const slider = document.querySelector('#firstVertSlider');
+        const slider2 = document.querySelector('#secondVertSlider');
+		slider.setAttribute('value', '100');
+		slider2.setAttribute('value', '80');
         
 /*         const apiKey = "28ac90daea56eeddfa3d2b7d0bce89e4";
         var api = `http://api.openweathermap.org/data/2.5/weather?q=Los%20Angeles&units=imperial&APPID=${apiKey}`;

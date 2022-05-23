@@ -28,6 +28,8 @@ function App() {
 	const popup = document.querySelector('.popup');
     const pop_inner = document.querySelector('.popup-inner');
 
+	
+
     // When the user clicks inside pop_inner, close the popup.
     window.addEventListener('click', (e) => {
         if (e.target === pop_inner) {
@@ -44,7 +46,6 @@ function App() {
 			window.scrollTo(0, window.scrollY + 1);
 		} 
 	});
-
 	window.addEventListener('click', (e) => {
 		const closeStg = document.querySelector('.close-sp-container');
 		const stgBtn = document.querySelector('.settings');
@@ -55,6 +56,22 @@ function App() {
 			stgBtn.style.visibility = 'visible';
 		}
 	});
+	
+	window.addEventListener('input', (e) => {
+		// set the opacity of the body equal to the value of the slider
+		const body = document.querySelector('body');
+		const slider1 = document.querySelector('#firstVertSlider');
+		const slider2 = document.querySelector('#secondVertSlider');
+		if (e.target === slider1) {
+		slider1.removeAttribute('value');
+		const sliderValue = slider1.value;
+		body.style.opacity = `${sliderValue}%`;
+		}
+		if (e.target === slider2) {
+		slider2.removeAttribute('value');
+		}
+	});
+
 
 
 	return(
@@ -101,14 +118,18 @@ function App() {
 							<BsFillBrightnessHighFill id="brightness-icon" size={24} color='#1d1d1fba' />
 
 							</div>
-							<div className="slidebar1" draggable="true"></div>
+							<div className="slidebar1">
+								<input type="range" min="0" max="100" className="input__vertical" id="firstVertSlider" />
+							</div>
 
 						</div>
 						<div className="sp_volume-slider">
 							<div className="volume-icon">
 							<BsFillVolumeUpFill id='volume-icon' size={24} color='#1d1d1fba' />
 							</div>
-							<div className="slidebar2"></div>
+							<div className="slidebar2">
+								<input type="range" min="0" max="100" className="input__vertical" id="secondVertSlider" />
+							</div>
 						</div>
 					</div>
 					{/* tap controls */}
