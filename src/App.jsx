@@ -17,19 +17,17 @@ import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import { IoMdClose } from "react-icons/io";
 import { RiRotateLockFill } from "react-icons/ri";
 import { AiOutlineCalculator } from "react-icons/ai";
-import { BsFillBrightnessHighFill, BsFillVolumeUpFill } from "react-icons/bs";
+import { BsFillBrightnessHighFill, BsFillVolumeUpFill, /* BsFillVolumeMuteFill, BsFillVolumeDownFill */ } from "react-icons/bs";
 import Cal from './Components/Widgets/Cal/Cal';
 import Weather from './Components/Widgets/Weather/Weather';
 import Dragging from './Components/Dragging/Dragging';
 import Volume from './Components/Volume/Volume';
+import MusicPlayer from './Components/MusicPlayer/MusicPlayer';
 
 
 function App() {
-	
 	const popup = document.querySelector('.popup');
     const pop_inner = document.querySelector('.popup-inner');
-
-	
 
     // When the user clicks inside pop_inner, close the popup.
     window.addEventListener('click', (e) => {
@@ -57,17 +55,16 @@ function App() {
 			stgBtn.style.visibility = 'visible';
 		}
 	});
-	
 	window.addEventListener('input', (e) => {
-		// set the opacity of the body equal to the value of the slider
 		const body = document.querySelector('body');
 		const slider1 = document.querySelector('#firstVertSlider');
 		const slider2 = document.querySelector('#secondVertSlider');
-		/* const volumeWrapper = document.querySelector('.volume__wrapper'); */
 		if (e.target === slider1) {
 		slider1.removeAttribute('value');
 		const sliderValue = slider1.value;
 		body.style.opacity = `${sliderValue}%`;
+		const brightnessIcon = document.querySelector('#brightness-icon');
+		sliderValue <= 55 ? brightnessIcon.style.color = 'rgb(118, 118, 118)' : brightnessIcon.style.color = '#1d1d1fba';
 		}
 		if (e.target === slider2) {
 		slider2.removeAttribute('value');
@@ -76,12 +73,10 @@ function App() {
 		const emptyMeasureColor = '#1d1d1fba';
 		const volumeWrapper = document.querySelector('.volume__wrapper');
 		volumeWrapper.classList.add('volume__active');
-		
-
 		slider2.addEventListener('mousemove', () => {
 			if (sliderValue2 >= 40 && sliderValue2 <= 50) {
 				volumeMeasures.forEach((measure) => {
-					measure.style.backgroundColor = emptyMeasureColor
+					measure.style.backgroundColor = emptyMeasureColor;
 				});
 			}
 			if (sliderValue2 >= 51 && sliderValue2 <= 55) {
@@ -96,7 +91,6 @@ function App() {
 				});
 				volumeMeasures[0].style.backgroundColor = 'rgb(255, 255, 255)';
 				volumeMeasures[1].style.backgroundColor = 'rgb(255, 255, 255)';
-
 			}
 			if (sliderValue2 >= 61 && sliderValue2 <= 65) {
 				volumeMeasures.forEach((measure) => {
@@ -192,17 +186,16 @@ function App() {
 			}
 		})
 		slider2.addEventListener('mouseup', () => {
-			// remove the active class volume__active from volumeWrapper after 2 seconds.
 			setTimeout(() => {
 				volumeWrapper.classList.remove('volume__active');
-			}
-			, 1500);
+			}, 1500);
 		});
-
-		
+		/* here */
+		const volumeIcon = document.querySelector('#volume-icon');
+		sliderValue2 <= 55 ? volumeIcon.style.color = 'rgb(118, 118, 118)' : volumeIcon.style.color = '#1d1d1fba';
 	}
 	});
-
+	
 
 
 	return(
@@ -247,7 +240,6 @@ function App() {
 						<div className="sp_brightness-slider">
 							<div className="brightness-icon">
 							<BsFillBrightnessHighFill id="brightness-icon" size={24} color='#1d1d1fba' />
-
 							</div>
 							<div className="slidebar1">
 								<input type="range" min="0" max="100" className="input__vertical" id="firstVertSlider" />
@@ -329,6 +321,7 @@ function App() {
 			</div>
 			</SpPopup>
 			<Volume />
+			<MusicPlayer />
 		</>
 	)
 }

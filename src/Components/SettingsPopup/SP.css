@@ -219,7 +219,10 @@ input[type='range'] {
   input[type="range"]::-ms-fill-lower {
     background-color: rgb(190, 187, 187);
   }
-
+ 
+  /* . {
+      background-color: rgb(118, 118, 118);
+  } */
 
 
 
