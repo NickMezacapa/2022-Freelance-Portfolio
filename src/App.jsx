@@ -21,6 +21,7 @@ import { BsFillBrightnessHighFill, BsFillVolumeUpFill } from "react-icons/bs";
 import Cal from './Components/Widgets/Cal/Cal';
 import Weather from './Components/Widgets/Weather/Weather';
 import Dragging from './Components/Dragging/Dragging';
+import Volume from './Components/Volume/Volume';
 
 
 function App() {
@@ -62,6 +63,7 @@ function App() {
 		const body = document.querySelector('body');
 		const slider1 = document.querySelector('#firstVertSlider');
 		const slider2 = document.querySelector('#secondVertSlider');
+		/* const volumeWrapper = document.querySelector('.volume__wrapper'); */
 		if (e.target === slider1) {
 		slider1.removeAttribute('value');
 		const sliderValue = slider1.value;
@@ -69,7 +71,136 @@ function App() {
 		}
 		if (e.target === slider2) {
 		slider2.removeAttribute('value');
-		}
+		const sliderValue2 = slider2.value;
+		const volumeMeasures = document.querySelectorAll('.volume__measurement');
+		const emptyMeasureColor = '#1d1d1fba';
+		const volumeWrapper = document.querySelector('.volume__wrapper');
+		volumeWrapper.classList.add('volume__active');
+		
+
+		slider2.addEventListener('mousemove', () => {
+			if (sliderValue2 >= 40 && sliderValue2 <= 50) {
+				volumeMeasures.forEach((measure) => {
+					measure.style.backgroundColor = emptyMeasureColor
+				});
+			}
+			if (sliderValue2 >= 51 && sliderValue2 <= 55) {
+				volumeMeasures.forEach((measure) => {
+					measure.style.backgroundColor = emptyMeasureColor;
+				});
+				volumeMeasures[0].style.backgroundColor = 'rgb(255, 255, 255)';
+			}
+			if (sliderValue2 >= 56 && sliderValue2 <= 60) {
+				volumeMeasures.forEach((measure) => {
+					measure.style.backgroundColor = emptyMeasureColor;
+				});
+				volumeMeasures[0].style.backgroundColor = 'rgb(255, 255, 255)';
+				volumeMeasures[1].style.backgroundColor = 'rgb(255, 255, 255)';
+
+			}
+			if (sliderValue2 >= 61 && sliderValue2 <= 65) {
+				volumeMeasures.forEach((measure) => {
+					measure.style.backgroundColor = emptyMeasureColor;
+				});
+				volumeMeasures[0].style.backgroundColor = 'rgb(255, 255, 255)';
+				volumeMeasures[1].style.backgroundColor = 'rgb(255, 255, 255)';
+				volumeMeasures[2].style.backgroundColor = 'rgb(255, 255, 255)';
+			}
+			if (sliderValue2 >= 66 && sliderValue2 <= 70) {
+				volumeMeasures.forEach((measure) => {
+					measure.style.backgroundColor = emptyMeasureColor;
+				});
+				volumeMeasures[0].style.backgroundColor = 'rgb(255, 255, 255)';
+				volumeMeasures[1].style.backgroundColor = 'rgb(255, 255, 255)';
+				volumeMeasures[2].style.backgroundColor = 'rgb(255, 255, 255)';
+				volumeMeasures[3].style.backgroundColor = 'rgb(255, 255, 255)';
+			}
+			if (sliderValue2 >= 71 && sliderValue2 <= 75) {
+				volumeMeasures.forEach((measure) => {
+					measure.style.backgroundColor = emptyMeasureColor;
+				});
+				volumeMeasures[0].style.backgroundColor = 'rgb(255, 255, 255)';
+				volumeMeasures[1].style.backgroundColor = 'rgb(255, 255, 255)';
+				volumeMeasures[2].style.backgroundColor = 'rgb(255, 255, 255)';
+				volumeMeasures[3].style.backgroundColor = 'rgb(255, 255, 255)';
+				volumeMeasures[4].style.backgroundColor = 'rgb(255, 255, 255)';
+			}
+			if (sliderValue2 >= 76 && sliderValue2 <= 80) {
+				volumeMeasures.forEach((measure) => {
+					measure.style.backgroundColor = emptyMeasureColor;
+				});
+				volumeMeasures[0].style.backgroundColor = 'rgb(255, 255, 255)';
+				volumeMeasures[1].style.backgroundColor = 'rgb(255, 255, 255)';
+				volumeMeasures[2].style.backgroundColor = 'rgb(255, 255, 255)';
+				volumeMeasures[3].style.backgroundColor = 'rgb(255, 255, 255)';
+				volumeMeasures[4].style.backgroundColor = 'rgb(255, 255, 255)';
+				volumeMeasures[5].style.backgroundColor = 'rgb(255, 255, 255)';
+			}
+			if (sliderValue2 >= 81 && sliderValue2 <= 85) {
+				volumeMeasures.forEach((measure) => {
+					measure.style.backgroundColor = emptyMeasureColor;
+				});
+				volumeMeasures[0].style.backgroundColor = 'rgb(255, 255, 255)';
+				volumeMeasures[1].style.backgroundColor = 'rgb(255, 255, 255)';
+				volumeMeasures[2].style.backgroundColor = 'rgb(255, 255, 255)';
+				volumeMeasures[3].style.backgroundColor = 'rgb(255, 255, 255)';
+				volumeMeasures[4].style.backgroundColor = 'rgb(255, 255, 255)';
+				volumeMeasures[5].style.backgroundColor = 'rgb(255, 255, 255)';
+				volumeMeasures[6].style.backgroundColor = 'rgb(255, 255, 255)';
+			}
+			if (sliderValue2 >= 86 && sliderValue2 <= 90) {
+				volumeMeasures.forEach((measure) => {
+					measure.style.backgroundColor = emptyMeasureColor;
+				});
+				volumeMeasures[0].style.backgroundColor = 'rgb(255, 255, 255)';
+				volumeMeasures[1].style.backgroundColor = 'rgb(255, 255, 255)';
+				volumeMeasures[2].style.backgroundColor = 'rgb(255, 255, 255)';
+				volumeMeasures[3].style.backgroundColor = 'rgb(255, 255, 255)';
+				volumeMeasures[4].style.backgroundColor = 'rgb(255, 255, 255)';
+				volumeMeasures[5].style.backgroundColor = 'rgb(255, 255, 255)';
+				volumeMeasures[6].style.backgroundColor = 'rgb(255, 255, 255)';
+				volumeMeasures[7].style.backgroundColor = 'rgb(255, 255, 255)';
+			}
+			if (sliderValue2 >= 91 && sliderValue2 <= 95) {
+				volumeMeasures.forEach((measure) => {
+					measure.style.backgroundColor = emptyMeasureColor;
+				});
+				volumeMeasures[0].style.backgroundColor = 'rgb(255, 255, 255)';
+				volumeMeasures[1].style.backgroundColor = 'rgb(255, 255, 255)';
+				volumeMeasures[2].style.backgroundColor = 'rgb(255, 255, 255)';
+				volumeMeasures[3].style.backgroundColor = 'rgb(255, 255, 255)';
+				volumeMeasures[4].style.backgroundColor = 'rgb(255, 255, 255)';
+				volumeMeasures[5].style.backgroundColor = 'rgb(255, 255, 255)';
+				volumeMeasures[6].style.backgroundColor = 'rgb(255, 255, 255)';
+				volumeMeasures[7].style.backgroundColor = 'rgb(255, 255, 255)';
+				volumeMeasures[8].style.backgroundColor = 'rgb(255, 255, 255)';
+			}
+			if (sliderValue2 >= 96 && sliderValue2 <= 100) {
+				volumeMeasures.forEach((measure) => {
+					measure.style.backgroundColor = emptyMeasureColor;
+				});
+				volumeMeasures[0].style.backgroundColor = 'rgb(255, 255, 255)';
+				volumeMeasures[1].style.backgroundColor = 'rgb(255, 255, 255)';
+				volumeMeasures[2].style.backgroundColor = 'rgb(255, 255, 255)';
+				volumeMeasures[3].style.backgroundColor = 'rgb(255, 255, 255)';
+				volumeMeasures[4].style.backgroundColor = 'rgb(255, 255, 255)';
+				volumeMeasures[5].style.backgroundColor = 'rgb(255, 255, 255)';
+				volumeMeasures[6].style.backgroundColor = 'rgb(255, 255, 255)';
+				volumeMeasures[7].style.backgroundColor = 'rgb(255, 255, 255)';
+				volumeMeasures[8].style.backgroundColor = 'rgb(255, 255, 255)';
+				volumeMeasures[9].style.backgroundColor = 'rgb(255, 255, 255)';
+			}
+		})
+		slider2.addEventListener('mouseup', () => {
+			// remove the active class volume__active from volumeWrapper after 2 seconds.
+			setTimeout(() => {
+				volumeWrapper.classList.remove('volume__active');
+			}
+			, 1500);
+		});
+
+		
+	}
 	});
 
 
@@ -197,7 +328,7 @@ function App() {
 				</span>
 			</div>
 			</SpPopup>
-
+			<Volume />
 		</>
 	)
 }
