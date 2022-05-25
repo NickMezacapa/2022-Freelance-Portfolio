@@ -33,13 +33,13 @@
     align-items: center;
 }
 .dynamic-dow {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 200;
     color: rgb(254, 61, 61);
     letter-spacing: -0.045em;
 }
 .dynamic-date {
-    font-size: 4.5rem;
+    font-size: 4.3rem;
     color: #1d1d1f;
     letter-spacing: -0.045em;
     font-weight: 400;
