@@ -194,6 +194,7 @@ function App() {
 		sliderValue2 <= 55 ? volumeIcon.style.color = 'rgb(118, 118, 118)' : volumeIcon.style.color = '#1d1d1fba';
 	}
 	});
+
 	
 
 

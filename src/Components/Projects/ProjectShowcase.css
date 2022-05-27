@@ -1,0 +1,30 @@
+.ProjectShowcase-Container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 1420px;
+    margin-top: 6rem;
+}
+.ProjectShowcase-Row_firstRow,
+.ProjectShowcase-Row_secondRow {
+        height: 48%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+}
+.ProjectShowcase-Row_firstRow_left,
+.ProjectShowcase-Row_firstRow_right,
+.ProjectShowcase-Row_secondRow_left,
+.ProjectShowcase-Row_secondRow_right {
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}

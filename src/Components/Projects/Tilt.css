@@ -1,0 +1,69 @@
+.Tilt-TiltContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Tilt-TiltInner_hoverSpan_wrapper {
+    position: relative;
+    transition: 0.4s ease-out;
+    perspective: 1000px;
+}
+.Tilt-TiltInner_hoverSpan_wrapper:hover {
+    transition: 0.3s linear;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.Tilt-BoxContent {
+    height: 22rem;
+    width: 34rem;
+    background-color: #2d2d2e;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    transition: all 0.6s ease-out;
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateY(0deg);
+    perspective: 1000px;
+    border: 1px solid rgba(177, 174, 174, 0.5);
+    border-radius: 24px;
+    box-shadow: 0px 100px 120px rgba(157, 157, 157, 0.846);
+}
+.Tilt-HoverSpan {
+    width: 33.3333%;
+    height: 33.3333%;
+    position: absolute;
+    z-index: 10;
+}
+.Tilt-HoverSpan:nth-child(1) { left: 0; top: 0; }
+.Tilt-HoverSpan:nth-child(2) { left: 33.3333%; top: 0; }
+.Tilt-HoverSpan:nth-child(3) { left: 66.6666%; top: 0; }
+.Tilt-HoverSpan:nth-child(4) { left: 0; top: 33.3333%; }
+.Tilt-HoverSpan:nth-child(5) { left: 33.3333%; top: 33.3333%; }
+.Tilt-HoverSpan:nth-child(6) { left: 66.6666%; top: 33.3333%; }
+.Tilt-HoverSpan:nth-child(7) { left: 0; top: 66.6666%; }
+.Tilt-HoverSpan:nth-child(8) { left: 33.3333%;; top: 66.6666%; }
+.Tilt-HoverSpan:nth-child(9) { left: 66.6666%; top: 66.6666%; }
+
+.Tilt-HoverSpan:nth-child(1):hover ~
+.Tilt-BoxContent { transform: rotateX(-20deg) rotateY(20deg); }
+.Tilt-HoverSpan:nth-child(2):hover ~
+.Tilt-BoxContent { transform: rotateX(-20deg) rotateY(0deg); }
+.Tilt-HoverSpan:nth-child(3):hover ~
+.Tilt-BoxContent { transform: rotateX(-20deg) rotateY(-20deg); }
+.Tilt-HoverSpan:nth-child(4):hover ~
+.Tilt-BoxContent { transform: rotateX(0deg) rotateY(20deg); }
+.Tilt-HoverSpan:nth-child(5):hover ~
+.Tilt-BoxContent { transform: rotateX(0deg) rotateY(0deg); }
+.Tilt-HoverSpan:nth-child(6):hover ~
+.Tilt-BoxContent { transform: rotateX(0deg) rotateY(-20deg); }
+.Tilt-HoverSpan:nth-child(7):hover ~
+.Tilt-BoxContent { transform: rotateX(20deg) rotateY(20deg); }
+.Tilt-HoverSpan:nth-child(8):hover ~
+.Tilt-BoxContent { transform: rotateX(20deg) rotateY(0deg); }
+.Tilt-HoverSpan:nth-child(9):hover ~
+.Tilt-BoxContent { transform: rotateX(20deg) rotateY(-20deg); }

@@ -2,10 +2,11 @@ import React from 'react';
 import './Projects.css';
 import { MdKeyboardArrowRight } from 'react-icons/md';
 import display from './assets/large_2x.mp4';
-import braintumor from './assets/download.png';
+import ProjectShowcase from '../Projects/ProjectShowcase';
+/* import braintumor from './assets/download.png';
 import pathfinder from './assets/pa3.png';
 import feeder from './assets/feeder.png';
-import scroller from './assets/scroller.png';
+import scroller from './assets/scroller.png'; */
 
 const Projects = () => {
 // Add an event listener for when the top of '.projectsCta' is intersecting with the top of '.navbar'. When they are both equal to each other, add the active class '.nav-light-active' to '.navbar'. When the navbar is not intersecting with the projectsCta, remove the active class '.nav-light-active' from '.navbar'.
@@ -45,7 +46,7 @@ const Projects = () => {
     const handleClick = () => {
         window.open("https://github.com/NickMezacapa", "_blank");
     }
-    const handleClick_btRepo = () => {
+/*     const handleClick_btRepo = () => {
         window.open("https://github.com/NickMezacapa/AI-Brain-Tumor-Detection-DCGAN-implementation", "_blank");
     } 
     const handleClick_ffRepo = () => {
@@ -53,7 +54,7 @@ const Projects = () => {
     } 
     const handleClick_pvRepo = () => {
         window.open("https://github.com/NickMezacapa/ReactJS-Pathfinding-Visualizer--Dijkstras-Algorithm", "_blank");
-    } 
+    }  */
 
 
 
@@ -100,7 +101,29 @@ const Projects = () => {
 
 
                 </div>
-                <section className="proj-1-ai">
+                {/* ************* start project showcase here */}
+
+
+
+                <ProjectShowcase />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{/* may not need */}
+
+{/*                 <section className="proj-1-ai">
                     <div className="proj-section-wrapper">
                         <div className="braintumor-cta" id='first_proj_container'>
                                 <img src={braintumor} alt="Brain Tumor Detection AI Project" className="braintumor-img" />
@@ -261,7 +284,7 @@ const Projects = () => {
                         </div>
                         
                     </div>
-                </section>
+                </section> */}
             </div>
         </section>
     </div>
