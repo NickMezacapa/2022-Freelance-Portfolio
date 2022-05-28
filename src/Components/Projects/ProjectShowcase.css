@@ -1,12 +1,22 @@
+
+.PS-Wrapper {
+    height: 175vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1420px;
+    margin-top: 6rem;
+}
 .ProjectShowcase-Container {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     max-width: 1420px;
-    margin-top: 6rem;
 }
 .ProjectShowcase-Row_firstRow,
 .ProjectShowcase-Row_secondRow {
@@ -20,11 +30,28 @@
 .ProjectShowcase-Row_firstRow_left,
 .ProjectShowcase-Row_firstRow_right,
 .ProjectShowcase-Row_secondRow_left,
-.ProjectShowcase-Row_secondRow_right {
+.ProjectShowcase-Row_secondRow_right,
+.ProjectShowcase-Row_thirdRow_left,
+.ProjectShowcase-Row_thirdRow_right {
         height: 100%;
         width: 50%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+}
+.PS-Container2 {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.ProjectShowcase-Row_thirdRow {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 }
