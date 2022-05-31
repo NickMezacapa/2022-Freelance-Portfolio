@@ -114,7 +114,7 @@ const Cal = () => {
 		}
 		if (fourthProjSubTitle) {
 			fourthProjSubTitle.innerHTML =
-				"A web scraper that utilizes machine learning to extract data from sports news websites and summarizes text into quick and meaningful reports.";
+				"A web scraper that utilizes machine learning and natural language processing to extract data from sports news websites and summarize text into quick and meaningful reports.";
 		}
 
 
