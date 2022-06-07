@@ -4,7 +4,7 @@ import './Content.css';
 
 const Content = () => {
 
-    window.onload = function () {
+	window.onload = function () {
 		const secondProjTitle = document.querySelector(
 			".ProjectShowcase-Row_firstRow_right .Content-InnerWrapper_projTitle",
 		);
@@ -44,31 +44,44 @@ const Content = () => {
 			fourthProjSubTitle.innerHTML =
 				"A web scraper that utilizes machine learning to extract data from sports news websites and summarizes text into quick and meaningful reports.";
 		}
+		const fifthProjTitle = document.querySelector(
+			".ProjectShowcase-Row_thirdRow_left .Content-InnerWrapper_projTitle",
+		);
+		const fifthProjSubTitle = document.querySelector(
+			".ProjectShowcase-Row_thirdRow_left .Content-InnerWrapper_projSubTitle",
+		);
+		if (fifthProjTitle) {
+			fifthProjTitle.innerText = "Web Scraper";
+		}
+		if (fifthProjSubTitle) {
+			fifthProjSubTitle.innerHTML =
+				"A web scraper that utilizes machine learning to extract data from sports news websites and summarizes text into quick and meaningful reports.";
+		}
 	};
 
 
-  return (
-    <div className="Content-Wrapper">
-        <div className="img-cta">
-        </div>
-        <section className="Content-Wrapper_inner">
-            
-                
-            
-            <div className="Content-InnerWrapper_div">
-                <h2 className="Content-InnerWrapper_projTitle">
-                    AI Iris Detection for Assisted Webpage Scrolling
-                </h2>
-                <h4 className="Content-InnerWrapper_projSubTitle">
-                    A downloadable chrome extension for improved accessibility.
-                </h4>
-            </div>
-            <div className="Content-CloseContainer">
-                <AiOutlinePlus className="Content-CloseIcon" />
-            </div>
-        </section>
-    </div>
-  )
+	return (
+		<div className="Content-Wrapper">
+			<div className="img-cta">
+			</div>
+			<section className="Content-Wrapper_inner">
+
+
+
+				<div className="Content-InnerWrapper_div">
+					<h2 className="Content-InnerWrapper_projTitle">
+						AI Iris Detection for Assisted Webpage Scrolling
+					</h2>
+					<h4 className="Content-InnerWrapper_projSubTitle">
+						A downloadable chrome extension for improved accessibility.
+					</h4>
+				</div>
+				<div className="Content-CloseContainer">
+					<AiOutlinePlus className="Content-CloseIcon" />
+				</div>
+			</section>
+		</div>
+	)
 }
 
 export default Content;

@@ -9,6 +9,7 @@
     border-radius: 24px;
     border: 1px solid rgba(187, 184, 184, 0.55);
 }
+
 .Content-Wrapper_inner {
     height: 100%;
     width: 95%;
@@ -35,14 +36,21 @@
     overflow: hidden;
     z-index: 10;
 }
+
 .ProjectShowcase-Row_firstRow_right .img-cta {
     background-image: url('./assets/brainTab.png');
 }
+
 .ProjectShowcase-Row_secondRow_left .img-cta {
     background-image: url('./assets/pseTab.png');
 }
+
 .ProjectShowcase-Row_secondRow_right .img-cta {
     background-image: url('./assets/wsTab.png');
+}
+
+.ProjectShowcase-Row_thirdRow_left .img-cta {
+    background-image: url('./assets/delivery-tab.png');
 }
 
 
@@ -58,18 +66,20 @@
     background-repeat: no-repeat;
     background-position: top;
 }
+
 .Content-InnerWrapper_projSubTitle {
     color: rgb(219, 216, 216);
     font-size: 0.9rem;
     margin-top: 2rem;
     width: 80%;
 }
+
 .Content-InnerWrapper_projTitle {
     background: linear-gradient(91.36deg, #52f0c8 0%, #49d6b3 13.02%, #63c9d6 25.52%, #A58DE3 37.5%, #56ABEC 49.48%, #737EB7 63.02%, rgb(73, 185, 189) 72.92%, #57acdd 84.38%, #515fdf 97.92%);
     background-size: 200% 200%;
     -webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     -moz-background-clip: text;
     -webkit-animation: intro-gradient 7.5s infinite ease both;
     -moz-animation: intro-gradient 7.5s infinite ease both;
@@ -80,6 +90,7 @@
     font-weight: 600;
     margin-top: 3rem;
 }
+
 .Content-CloseContainer {
     display: flex;
     justify-content: center;
@@ -93,29 +104,30 @@
     border-radius: 50%;
     background-color: rgba(198, 196, 196, 0.569);
 }
+
 .Content-CloseIcon {
     font-size: 28px;
     color: #1d1d1fba;
 }
+
 .ProjectShowcase-Row_firstRow_right .Content-Wrapper_inner {
     height: 87%;
 }
+
 .ProjectShowcase-Row_firstRow_right .Content-InnerWrapper_projTitle {
     padding-top: 3.5rem;
-	background: linear-gradient(
-		91.36deg,
-		#eca658 0%,
-		#f391a6 13.02%,
-		#e188c3 25.52%,
-		#a58de3 37.5%,
-		#56abec 49.48%,
-		#737eb7 63.02%,
-		#c8638c 72.92%
-	);
+    background: linear-gradient(91.36deg,
+            #eca658 0%,
+            #f391a6 13.02%,
+            #e188c3 25.52%,
+            #a58de3 37.5%,
+            #56abec 49.48%,
+            #737eb7 63.02%,
+            #c8638c 72.92%);
     background-size: 200% 200%;
     -webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     -moz-background-clip: text;
     -webkit-animation: intro-gradient 7.5s infinite ease both;
     -moz-animation: intro-gradient 7.5s infinite ease both;
@@ -125,16 +137,19 @@
     letter-spacing: -0.045em;
     font-weight: 600;
 }
+
 .ProjectShowcase-Row_firstRow_right .Content-InnerWrapper_projSubTitle {
     width: 80%;
     margin-top: 1rem;
 }
+
 .ProjectShowcase-Row_firstRow_right .Content-InnerWrapper_div {
     background-image: url('./assets/brain-detect.png');
     background-repeat: no-repeat;
     background-position: top;
     background-size: 21%;
 }
+
 .ProjectShowcase-Row_secondRow_left .Content-InnerWrapper_div {
     background-image: url('./assets/pse.png');
     background-repeat: no-repeat;
@@ -144,23 +159,21 @@
 
 .ProjectShowcase-Row_secondRow_left .Content-InnerWrapper_projTitle {
     padding-top: 2rem;
-    background: linear-gradient(
-		91.36deg,
-		#56abec 12.48%,
-		#e188c3 31.52%,
-		#f877cd 51.52%,
-		#d788e1 35.52%,
-		#a58de3 80%,
-		#e188c3 10%,
-		#56abec 10%,
-		#56abec 12.48%,
-		#8dabe3 50%,
-		#a58de3 0%   
-	);
+    background: linear-gradient(91.36deg,
+            #56abec 12.48%,
+            #e188c3 31.52%,
+            #f877cd 51.52%,
+            #d788e1 35.52%,
+            #a58de3 80%,
+            #e188c3 10%,
+            #56abec 10%,
+            #56abec 12.48%,
+            #8dabe3 50%,
+            #a58de3 0%);
     background-size: 200% 200%;
     -webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     -moz-background-clip: text;
     -webkit-animation: intro-gradient 7.5s infinite ease both;
     -moz-animation: intro-gradient 7.5s infinite ease both;
@@ -170,43 +183,47 @@
     letter-spacing: -0.045em;
     font-weight: 600;
 }
+
 .ProjectShowcase-Row_secondRow_left .Content-InnerWrapper_projSubTitle {
     width: 80%;
     margin-top: 1rem;
 }
+
 .ProjectShowcase-Row_secondRow_right .Content-InnerWrapper_div {
     background-image: url('./assets/web-scraper.png');
     background-repeat: no-repeat;
     background-position: 50% 10%;
     background-size: 34%;
 }
+
 .ProjectShowcase-Row_secondRow_right .Content-InnerWrapper_projTitle {
     padding-top: 2rem;
 }
+
 .ProjectShowcase-Row_secondRow_right .Content-Wrapper_inner {
     height: 105%;
 }
+
 .ProjectShowcase-Row_secondRow_right .Content-InnerWrapper_projSubTitle {
     width: 80%;
     margin-top: 1rem;
 }
+
 .ProjectShowcase-Row_thirdRow_right .Content-InnerWrapper_projTitle {
-    background: linear-gradient(
-		91.36deg,
-		#eca658 0%,
-		#f2906c 12%,
-		#f391a6 13.02%,
-		#e188c3 25.52%,
-		#a58de3 37.5%,
-		#56abec 49.48%,
-		#737eb7 63.02%,
-		#c8638c 72.92%,
-        #eea552 92%
-	);
+    background: linear-gradient(91.36deg,
+            #eca658 0%,
+            #f2906c 12%,
+            #f391a6 13.02%,
+            #e188c3 25.52%,
+            #a58de3 37.5%,
+            #56abec 49.48%,
+            #737eb7 63.02%,
+            #c8638c 72.92%,
+            #eea552 92%);
     background-size: 200% 200%;
     -webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     -moz-background-clip: text;
     -webkit-animation: intro-gradient 7.5s infinite ease both;
     -moz-animation: intro-gradient 7.5s infinite ease both;
@@ -217,6 +234,20 @@
     font-weight: 600;
 }
 
+.ProjectShowcase-Row_thirdRow_left .Content-InnerWrapper_div {
+    background-image: url('./assets/rx-delivery.png');
+    background-repeat: no-repeat;
+    background-position: 50% -6%;
+    background-size: 48%;
+}
+
+.ProjectShowcase-Row_thirdRow_left .Content-InnerWrapper_projTitle {
+    padding-top: 5rem;
+}
+
+.ProjectShowcase-Row_thirdRow_left .Content-InnerWrapper_projSubTitle {
+    margin-top: 1rem;
+}
 
 
 /* 
@@ -229,43 +260,43 @@
 
 
 @-webkit-keyframes intro-gradient {
-	0% {
-		background-position: 0% 4%;
-	}
+    0% {
+        background-position: 0% 4%;
+    }
 
-	50% {
-		background-position: 100% 97%;
-	}
+    50% {
+        background-position: 100% 97%;
+    }
 
-	100% {
-		background-position: 0% 4%;
-	}
+    100% {
+        background-position: 0% 4%;
+    }
 }
 
 @-moz-keyframes intro-gradient {
-	0% {
-		background-position: 0% 4%;
-	}
+    0% {
+        background-position: 0% 4%;
+    }
 
-	50% {
-		background-position: 100% 97%;
-	}
+    50% {
+        background-position: 100% 97%;
+    }
 
-	100% {
-		background-position: 0% 4%;
-	}
+    100% {
+        background-position: 0% 4%;
+    }
 }
 
 @keyframes intro-gradient {
-	0% {
-		background-position: 0% 4%;
-	}
+    0% {
+        background-position: 0% 4%;
+    }
 
-	50% {
-		background-position: 100% 97%;
-	}
+    50% {
+        background-position: 100% 97%;
+    }
 
-	100% {
-		background-position: 0% 4%;
-	}
+    100% {
+        background-position: 0% 4%;
+    }
 }
