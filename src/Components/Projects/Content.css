@@ -53,6 +53,10 @@
     background-image: url('./assets/delivery-tab.png');
 }
 
+.ProjectShowcase-Row_thirdRow_right .img-cta {
+    background-image: url('./assets/streasks-tab.png');
+}
+
 
 
 .Content-InnerWrapper_div {
@@ -192,12 +196,12 @@
 .ProjectShowcase-Row_secondRow_right .Content-InnerWrapper_div {
     background-image: url('./assets/web-scraper.png');
     background-repeat: no-repeat;
-    background-position: 50% 10%;
+    background-position: 50% 12%;
     background-size: 34%;
 }
 
 .ProjectShowcase-Row_secondRow_right .Content-InnerWrapper_projTitle {
-    padding-top: 2rem;
+    padding-top: 3rem;
 }
 
 .ProjectShowcase-Row_secondRow_right .Content-Wrapper_inner {
@@ -235,7 +239,7 @@
 .ProjectShowcase-Row_thirdRow_left .Content-InnerWrapper_div {
     background-image: url('./assets/rx-delivery.png');
     background-repeat: no-repeat;
-    background-position: 50% -6%;
+    background-position: 50% -4%;
     background-size: 48%;
 }
 

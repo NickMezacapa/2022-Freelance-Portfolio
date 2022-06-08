@@ -140,7 +140,7 @@ const Cal = () => {
         }
         if (sixthProjSubTitle) {
             sixthProjSubTitle.innerHTML =
-                "A social media app where users can challenge friends to accomplish daily tasks. Once the user completes all tasks, the calender date turns green to indicate the user is on a streak.";
+                "A social media app where users can challenge friends to accomplish daily tasks. Once the user completes all tasks, the calendar date turns green to indicate the user is on a streak.";
         }
     };
 
