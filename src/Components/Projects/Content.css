@@ -209,16 +209,14 @@
     margin-top: 1rem;
 }
 
-.ProjectShowcase-Row_thirdRow_right .Content-InnerWrapper_projTitle {
+/* .ProjectShowcase-Row_secondRow_right .Content-InnerWrapper_projTitle {
     background: linear-gradient(91.36deg,
             #eca658 0%,
             #f2906c 12%,
-            #f391a6 13.02%,
-            #e188c3 25.52%,
-            #a58de3 37.5%,
-            #56abec 49.48%,
-            #737eb7 63.02%,
-            #c8638c 72.92%,
+            #f391a6 33.02%,
+            #ee7b94 28.02%,
+            #ed7c7c 33.02%,
+            #e06d6d 73.02%,
             #eea552 92%);
     background-size: 200% 200%;
     -webkit-background-clip: text;
@@ -232,7 +230,7 @@
     line-height: 1.1;
     letter-spacing: -0.045em;
     font-weight: 600;
-}
+} */
 
 .ProjectShowcase-Row_thirdRow_left .Content-InnerWrapper_div {
     background-image: url('./assets/rx-delivery.png');
@@ -247,6 +245,42 @@
 
 .ProjectShowcase-Row_thirdRow_left .Content-InnerWrapper_projSubTitle {
     margin-top: 1rem;
+}
+
+.ProjectShowcase-Row_thirdRow_right .Content-InnerWrapper_div {
+    background-image: url('./assets/streaks4.png');
+    background-repeat: no-repeat;
+    background-position: 50% 16%;
+    background-size: 50%;
+}
+
+.ProjectShowcase-Row_thirdRow_right .Content-InnerWrapper_projTitle {
+    padding-top: 6rem;
+}
+
+.ProjectShowcase-Row_thirdRow_right .Content-InnerWrapper_projSubTitle {
+    margin-top: 1rem;
+}
+
+.ProjectShowcase-Row_thirdRow_right .Content-InnerWrapper_projTitle {
+    background: linear-gradient(91.36deg,
+            #2ed77f 8.02%,
+            #63c9d6 35.52%,
+            #8de3d0 57.5%,
+            rgb(73, 185, 189) 72.92%,
+            #57dd9a 84.38%);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-animation: intro-gradient 7.5s infinite ease both;
+    -moz-animation: intro-gradient 7.5s infinite ease both;
+    animation: intro-gradient 7.5s infinite ease both;
+    font-size: 28px;
+    line-height: 1.1;
+    letter-spacing: -0.045em;
+    font-weight: 600;
 }
 
 

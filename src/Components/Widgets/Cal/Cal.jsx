@@ -127,7 +127,20 @@ const Cal = () => {
         }
         if (fifthProjSubTitle) {
             fifthProjSubTitle.innerHTML =
-                "A delivery service capable of scaling for millions of users. A platform that provides an opportunity for an on-demand network of drivers to earn money by delivering prescriptions to customers.";
+                "A delivery service capable of scaling for millions of users. A platform that provides an on-demand network of drivers to deliver prescriptions to customers.";
+        }
+        const sixthProjTitle = document.querySelector(
+            ".ProjectShowcase-Row_thirdRow_right .Content-InnerWrapper_projTitle",
+        );
+        const sixthProjSubTitle = document.querySelector(
+            ".ProjectShowcase-Row_thirdRow_right .Content-InnerWrapper_projSubTitle",
+        );
+        if (sixthProjTitle) {
+            sixthProjTitle.innerText = "Full Stack Social Media Platform";
+        }
+        if (sixthProjSubTitle) {
+            sixthProjSubTitle.innerHTML =
+                "A social media app where users can challenge friends to accomplish daily tasks. Once the user completes all tasks, the calender date turns green to indicate the user is on a streak.";
         }
     };
 
