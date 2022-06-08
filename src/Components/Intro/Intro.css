@@ -6,22 +6,26 @@
 	-webkit-text-size-adjust: 100%;
 	-webkit-user-select: none;
 	user-select: none;
-    -webkit-user-drag: none;
-    -webkit-app-region: none;
+	-webkit-user-drag: none;
+	-webkit-app-region: none;
 }
+
 body {
 	overflow-y: scroll;
 	scroll-behavior: smooth;
 }
+
 .hidden-element-active {
 	display: none;
 }
+
 /* body::-webkit-scrollbar {
 	display: none;
 } */
 .hero-scroll-wrap {
 	position: relative;
 }
+
 .hero-scroll-trigger {
 	position: absolute;
 	left: 0;
@@ -31,6 +35,7 @@ body {
 	z-index: -1;
 	height: 100vh;
 }
+
 .sticky-wrap {
 	height: 60vh;
 	min-height: 100vh;
@@ -38,10 +43,12 @@ body {
 	top: 0;
 	z-index: 1;
 }
+
 .overflow-wrap {
 	overflow: hidden;
 	height: 100%;
 }
+
 /* .hero {
 	display: flex;
 	align-items: center;
@@ -106,6 +113,7 @@ body {
 	-webkit-box-pack: center;
 	-webkit-box-align: center;
 }
+
 .heroWrapper {
 	position: relative;
 	/* height: 100%;
@@ -125,6 +133,7 @@ body {
 	min-width: 350px;
 	/* margin-bottom: 64px; */
 }
+
 .hero-img-container {
 	position: relative;
 	z-index: 3;
@@ -140,9 +149,11 @@ body {
 	align-items: center;
 	transition: transform 0.4s ease;
 }
+
 .hero-img-container:hover {
 	transform: scale(0.9);
 }
+
 .hero-img {
 	height: 93%;
 	width: 93%;
@@ -153,6 +164,7 @@ body {
 	animation-fill-mode: backwards;
 	animation-delay: 0.8s;
 }
+
 .hero-img-shadow-wrap {
 	position: absolute;
 	left: -20%;
@@ -165,30 +177,27 @@ body {
 	border-radius: 50%;
 	filter: blur(20px);
 }
+
 .hero-img-shadow-wrap.hero-img-shadow-wrap--intro {
 	z-index: 1;
 }
+
 .hero-img-shadow {
 	width: 100%;
 	height: 100%;
 	border-radius: 50%;
-	background-image: radial-gradient(
-			circle farthest-side at 100% 100%,
+	background-image: radial-gradient(circle farthest-side at 100% 100%,
 			#9873ff,
-			rgba(152, 115, 255, 0)
-		),
-		radial-gradient(
-			circle farthest-side at 100% 0,
+			rgba(152, 115, 255, 0)),
+		radial-gradient(circle farthest-side at 100% 0,
 			#0ba5f7,
-			rgba(85, 196, 255, 0)
-		),
+			rgba(85, 196, 255, 0)),
 		radial-gradient(circle farthest-side at 0 0, #ff763c, rgba(255, 176, 60, 0)),
-		radial-gradient(
-			circle farthest-side at 0 100%,
+		radial-gradient(circle farthest-side at 0 100%,
 			#ff5aaa,
-			rgba(255, 90, 170, 0)
-		);
+			rgba(255, 90, 170, 0));
 }
+
 #hero-img-shadow-1 {
 	will-change: opacity;
 	animation: heroImgShadow1 0.8s ease;
@@ -196,6 +205,7 @@ body {
 	animation-fill-mode: backwards;
 	animation-delay: 1.5s;
 }
+
 #hero-img-shadow-2 {
 	will-change: opacity, transform;
 	animation: heroImgShadow2 1.2s cubic-bezier(0.65, 0, 0.35, 1);
@@ -203,6 +213,7 @@ body {
 	animation-fill-mode: both;
 	animation-delay: 1.5s;
 }
+
 .hero__header {
 	position: relative;
 	z-index: 1;
@@ -212,6 +223,7 @@ body {
 	justify-content: center;
 	width: 100%;
 }
+
 .hero-eyebrow {
 	font-size: 25px;
 	line-height: 1.2;
@@ -230,6 +242,7 @@ body {
 	margin-inline-end: 0px;
 	margin-top: 4rem;
 }
+
 .hero-heading {
 	width: 100vw;
 	text-align: center;
@@ -243,6 +256,7 @@ body {
 	animation-fill-mode: backwards;
 	animation-delay: 0.5s;
 }
+
 .hero-link {
 	display: flex;
 	justify-content: center;
@@ -259,22 +273,57 @@ body {
 	animation-fill-mode: backwards;
 	animation-delay: 0.6s;
 }
+
 .hero-link p {
 	transition: 0.4s ease;
 }
+
 .hero-link-icon {
 	padding-top: 4px;
 }
+
 .hero-link:hover {
 	text-decoration: underline;
 	color: var(--blue-dark);
 	cursor: pointer;
 }
+
 #launch-trigger {
 	color: var(--blue-dark);
 }
+
 .sticky-gap {
 	height: 100vh;
+}
+
+.heroHeading_active {
+	transition: 1s ease;
+	background-color: #4fb7ef72;
+	animation: background-color heroImgShadow1 1s ease;
+}
+
+.sticky-cdv-box {
+	position: absolute;
+	bottom: 35%;
+	left: -5%;
+	width: 20%;
+	height: 20%;
+	background-color: #fff;
+	border-radius: 12px;
+	border: 1px solid hsla(0, 0%, 59.2%, .3);
+	background-image: url('./cdv-inner.png');
+	background-size: 95%;
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: 2;
+	display: none;
+	animation: heroImgShadow1 1s ease;
+}
+
+.sticky-cdv-box__active {
+	display: block;
+	animation: heroImgShadow1 1.5s ease;
+	transition: 1.5s ease;
 }
 
 /* Create a media query for when the user is using a mobile device. The .hero-ui element should be moved down 2rem. */
@@ -284,14 +333,17 @@ body {
 		max-width: none;
 		transform: scale(0.75);
 	}
+
 	.hero-heading {
 		font-size: 48px;
 		font-weight: 700;
 	}
+
 	.hero-scroll-trigger {
 		height: 60vh;
 	}
 }
+
 /* End media query medium */
 
 @keyframes heroImgScale {
@@ -305,62 +357,76 @@ body {
 		transform: scale(1, 1);
 	}
 }
+
 @keyframes heroImgShadow1 {
 	from {
 		opacity: 0;
 	}
+
 	to {
 		opacity: 1;
 	}
 }
+
 @keyframes heroImgShadow2 {
 	0% {
 		opacity: 1;
 		transform: scale(1, 1);
 	}
+
 	99% {
 		opacity: 0;
 		transform: scale(6, 6);
 		height: 140%;
 	}
+
 	100% {
 		height: 0%;
 		opacity: 0;
 	}
 }
+
 @keyframes heroImgWrap {
 	from {
 		opacity: 0;
 	}
+
 	to {
 		opacity: 1;
 	}
 }
+
 @keyframes fadeIn {
 	from {
 		opacity: 0;
 		transform: translateY(100px);
 	}
+
 	to {
 		opacity: auto;
 		transform: translateY(0px);
 	}
 }
+
 @keyframes macHero {
 	from {
 		transform: scale3d(1, 1, 1);
 	}
+
 	to {
 		transform: scale3d(0.360058, 0.360058, 1);
 	}
 }
+
 @keyframes heroUIimg {
 	0% {
 		opacity: 0;
 	}
+
 	20% {
 		opacity: 1;
 	}
+
 	100% {
 		opacity: 1;
 	}
@@ -375,38 +441,48 @@ body {
 	.hero-scroll-wrap {
 		height: 200vh;
 	}
+
 	.hero-ui {
 		margin-top: 8rem;
 		transform: scale(0.6);
 	}
+
 	.heroWrapper {
 		transform: scale(0.8);
 		margin-top: -2rem;
 	}
+
 	.hero__header {
 		margin-top: -3rem;
 	}
+
 	.hero-heading {
 		font-size: 36px;
 		font-weight: 600;
 	}
+
 	.hero-link-text {
 		font-size: 18px;
 	}
+
 	.overflow-wrap {
 		overflow: hidden;
 	}
+
 	.letsLaunchArrowRt {
 		font-size: 18px;
 		margin-bottom: 1rem;
 		font-weight: 600;
 	}
+
 	*::-webkit-scrollbar {
 		display: none;
 	}
+
 	*::-webkit-scrollbar-thumb {
 		display: none;
 	}
+
 	.hero-eyebrow {
 		font-weight: 500;
 		font-size: 20px;
@@ -416,41 +492,49 @@ body {
 /* ************************ */
 /* Media queires iphone xr */
 /* ************************ */
-@media screen and (min-width: 412px) and (max-width: 414px){
+@media screen and (min-width: 412px) and (max-width: 414px) {
 	.hero__header {
 		margin-top: 1rem;
 	}
+
 	.hero-heading {
 		font-size: 44px;
 		font-weight: 600;
 	}
+
 	.heroWrapper {
 		margin-top: -2rem;
 		transform: scale(0.95);
 	}
+
 	.hero-eyebrow {
 		font-weight: 500;
 		font-size: 24px;
 	}
+
 	.hero-link-text {
 		font-size: 22px;
 	}
 }
+
 /* ************************ */
 /* Media queires iphone 12 pro */
 /* ************************ */
-@media screen and (min-width: 390px) and (max-width: 393px){
+@media screen and (min-width: 390px) and (max-width: 393px) {
 	.hero-heading {
 		font-size: 41px;
 		font-weight: 600;
 	}
+
 	.hero-eyebrow {
 		font-weight: 500;
 		font-size: 24px;
 	}
+
 	.hero-link-text {
 		font-size: 22px;
 	}
+
 	.heroWrapper {
 		margin-top: -2rem;
 		transform: scale(0.95);
