@@ -17,11 +17,12 @@ import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import { IoMdClose } from "react-icons/io";
 import { RiRotateLockFill } from "react-icons/ri";
 import { AiOutlineCalculator } from "react-icons/ai";
-import { BsFillBrightnessHighFill, BsFillVolumeUpFill, /* BsFillVolumeMuteFill, BsFillVolumeDownFill */ } from "react-icons/bs";
+import { BsFillBrightnessHighFill, BsFillVolumeUpFill } from "react-icons/bs";
 import Cal from './Components/Widgets/Cal/Cal';
 import Weather from './Components/Widgets/Weather/Weather';
 import Dragging from './Components/Dragging/Dragging';
 import Volume from './Components/Volume/Volume';
+import Click from './Components/ClickMagic/Click';
 
 
 function App() {
@@ -293,7 +294,7 @@ function App() {
 					</div>
 					<div className="mp-timer">
 						<p className="mp-timer-time">0:52</p>
-						<p className="mp-timer-time">-2:27</p>
+						<p className="mp-timer-time">-2:28</p>
 					</div>
 					<div className="mp-title-container">
 						<h2 className="song-title">
@@ -331,6 +332,7 @@ function App() {
 				</div>
 			</SpPopup>
 			<Volume />
+			<Click />
 		</>
 	)
 }
