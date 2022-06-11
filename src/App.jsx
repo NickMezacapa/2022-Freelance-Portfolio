@@ -22,7 +22,7 @@ import Cal from './Components/Widgets/Cal/Cal';
 import Weather from './Components/Widgets/Weather/Weather';
 import Dragging from './Components/Dragging/Dragging';
 import Volume from './Components/Volume/Volume';
-import Click from './Components/ClickMagic/Click';
+
 
 
 function App() {
@@ -332,7 +332,7 @@ function App() {
 				</div>
 			</SpPopup>
 			<Volume />
-			<Click />
+			
 		</>
 	)
 }
