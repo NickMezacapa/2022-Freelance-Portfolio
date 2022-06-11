@@ -23,7 +23,7 @@ import Weather from './Components/Widgets/Weather/Weather';
 import Dragging from './Components/Dragging/Dragging';
 import Volume from './Components/Volume/Volume';
 
-
+// inout icide 
 
 function App() {
 	const popup = document.querySelector('.popup');
