@@ -243,7 +243,7 @@ function App() {
 						</div>
 					</section>
 
-					{/* controls */}
+					
 					<section className="sp_quick-controls">
 						{/* slider controls */}
 						<div className="sp_slider-controls">
