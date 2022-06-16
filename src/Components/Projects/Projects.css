@@ -6,6 +6,7 @@
 	position: relative;
 	z-index: 300000000;
 }
+
 .projects-overflow {
 	width: 100%;
 	max-width: 1450px;
@@ -15,22 +16,26 @@
 	padding-left: 28px;
 	padding-right: 28px;
 }
+
 .projects-content {
 	width: 96%;
 	height: 175vh;
 	margin-left: auto;
 	margin-right: auto;
 }
+
 .project-header {
 	display: flex;
 	height: 8rem;
 	width: 100%;
 }
+
 .proj-sticky-intro {
 	width: 100%;
 	position: sticky;
 	top: 0;
 }
+
 .proj-mainTitle {
 	font-size: 80px;
 	font-weight: 600;
@@ -39,21 +44,25 @@
 	padding-left: 10px;
 	padding-top: 15rem;
 }
+
 .proj-intro-summary {
 	width: 45%;
 	padding-top: 2rem;
 	padding-left: 10px;
 }
+
 .pss1 {
 	font-size: 22px;
 	color: #1d1d1f;
 	font-weight: 500;
 }
+
 .pss2 {
 	font-size: 22px;
 	color: #86868B;
 	font-weight: 400;
 }
+
 .link-moreProjects {
 	color: var(--blue-dark);
 	padding-top: 4rem;
@@ -65,14 +74,17 @@
 	transform: translateY(50px);
 	transition: 0.4s ease;
 }
+
 .link-moreProjects:hover {
 	cursor: pointer;
 	text-decoration: underline;
 }
+
 .ls2 {
 	padding-top: 3px;
 	padding-left: 3px;
 }
+
 .ip-hero {
 	position: absolute;
 	top: 7%;
@@ -83,6 +95,7 @@
 	transform: translateY(40px) scale(0.98);
 	transition: 0.4s ease;
 }
+
 .link-moreProjects2 {
 	color: var(--blue-dark);
 	padding-top: 2rem;
@@ -94,32 +107,39 @@
 	transform: translateY(50px);
 	transition: 0.4s ease;
 }
+
 .proj-link-animation-active {
 	animation: proj-link-animation 0.7s ease-in-out forwards;
 	animation-delay: 0.3s;
 }
+
 .proj-link-animation-active2 {
 	animation: proj-link-animation 0.8s ease-in-out forwards;
 	animation-delay: 0.7s;
 }
+
 .ip-hero-active {
 	animation: ip-hero-anim 0.4s ease-in-out forwards;
 	animation-delay: 0.1s;
 }
+
 .link-moreProjects2:hover {
 	cursor: pointer;
 	text-decoration: underline;
 }
+
 .ls3 {
 	padding-top: 3px;
 	padding-left: 3px;
 }
+
 .proj-1-ai {
 	max-width: 1450px;
 	width: 90%;
 	height: 900px;
 	position: absolute;
 }
+
 .braintumor-cta {
 	width: 75%;
 	height: 450px;
@@ -133,6 +153,7 @@
 	position: relative;
 	left: 0;
 }
+
 .braintumor-content {
 	display: flex;
 	flex-direction: column;
@@ -140,39 +161,42 @@
 	align-items: center;
 	width: 55%;
 }
+
 .btc-heading {
 	width: 90%;
 	height: 45%;
 	margin-left: 1rem;
 }
+
 .btc-p {
 	width: 90%;
 	margin-top: 1.5rem;
 	font-weight: 500;
 	margin-left: 1rem;
 }
+
 .braintumor-subheading {
 	color: #86868baa;
 }
+
 .braintumor-cta img {
 	max-width: 40%;
 	width: 40%;
 	margin-top: 1.25rem;
 	margin-left: -2rem;
-	
+
 }
+
 .proj-title {
 	font-size: 32px;
-	background: linear-gradient(
-		91.36deg,
-		#eca658 0%,
-		#f391a6 13.02%,
-		#e188c3 25.52%,
-		#a58de3 37.5%,
-		#56abec 49.48%,
-		#737eb7 63.02%,
-		#c8638c 72.92%
-	);
+	background: linear-gradient(91.36deg,
+			#eca658 0%,
+			#f391a6 13.02%,
+			#e188c3 25.52%,
+			#a58de3 37.5%,
+			#56abec 49.48%,
+			#737eb7 63.02%,
+			#c8638c 72.92%);
 	background-size: 200% 200%;
 	-webkit-text-fill-color: transparent;
 	-webkit-background-clip: text;
@@ -183,16 +207,16 @@
 	animation: intro-gradient 10s infinite ease both;
 	font-weight: 700;
 }
-.proj-title2, .proj-title4 {
+
+.proj-title2,
+.proj-title4 {
 	font-size: 32px;
-	background: linear-gradient(
-		91.36deg,
-		#2ed77f 8.02%,
-		#63c9d6 35.52%,
-		#a58de3 57.5%,
-		rgb(73, 185, 189) 72.92%,
-		#57acdd 84.38%
-	);
+	background: linear-gradient(91.36deg,
+			#2ed77f 8.02%,
+			#63c9d6 35.52%,
+			#a58de3 57.5%,
+			rgb(73, 185, 189) 72.92%,
+			#57acdd 84.38%);
 	background-size: 200% 200%;
 	-webkit-text-fill-color: transparent;
 	-webkit-background-clip: text;
@@ -203,21 +227,20 @@
 	animation: intro-gradient 10s infinite ease both;
 	font-weight: 700;
 }
+
 .proj-title3 {
 	font-size: 32px;
-	background: linear-gradient(
-		91.36deg,
-		#56abec 12.48%,
-		#e188c3 31.52%,
-		#f877cd 51.52%,
-		#d788e1 35.52%,
-		#a58de3 80%,
-		#e188c3 10%,
-		#56abec 10%,
-		#56abec 12.48%,
-		#8dabe3 50%,
-		#a58de3 0%   
-	);
+	background: linear-gradient(91.36deg,
+			#56abec 12.48%,
+			#e188c3 31.52%,
+			#f877cd 51.52%,
+			#d788e1 35.52%,
+			#a58de3 80%,
+			#e188c3 10%,
+			#56abec 10%,
+			#56abec 12.48%,
+			#8dabe3 50%,
+			#a58de3 0%);
 	background-size: 200% 200%;
 	-webkit-text-fill-color: transparent;
 	-webkit-background-clip: text;
@@ -228,6 +251,7 @@
 	animation: intro-gradient 10s infinite ease both;
 	font-weight: 700;
 }
+
 .braintumor-links {
 	color: #3997f7 !important;
 	width: 90%;
@@ -236,22 +260,26 @@
 	gap: 1rem;
 	margin-left: 1rem;
 }
-.braintumor-links > #bt-linkspan-1 > p,
-.braintumor-links > #bt-linkspan-2 > p {
+
+.braintumor-links>#bt-linkspan-1>p,
+.braintumor-links>#bt-linkspan-2>p {
 	color: #3997f7 !important;
 	padding-right: 1rem;
 	padding-top: 2rem;
 	font-weight: 400;
 	transition: 0.4s ease;
 }
+
 #bt-linkspan-1:hover,
 #bt-linkspan-2:hover {
 	cursor: pointer;
 	text-decoration: underline;
 }
+
 .arrow-proj {
 	padding-top: 5px;
 }
+
 .eye-detection-cta {
 	width: 75%;
 	height: 450px;
@@ -265,6 +293,7 @@
 	position: absolute;
 	right: -2%;
 }
+
 .proj3-cta {
 	width: 75%;
 	height: 450px;
@@ -278,6 +307,7 @@
 	position: absolute;
 	left: 0;
 }
+
 .proj4-cta {
 	width: 75%;
 	height: 450px;
@@ -291,6 +321,7 @@
 	position: absolute;
 	right: -2%;
 }
+
 .proj5-cta {
 	width: 75%;
 	height: 450px;
@@ -304,18 +335,21 @@
 	position: absolute;
 	left: 0;
 }
+
 .project-img {
 	display: block;
 	block-size: 300px;
 	max-block-size: 300px;
-	
+
 }
+
 .pathfinder-img {
 	display: block;
 	block-size: 275px;
 	max-block-size: 275px;
 	box-shadow: 0px 0px 20px rgba(51, 51, 51, 0.32);
 }
+
 .feeder-img {
 	display: block;
 	block-size: 375px;
@@ -324,6 +358,7 @@
 	object-fit: cover;
 	box-shadow: 0px 0px 20px rgba(51, 51, 51, 0.32);
 }
+
 .scroller-img {
 	display: block;
 	block-size: 350px;
@@ -331,6 +366,7 @@
 	margin-left: 2rem;
 	box-shadow: 0px 0px 20px rgba(152, 152, 152, 0.32);
 }
+
 .proj-seeMore {
 	height: 100px;
 	width: 100%;
@@ -341,6 +377,7 @@
 	justify-content: center;
 	align-items: center;
 }
+
 .psm-button {
 	font-size: 18px;
 	font-weight: 500;
@@ -350,41 +387,51 @@
 	background-color: transparent;
 	transition: 0.4s ease;
 }
+
 .psm-button:hover {
 	text-decoration: underline;
 	cursor: pointer;
 }
+
 .feeder-content {
 	margin-left: -2rem;
 }
+
 .scroller-content {
 	margin-left: -2rem;
 }
+
 .scroller-links {
 	margin-top: -0.5rem;
 }
+
 .DA {
 	position: absolute;
 	bottom: 0;
 }
+
 @keyframes proj-link-animation {
 	0% {
 		opacity: 0;
 		transform: translateY(50px);
 	}
+
 	100% {
 		opacity: 1;
 		transform: translateY(0px);
 	}
 }
+
 @keyframes ip-hero-anim {
 	0% {
 		transform: translateY(40px) scale(0.98);
 	}
+
 	100% {
 		transform: translateY(0px) scale(1);
 	}
 }
+
 .braintumor-cta,
 .eye-detection-cta,
 .proj3-cta,
@@ -393,6 +440,7 @@
 	transition: 0.4s ease;
 	box-shadow: 0px 1px 7px rgba(166, 166, 166, 0.35);
 }
+
 .braintumor-cta:hover,
 .eye-detection-cta:hover,
 .proj3-cta:hover,
@@ -402,76 +450,123 @@
 	box-shadow: 0px 0px 20px rgba(166, 166, 166, 0.18);
 }
 
+.Projects-SeeMore_cta {
+	height: 100px;
+	width: 98%;
+	left: 1%;
+	position: absolute;
+	bottom: 5%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.Projects-SeeMore_linkWrap {
+	height: 100%;
+	width: 40%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.Projects-SeeMore_linkClick {
+	cursor: pointer;
+	color: var(--blue-dark);
+	transition: 0.4s ease;
+	font-size: 1.2rem;
+}
+
+.Projects-SeeMore_linkClick:hover {
+	text-decoration: underline;
+	transform: scale(1.03);
+	cursor: pointer;
+}
 
 @media screen and (max-width: 768px) {
-/* 	.projectsCta {
+
+	/* 	.projectsCta {
 		border: 1px solid red;
 	} */
 	.projects-overflow {
 		width: 90%;
 	}
+
 	.proj-sticky-intro {
 		margin-top: -2rem;
 		border: 1px solid transparent;
 	}
+
 	.proj-mainTitle {
 		font-size: 55px;
 		margin-top: -4rem;
 		margin-left: -2rem;
 	}
+
 	.display-proj-hero-wrap {
 		position: absolute;
 		right: -17%;
 		top: 8%;
 		width: 125%;
 	}
+
 	.proj-intro-summary {
 		width: 100%;
 		margin-left: -2rem;
 	}
+
 	.link-moreProjects {
 		width: 100%;
 	}
+
 	.ls1 {
 		width: 95%;
 		margin-left: -2rem;
 	}
+
 	.ls2 {
 		margin-left: -1rem;
 	}
+
 	.proj-1-ai {
 		width: 100%;
-		margin-left: -2rem;	
+		margin-left: -2rem;
 	}
-	.braintumor-cta, .eye-detection-cta {
+
+	.braintumor-cta,
+	.eye-detection-cta {
 		width: 91.5%;
 		display: flex;
 		font-size: 14px;
 		margin-top: 0;
 		box-shadow: 0px 0px 20px rgba(166, 166, 166, 0.32);
 	}
+
 	.braintumor-cta .proj-title {
 		width: 100%;
 		position: absolute;
 		left: 5%;
 		top: 5%;
 	}
+
 	.braintumor-cta .braintumor-subheading {
 		width: 100%;
 		position: absolute;
 		left: 5%;
 		top: 15%;
 	}
+
 	.braintumor-cta .braintumor-para {
 		margin-top: 4rem;
 		position: relative;
 		left: 2%;
 	}
+
 	.braintumor-cta img {
 		margin-top: -4rem;
 		left: 2.5%;
 		position: relative;
 	}
+
 	.braintumor-cta .braintumor-links {
 		position: absolute;
 		left: 3%;
@@ -479,6 +574,7 @@
 		display: flex;
 		flex-direction: column;
 	}
+
 	.eye-detection-cta {
 		margin-top: 4rem;
 		position: absolute;
@@ -488,12 +584,14 @@
 		flex-direction: column;
 		height: auto;
 	}
+
 	.eye-detection-cta .proj-title2 {
 		width: 96%;
 		position: absolute;
 		left: 5%;
 		top: 5%;
 	}
+
 	.eye-detection-cta img {
 		margin-top: 0.2rem;
 		right: 2.5%;
@@ -501,12 +599,14 @@
 		width: 44%;
 		height: auto;
 	}
+
 	.eye-detection-cta .braintumor-subheading {
 		width: 100%;
 		position: absolute;
 		left: 5%;
 		top: 25.5%;
 	}
+
 	.eye-detection-cta .braintumor-para {
 		position: relative;
 		margin-top: 80%;
@@ -515,6 +615,7 @@
 		width: 91%;
 		padding-bottom: 30px;
 	}
+
 	.eye-detection-cta .braintumor-links {
 		position: absolute;
 		right: -48.5%;
@@ -522,6 +623,7 @@
 		display: flex;
 		flex-direction: column;
 	}
+
 	/*  */
 	.proj3-cta {
 		width: 91.5%;
@@ -531,12 +633,14 @@
 		margin-top: 45.75rem;
 		box-shadow: 0px 0px 20px rgba(166, 166, 166, 0.32);
 	}
+
 	.proj3-cta .proj-title3 {
 		width: 100%;
 		position: absolute;
 		left: 5%;
 		top: 5%;
 	}
+
 	.proj3-cta img {
 		margin-top: 0;
 		left: 0;
@@ -544,18 +648,21 @@
 		width: 44%;
 		height: auto;
 	}
+
 	.proj3-cta .braintumor-subheading {
 		width: 100%;
 		position: absolute;
 		left: 5%;
 		top: 23%;
 	}
+
 	.proj3-cta .braintumor-para {
 		margin-top: 8rem;
 		position: relative;
 		left: -3%;
 		padding-bottom: 30px;
 	}
+
 	.proj3-cta .braintumor-links {
 		position: absolute;
 		left: 3%;
@@ -563,6 +670,7 @@
 		display: flex;
 		flex-direction: column;
 	}
+
 	/*  */
 	.proj4-cta {
 		width: 91.5%;
@@ -575,18 +683,21 @@
 		flex-direction: column;
 		height: auto;
 	}
+
 	.proj4-cta .proj-title4 {
 		width: 95%;
 		position: absolute;
 		left: 5%;
 		top: 5%;
 	}
+
 	.proj4-cta .braintumor-subheading {
 		width: 95%;
 		position: absolute;
 		left: 5%;
 		top: 19%;
 	}
+
 	.proj4-cta img {
 		margin-top: -3.5rem;
 		right: 3.5%;
@@ -594,10 +705,12 @@
 		width: 48%;
 		height: auto;
 	}
+
 	#feeder-img {
 		width: 40%;
 		margin-right: 0.2rem;
 	}
+
 	.proj4-cta .braintumor-para {
 		position: relative;
 		margin-top: 80%;
@@ -606,6 +719,7 @@
 		width: 91%;
 		padding-bottom: 30px;
 	}
+
 	.proj4-cta .braintumor-links {
 		position: absolute;
 		right: -48.5%;
@@ -613,6 +727,7 @@
 		display: flex;
 		flex-direction: column;
 	}
+
 	/*  */
 	.proj5-cta {
 		width: 91.5%;
@@ -621,23 +736,27 @@
 		margin-top: 124.5rem;
 		box-shadow: 0px 0px 20px rgba(166, 166, 166, 0.32);
 	}
+
 	.proj5-cta .proj-title {
 		width: 100%;
 		position: absolute;
 		left: 5%;
 		top: 5%;
 	}
+
 	.proj5-cta .braintumor-subheading {
 		width: 100%;
 		position: absolute;
 		left: 5%;
 		top: 24%;
 	}
+
 	.proj5-cta .braintumor-para {
 		margin-top: 7rem;
 		position: relative;
 		left: 0%;
 	}
+
 	.proj5-cta img {
 		margin-top: 0;
 		left: 2.5%;
@@ -645,6 +764,7 @@
 		width: 44%;
 		height: auto;
 	}
+
 	.proj5-cta .braintumor-links {
 		position: absolute;
 		left: 3%;
@@ -652,7 +772,7 @@
 		display: flex;
 		flex-direction: column;
 	}
-	
+
 }
 
 /* ****************************** */
@@ -662,36 +782,46 @@
 	.projectsCta {
 		height: 660vh;
 	}
+
 	.proj-mainTitle {
 		font-size: 2.5rem;
 	}
+
 	.proj-sticky-intro {
 		width: 100%;
 		position: sticky !important;
 		top: -10%;
 	}
-	.pss1, .pss2 {
+
+	.pss1,
+	.pss2 {
 		font-size: 1rem;
 	}
+
 	.display-proj-hero-wrap {
 		margin-top: 2rem;
 	}
+
 	.link-moreProjects {
 		margin-top: -1rem;
 	}
+
 	.ls1 {
 		font-size: 0.81rem;
 		width: 100%;
 	}
+
 	.ls2 {
 		position: absolute;
 		bottom: -4%;
 		right: 6%;
 		font-size: 0.81rem;
 	}
+
 	.projects-content {
 		height: 200vh;
 	}
+
 	#first_proj_container img {
 		position: absolute;
 		top: 43%;
@@ -703,81 +833,103 @@
 		display: flex;
 		transform: scale(1.1);
 	}
+
 	.braintumor-subheading {
 		font-size: 0.85rem;
 		margin-top: 0.2rem;
 	}
+
 	.braintumor-para {
 		font-size: 0.73rem;
 		margin-left: 1rem;
 	}
+
 	#btc-p-contain {
 		width: 100%;
 		margin-left: 7.5rem;
 	}
+
 	#bt-sub {
 		margin-top: 2.2rem;
 	}
+
 	#para_bt {
 		margin-top: 8rem;
 		margin-left: 1.8rem;
 	}
+
 	.braintumor-links {
 		font-size: 0.73rem;
 		margin-left: 0.5rem;
 	}
+
 	#eye-detection-para {
 		font-size: 0.73rem;
 		margin-left: -4rem;
 	}
+
 	#scroller-sub {
 		margin-top: 0.75rem;
 	}
+
 	#fse-para {
 		font-size: 0.73rem;
 		margin-left: -0.1rem;
 		margin-top: 8rem;
 	}
+
 	#fse-img {
 		margin-top: -1rem;
 	}
+
 	#fse-links {
 		margin-top: -0.5rem;
 	}
+
 	.proj4-cta img {
 		width: 40%;
 	}
+
 	#feeder-para {
 		font-size: 0.73rem;
 		margin-left: -3.65rem;
 		margin-top: 9rem;
 	}
+
 	#feeder-sub {
 		margin-top: 0.5rem;
 		width: 80%;
 	}
+
 	#feeder-links {
 		margin-top: -0.7rem;
 	}
+
 	#feeder-img {
 		margin-right: 0.2rem;
 	}
+
 	.proj3-cta {
 		margin-top: 43.75rem;
 	}
+
 	.proj4-cta {
 		margin-top: 77rem;
 	}
+
 	.proj5-cta {
 		margin-top: 116.3rem;
 	}
+
 	#path-para-contain {
 		margin-right: 1rem;
 	}
+
 	.psm-button {
 		margin-top: -6rem;
 		margin-right: 0.6rem;
 	}
+
 	#first_proj_container {
 		padding-bottom: 2rem;
 		display: flex;
@@ -787,6 +939,7 @@
 		height: auto;
 	}
 }
+
 /* ****************************** */
 /* End media queries iphone se */
 /* **************************** */
@@ -798,22 +951,27 @@
 	.proj-mainTitle {
 		font-size: 2.5rem;
 	}
+
 	.proj-intro-summary {
 		margin-top: 1rem;
 		width: 120%;
 	}
+
 	.proj-sticky-intro {
 		width: 100%;
 		top: -5%;
 		position: sticky;
-		position:-webkit-sticky;
+		position: -webkit-sticky;
 	}
+
 	.link-moreProjects {
 		font-size: 1.2rem;
 	}
+
 	.projects-content {
 		height: 175vh;
 	}
+
 	#first_proj_container {
 		padding-bottom: 2rem;
 		display: flex;
@@ -822,10 +980,12 @@
 		align-items: center;
 		height: auto;
 	}
+
 	#bt-sub {
 		margin-top: 1.5rem;
 		width: 90%;
 	}
+
 	#first_proj_container img {
 		position: absolute;
 		top: 42%;
@@ -836,16 +996,19 @@
 		display: flex;
 		transform: scale(1.2);
 	}
+
 	#btc-p-contain {
 		width: 100%;
 		margin-left: 9rem;
 		margin-top: 3rem;
 		padding-bottom: 10rem;
 	}
+
 	#para_bt {
 		margin-top: 8rem;
 		margin-left: 2rem;
 	}
+
 	#btc-secondThought {
 		position: absolute;
 		width: 200%;
@@ -853,33 +1016,40 @@
 		margin-right: 10rem;
 		margin-top: 0rem;
 	}
+
 	#first_proj_links {
 		margin-top: 9rem;
 		flex-direction: row;
 	}
+
 	#scroller-sub {
 		width: 90%;
 		margin-top: 0rem;
 	}
+
 	#eye-detection-para {
 		margin-left: -4rem;
 		font-size: 0.9em;
 		margin-top: 12rem;
 	}
+
 	#scroller-secondThought {
 		position: absolute;
 		width: 200%;
 		left: 0%;
 		margin-top: 0rem;
 	}
+
 	#scroller-img {
 		top: 14rem;
 	}
+
 	#scroller-contain {
 		padding-bottom: 8rem;
 		margin-top: 2rem;
 		margin-right: 0.5rem;
 	}
+
 	#scroller-links {
 		flex-direction: row;
 		margin-top: 5rem;
@@ -887,56 +1057,69 @@
 		position: absolute;
 		left: 1%;
 	}
+
 	#fse-para {
 		font-size: 0.9em;
 		margin-left: -0.1rem;
 		margin-top: 10rem;
 	}
+
 	#fse-links {
 		left: 0.5rem;
 		position: absolute;
 		flex-direction: row;
 		margin-top: 5rem;
 	}
+
 	#fse-secondThought {
 		position: absolute;
 		width: 185%;
 		left: -85%;
 		margin-top: 1rem;
 	}
+
 	#fse-contain {
 		padding-bottom: 10rem;
 		margin-top: -0.5rem;
 	}
+
 	#fse-img {
 		margin-top: -2rem;
 	}
+
 	.projectsCta {
 		height: 540vh;
 	}
+
 	.proj4-cta {
 		margin-top: 81rem;
 	}
+
 	#feeder-para {
 		font-size: 0.9em;
 		margin-left: -4.3rem;
 		margin-top: 10rem;
 	}
+
 	#feeder-secondThought {
 		position: absolute;
 		width: 200%;
 		left: 0%;
 		margin-top: 0rem;
 	}
+
 	#feeder-sub {
 		margin-top: 1rem;
 	}
+
 	#feeder-contain {
 		padding-bottom: 10rem;
 	}
+
 	#feeder-img {
 		margin-top: -1.5rem;
 	}
+
 	#feeder-links {
 		flex-direction: row;
 		margin-top: 5rem;
@@ -944,31 +1127,39 @@
 		position: absolute;
 		left: 1%;
 	}
+
 	.proj5-cta {
 		margin-top: 121.3rem;
 		height: auto;
 	}
+
 	#proj5-title {
 		width: 90%;
 	}
+
 	#path-sub {
 		width: 90%;
 		margin-top: -0.75rem;
 	}
+
 	#path-para {
 		margin-top: 12rem;
 	}
+
 	#path-para-contain {
 		margin-top: 0rem;
 		padding-bottom: 2rem;
 	}
+
 	#path-links {
 		padding-bottom: 8rem;
 		left: 0;
 	}
+
 	#path-img {
 		margin-top: -2rem;
 	}
+
 	.psm-button {
 		margin-top: 22rem;
 		margin-right: 0.6rem;
@@ -982,38 +1173,47 @@
 	.proj-mainTitle {
 		font-size: 2.5rem;
 	}
+
 	.proj-intro-summary {
 		margin-top: 1rem;
 		width: 120%;
 	}
+
 	.ip-hero {
 		margin-top: 1rem;
 	}
+
 	.pss1,
 	.pss2 {
 		font-size: 1.2rem;
 	}
+
 	.proj-sticky-intro {
 		width: 100%;
 		top: -5%;
 		margin-top: -4rem;
 		position: sticky;
-		position:-webkit-sticky;
+		position: -webkit-sticky;
 	}
+
 	.link-moreProjects {
 		font-size: 1rem;
 	}
+
 	.projects-content {
 		height: 150vh;
 	}
+
 	.ls2 {
 		font-size: 1rem;
 		position: relative;
 		right: 1rem;
 	}
+
 	.braintumor-links {
 		width: 100%;
 	}
+
 	#first_proj_container {
 		padding-bottom: 2rem;
 		display: flex;
@@ -1022,10 +1222,12 @@
 		align-items: center;
 		height: auto;
 	}
+
 	#bt-sub {
 		margin-top: 1.5rem;
 		width: 90%;
 	}
+
 	#first_proj_container img {
 		position: absolute;
 		top: 42%;
@@ -1036,16 +1238,19 @@
 		display: flex;
 		transform: scale(1.2);
 	}
+
 	#btc-p-contain {
 		width: 100%;
 		margin-left: 9rem;
 		margin-top: 3rem;
 		padding-bottom: 10rem;
 	}
+
 	#para_bt {
 		margin-top: 8rem;
 		margin-left: 1.5rem;
 	}
+
 	#btc-secondThought {
 		position: absolute;
 		width: 200%;
@@ -1059,29 +1264,35 @@
 		flex-direction: row;
 		left: 0;
 	}
+
 	#scroller-sub {
 		width: 90%;
 		margin-top: 0rem;
 	}
+
 	#eye-detection-para {
 		margin-left: -4rem;
 		font-size: 0.9em;
 		margin-top: 12rem;
 	}
+
 	#scroller-secondThought {
 		position: absolute;
 		width: 200%;
 		left: 0%;
 		margin-top: 0rem;
 	}
+
 	#scroller-img {
 		top: 14rem;
 	}
+
 	#scroller-contain {
 		padding-bottom: 8rem;
 		margin-top: 2rem;
 		margin-right: 0.5rem;
 	}
+
 	#scroller-links {
 		flex-direction: row;
 		margin-top: 5rem;
@@ -1089,60 +1300,73 @@
 		position: absolute;
 		left: 1%;
 	}
+
 	#fse-para {
 		font-size: 0.9em;
 		margin-left: -0.1rem;
 		margin-top: 10rem;
 	}
+
 	#fse-links {
 		left: 0.5rem;
 		position: absolute;
 		flex-direction: row;
 		margin-top: 5rem;
 	}
+
 	#fse-sub {
 		width: 90%;
 	}
+
 	#fse-secondThought {
 		position: absolute;
 		width: 185%;
 		left: -85%;
 		margin-top: 0rem;
 	}
+
 	#fse-contain {
 		padding-bottom: 8rem;
 		margin-top: 1rem;
 	}
+
 	#fse-img {
 		margin-top: 0rem;
 	}
-/* 	.projectsCta {
+
+	/* 	.projectsCta {
 		height: 540vh;
 	} */
 	.proj4-cta {
 		margin-top: 81rem;
 	}
+
 	#feeder-para {
 		font-size: 0.9em;
 		margin-left: -4rem;
 		margin-top: 12rem;
 	}
+
 	#feeder-sub {
 		margin-top: 1rem;
 	}
+
 	#feeder-secondThought {
 		position: absolute;
 		width: 200%;
 		left: 0%;
 		margin-top: 0rem;
 	}
+
 	#feeder-contain {
 		padding-bottom: 10rem;
 		margin-top: -0.5rem;
 	}
+
 	#feeder-img {
 		margin-top: -2rem;
 	}
+
 	#feeder-links {
 		flex-direction: row;
 		margin-top: 5rem;
@@ -1150,47 +1374,56 @@
 		position: absolute;
 		left: 1%;
 	}
+
 	.proj5-cta {
 		margin-top: 121.5rem;
 		height: auto;
 		padding-bottom: 4rem;
 	}
+
 	#proj5-title {
 		width: 95%;
 	}
+
 	#path-sub {
 		width: 90%;
 		margin-top: 0rem;
 	}
+
 	#path-para {
 		margin-top: 6rem;
 		font-size: 0.8rem;
 	}
+
 	#path-para-contain {
 		margin-top: 6rem;
 		padding-bottom: 4rem;
 	}
+
 	#path-links {
 		padding-bottom: 8rem;
 		left: 2%;
 		margin-top: 6.5rem;
 		flex-direction: row;
 	}
+
 	#path-img {
 		margin-top: 2.5rem;
 	}
+
 	#path-secondThought {
 		position: absolute;
 		width: 180%;
 		left: -85%;
 		margin-top: 0rem;
 	}
+
 	.psm-button {
 		margin-top: 22rem;
 		margin-right: 0.6rem;
 	}
+
 	.projectsCta {
 		height: 545vh;
 	}
 }
-
