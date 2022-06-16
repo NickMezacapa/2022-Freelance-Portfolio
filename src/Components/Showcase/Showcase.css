@@ -217,13 +217,13 @@
 .Showcase-Small_clients {
 	height: 100%;
 	width: 30%;
-	border: 1px solid hsla(0, 0%, 59.2%, .3);
 	border-radius: 24px;
 	background-color: var(--bg-dark);
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
+	border: 1px solid hsla(0, 0%, 51.4%, 0.16);
 }
 
 .clients-title {
