@@ -6,10 +6,7 @@ import AnimationsMovie from '../../Images/earth-recording-threeJS.mov';
 import LoadTimes from '../../Images/Showcase/load-times.png';
 import AppImgs from '../../Images/Showcase/app-imgs3.png';
 import Responsive from '../../Images/Showcase/responsive.png';
-import Disney from './ClientLogos/dis-logo.png';
-import ESPN from './ClientLogos/espn-logo.png';
-import Quora from './ClientLogos/q-logo.png';
-import Shopify from './ClientLogos/shopify-logo.png';
+
 
 
 const Showcase = () => {
@@ -17,11 +14,14 @@ const Showcase = () => {
 
     const handleScroll3 = () => {
         const trigger = document.querySelector('#dd-trigger');
+        const scaleTrigger = document.querySelector('.scale-trigger');
         const months = document.querySelector('.dd-months');
         const weeks = document.querySelector('#dd-weeks');
+        const scaleBars = document.querySelectorAll('.scale-bar');
         const viewport_height = window.innerHeight;
         if (trigger && months) {
             const triggerRect = trigger.getBoundingClientRect();
+            const scaleTriggerRect = scaleTrigger.getBoundingClientRect();
             // once the top of trigger enters the viewport, add the active class
             if (triggerRect.top <= viewport_height) {
                 months.classList.add('dd-months-strike');
@@ -32,7 +32,26 @@ const Showcase = () => {
                 months.classList.remove('dd-months-gray');
                 weeks.classList.remove('dd-weeks-active');
             }
+            // once the top of the trigger leaves the top of the viewport, remove the active class '.scale-bar_active' from everything in the '.scale-bar' class.
+            if (scaleTriggerRect.top <= 0) {
+                scaleBars.forEach(bar => {
+                    bar.classList.remove('scale-bar_active');
+                    scaleBars[0].classList.add('scaleBar1_anim');
+                    scaleBars[1].classList.add('scaleBar2_anim');
+                    scaleBars[2].classList.add('scaleBar3_anim');
+                    scaleBars[3].classList.add('scaleBar4_anim');
+                });
+            } else if (scaleTriggerRect.top >= viewport_height) {
+                scaleBars.forEach(bar => {
+                    bar.classList.add('scale-bar_active');
+                    scaleBars[0].classList.remove('scaleBar1_anim');
+                    scaleBars[1].classList.remove('scaleBar2_anim');
+                    scaleBars[2].classList.remove('scaleBar3_anim');
+                    scaleBars[3].classList.remove('scaleBar4_anim');
+                });
+            }
         }
+
     }
     window.addEventListener('scroll', handleScroll3);
 
@@ -109,7 +128,7 @@ const Showcase = () => {
                 <section className="showcase2">
                     <div className="showcase-small">
                         <div className="dev-duration">
-                            <h2>Development Duration</h2>
+                            <h2 className="scale-trigger">Development Duration</h2>
                             <div className="dd-time-cta">
                                 <h3 className="dd-months">Months</h3>
                                 <h3 id="dd-weeks">Weeks</h3>
@@ -163,21 +182,14 @@ const Showcase = () => {
                 <div className="Showcase-Bottom_cta">
                     <div className="Showcase-Small_clients">
                         <h2 className="clients-title">
-                            Clients that speak for themselves
+                            Scalable CRM and CMS Platforms.<br />
+                            Tailored to your needs.
                         </h2>
                         <div className="Showcase-Client_logos">
-                            <div className="disney-logo cl-cta">
-                                <img src={Disney} alt="logo" />
-                            </div>
-                            <div className="espn-logo cl-cta">
-                                <img src={ESPN} alt="logo" />
-                            </div>
-                            <div className="quora-logo cl-cta">
-                                <img src={Quora} alt="logo" />
-                            </div>
-                            <div className="shopify-logo cl-cta">
-                                <img src={Shopify} alt="logo" />
-                            </div>
+                            <div className="scale-bar bar1 scale-bar_active"></div>
+                            <div className="scale-bar bar2 scale-bar_active"></div>
+                            <div className="scale-bar bar3 scale-bar_active"></div>
+                            <div className="scale-bar bar4 scale-bar_active"></div>
                         </div>
                     </div>
                     <div className="Showcase-Long_testimonials"></div>
