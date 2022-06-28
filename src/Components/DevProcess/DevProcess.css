@@ -1,23 +1,27 @@
 * {
     box-sizing: border-box;
 }
+
 .process-scroll-wrap {
-    height: 310vh;
+    height: 365vh;
     background-color: black;
     color: white;
-	z-index: 300000000;
+    z-index: 300000000;
 }
+
 .sticky-wrap {
     position: sticky;
     top: 0;
     z-index: 300000000;
 }
+
 .process-section {
     overflow: hidden;
     height: 100vh;
     padding-top: 140px;
     padding-bottom: 140px;
 }
+
 .workflow-container {
     position: relative;
     display: flex;
@@ -30,21 +34,23 @@
     width: 90%;
     max-width: 980px;
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
 }
+
 .header-workflow {
     position: absolute;
     width: 100%;
     max-width: 980px;
     margin-left: -20rem;
     margin-bottom: 142px;
-    padding-top: 0.5rem;
+    padding-top: 1.5rem;
     text-align: left;
     will-change: transform, opacity;
     transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
     transform-style: preserve-3d;
     opacity: 1;
 }
+
 .header-workflow h2 {
     max-width: 890px;
     margin-top: -4rem;
@@ -54,6 +60,7 @@
     letter-spacing: -0.045em;
     font-weight: 600;
 }
+
 .header-workflow h4 {
     max-width: 890px;
     margin-top: 1rem;
@@ -64,6 +71,7 @@
     font-weight: 600;
     opacity: 0.75;
 }
+
 .cards-wrap {
     position: relative;
     display: flex;
@@ -78,6 +86,7 @@
     -webkit-box-align: center;
     align-items: center;
 }
+
 .process-card1 {
     will-change: transform, opacity;
     transform: translate3d(0px, -15%, 0px) scale3d(0.800014, 0.800014, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
@@ -108,6 +117,7 @@
     -ms-transform-origin: 50% 0%;
     transform-origin: 50% 0%;
 }
+
 .process-card2 {
     will-change: transform, opacity;
     transform: translate3d(0px, -10%, 0px) scale3d(0.850015, 0.850015, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
@@ -138,6 +148,7 @@
     -ms-transform-origin: 50% 0%;
     transform-origin: 50% 0%;
 }
+
 .process-card3 {
     will-change: transform, opacity;
     transform: translate3d(0px, -5%, 0px) scale3d(0.900015, 0.900015, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
@@ -168,6 +179,7 @@
     -ms-transform-origin: 50% 0%;
     transform-origin: 50% 0%;
 }
+
 .process-card4 {
     will-change: transform, opacity;
     transform: translate3d(0px, 0%, 0px) scale3d(0.950015, 0.950015, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
@@ -198,6 +210,7 @@
     -ms-transform-origin: 50% 0%;
     transform-origin: 50% 0%;
 }
+
 .process-card5 {
     will-change: opacity, transform;
     opacity: 1;
@@ -228,22 +241,25 @@
     -ms-transform-origin: 50% 0%;
     transform-origin: 50% 0%;
 }
+
 .card-step {
-margin-bottom: 8px;
-color: var(--blue-dark);
-font-weight: 500;
-letter-spacing: -0.015em;
-font-size: 18px;
-margin-top: 1rem;
+    margin-bottom: 8px;
+    color: var(--blue-dark);
+    font-weight: 500;
+    letter-spacing: -0.015em;
+    font-size: 18px;
+    margin-top: 1rem;
 }
+
 .process-card-heading {
-margin-top: 1rem;
-margin-bottom: 12px;
-font-size: 32px;
-line-height: 1.2;
-font-weight: 600;
-letter-spacing: -0.015em;
+    margin-top: 1rem;
+    margin-bottom: 12px;
+    font-size: 32px;
+    line-height: 1.2;
+    font-weight: 600;
+    letter-spacing: -0.015em;
 }
+
 .process-description {
     opacity: 0.75;
     font-size: 22px;
@@ -254,6 +270,7 @@ letter-spacing: -0.015em;
     margin-bottom: 0;
 
 }
+
 .canvas {
     position: absolute;
     width: 80%;
@@ -307,6 +324,7 @@ letter-spacing: -0.015em;
         margin: 0 auto;
         margin-left: -2rem;
     }
+
     .process-card1 .card-step,
     .process-card2 .card-step,
     .process-card3 .card-step,
@@ -317,6 +335,7 @@ letter-spacing: -0.015em;
         left: -12%;
     }
 }
+
 /* ********************************** */
 /*  End media queries medium screen  */
 /* ******************************** */
@@ -325,33 +344,39 @@ letter-spacing: -0.015em;
 /* Begin media queries iphone se */
 /* **************************** */
 @media screen and (max-width: 375px) {
-.process-scroll-wrap {
-    height: 424vh;
+    .process-scroll-wrap {
+        height: 424vh;
+    }
+
+    #dev_process_h2 {
+        font-size: 1.5rem;
+    }
+
+    .process-scroll-wrap #hassle-free {
+        font-size: 1rem;
+        margin-top: -2rem;
+    }
+
+    .header-workflow {
+        margin-left: -14.5rem;
+        margin-top: 0.5rem;
+    }
+
+    .cards-wrap {
+        margin-top: 6rem;
+        transform: scale(0.8);
+    }
+
+    .process-card1,
+    .process-card2,
+    .process-card3,
+    .process-card4,
+    .process-card5 {
+        width: 120%;
+        margin-left: -2rem;
+    }
 }
-#dev_process_h2 {
-    font-size: 1.5rem;
-}
-.process-scroll-wrap #hassle-free {
-    font-size: 1rem;
-    margin-top: -2rem;
-}
-.header-workflow {
-    margin-left: -14.5rem;
-    margin-top: 0.5rem;
-}
-.cards-wrap {
-    margin-top: 6rem;
-    transform: scale(0.8);
-}
-.process-card1,
-.process-card2,
-.process-card3,
-.process-card4,
-.process-card5 {
-    width: 120%;
-    margin-left: -2rem;
-}
-}
+
 /* ****************************** */
 /* End media queries iphone se */
 /* **************************** */
@@ -360,32 +385,37 @@ letter-spacing: -0.015em;
 /* Begin media queries iphone xr */
 /* **************************** */
 @media screen and (min-width: 412px) and (max-width: 414px) {
-.process-scroll-wrap {
-    height: 250vh;
-}
-#dev_process_h2 {
-    font-size: 2rem;
-}
-.process-scroll-wrap #hassle-free {
-    font-size: 1.5rem;
-    margin-top: -2rem;
-}
-.header-workflow {
-    margin-left: -14.5rem;
-    margin-top: 0.5rem;
-}
-.cards-wrap {
-    margin-top: 0rem;
-    transform: scale(0.8);
-}
-.process-card1,
-.process-card2,
-.process-card3,
-.process-card4,
-.process-card5 {
-    width: 120%;
-    margin-left: -2rem;
-}
+    .process-scroll-wrap {
+        height: 250vh;
+    }
+
+    #dev_process_h2 {
+        font-size: 2rem;
+    }
+
+    .process-scroll-wrap #hassle-free {
+        font-size: 1.5rem;
+        margin-top: -2rem;
+    }
+
+    .header-workflow {
+        margin-left: -14.5rem;
+        margin-top: 0.5rem;
+    }
+
+    .cards-wrap {
+        margin-top: 0rem;
+        transform: scale(0.8);
+    }
+
+    .process-card1,
+    .process-card2,
+    .process-card3,
+    .process-card4,
+    .process-card5 {
+        width: 120%;
+        margin-left: -2rem;
+    }
 }
 
 /* ****************************** */
@@ -395,21 +425,26 @@ letter-spacing: -0.015em;
     .process-scroll-wrap {
         height: 300vh;
     }
+
     #dev_process_h2 {
         font-size: 2rem;
     }
+
     .process-scroll-wrap #hassle-free {
         font-size: 1.5rem;
         margin-top: -2rem;
     }
+
     .header-workflow {
         margin-left: -14.5rem;
         margin-top: 0.5rem;
     }
+
     .cards-wrap {
         margin-top: 0rem;
         transform: scale(0.8);
     }
+
     .process-card1,
     .process-card2,
     .process-card3,

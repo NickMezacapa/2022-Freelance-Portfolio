@@ -292,6 +292,7 @@ const Projects = () => {
                             See more projects
                             <MdKeyboardArrowRight className="arrow-proj" />
                         </div>
+                        <div className="DA"></div>
                     </div>
                 </div>
             </section>
