@@ -4,6 +4,7 @@
 	position: relative;
 	z-index: 300000000;
 }
+
 .title {
 	font-size: 28px;
 	color: rgba(255, 255, 255, 0.61);
@@ -12,6 +13,7 @@
 	padding-top: 7rem;
 	padding-left: 10rem;
 }
+
 /* .description {
 	max-width: 890px;
 	font-size: 62px;
@@ -34,6 +36,7 @@
 	justify-content: space-evenly;
 	margin-left: 2rem;
 }
+
 .bio {
 	height: 100%;
 	width: 55%;
@@ -42,6 +45,7 @@
 	background-color: var(--bg-dark);
 	transition: 0.4s ease;
 }
+
 .bio-span {
 	background-image: linear-gradient(120deg, #ec787e, #ad7fee);
 	background-clip: text;
@@ -50,6 +54,7 @@
 	background-clip: text;
 	-moz-background-clip: text;
 }
+
 .cardsCta {
 	height: 100%;
 	width: 45%;
@@ -57,6 +62,7 @@
 	justify-content: space-between;
 	flex-direction: column;
 }
+
 .cards1,
 .cards2 {
 	display: flex;
@@ -65,6 +71,7 @@
 	height: 48%;
 	width: 100%;
 }
+
 .card1,
 .card2,
 .card3,
@@ -80,12 +87,14 @@
 	align-items: center;
 	transition: 0.4s ease;
 }
+
 .card1:hover,
 .card2:hover,
 .card3:hover,
 .card4:hover {
 	transform: scale(0.9);
 }
+
 .bio:hover {
 	transform: scale(0.97);
 }
@@ -95,16 +104,14 @@
 	width: 60%;
 	margin-left: 3rem;
 	margin-top: 4rem;
-	background: linear-gradient(
-		91.36deg,
-		#eca658 0%,
-		#f391a6 13.02%,
-		#e188c3 25.52%,
-		#a58de3 37.5%,
-		#56abec 49.48%,
-		#737eb7 63.02%,
-		#c8638c 72.92%
-	);
+	background: linear-gradient(91.36deg,
+			#eca658 0%,
+			#f391a6 13.02%,
+			#e188c3 25.52%,
+			#a58de3 37.5%,
+			#56abec 49.48%,
+			#737eb7 63.02%,
+			#c8638c 72.92%);
 	background-size: 200% 200%;
 	-webkit-text-fill-color: transparent;
 	-webkit-background-clip: text;
@@ -114,14 +121,16 @@
 	-moz-animation: intro-gradient 10s infinite ease both;
 	animation: intro-gradient 10s infinite ease both;
 }
+
 .bioContent {
 	width: 80%;
 	margin-left: 3rem;
 	margin-right: auto;
 	margin-top: 3rem;
-	font-size: 18px;
+	font-size: 22px;
 	opacity: 0.85;
 }
+
 .card1-number {
 	font-size: 64px;
 	line-height: 1.05;
@@ -136,34 +145,35 @@
 	padding-right: 10px;
 	font-weight: 600;
 }
+
 .card1-desc,
 .card2-desc {
 	font-size: 40px;
 	position: absolute;
 	top: 55px;
-	background: linear-gradient(
-		91.36deg,
-		#52f0c8 0%,
-		#49d6b3 13.02%,
-		#63c9d6 25.52%,
-		#a58de3 97.5%,
-		#56abec 49.48%,
-		#737eb7 63.02%,
-		rgb(73, 185, 189) 72.92%,
-		#57acdd 84.38%,
-		#515fdf 97.92%
-	);
+	background: linear-gradient(91.36deg,
+			#52f0c8 0%,
+			#49d6b3 13.02%,
+			#63c9d6 25.52%,
+			#a58de3 97.5%,
+			#56abec 49.48%,
+			#737eb7 63.02%,
+			rgb(73, 185, 189) 72.92%,
+			#57acdd 84.38%,
+			#515fdf 97.92%);
 	background-size: 200% 200%;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	background-clip: text;
 }
+
 .card1-subheading,
 .card2-subheading,
 .card3-subheading,
 .card4-subheading {
 	padding-top: 10px;
 }
+
 .card2-number {
 	font-size: 64px;
 	line-height: 1.05;
@@ -178,6 +188,7 @@
 	padding-right: 10px;
 	font-weight: 600;
 }
+
 .card3-number {
 	background-image: linear-gradient(225deg, #e374ff, #30a6ea);
 	font-size: 64px;
@@ -193,6 +204,7 @@
 	font-weight: 600;
 	margin-left: 15px;
 }
+
 .card3-desc {
 	font-size: 40px;
 	position: relative;
@@ -203,6 +215,7 @@
 	-webkit-text-fill-color: transparent;
 	background-clip: text;
 }
+
 .card4-number {
 	background-image: linear-gradient(135deg, #ffb077, #b82698);
 	font-size: 64px;
@@ -218,6 +231,7 @@
 	font-weight: 600;
 	margin-left: 15px;
 }
+
 .card4-desc {
 	font-size: 30px;
 	position: relative;
@@ -228,6 +242,7 @@
 	-webkit-text-fill-color: transparent;
 	background-clip: text;
 }
+
 .overflow-cta {
 	width: 100%;
 	max-width: 1450px;
@@ -237,6 +252,7 @@
 	padding-left: 28px;
 	padding-right: 28px;
 }
+
 @-webkit-keyframes intro-gradient {
 	0% {
 		background-position: 0% 4%;
@@ -295,11 +311,13 @@
 		flex-direction: column;
 		align-items: center;
 	}
+
 	.overflow-cta {
 		padding-left: 0;
 		padding-right: 0;
 		margin-left: -0.5rem;
 	}
+
 	.container {
 		display: flex;
 		flex-direction: column;
@@ -308,6 +326,7 @@
 		margin-top: -8rem;
 		max-width: 90%;
 	}
+
 	.bio {
 		width: 100%;
 		align-items: center;
@@ -315,6 +334,7 @@
 		margin-right: auto;
 		height: 40rem;
 	}
+
 	.cardsCta {
 		width: 100%;
 		height: 25rem;
@@ -323,15 +343,18 @@
 		margin-right: auto;
 		margin-top: -8rem;
 	}
+
 	.description {
 		display: none;
 	}
+
 	.bioTitle {
 		width: 90%;
 		text-align: center;
 		margin-left: auto;
 		margin-right: auto;
 	}
+
 	.bioContent {
 		width: 82%;
 		text-justify: distribute;
@@ -339,11 +362,14 @@
 		margin-left: auto;
 		margin-right: auto;
 	}
-	.card1-desc, .card2-desc {
+
+	.card1-desc,
+	.card2-desc {
 		position: relative;
 		top: -1.75rem;
 	}
 }
+
 /* ************************************************* */
 /*  End media queries for medium screen */
 /* ************************************************* */
@@ -365,9 +391,11 @@
 		flex-direction: column;
 		align-items: center;
 	}
+
 	.overflow-cta {
 		width: 97%;
 	}
+
 	.title {
 		align-items: center;
 		padding-top: 0rem;
@@ -378,6 +406,7 @@
 		position: absolute;
 		width: 105%;
 	}
+
 	.description {
 		display: block;
 		opacity: 1;
@@ -391,9 +420,11 @@
 		letter-spacing: -0.045em;
 		padding-bottom: 1rem;
 	}
+
 	.container {
 		margin-top: 3rem;
 	}
+
 	.bio {
 		display: flex;
 		flex-direction: column;
@@ -401,6 +432,7 @@
 		margin-top: -10rem;
 		height: fit-content;
 	}
+
 	.bioTitle {
 		width: 95%;
 		text-align: center;
@@ -408,6 +440,7 @@
 		margin-right: auto;
 		font-size: 26px;
 	}
+
 	.bioContent {
 		padding-bottom: 4rem;
 		text-align: left;
@@ -418,44 +451,53 @@
 		margin-left: 1.8rem;
 		margin-right: auto;
 	}
+
 	.secondThought {
 		margin-top: 1rem;
 	}
+
 	/*  */
 	.cardsCta {
 		margin-top: -12rem;
 	}
+
 	.card1 .card1-info {
 		margin-left: 0.75rem;
 	}
+
 	.card1 .card1-info .card1-number,
-	.card2 .card2-info .card2-number, 
-	.card3 .card3-info .card3-number, 
+	.card2 .card2-info .card2-number,
+	.card3 .card3-info .card3-number,
 	.card4 .card4-info .card4-number {
 		font-size: 50px;
 	}
+
 	.card1 .card1-info .card1-desc,
 	.card2 .card2-info .card2-desc,
 	.card3 .card3-info .card3-desc,
 	.card4 .card4-info .card4-desc {
 		font-size: 35px;
 	}
+
 	.card2 .card2-info {
 		margin-top: 1rem;
 		margin-left: 1rem;
 	}
+
 	.card2 .card2-subheading {
 		text-align: center;
 	}
+
 	.card4 .card4-info {
 		margin-left: -0.5rem;
 	}
+
 	.card4 .card4-info .card4-desc {
 		font-size: 28px;
 		padding-top: 2rem;
 		position: relative;
 	}
-	
+
 
 }
 
@@ -473,6 +515,7 @@
 		position: absolute;
 		width: 105%;
 	}
+
 	.description {
 		display: block;
 		opacity: 1;
@@ -486,9 +529,11 @@
 		letter-spacing: -0.045em;
 		padding-bottom: 1rem;
 	}
+
 	.container {
 		margin-top: -1rem;
 	}
+
 	.bioTitle {
 		width: 95%;
 		text-align: center;
@@ -496,12 +541,14 @@
 		margin-right: auto;
 		font-size: 30px;
 	}
+
 	.bioContent {
 		height: 100%;
 		width: 90%;
 		font-size: 20px;
 		margin-left: 2rem;
 	}
+
 	.secondThought {
 		margin-top: 4rem;
 		position: absolute;
@@ -509,6 +556,7 @@
 		width: 80%;
 	}
 }
+
 /* ************************************************* */
 /*  Begin media queries for iphone 12 pro */
 /* ************************************************* */
@@ -523,6 +571,7 @@
 		position: absolute;
 		width: 105%;
 	}
+
 	.description {
 		display: block;
 		opacity: 1;
@@ -536,9 +585,11 @@
 		letter-spacing: -0.045em;
 		padding-bottom: 1rem;
 	}
+
 	.container {
 		margin-top: -1.5rem;
 	}
+
 	.bioTitle {
 		width: 95%;
 		text-align: center;
@@ -546,50 +597,60 @@
 		margin-right: auto;
 		font-size: 30px;
 	}
+
 	.bioContent {
 		height: 100%;
 		width: 90%;
 		font-size: 20px;
 		margin-left: 2rem;
 	}
+
 	.secondThought {
 		margin-top: 4rem;
 		position: absolute;
 		left: 9.5%;
 		width: 80%;
 	}
+
 	.cardsCta {
 		margin-top: -7rem;
 	}
+
 	.glimpseCta {
 		height: 158vh;
 	}
+
 	.card1-subheading,
 	.card2-subheading,
 	.card3-subheading,
 	.card4-subheading {
 		font-size: 14px;
 	}
+
 	.card1 .card1-info .card1-number,
 	.card2 .card2-info .card2-number,
 	.card3 .card3-info .card3-number,
 	.card4 .card4-info .card4-number {
 		font-size: 50px;
 	}
+
 	.card1 .card1-info .card1-desc,
 	.card2 .card2-info .card2-desc,
 	.card3 .card3-info .card3-desc {
 		font-size: 35px;
 	}
+
 	.card4 .card4-info .card4-desc {
 		font-size: 30px;
 	}
+
 	.card1,
 	.card2,
 	.card3,
 	.card4 {
 		height: 90%;
 	}
+
 	.card3,
 	.card4 {
 		margin-top: -3rem;
