@@ -6,6 +6,8 @@ import AnimationsMovie from '../../Images/earth-recording-threeJS.mov';
 import LoadTimes from '../../Images/Showcase/load-times.png';
 import AppImgs from '../../Images/Showcase/app-imgs3.png';
 import Responsive from '../../Images/Showcase/responsive.png';
+import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa';
+import TestimonialPhoto1 from './Testimonials/test-photo1.png';
 
 
 
@@ -192,7 +194,28 @@ const Showcase = () => {
                             <div className="scale-bar bar4 scale-bar_active"></div>
                         </div>
                     </div>
-                    <div className="Showcase-Long_testimonials"></div>
+                    <div className="Showcase-Long_testimonials">
+                        <FaQuoteLeft className="Testimonals_quote-left" />
+                        <FaQuoteRight className="Testimonals_quote-right" />
+                        <div className="Testimonals_content">
+                            <div className="Testimonials-Content_profileWrapper">
+                                <div className="Testimonials-Content_profile">
+                                    <div className="Testimonials-Content_profileShadow">
+                                        <div className="Testimonials-Content_profileImg">
+                                            <img src={TestimonialPhoto1} alt=" first review" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="Testimonials-Content_textWrapper">
+                                <div className="Testimonials-Content_text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ducimus tempore necessitatibus aspernatur repellat aperiam obcaecati omnis facilis iure odit inventore quae, atque, assumenda voluptatum.
+                                </div>
+                                <div className="Testimonials-Content_text_username">Dave - RoaminDonut</div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>

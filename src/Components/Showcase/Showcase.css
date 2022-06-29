@@ -288,6 +288,107 @@
 	animation: scaleBar4 0.7s ease-in-out forwards;
 }
 
+.Testimonals_quote-left {
+	font-size: 2.5rem;
+	margin-left: 1rem;
+	margin-top: 1rem;
+	opacity: 0.4;
+}
+
+.Testimonals_quote-right {
+	font-size: 2.5rem;
+	right: 1rem;
+	top: 1rem;
+	opacity: 0.4;
+	position: absolute;
+}
+
+.Testimonals_content {
+	height: 70%;
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.Testimonials-Content_profileWrapper {
+	height: 100%;
+	min-width: 25%;
+	width: 25%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.Testimonials-Content_profile {
+	height: 73%;
+	max-height: 73%;
+	min-height: 100px;
+	max-width: 75%;
+	min-width: 100px;
+	width: 75%;
+	border-radius: 50%;
+	border: 1px solid hsla(0, 0%, 100%, 0.3);
+	background-color: hsla(0, 0%, 84%, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 10px 20px 35px rgba(0, 0, 128, 0.7);
+}
+
+.Testimonials-Content_profileShadow {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-image: radial-gradient(circle farthest-side at 100% 100%,
+			#9873ff,
+			rgba(152, 115, 255, 0)),
+		radial-gradient(circle farthest-side at 100% 0,
+			#0ba5f7,
+			rgba(85, 196, 255, 0)),
+		radial-gradient(circle farthest-side at 0 0, #ff763c, rgba(255, 176, 60, 0)),
+		radial-gradient(circle farthest-side at 0 100%,
+			#ff5aaa,
+			rgba(255, 90, 170, 0));
+
+}
+
+.Testimonials-Content_profileImg {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 95%;
+}
+
+.Testimonials-Content_profileImg img {
+	min-width: 95%;
+	width: 95%;
+	border-radius: 50%;
+}
+
+.Testimonials-Content_textWrapper {
+	height: 100%;
+	width: 65%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.Testimonials-Content_text {
+	margin-top: -1rem;
+}
+
+.Testimonials-Content_text_username {
+	height: 10%;
+	padding-top: 2rem;
+	align-items: left;
+	left: 0;
+}
+
 @keyframes scaleBar1 {
 	0% {
 		height: 0%;
