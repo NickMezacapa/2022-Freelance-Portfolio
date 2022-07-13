@@ -162,7 +162,7 @@ const Intro = () => {
                       <MdKeyboardArrowRight className="letsLaunchArrowRt" />
                     </div>
                   </p>
-                  <div className="sticky-cdv-box"></div>
+                  {/* <div className="sticky-cdv-box"></div> */}
                 </div>
               </header>
             </Plx>
