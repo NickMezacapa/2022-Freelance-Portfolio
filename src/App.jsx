@@ -48,10 +48,8 @@ function App() {
 		// Once the user has scrolled 100px, add the active class to heroHeading
 		if (window.scrollY > 200) {
 			document.querySelector('.hero-heading').classList.add('heroHeading_active');
-			document.querySelector('.sticky-cdv-box').classList.add('sticky-cdv-box__active');
 		} else {
 			document.querySelector('.hero-heading').classList.remove('heroHeading_active');
-			document.querySelector('.sticky-cdv-box').classList.remove('sticky-cdv-box__active');
 		}
 	});
 	window.addEventListener('click', (e) => {

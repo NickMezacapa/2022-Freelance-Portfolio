@@ -24,9 +24,9 @@ const HeroDesc = () => {
                 },
               ]}
               style={{
-                fontSize: "45px",
+                fontSize: "2.5rem",
                 width: "75%",
-                maxWidth: "1010px",
+                minWidth: "70%",
                 lineHeight: 1.05,
                 textAlign: "center",
                 background: "linear-gradient(91.36deg, #52f0c8 0%, #49d6b3 13.02%, #63c9d6 25.52%, #a58de3 37.5%, #56abec 49.48%, #737eb7 63.02%, rgb(73, 185, 189) 72.92%, #57acdd 84.38%, #515fdf 97.92%)",
@@ -53,8 +53,8 @@ const HeroDesc = () => {
             <Plx
                 parallaxData={[
                     {
-                      start: "1675px",
-                      end: "1750px",
+                      start: "self",
+                      duration: "380px",
                       easing: "ease-in",
                       properties: [
                         {

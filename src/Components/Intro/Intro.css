@@ -545,7 +545,7 @@ body {
 /* Media queires 13 inch macbook pro */
 /* ************************ */
 
-@media (min-width: 770px) and (max-width: 1283px) {
+@media (min-width: 760px) and (max-width: 1400px) {
 	.hero-heading {
 		font-size: 62px;
 		font-weight: 700;
@@ -571,4 +571,41 @@ body {
 		max-width: none;
 		transform: scale(0.8);
 	}
+}
+
+@media screen and (min-width: 970px) and (max-width: 1170px) {
+	.hero-ui {
+		margin-top: 4rem;
+	}
+}
+@media screen and (min-width: 850px) and (max-width: 970px) {
+	.hero-ui {
+		margin-top: 10rem;
+	}
+}
+@media screen and (min-width: 750px) and (max-width: 850px) {
+	.hero-ui {
+		margin-top: 10rem;
+	}
+}
+@media screen and (min-width: 600px) and (max-width: 750px) {
+	.hero-ui {
+		margin-top: 8rem;
+	}
+
+}
+@media screen and (min-width: 400px) and (max-width: 760px) {
+	.heroWrapper {
+		transform: scale(0.8);
+		margin-top: 0;
+	}
+	.hero-eyebrow {
+		margin-top: 0;
+	}
+}
+@media screen and (min-width: 500px) and (max-width: 650px) {
+	.heroWrapper {
+		margin-top: -2rem;
+	}
+
 }
