@@ -298,9 +298,9 @@
 /* ************************************************* */
 /*  Begin media queries for medium screen */
 /* ************************************************* */
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 685px) and (max-width: 800px) {
 	.glimpseCta {
-		height: 150vh;
+		height: 140vh;
 		width: 100%;
 		max-width: 100%;
 		margin-left: auto;
@@ -320,32 +320,42 @@
 
 	.container {
 		display: flex;
-		flex-direction: column;
 		align-items: center;
-		height: 100%;
-		margin-top: -8rem;
-		max-width: 90%;
+		height: 70%;
+		margin-top: -4rem;
+		max-width: 100%;
+		color: red;
+	}
+
+	.card1 .card1-info .card1-number,
+	.card2 .card2-info .card2-number,
+	.card3 .card3-info .card3-number,
+	.card4 .card4-info .card4-number {
+		font-size: 50px;
 	}
 
 	.bio {
-		width: 100%;
+		width: 48%;
 		align-items: center;
 		margin-left: auto;
 		margin-right: auto;
-		height: 40rem;
+		height: 25rem;
+		margin-top: 0;
 	}
 
 	.cardsCta {
-		width: 100%;
+		width: 48%;
 		height: 25rem;
 		align-items: center;
 		margin-left: auto;
 		margin-right: auto;
-		margin-top: -8rem;
+		margin-top: 0;
 	}
 
 	.description {
-		display: none;
+		font-size: 44px;
+		max-width: 85%;
+		margin-left: -4rem;
 	}
 
 	.bioTitle {
@@ -353,6 +363,7 @@
 		text-align: center;
 		margin-left: auto;
 		margin-right: auto;
+		font-size: 22px;
 	}
 
 	.bioContent {
@@ -361,12 +372,20 @@
 		text-align-last: left;
 		margin-left: auto;
 		margin-right: auto;
+		font-size: 1rem;
+		margin-top: 1rem;
 	}
 
 	.card1-desc,
 	.card2-desc {
 		position: relative;
 		top: -1.75rem;
+	}
+	.card2 .card2-subheading {
+		text-align: center;
+	}
+	.title {
+		margin-left: -4rem;
 	}
 }
 
@@ -655,4 +674,53 @@
 	.card4 {
 		margin-top: -3rem;
 	}
+}
+
+@media screen and (max-width: 1600px) {
+	.glimpseCta {
+		height: 150vh;
+	}
+}
+@media screen and (min-width: 801px) and (max-width: 1110px) {
+	.title, .description {
+		margin-left: -4rem;
+	}
+	.description {
+		font-size: 52px;
+		min-width: 70%;
+		max-width: 85%;
+		width: 85%;
+	}
+	.bioTitle {
+		width: 95%;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 30px;
+	}
+	.bioContent {
+		font-size: 18px;
+	}
+	.card2-subheading {
+		text-align: center;
+	}
+	.card1 .card1-info .card1-number,
+	.card2 .card2-info .card2-number,
+	.card3 .card3-info .card3-number,
+	.card4 .card4-info .card4-number {
+		font-size: 42px;
+	}
+	.card1 .card1-info .card1-desc,
+	.card2 .card2-info .card2-desc,
+	.card3 .card3-info .card3-desc {
+		font-size: 35px;
+	}
+	.card4 .card4-info .card4-desc {
+		font-size: 28px;
+		padding-top: 12rem;
+	}
+	.container {
+		margin-top: 2rem;
+	}
+
 }

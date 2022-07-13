@@ -54,7 +54,7 @@ const Glimpse = () => {
                             AI Fanatic.
                         </h2>
                         <p className='bioContent'>
-                            I'm a Full-Stack Engineer assisting startups in creating growth-driven products and brands.<span className='secondThought'> I believe the best software is created user-first, providing an attractive <span className='bio-span'>experience</span> that keeps the user returning. I'm committed to building solutions to everyday problems and I put emphasis on the value that stems from a great application.</span>
+                            I'm a Full-Stack Engineer assisting startups in creating growth-driven products and brands.<span className='secondThought'> I believe the best software is created user-first, providing an attractive <span className='bio-span'>experience</span> that keeps users returning. I'm committed to building solutions to everyday problems and I put emphasis on the value that stems from a great application.</span>
                         </p>
                     </div>
 
@@ -88,8 +88,8 @@ const Glimpse = () => {
                             </div>
                             <div className="card4">
                                 <div className="card4-info">
-                                    <span className="card4-number">100</span>
-                                    <span className="card4-desc">%</span>
+                                    <span className="card4-number">100%</span>
+{/*                                     <span className="card4-desc">%</span> */}
                                 </div>
                                 <div className="card4-subheading">
                                     Passion
