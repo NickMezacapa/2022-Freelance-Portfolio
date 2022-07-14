@@ -15,7 +15,7 @@
 }
 
 .slidingTitle_active {
-	animation: 1.35s slidingTitle 0.25s ease forwards;
+	animation: 1.15s slidingTitle 0.25s ease forwards;
 }
 
 @keyframes slidingTitle {
@@ -381,6 +381,7 @@
 		text-align: center;
 		margin-left: auto;
 		margin-right: auto;
+		margin-top: 2rem;
 		font-size: 22px;
 	}
 
@@ -739,6 +740,59 @@
 	}
 	.container {
 		margin-top: 2rem;
+	}
+
+}
+
+@media screen and (min-width: 415px) and (max-width: 684px) {
+	.container {
+		color: blue;
+	}
+	.title, .description {
+		margin-left: -6rem;
+	}
+	.description {
+		font-size: 44px;
+	}
+	.bio {
+		width: 48%;
+
+	}
+	.bioTitle {
+		font-size: 1.2rem;
+		width: 95%;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.bioContent {
+		font-size: 16px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.cardsCta {
+		width: 48%;
+	}
+	.card2 .card2-subheading,
+	.card1 .card1-subheading {
+		text-align: center;
+	}
+	.card1 .card1-info .card1-number,
+	.card2 .card2-info .card2-number,
+	.card3 .card3-info .card3-number {
+		font-size: 3rem;
+	}
+	.card4 .card4-info .card4-number {
+		font-size: 2.8rem;
+	}
+	.card1 .card1-info .card1-desc,
+	.card3 .card3-info .card3-desc {
+		font-size: 1.8rem;
+		margin-top: 1rem;
+	}
+	.card2 .card2-info .card2-desc {
+		font-size: 1.8rem;
+		margin-top: 0.5rem;
 	}
 
 }
