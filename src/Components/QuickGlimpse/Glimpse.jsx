@@ -1,51 +1,33 @@
 import React from 'react';
-import Plx from 'react-plx/lib/Plx';
+/* import Plx from 'react-plx/lib/Plx'; */
 import './Glimpse.css';
 
 const Glimpse = () => {
+
+    // when slideTrigger enters the viewport from the bottom of the page, add the active animation
+    const handleScroll_slideTrigger = () => {
+        const slideTrigger = document.querySelector('.title.slideTrigger');
+        const slidingTitle = document.querySelector('.description');
+        // when slideTrigger enters the viewport from the bottom of the page, add the active animation 'slidingTitle_active' to slidingTitle
+        if (slideTrigger.getBoundingClientRect().bottom < window.innerHeight) {
+            slidingTitle.classList.add('slidingTitle_active');
+        }
+        // if slideTrigger is below the viewport, remove the active animation 'slidingTitle_active' from slidingTitle
+        else {
+            slidingTitle.classList.remove('slidingTitle_active');
+        }
+    }
+    window.addEventListener('scroll', handleScroll_slideTrigger);
+
     return (
         <div className='glimpseCta'>
             <div className="overflow-cta">
-                <header className="title">Quick Glimpse</header>
-                <Plx
-                    parallaxData={[
-                        {
-                            /* start: "1900px",
-                            end: "2200px", */
-                            start: "self",
-                            duration: "350px",
-                            easing: "ease",
-                            properties: [
-                                {
-                                    startValue: -140,
-                                    endValue: 0,
-                                    property: "translateX",
-                                },
-                                {
-                                    startValue: 0,
-                                    endValue: 1,
-                                    property: "opacity"
-                                }
-                            ],
-                        },
-                    ]}
-                    style={{
-                        maxWidth: "890px",
-                        fontSize: "62px",
-                        color: "var(--textColor-dark)",
-                        lineHeight: 1.1,
-                        letterSpacing: "-0.045em",
-                        fontWeight: 700,
-                        paddingTop: "2rem",
-                        paddingLeft: "10rem",
-                        transform: "translateX(-140px)",
-                        willChange: "transform, opacity"
-                    }}
-                >
-                    <p className="description">
+                <header className="title slideTrigger">Quick Glimpse</header>
+               
+                    <p className="description slidingTitle">
                         Your perfect medium for the evolving web.
                     </p>
-                </Plx>
+                
                 <section className="container">
                     <div className="bio">
                         <h2 className="bioTitle">
