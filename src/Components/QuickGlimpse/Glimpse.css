@@ -746,7 +746,7 @@
 
 @media screen and (min-width: 415px) and (max-width: 684px) {
 	.container {
-		color: blue;
+		color: green;
 	}
 	.title, .description {
 		margin-left: -6rem;
