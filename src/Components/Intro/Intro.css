@@ -573,7 +573,7 @@ body {
 	}
 }
 
-@media screen and (min-width: 970px) and (max-width: 1170px) {
+@media screen and (min-width: 970px) and (max-width: 1023px) {
 	.hero-ui {
 		margin-top: 4rem;
 	}
@@ -606,6 +606,37 @@ body {
 @media screen and (min-width: 500px) and (max-width: 650px) {
 	.heroWrapper {
 		margin-top: -2rem;
+	}
+
+}
+
+
+/* media query test for ip[ad pro 12 portrait */
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)  {
+	.heroWrapper {
+		transform: scale(1.2);
+		margin-top: -2rem;
+	}
+	.hero-ui {
+		margin-top: 10rem;
+		transform: scale(1.2);
+	}
+	.hero__header {
+		margin-top: 6rem;
+	}
+	.hero-eyebrow {
+		font-size: 3rem;
+	}
+	.hero-heading {
+		font-size: 6rem;
+	}
+	#launch-trigger {
+		font-size: 2rem;
+		padding-top: 25px;
+	}
+	.hero-link-text {
+		font-size: 2rem;
 	}
 
 }
