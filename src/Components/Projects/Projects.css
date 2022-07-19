@@ -1427,3 +1427,25 @@
 		height: 545vh;
 	}
 }
+
+/* media query for ipad pro portrait */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait) {
+	.projectsCta {
+		height: 240vh;
+	}
+	.projects-content {
+		height: 110vh;
+	}
+	.proj-mainTitle {
+		font-size: 5.5rem;
+	}
+	.ip-hero {
+		margin-top: 15rem;
+		right: -3rem;
+	}
+	.proj-intro-summary {
+		margin-top: 4rem;
+		font-size: 1.75rem;
+		width: 60%;
+	}
+}

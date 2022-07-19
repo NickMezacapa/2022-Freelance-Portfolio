@@ -69,3 +69,13 @@
         font-size: 11px;
     }
 }
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait) {
+    .card-flip12 {
+        width: 100%;
+    }
+    #smaller-font-card-flip {
+        font-size: 1.18rem;
+        line-height: 1.5;
+        font-weight: 500;
+    }
+}

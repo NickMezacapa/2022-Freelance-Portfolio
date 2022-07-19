@@ -55,3 +55,21 @@
     justify-content: space-evenly;
     align-items: center;
 }
+
+/* media queries ipad pro 12 portrait */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait) {
+    .ProjectShowcase-Container {
+        margin-top: -70rem;
+    }
+    .ProjectShowcase-Row_firstRow {
+        height: 10%;
+    }
+    .ProjectShowcase-Row_secondRow {
+        /* border: 2px solid red; */
+        height: 10%;
+        margin-top: -10.5rem;
+    }
+    .PS-Container2 {
+        margin-top: -28rem;
+    }
+}

@@ -202,6 +202,14 @@
 		width: 100%;
 	}
 }
-
+/* media query ipad pro 12.9 */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait) {
+	.heroDescriptions {
+		height: 40vh;
+	}
+	.descriptionsCta {
+		margin-top: -6rem;
+	}
+}
 
 

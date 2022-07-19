@@ -3,10 +3,6 @@ import './Projects.css';
 import { MdKeyboardArrowRight } from 'react-icons/md';
 import display from './assets/large_2x.mp4';
 import ProjectShowcase from '../Projects/ProjectShowcase';
-/* import braintumor from './assets/download.png';
-import pathfinder from './assets/pa3.png';
-import feeder from './assets/feeder.png';
-import scroller from './assets/scroller.png'; */
 
 const Projects = () => {
     // Add an event listener for when the top of '.projectsCta' is intersecting with the top of '.navbar'. When they are both equal to each other, add the active class '.nav-light-active' to '.navbar'. When the navbar is not intersecting with the projectsCta, remove the active class '.nav-light-active' from '.navbar'.
@@ -25,9 +21,6 @@ const Projects = () => {
                 settings.classList.add("settings-active");
                 setting_icon.style.color = "#1d1d1f";
                 animated_link.classList.add('proj-link-animation-active');
-                /*                 ip_hero.classList.add('ip-hero-active'); */
-                // PLay the video once
-                /* ip_hero.play(); */
 
 
 
@@ -36,7 +29,6 @@ const Projects = () => {
                 settings.classList.remove("settings-active");
                 animated_link.classList.remove('proj-link-animation-active');
                 setting_icon.style.color = "white";
-                /*                 ip_hero.classList.remove('ip-hero-active'); */
                 ip_hero.currentTime = 0;
             }
         }
@@ -46,15 +38,6 @@ const Projects = () => {
     const handleClick = () => {
         window.open("https://github.com/NickMezacapa", "_blank");
     }
-    /*     const handleClick_btRepo = () => {
-            window.open("https://github.com/NickMezacapa/AI-Brain-Tumor-Detection-DCGAN-implementation", "_blank");
-        } 
-        const handleClick_ffRepo = () => {
-            window.open("https://github.com/NickMezacapa/Automated-Fish-Feeder-with-JS-and-Arduino-Uno-Rev3", "_blank");
-        } 
-        const handleClick_pvRepo = () => {
-            window.open("https://github.com/NickMezacapa/ReactJS-Pathfinding-Visualizer--Dijkstras-Algorithm", "_blank");
-        }  */
 
 
 
@@ -90,7 +73,7 @@ const Projects = () => {
                                 </span>
                             </div>
                             <div className="display-proj-hero-wrap">
-                                <video muted="true" autoplay="false" className="ip-hero">
+                                <video muted="true" autoPlay={true} className="ip-hero">
                                     <source src={display} type="video/mp4" />
                                 </video>
                             </div>
@@ -108,183 +91,6 @@ const Projects = () => {
                     <ProjectShowcase />
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-                    {/* may not need */}
-
-                    {/*                 <section className="proj-1-ai">
-                    <div className="proj-section-wrapper">
-                        <div className="braintumor-cta" id='first_proj_container'>
-                                <img src={braintumor} alt="Brain Tumor Detection AI Project" className="braintumor-img" />
-                                <div className="braintumor-content">
-                                    <div className="btc-heading">
-                                    <h1 className="proj-title">AI Brain Tumor Detection</h1>
-                                    <h3 className="braintumor-subheading" id='bt-sub'>Image Classification Machine Learning Model</h3>
-                                    </div>
-                                    <div className="btc-p" id='btc-p-contain'>
-                                    <p className="braintumor-para" id='para_bt'>
-                                        <span id='btc-firstThought'>
-                                    A Deep Convolutional Generative Adversarial Network (DCGAN) to classify 3D MRI brain scans as tumorous or non-tumorous. This is a python machine learning project using TensorFlow to instantiate and train the model. Deployment via TensorFlow.js conversion and React frontend integration.<br /><br /></span>
-                                    <span id='btc-secondThought'>
-                                    Using deep learning classifiers in medicine, we have the potential to integrate cell and region-specific annotations with clinical, genetic, and molecular data - providing unbiased data for clinical studies that will enhance research in pathology.</span>
-                                    </p>
-                                    </div>
-                                    <div className="braintumor-links" id='first_proj_links'>
-                                        <div id="bt-linkspan-1">
-                                            <p onClick={handleClick_btRepo}>
-                                            Go to code repository
-                                            <MdKeyboardArrowRight className="arrow-proj" />
-                                            </p>
-                                        </div>
-                                        <div id="bt-linkspan-2">
-                                            <p id='bt1'>
-                                            Launch live demo
-                                            <MdKeyboardArrowRight className="arrow-proj" id='bt2' />
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                        </div>
-                        <div className="eye-detection-cta">
-                                <div className="braintumor-content scroller-content">
-                                    <div className="btc-heading">
-                                    <h1 className="proj-title2">Assisted Webpage Scrolling with Iris Detection AI</h1>
-                                    <h3 className="braintumor-subheading" id='scroller-sub'>Chrome Extension for enhanced accessability</h3>
-                                    </div>
-                                    <div className="btc-p" id='scroller-contain'>
-                                    <p className="braintumor-para" id='eye-detection-para'>
-                                    Realtime eye-detection and landmark-extraction via webcam and client-side inference. It is an end-to-end Machine Learning project that spans data collection, data augmentation, model design, customized training, and model optimization. Deployment via TensorFlow.js conversion and React frontend integration.
-                                    <br /><br />
-                                    <span id='scroller-secondThought'>
-                                    The result is an intelligent interface for controlling the scrolling action of a document by the user's blinking action. Inspired by the difficulties faced by individuals suffering from body paralysis and movement impairments.</span> 
-                                    </p>
-                                    </div>
-                                    <div className="braintumor-links scroller-links" id='scroller-links'>
-                                        <div id="bt-linkspan-1">
-                                            <p>
-                                            Go to code repository
-                                            <MdKeyboardArrowRight className="arrow-proj" />
-                                            </p>
-                                        </div>
-                                        <div id="bt-linkspan-2">
-                                            <p>
-                                            Launch live demo
-                                            <MdKeyboardArrowRight className="arrow-proj" />
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <img src={scroller} alt="Brain Tumor Detection AI Project" className="scroller-img" id='scroller-img' />
-                        </div>
-                        <div className="proj3-cta">
-                        <img src={braintumor} alt="Brain Tumor Detection AI Project" className="braintumor-img" id='fse-img' />
-                                <div className="braintumor-content">
-                                    <div className="btc-heading">
-                                    <h1 className="proj-title3">Full-Stack Private Search Engine</h1>
-                                    <h3 className="braintumor-subheading" id='fse-sub'>A non-intrusive way to browse the internet</h3>
-                                    </div>
-                                    <div className="btc-p" id='fse-contain'>
-                                    <p className="braintumor-para" id='fse-para'>
-                                    Seamlessly take control of your online privacy without any tradeoffs. This is an internet search engine that emphasizes protecting searchers' privacy and avoiding the filter bubble of personalized search results. User search data is never stored nor tracked.<br /><br />
-                                    <span id='fse-secondThought'>
-                                    The project is a full-stack web application that utilizes a RESTful API (Google Custom Search API) to store and retrieve data. The frontend is built with React and Tailwind CSS, and the backend is built with Node.js and Firebase integration.</span>
-                                    </p>
-                                    </div>
-                                    <div className="braintumor-links" id='fse-links'>
-                                        <div id="bt-linkspan-1">
-                                            <p>
-                                            Go to code repository
-                                            <MdKeyboardArrowRight className="arrow-proj" />
-                                            </p>
-                                        </div>
-                                        <div id="bt-linkspan-2">
-                                            <p>
-                                            Launch live demo
-                                            <MdKeyboardArrowRight className="arrow-proj" />
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                        </div>
-                        <div className="proj4-cta">
-                        <div className="braintumor-content feeder-content">
-                                    <div className="btc-heading">
-                                    <h1 className="proj-title4">Automated Fish Feeder App</h1>
-                                    <h3 className="braintumor-subheading" id='feeder-sub'>Feed your fish over the internet using an Arduino Uno Rev3</h3>
-                                    </div>
-                                    <div className="btc-p" id='feeder-contain'>
-                                    <p className="braintumor-para" id='feeder-para'>
-                                    This is a system I built to feed my fish, hands-free, wherever I am at the click of a button. I built a web interface using Vanilla JS that sends messages to an Arduino Uno Rev3 which is used to control a motor that drops fish food. Using the interface, I can also keep track of remote feedings by date and time.<br /><br /><span id='feeder-secondThought'>
-                                    An Arduino Uno and a motor are used to spin an auger mechanism that is attached to the top of the aquarium. The web interface sends a request to the Pubnub API, which then sends programmed instructions to the Arduino. The motor then turns for a predetermined length of time to dispense the fish food.</span>
-                                    </p>
-                                    </div>
-                                    <div className="braintumor-links" id='feeder-links'>
-                                        <div id="bt-linkspan-1">
-                                            <p onClick={handleClick_ffRepo}>
-                                            Go to code repository
-                                            <MdKeyboardArrowRight className="arrow-proj" />
-                                            </p>
-                                        </div>
-                                        <div id="bt-linkspan-2">
-                                            <p>
-                                            Launch live demo
-                                            <MdKeyboardArrowRight className="arrow-proj" />
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <img src={feeder} alt="Brain Tumor Detection AI Project" className="feeder-img" id='feeder-img' />
-                        </div>
-                        <div className="proj5-cta">
-                                <img src={pathfinder} alt="Brain Tumor Detection AI Project" className="pathfinder-img" id='path-img' />
-                                <div className="braintumor-content">
-                                    <div className="btc-heading">
-                                    <h1 className="proj-title" id='proj5-title'>Pathfinding Algorithm Visualizer</h1>
-                                    <h3 className="braintumor-subheading" id='path-sub'>A visualization model for Dijkstra's Algorithm</h3>
-                                    </div>
-                                    <div className="btc-p" id='path-para-contain'>
-                                    <p className="braintumor-para" id='path-para'>
-                                    This is a React project demonstrating Dijkstra's Algorithm in real time. The algorithm is used for finding the shortest path between nodes in a graph, which may represent, for example, road networks in real-life applications. Many delivery, scheduling, and ride-sharing apps use this algorithm to find optimal routing paths.<br /><br /><span id='path-secondThought'>
-                                    In this web application you can draw "walls" on a graph and visualize a car finding the shortest path to its house.</span>
-                                    </p>
-                                    </div>
-                                    <div className="braintumor-links" id='path-links'>
-                                        <div id="bt-linkspan-1">
-                                            <p onClick={handleClick_pvRepo}>
-                                            Go to code repository
-                                            <MdKeyboardArrowRight className="arrow-proj" />
-                                            </p>
-                                        </div>
-                                        <div id="bt-linkspan-2">
-                                            <p>
-                                            Launch live demo
-                                            <MdKeyboardArrowRight className="arrow-proj" />
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                        </div>
-                        <div className="proj-seeMore">
-                            <button className="psm-button" onClick={handleClick}>
-                                See more projects
-                                <MdKeyboardArrowRight className="arrow-proj" />
-                            </button>
-                            <div className="DA"></div>
-                        </div>
-                        
-                    </div>
-                </section> */}
                 </div>
                 <div className="Projects-SeeMore_cta">
                     <div className="Projects-SeeMore_linkWrap">

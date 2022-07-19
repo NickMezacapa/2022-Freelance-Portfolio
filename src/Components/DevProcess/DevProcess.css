@@ -454,3 +454,17 @@
         margin-left: -2rem;
     }
 }
+
+/* media queries for ipad pro 12.9 portrait */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait) {
+    .header-workflow {
+        margin-left: 2rem;
+        margin-top: 2rem;
+    }
+    .process-scroll-wrap {
+        height: 300vh;
+    }
+    .cards-wrap {
+        transform: scale(1.2);
+    }
+}

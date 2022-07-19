@@ -264,3 +264,10 @@ footer {
         transform: scale(0.8);
     }
 }
+
+/* media queries ipad 12 portrait */ 
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait) {
+    .last-avatar {
+        top: 65%;
+    }
+}

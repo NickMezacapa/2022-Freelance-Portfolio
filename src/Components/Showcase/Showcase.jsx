@@ -6,8 +6,6 @@ import AnimationsMovie from '../../Images/earth-recording-threeJS.mov';
 import LoadTimes from '../../Images/Showcase/load-times.png';
 import AppImgs from '../../Images/Showcase/app-imgs3.png';
 import Responsive from '../../Images/Showcase/responsive.png';
-import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa';
-import TestimonialPhoto1 from './Testimonials/test-photo1.png';
 
 
 
@@ -16,15 +14,11 @@ const Showcase = () => {
 
     const handleScroll3 = () => {
         const trigger = document.querySelector('#dd-trigger');
-        const scaleTrigger = document.querySelector('.scale-trigger');
         const months = document.querySelector('.dd-months');
         const weeks = document.querySelector('#dd-weeks');
-        const scaleBars = document.querySelectorAll('.scale-bar');
         const viewport_height = window.innerHeight;
         if (trigger && months) {
             const triggerRect = trigger.getBoundingClientRect();
-            const scaleTriggerRect = scaleTrigger.getBoundingClientRect();
-            // once the top of trigger enters the viewport, add the active class
             if (triggerRect.top <= viewport_height) {
                 months.classList.add('dd-months-strike');
                 months.classList.add('dd-months-gray');
@@ -33,24 +27,6 @@ const Showcase = () => {
                 months.classList.remove('dd-months-strike');
                 months.classList.remove('dd-months-gray');
                 weeks.classList.remove('dd-weeks-active');
-            }
-            // once the top of the trigger leaves the top of the viewport, remove the active class '.scale-bar_active' from everything in the '.scale-bar' class.
-            if (scaleTriggerRect.top <= 0) {
-                scaleBars.forEach(bar => {
-                    bar.classList.remove('scale-bar_active');
-                    scaleBars[0].classList.add('scaleBar1_anim');
-                    scaleBars[1].classList.add('scaleBar2_anim');
-                    scaleBars[2].classList.add('scaleBar3_anim');
-                    scaleBars[3].classList.add('scaleBar4_anim');
-                });
-            } else if (scaleTriggerRect.top >= viewport_height) {
-                scaleBars.forEach(bar => {
-                    bar.classList.add('scale-bar_active');
-                    scaleBars[0].classList.remove('scaleBar1_anim');
-                    scaleBars[1].classList.remove('scaleBar2_anim');
-                    scaleBars[2].classList.remove('scaleBar3_anim');
-                    scaleBars[3].classList.remove('scaleBar4_anim');
-                });
             }
         }
 
@@ -79,8 +55,6 @@ const Showcase = () => {
                             <Plx
                                 parallaxData={[
                                     {
-                                        /*                   start: "3035px",
-                                                          end: "3195px", */
                                         start: "self",
                                         duration: "300px",
                                         easing: "ease-in",
@@ -176,47 +150,10 @@ const Showcase = () => {
                         </div>
                     </div>
                     <div className="responsive">
-                        <h2>Responsive<br />
-                            Design.</h2>
+                        <h2>Responsive Design.</h2>
                         <img src={Responsive} alt="an example of screen friendly development" />
                     </div>
                 </section>
-                <div className="Showcase-Bottom_cta">
-                    <div className="Showcase-Small_clients">
-                        <h2 className="clients-title">
-                            Scalable CRM and CMS Platforms.<br />
-                            Tailored to your needs.
-                        </h2>
-                        <div className="Showcase-Client_logos">
-                            <div className="scale-bar bar1 scale-bar_active"></div>
-                            <div className="scale-bar bar2 scale-bar_active"></div>
-                            <div className="scale-bar bar3 scale-bar_active"></div>
-                            <div className="scale-bar bar4 scale-bar_active"></div>
-                        </div>
-                    </div>
-                    <div className="Showcase-Long_testimonials">
-                        <FaQuoteLeft className="Testimonals_quote-left" />
-                        <FaQuoteRight className="Testimonals_quote-right" />
-                        <div className="Testimonals_content">
-                            <div className="Testimonials-Content_profileWrapper">
-                                <div className="Testimonials-Content_profile">
-                                    <div className="Testimonials-Content_profileShadow">
-                                        <div className="Testimonials-Content_profileImg">
-                                            <img src={TestimonialPhoto1} alt=" first review" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="Testimonials-Content_textWrapper">
-                                <div className="Testimonials-Content_text">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ducimus tempore necessitatibus aspernatur repellat aperiam obcaecati omnis facilis iure odit inventore quae, atque, assumenda voluptatum.
-                                </div>
-                                <div className="Testimonials-Content_text_username">Dave - RoaminDonut</div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
             </div>
         </div>
     )

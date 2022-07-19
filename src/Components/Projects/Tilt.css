@@ -67,3 +67,13 @@
 .Tilt-BoxContent { transform: rotateX(20deg) rotateY(0deg); }
 .Tilt-HoverSpan:nth-child(9):hover ~
 .Tilt-BoxContent { transform: rotateX(20deg) rotateY(-20deg); }
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait) {
+    .Tilt-TiltInner_hoverSpan_wrapper {
+        transform: scale(0.85);
+    }
+/*     .Tilt-TiltContainer {
+        border: 2px solid orange;
+        height: 100%;
+    } */
+}
