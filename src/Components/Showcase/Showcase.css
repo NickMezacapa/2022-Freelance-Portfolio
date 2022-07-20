@@ -69,8 +69,8 @@
 .animations-heroContent {
 	position: absolute;
 	top: 2.9%;
-	height: 286px;
-	width: 486px;
+	height: 292px;
+	width: 496px;
 	z-index: 2;
 	object-fit: cover;
 	overflow: hidden;

@@ -4,6 +4,8 @@ import './Cal.css';
 const Cal = () => {
 
     window.onload = function() {
+        // if the screen width is above 200 run the code below
+        if (window.innerWidth > 200) {
         var today = new Date();
         var dd = today.getDate();
         var mm = today.getMonth() + 1;
@@ -142,7 +144,9 @@ const Cal = () => {
             sixthProjSubTitle.innerHTML =
                 "A social media app where users can challenge friends to accomplish daily tasks. Once the user completes all tasks, the calendar date turns green to indicate the user is on a streak.";
         }
-    };
+    }
+    };    
+    
     return (
         <div className='cw_container'>
             <div className="cw_content-wrapper">
