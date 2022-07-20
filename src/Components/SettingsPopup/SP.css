@@ -379,7 +379,7 @@ input[type='range'] {
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait) {
     .SP_popup-inner {
         width: 60%;
-        height: 52%;
+        height: 53%;
     }
     input[type='range']::-webkit-slider-thumb {
         height: 150%;
