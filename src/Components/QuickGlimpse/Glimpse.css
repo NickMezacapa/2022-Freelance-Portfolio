@@ -803,3 +803,8 @@
 		height: 65vh;
 	}
 }
+@media only screen and (min-width: 1366px) and (max-height: 1025px) and (min-resolution: 2dppx)  and (orientation: landscape) {
+	.glimpseCta {
+		height: 95vh;
+	}
+}
