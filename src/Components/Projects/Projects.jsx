@@ -12,7 +12,7 @@ const Projects = () => {
         const settings = document.querySelector('.settings');
         const setting_icon = document.querySelector('.setting-icon-el');
         const animated_link = document.querySelector('.link-moreProjects');
-        const ip_hero = document.querySelector('.ip-hero');
+        /* const ip_hero = document.querySelector('.ip-hero'); */
         if (el && nav) {
             const rect = el.getBoundingClientRect();
             const navRect = nav.getBoundingClientRect();
@@ -29,7 +29,7 @@ const Projects = () => {
                 settings.classList.remove("settings-active");
                 animated_link.classList.remove('proj-link-animation-active');
                 setting_icon.style.color = "white";
-                ip_hero.currentTime = 0;
+                /* ip_hero.currentTime = 0; */
             }
         }
     }

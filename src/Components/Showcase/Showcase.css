@@ -1,6 +1,6 @@
 .showcaseCta {
 	position: relative;
-	height: 250vh;
+	height: 225vh;
 	background-color: black;
 	color: var(--textColor-dark);
 	z-index: 300000000;

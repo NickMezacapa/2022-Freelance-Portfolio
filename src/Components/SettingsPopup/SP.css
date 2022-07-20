@@ -375,3 +375,11 @@ input[type='range'] {
         transform: translateY(0px) translateX(0px) scale(1);
     }
 }
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait) {
+    .SP_popup-inner {
+        border: 1px solid red;
+        width: 60%;
+        height: 50%;
+    }
+}

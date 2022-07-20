@@ -24,8 +24,8 @@ export default function DevProcess() {
                 <Plx
                   parallaxData={[
                     {
-                      start: "10100px",
-                      end: "10400px",
+                      start: "9850px",
+                      end: "10150px",
                       easing: "ease-in",
                       properties: [
                         {
@@ -67,8 +67,8 @@ export default function DevProcess() {
                 <Plx
                   parallaxData={[
                     {
-                      start: "10450px",
-                      end: "10750px",
+                      start: "10200px",
+                      end: "10500px",
                       easing: "ease-in",
                       properties: [
                         {
@@ -110,8 +110,8 @@ export default function DevProcess() {
                 <Plx
                   parallaxData={[
                     {
-                      start: "10800px",
-                      end: "11100px",
+                      start: "10550px",
+                      end: "10850px",
                       easing: "ease-in",
                       properties: [
                         {
@@ -153,8 +153,8 @@ export default function DevProcess() {
                 <Plx
                   parallaxData={[
                     {
-                      start: "11150px",
-                      end: "11450px",
+                      start: "10900px",
+                      end: "11200px",
                       easing: "ease-in",
                       properties: [
                         {
@@ -197,8 +197,8 @@ export default function DevProcess() {
                 <Plx
                   parallaxData={[
                     {
-                      start: "11500px",
-                      end: "11800px",
+                      start: "11250px",
+                      end: "11550px",
                       easing: "ease-in",
                       properties: [
                         {
