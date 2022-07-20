@@ -6,6 +6,11 @@
     justify-content: center;
     align-items: center;
     font-family: 'Inter', sans-serif;
+    -webkit-user-select: text;
+    user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    -o-user-select: text;
 }
 .contact-overflow {
     width: 90%;
