@@ -798,7 +798,7 @@
 }
 
 /* media queries ipad pro 12.9 */ 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (min-resolution: 2dppx)  and (orientation: portrait) {
 	.glimpseCta {
 		height: 65vh;
 	}
