@@ -6,7 +6,7 @@ import ProjectShowcase from '../Projects/ProjectShowcase';
 
 const Projects = () => {
     // Add an event listener for when the top of '.projectsCta' is intersecting with the top of '.navbar'. When they are both equal to each other, add the active class '.nav-light-active' to '.navbar'. When the navbar is not intersecting with the projectsCta, remove the active class '.nav-light-active' from '.navbar'.
-    const handleScroll = () => {
+    const handleScroll = function(){
         const el = document.querySelector(".projectsCta");
         const nav = document.querySelector(".navbar");
         const settings = document.querySelector('.settings');
@@ -35,7 +35,7 @@ const Projects = () => {
     }
     window.addEventListener("scroll", handleScroll);
 
-    const handleClick = () => {
+    const handleClick = function() {
         window.open("https://github.com/NickMezacapa", "_blank");
     }
 
