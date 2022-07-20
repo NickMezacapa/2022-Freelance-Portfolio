@@ -462,7 +462,8 @@
         margin-top: 2rem;
     }
     .process-scroll-wrap {
-        height: 300vh;
+        height: 310vh;
+        border: 1px solid red;
     }
     .cards-wrap {
         transform: scale(1.2);
