@@ -192,11 +192,19 @@ function App() {
 					volumeMeasures[9].style.backgroundColor = 'rgb(255, 255, 255)';
 				}
 			})
+			slider2.addEventListener('touchend', () => {
+				setTimeout(() => {
+					volumeWrapper.classList.remove('volume__active');
+				}, 1500);
+			}
+			);
 			slider2.addEventListener('mouseup', () => {
 				setTimeout(() => {
 					volumeWrapper.classList.remove('volume__active');
 				}, 1500);
 			});
+			// when on mobile devices, after slider2 has no change in input, remove the active class after 3 seconds
+
 			/* here */
 			const volumeIcon = document.querySelector('#volume-icon');
 			sliderValue2 <= 55 ? volumeIcon.style.color = 'rgb(118, 118, 118)' : volumeIcon.style.color = '#1d1d1fba';
