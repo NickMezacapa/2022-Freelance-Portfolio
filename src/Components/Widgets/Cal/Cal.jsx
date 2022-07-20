@@ -3,7 +3,10 @@ import './Cal.css';
 
 const Cal = () => {
 
-    window.onload = function() {
+    // 1 second after the page loads, run the code below
+    
+        setTimeout(() => {
+    /* window.onload = function() { */
         // if the screen width is above 200 run the code below
         if (window.innerWidth > 200) {
         var today = new Date();
@@ -145,7 +148,9 @@ const Cal = () => {
                 "A social media app where users can challenge friends to accomplish daily tasks. Once the user completes all tasks, the calendar date turns green to indicate the user is on a streak.";
         }
     }
-    };    
+    }, 100);
+
+
     
     return (
         <div className='cw_container'>
