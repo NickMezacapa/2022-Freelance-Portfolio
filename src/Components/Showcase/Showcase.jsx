@@ -82,7 +82,7 @@ const Showcase = () => {
                             >
                                 <div className="overlay"></div>
                             </Plx>
-                            <video muted autoPlay loop src={AnimationsMovie}></video>
+                            <video muted autoPlay={true} loop src={AnimationsMovie}></video>
                         </div>
 
 
