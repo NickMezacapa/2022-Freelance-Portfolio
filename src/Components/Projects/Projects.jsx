@@ -73,7 +73,7 @@ const Projects = () => {
                                 </span>
                             </div>
                             <div className="display-proj-hero-wrap">
-                                <video muted="true" autoPlay={true} className="ip-hero">
+                                <video muted={true} autoPlay={true} playsInline className="ip-hero">
                                     <source src={display} type="video/mp4" />
                                 </video>
                             </div>
