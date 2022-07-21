@@ -77,3 +77,9 @@
         height: 100%;
     } */
 }
+
+@media only screen and (min-width: 834px) and (max-width: 1023px) and (orientation: portrait) and (min-resolution: 2dppx) {
+    .Tilt-TiltInner_hoverSpan_wrapper {
+        transform: scale(0.7);
+    }
+}

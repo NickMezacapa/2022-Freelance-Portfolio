@@ -271,3 +271,36 @@ footer {
         top: 65%;
     }
 }
+
+/* media query ipad pro 11 */
+@media only screen and (min-width: 834px) and (max-width: 1023px) and (orientation: portrait) and (min-resolution: 2dppx) {
+    .last-body {
+        height: 65vh;
+    }
+    .last-avatar {
+        top: 85%;
+        /* max-width: 340px; */
+        transform: translateX(-55px) rotate(45deg);
+    }
+    footer {
+        transform: scale(0.8);
+        bottom: -18rem;
+    }
+}
+@media only screen and (min-width: 1194px) and (max-width: 1194px) and (min-height: 834px) and (max-height: 834px) and (orientation: landscape) and (min-resolution: 2dppx) {
+    .last-body {
+        height: 60vh;
+    }
+    .last-avatar {
+        top: 85%;
+        max-width: 280px;
+        transform: translateX(-60px) rotate(45deg);
+    }
+    .last-text {
+        margin-top: 2rem;
+    }
+    footer {
+        transform: scale(0.8);
+        bottom: -14rem;
+    }
+}

@@ -217,5 +217,20 @@
 	}
 }
 
+/* media query ipad pro 11 */
+@media only screen and (min-width: 834px) and (max-width: 1023px) and (orientation: portrait) and (min-resolution: 2dppx) {
+	.heroDescriptions {
+		height: 50vh;
+		/* margin-left: 0.75rem; */
+	}
+	.descriptionsCta {
+		margin-top: -6rem;
+	}
+}
+@media only screen and (min-width: 1194px) and (max-width: 1194px) and (min-height: 834px) and (max-height: 834px) and (orientation: landscape) and (min-resolution: 2dppx) {
+	.heroDescriptions {
+		height: 50vh;
+	}
+}
 
 

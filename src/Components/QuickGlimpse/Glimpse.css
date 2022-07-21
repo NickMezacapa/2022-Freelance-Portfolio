@@ -801,10 +801,38 @@
 @media only screen and (min-width: 1024px) and (max-width: 1366px) and (min-resolution: 2dppx)  and (orientation: portrait) {
 	.glimpseCta {
 		height: 65vh;
+		margin-left: -1rem;
 	}
 }
 @media only screen and (min-width: 1366px) and (max-height: 1025px) and (min-resolution: 2dppx)  and (orientation: landscape) {
 	.glimpseCta {
 		height: 95vh;
+		margin-left: -0.3rem;
+	}
+}
+
+/* media queries ipad pro 11 */
+@media only screen and (min-width: 834px) and (max-width: 1023px) and (orientation: portrait) and (min-resolution: 2dppx) {
+	.glimpseCta {
+		height: 70vh;
+	}
+	.glimpseCta .container {
+		margin-left: 1rem;
+		height: 450px;
+	} 
+	.bioContent {
+		margin-top: 2rem;
+	}
+	.card1-subheading,
+	.card2-subheading,
+	.card3-subheading,
+	.card4-subheading {
+		font-size: 14px;
+	}
+}
+@media only screen and (min-width: 1194px) and (max-width: 1194px) and (min-height: 834px) and (max-height: 834px) and (orientation: landscape) and (min-resolution: 2dppx) {
+	.glimpseCta {
+		height: 115vh;
+		margin-left: -0.5rem;
 	}
 }

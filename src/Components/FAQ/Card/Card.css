@@ -79,3 +79,14 @@
         font-weight: 500;
     }
 }
+/* media query ipad pro 11 */
+@media only screen and (min-width: 834px) and (max-width: 1023px) and (orientation: portrait) and (min-resolution: 2dppx) {
+    .card-flip12 {
+        width: 100%;
+    }
+    #smaller-font-card-flip {
+        font-size: 1.1rem;
+        line-height: 1.5;
+        font-weight: 500;
+    }
+}

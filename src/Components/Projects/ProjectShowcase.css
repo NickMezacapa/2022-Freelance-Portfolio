@@ -65,11 +65,27 @@
         height: 10%;
     }
     .ProjectShowcase-Row_secondRow {
-        /* border: 2px solid red; */
         height: 10%;
         margin-top: -10.5rem;
     }
     .PS-Container2 {
         margin-top: -28rem;
+    }
+}
+
+/* media queries ipad pro 11 */
+@media only screen and (min-width: 834px) and (max-width: 1023px) and (orientation: portrait) and (min-resolution: 2dppx) {
+    .ProjectShowcase-Container {
+        margin-top: -70rem;
+    }
+    .ProjectShowcase-Row_firstRow {
+        height: 10%;
+    }
+    .ProjectShowcase-Row_secondRow {
+        height: 10%;
+        margin-top: -10.5rem;
+    }
+    .PS-Container2 {
+        margin-top: -25rem;
     }
 }

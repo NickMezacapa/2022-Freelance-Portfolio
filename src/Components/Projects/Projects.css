@@ -1461,3 +1461,37 @@
 		margin-top: 4rem;
 	}
 }
+
+/* media query ipad pro 11 */
+@media only screen and (min-width: 834px) and (max-width: 1023px) and (orientation: portrait) and (min-resolution: 2dppx) {
+	.projectsCta {
+		height: 300vh;
+	}
+	.proj-intro-summary {
+		margin-top: 2rem;
+		font-size: 1.75rem;
+		width: 55%;
+	}
+	.ip-hero {
+		margin-top: 18rem;
+		right: -2rem;
+	}
+	.proj-sticky-intro {
+		margin-top: -8rem;
+	}
+	.Projects-SeeMore_linkClick {
+		margin-top: 4rem;
+	}
+}
+@media only screen and (min-width: 1194px) and (max-width: 1194px) and (min-height: 834px) and (max-height: 834px) and (orientation: landscape) and (min-resolution: 2dppx) {
+	.proj-sticky-intro {
+		margin-top: -10rem;
+	}
+	.proj-mainTitle {
+		margin-top: -10rem;
+	}
+	.ip-hero {
+		right: -5.5rem;
+		margin-top: 2rem;
+	}
+}

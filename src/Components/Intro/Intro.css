@@ -666,3 +666,60 @@ body {
 		transform: scale(1.05);
 	}
 }
+
+/* media query ipad 11 inch */
+@media only screen and (min-width: 834px) and (max-width: 1023px) and (orientation: portrait) and (min-resolution: 2dppx) {
+/* 	body {
+		margin-left: 1rem;
+	} */
+	.heroWrapper {
+		transform: scale(1.1);
+		margin-top: -6rem;
+	}
+	.hero-eyebrow {
+		font-size: 2rem;
+		margin-top: 5rem;
+	}
+	.hero-heading {
+		font-size: 5rem;
+		margin-top: 0;
+	}
+	.hero-link-text {
+		font-size: 1.5rem;
+		margin-top: 1.5rem;
+	}
+	#launch-trigger {
+		font-size: 1.5rem;
+		 margin-top: 1rem;
+	}
+	.hero-link-icon {
+		margin-top: 1.5rem;
+	}
+	.hero-ui {
+		margin-top: 3rem;
+		transform: scale(0.96);
+	}
+/* 	.overflow-wrap {
+		overflow: visible;
+		margin-left: 0.8rem;
+	} */
+/* 	.hero-scroll-wrap {
+		margin-left: 0.48rem;
+	} */
+}
+@media only screen and (min-width: 1194px) and (max-width: 1194px) and (min-height: 834px) and (max-height: 834px) and (orientation: landscape) and (min-resolution: 2dppx) {
+	.heroWrapper {
+		margin-top: -5rem;
+	}
+	.hero-eyebrow {
+		font-size: 2rem;
+		margin-top: 2rem;
+	}
+	.hero-heading {
+		font-size: 5rem;
+		margin-top: 0;
+	}
+	.hero-ui {
+		margin-top: -5rem;
+	}
+}
