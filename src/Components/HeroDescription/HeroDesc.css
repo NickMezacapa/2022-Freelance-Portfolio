@@ -221,6 +221,9 @@ and (orientation: portrait) {
 		align-items: center;
 		margin-top: -6rem;
 	}
+	.first {
+		opacity: 1;
+	}
 	.first h2 {
 		border: 1px solid red;
 		font-size: 30px;
