@@ -570,7 +570,7 @@ and (orientation: portrait) {
 	}
 	.mobileHero {
 		width: 16.9em;
-		z-index: 99999999999999999999999999999999999;
+		/* z-index: 99999999999999999999999999999999999; */
 		border: 1px solid red;
 		position: fixed;
 		top: 25%;
