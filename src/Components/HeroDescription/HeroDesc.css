@@ -216,7 +216,7 @@ and (orientation: portrait) {
 		overflow-y: scroll;
 	}
 	.descriptionsCta {
-		height: 40vh;
+		height: 70vh;
 		display: flex;
 		justify-content: center;
 		align-items: center;
