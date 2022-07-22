@@ -212,28 +212,23 @@ and (orientation: portrait) {
 	.heroDescriptions {
 		margin: 0;
 		padding: 0;
-		overflow-x: scroll;
-		overflow-y: scroll;
 	}
 	.descriptionsCta {
-		height: 70vh;
+		height: 40vh;
 		display: flex;
+		flex-wrap: nowrap;
 		justify-content: center;
 		align-items: center;
 		margin-top: -6rem;
 	}
-	.first {
+/* 	.first {
 		opacity: 1;
-	}
+	} */
 	.first h2 {
-		border: 1px solid red;
-		font-size: 26px;
+		font-size: 30px;
 		margin-top: 0;
-		width: 100%;
+		width: 110%;
 		margin-left: -1rem;
-		opacity: 1;
-		min-height: 100%;
-		height: 1000%;
 	}
 	.second h2 {
 		font-size: 22px;
@@ -241,13 +236,6 @@ and (orientation: portrait) {
 		width: 110%;
 		display: block;
 		margin-left: -0.5rem;
-		opacity: 1;
-	}
-	.secondDesc_active {
-		animation: none;
-	}
-	.firstDesc_active {
-		animation: none;
 	}
 }
 

@@ -551,10 +551,6 @@ and (orientation: portrait) {
 	.heroWrapper {
 		top: -6rem;
 	}
-	.hero-scroll-wrap {
-		border: 1px solid green;
-		height: 200vh;
-	}
 	.hero__header {
 		margin-top: -6rem;
 	}
@@ -575,7 +571,6 @@ and (orientation: portrait) {
 	.mobileHero {
 		width: 16.9em;
 		/* z-index: 99999999999999999999999999999999999; */
-		border: 1px solid red;
 		position: fixed;
 		top: 25%;
 		left: -41%;

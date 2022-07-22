@@ -5,20 +5,15 @@ const HeroDesc = () => {
   const handleScroll_heroDesc = () => {
       const firstDesc = document.querySelector('.first');
       const secondDesc = document.querySelector('.second');
-      
-      if (window.innerWidth > 768) {
+     
       if (firstDesc.getBoundingClientRect().top < window.innerHeight) {
         firstDesc.classList.add('firstDesc_active');
         secondDesc.classList.add('secondDesc_active');
       }
-    }
-      // if the user is not on a mobile device, run the code below
-      if (window.innerWidth > 768) {
       if (firstDesc.getBoundingClientRect().top > window.innerHeight) {
         firstDesc.classList.remove('firstDesc_active');
         secondDesc.classList.remove('secondDesc_active');
       }
-    }
   };
 
   window.addEventListener('scroll', handleScroll_heroDesc);
