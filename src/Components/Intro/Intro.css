@@ -571,6 +571,7 @@ and (orientation: portrait) {
 	.mobileHero {
 		width: 16.9em;
 		z-index: 99999999999999999999999999999999999;
+		border: 1px solid red;
 		position: fixed;
 		top: 25%;
 		left: -41%;
@@ -578,6 +579,7 @@ and (orientation: portrait) {
 	}
 	.mobileHero img{
 		position: absolute;
+		border: 1px solid blue;
 		top: 0;
 		left: 0;
 		height: 100%;
