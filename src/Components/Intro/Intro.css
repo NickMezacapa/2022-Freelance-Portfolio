@@ -545,7 +545,7 @@ body {
 @media only screen 
 and (min-width: 414px) and (max-width: 414px)
 and (min-height: 896px) and (max-height: 896px)
-and (min-resolution: 3dppx)
+/* and (min-resolution: 3dppx) */
 and (orientation: portrait) {
 	.heroWrapper {
 		top: -6rem;
