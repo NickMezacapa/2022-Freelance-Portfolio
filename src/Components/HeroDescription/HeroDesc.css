@@ -202,6 +202,40 @@
 		width: 100%;
 	}
 }
+/* media query iphone xs max */
+@media only screen 
+and (min-width: 414px) and (max-width: 414px)
+and (min-height: 896px) and (max-height: 896px)
+and (min-resolution: 3dppx)
+and (orientation: portrait) {
+	.heroDescriptions {
+		margin: 0;
+		padding: 0;
+
+	}
+	.descriptionsCta {
+		height: 40vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: -6rem;
+	}
+	.first h2 {
+		font-size: 30px;
+		margin-top: 0;
+		width: 110%;
+		margin-left: -1rem;
+	}
+	.second h2 {
+		font-size: 22px;
+		margin-top: 0;
+		width: 110%;
+		display: block;
+		margin-left: -0.5rem;
+	}
+}
+
+
 /* media query ipad pro 12.9 */
 @media only screen and (min-width: 1024px) and (max-width: 1366px) and (min-resolution: 2dppx)  and (orientation: portrait) {
 	.heroDescriptions {

@@ -3,6 +3,7 @@ import React from 'react';
 import { MdKeyboardArrowRight } from 'react-icons/md';
 import Plx from 'react-plx';
 import HeroImg from '../Intro/open-hero20.png';
+import HeroImgMobile from '../Intro/media-ip.png';
 import './Intro.css';
 
 const Intro = () => {
@@ -134,6 +135,8 @@ const Intro = () => {
 
                 >
                   <img src={HeroImg} alt="iMac" className="hero-ui" />
+                  <img src={HeroImgMobile} alt="mobile hero" 
+                  media="(max-width: 414px) (min-width: 414px)" className="mobileHero" />
                 </Plx>
                 <div className='heroCta'>
                   <div class="heroWrapper">
