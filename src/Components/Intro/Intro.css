@@ -551,6 +551,10 @@ and (orientation: portrait) {
 	.heroWrapper {
 		top: -6rem;
 	}
+	.hero-scroll-wrap {
+		border: 1px solid green;
+		height: 200vh;
+	}
 	.hero__header {
 		margin-top: -6rem;
 	}
