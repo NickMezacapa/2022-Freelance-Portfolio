@@ -212,7 +212,8 @@ and (orientation: portrait) {
 	.heroDescriptions {
 		margin: 0;
 		padding: 0;
-
+		overflow-x: scroll;
+		overflow-y: scroll;
 	}
 	.descriptionsCta {
 		height: 40vh;
