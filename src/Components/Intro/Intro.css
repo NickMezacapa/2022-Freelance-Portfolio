@@ -568,15 +568,15 @@ and (orientation: portrait) {
 	.heroHeading_active {
 		background-color: transparent;
 	}
-/* 	.mobileHero {
+	.mobileHero {
 		width: 16.9em;
-		z-index: 99999999999999999999999999999999999;
+		/* z-index: 99999999999999999999999999999999999; */
 		position: relative;
 		top: 25%;
 		left: -41%;
 		transform: scale(3);
 		display: none;
-	} */
+	}
 /* 	.mobileHero img{
 		position: absolute;
 		border: 1px solid blue;
