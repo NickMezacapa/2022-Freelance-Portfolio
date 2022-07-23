@@ -136,13 +136,13 @@ const Intro = () => {
                 >
                   <img src={HeroImg} alt="iMac" className="hero-ui" />
                   <img src={HeroImgMobile} alt="mobile hero" 
-                  media="(max-width: 414px) (min-width: 414px)" className="mobileHero" />
+                  media="(max-width: 414px), (min-width: 414px)" className="mobileHero" />
                 </Plx>
                 <div className='heroCta'>
                   <div class="heroWrapper">
 
                     <div class="hero-img-container">
-                      <img src={require("./nm.png")} loading="eager" /* sizes="(max-width: 479px) 100vw, (max-width: 767px) 648px, (max-width: 991px) 100vw, 65vw" */ alt="Headshot of Nick Mezacapa" class="hero-img" />
+                      <img src={require("./nm.png")} /* loading="eager" */ /* sizes="(max-width: 479px) 100vw, (max-width: 767px) 648px, (max-width: 991px) 100vw, 65vw" */ alt="Headshot of Nick Mezacapa" class="hero-img" />
                     </div>
 
                     <div id="hero-img-shadow-1" class="hero-img-shadow-wrap">

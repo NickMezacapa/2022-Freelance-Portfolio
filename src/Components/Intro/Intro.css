@@ -571,12 +571,13 @@ and (orientation: portrait) {
 	.mobileHero {
 		width: 16.9em;
 		/* z-index: 99999999999999999999999999999999999; */
-		position: fixed;
+		position: relative;
 		top: 25%;
 		left: -41%;
 		transform: scale(3);
+		display: none;
 	}
-	.mobileHero img{
+/* 	.mobileHero img{
 		position: absolute;
 		border: 1px solid blue;
 		top: 0;
@@ -584,7 +585,7 @@ and (orientation: portrait) {
 		height: 100%;
 		width: 100%;
 		border: 1px solid red;
-	}
+	} */
 }
 @media only screen and (min-width: 415px) {
 	.mobileHero {
