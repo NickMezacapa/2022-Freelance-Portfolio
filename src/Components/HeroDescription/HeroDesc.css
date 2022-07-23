@@ -207,8 +207,8 @@
 @media only screen 
 and (device-width: 414px) /* and (max-width: 414px) */
 and (device-height: 896px) /* and (max-height: 896px) */
-and (-webkit-min-device-pixel-ratio: 3)
-and (orientation: portrait) {
+/* and (-webkit-min-device-pixel-ratio: 3)
+and (orientation: portrait) */ {
 	.heroDescriptions {
 		margin: 0;
 		padding: 0;
