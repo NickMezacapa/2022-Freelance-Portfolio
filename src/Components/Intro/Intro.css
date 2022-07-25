@@ -571,17 +571,16 @@ and (orientation: portrait) */ {
 	.mobileHero {
 		width: 16.9em;
 		/* z-index: 99999999999999999999999999999999999; */
-		position: relative;
-		top: 25%;
-		left: -41%;
+		position: absolute;
+		top: 36%;
+		left: -4.5%;
 		transform: scale(3);
-		display: none;
 	}
-/* 	.mobileHero img{
+/* 	.mobileHero img {
 		position: absolute;
 		border: 1px solid blue;
-		top: 0;
-		left: 0;
+		top: 10%;
+		left: 10%;
 		height: 100%;
 		width: 100%;
 		border: 1px solid red;
