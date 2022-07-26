@@ -100,7 +100,7 @@
 
 
 /* Create a media query for when the user is on a mobile device. The text size should be resposive. */
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 768px) {
 	.first h2 {
 		font-size: 34px;
 		align-items: center;
@@ -210,8 +210,11 @@ and (device-height: 896px) /* and (max-height: 896px) */
 /* and (-webkit-min-device-pixel-ratio: 3)
 and (orientation: portrait) */ {
 	.heroDescriptions {
-		margin: 0;
+		margin-top: -6rem;
 		padding: 0;
+		border: 1px solid blue;
+		height: 40vh;
+		z-index: 9999999999999999999999999999999999999999999999999;
 	}
 	.descriptionsCta {
 		height: 40vh;
@@ -219,7 +222,8 @@ and (orientation: portrait) */ {
 		flex-wrap: nowrap;
 		justify-content: center;
 		align-items: center;
-		margin-top: -6rem;
+		margin-top: 0;
+		border: 1px solid red;
 	}
 /* 	.first {
 		opacity: 1;
@@ -257,7 +261,7 @@ and (orientation: portrait) */ {
 }
 
 /* media query ipad pro 11 */
-@media only screen and (min-width: 834px) and (max-width: 1023px) and (orientation: portrait) and (min-resolution: 2dppx) {
+@media only screen and (min-device-width: 834px) and (max-device-width: 834px) and (min-device-height: 1023px) and (max-device-height: 1023px) and (orientation: portrait) and (min-resolution: 2dppx) {
 	.heroDescriptions {
 		height: 50vh;
 		/* margin-left: 0.75rem; */
@@ -266,7 +270,7 @@ and (orientation: portrait) */ {
 		margin-top: -6rem;
 	}
 }
-@media only screen and (min-width: 1194px) and (max-width: 1194px) and (min-height: 834px) and (max-height: 834px) and (orientation: landscape) and (min-resolution: 2dppx) {
+@media only screen and (min-device-width: 1194px) and (max-device-width: 1194px) and (min-device-height: 834px) and (max-device-height: 834px) and (orientation: landscape) and (min-resolution: 2dppx) {
 	.heroDescriptions {
 		height: 50vh;
 	}

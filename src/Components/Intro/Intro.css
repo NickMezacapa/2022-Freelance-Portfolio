@@ -327,7 +327,7 @@ body {
 }
 
 /* Create a media query for when the user is using a mobile device. The .hero-ui element should be moved down 2rem. */
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 768px) {
 	.hero-ui {
 		margin-top: 10rem;
 		max-width: none;
@@ -550,9 +550,13 @@ and (device-height: 896px) /* and (max-height: 896px) */
 and (orientation: portrait) */ {
 	.heroWrapper {
 		top: -6rem;
+		transform: scale(0.9);
+	}
+	.hero-scroll-wrap {
+		border: 1px solid red;
 	}
 	.hero__header {
-		margin-top: -6rem;
+		margin-top: -8rem;
 	}
 	.hero-eyebrow {
 		font-size: 20px;
@@ -572,7 +576,7 @@ and (orientation: portrait) */ {
 		width: 16.9em;
 		/* z-index: 99999999999999999999999999999999999; */
 		position: absolute;
-		top: 37%;
+		top: 34.5%;
 		left: -4%;
 		transform: scale(3);
 	}
@@ -585,7 +589,7 @@ and (orientation: portrait) */ {
 		width: 100%;
 		border: 1px solid red;
 	} */
-	
+
 }
 @media only screen and (min-width: 415px) {
 	.mobileHero {
@@ -602,7 +606,7 @@ and (orientation: portrait) */ {
 /* Media queires 13 inch macbook pro */
 /* ************************ */
 
-@media (min-width: 760px) and (max-width: 1400px) {
+/* @media (min-width: 760px) and (max-width: 1400px) {
 	.hero-heading {
 		font-size: 62px;
 		font-weight: 700;
@@ -665,7 +669,7 @@ and (orientation: portrait) */ {
 		margin-top: -2rem;
 	}
 
-}
+} */
 
 
 /* media query test for ip[ad pro 12 portrait */
@@ -725,7 +729,7 @@ and (orientation: portrait) */ {
 }
 
 /* media query ipad 11 inch */
-@media only screen and (min-width: 834px) and (max-width: 1023px) and (orientation: portrait) and (min-resolution: 2dppx) {
+@media only screen and (min-device-width: 834px) and (max-device-width: 834px) and (min-device-height: 1023px) and (max-device-height: 1023px) and (orientation: portrait) and (min-resolution: 2dppx) {
 /* 	body {
 		margin-left: 1rem;
 	} */
