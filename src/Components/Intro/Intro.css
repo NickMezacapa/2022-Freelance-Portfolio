@@ -549,7 +549,7 @@ and (device-height: 896px) /* and (max-height: 896px) */
 /* and (-webkit-min-device-pixel-ratio: 3)
 and (orientation: portrait) */ {
 	.heroWrapper {
-		top: -8rem;
+		top: -6rem;
 		/* transform: scale(0.9); */
 	}
 	.hero__header {
