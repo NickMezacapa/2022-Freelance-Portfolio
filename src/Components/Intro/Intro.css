@@ -573,7 +573,7 @@ and (orientation: portrait) */ {
 		width: 16.9em;
 		/* z-index: 99999999999999999999999999999999999; */
 		position: absolute;
-		top: 34.5%;
+		top: 36%;
 		left: -4%;
 		transform: scale(3);
 	}
