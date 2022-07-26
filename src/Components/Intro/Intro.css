@@ -549,14 +549,11 @@ and (device-height: 896px) /* and (max-height: 896px) */
 /* and (-webkit-min-device-pixel-ratio: 3)
 and (orientation: portrait) */ {
 	.heroWrapper {
-		top: -6rem;
-		transform: scale(0.9);
-	}
-	.hero-scroll-wrap {
-		border: 1px solid red;
+		top: -8rem;
+		/* transform: scale(0.9); */
 	}
 	.hero__header {
-		margin-top: -8rem;
+		margin-top: -6rem;
 	}
 	.hero-eyebrow {
 		font-size: 20px;
@@ -606,7 +603,7 @@ and (orientation: portrait) */ {
 /* Media queires 13 inch macbook pro */
 /* ************************ */
 
-/* @media (min-width: 760px) and (max-width: 1400px) {
+ @media (min-width: 760px) and (max-width: 1400px) {
 	.hero-heading {
 		font-size: 62px;
 		font-weight: 700;
@@ -669,7 +666,7 @@ and (orientation: portrait) */ {
 		margin-top: -2rem;
 	}
 
-} */
+} 
 
 
 /* media query test for ip[ad pro 12 portrait */

@@ -212,7 +212,6 @@ and (orientation: portrait) */ {
 	.heroDescriptions {
 		margin-top: -6rem;
 		padding: 0;
-		border: 1px solid blue;
 		height: 40vh;
 		z-index: 9999999999999999999999999999999999999999999999999;
 	}
@@ -223,7 +222,6 @@ and (orientation: portrait) */ {
 		justify-content: center;
 		align-items: center;
 		margin-top: 0;
-		border: 1px solid red;
 	}
 /* 	.first {
 		opacity: 1;
