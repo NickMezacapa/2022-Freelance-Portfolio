@@ -73,6 +73,30 @@
     }
 }
 
+/* media queries iphone xs max */
+@media only screen and (min-device-width: 414px) 
+and (max-device-width: 414px)
+and (min-device-height: 896px)
+and (max-device-height: 896px) {
+    .ProjectShowcase-Row_firstRow,
+    .ProjectShowcase-Row_secondRow,
+    .ProjectShowcase-Row_thirdRow {
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+    }
+    .ProjectShowcase-Row_secondRow {
+        margin-top: 14.5rem;
+    }
+    .ProjectShowcase-Row_thirdRow {
+        margin-top: 14.5rem;
+        height: 62%;
+    }
+/*     .PS-Wrapper {
+        height: 100vh;
+    } */
+}
+
 /* media queries ipad pro 11 */
 @media only screen and (min-width: 834px) and (max-width: 1023px) and (orientation: portrait) and (min-resolution: 2dppx) {
     .ProjectShowcase-Container {

@@ -1428,6 +1428,31 @@
 	}
 }
 
+/* media queries iphone xs max */
+@media only screen and (min-device-width: 414px) 
+and (max-device-width: 414px)
+and (min-device-height: 896px)
+and (max-device-height: 896px) {
+	.link-moreProjects {
+		margin-top: -2rem;
+		width: 110%;
+		font-size: 14px;
+	}
+	.projectsCta {
+		height: 400vh;
+	}
+	.Projects-SeeMore_cta {
+		width: 120%;
+		margin-left: -2.2rem;
+	}
+	.Projects-SeeMore_linkClick {
+		margin-top: 4rem;
+	}
+	.arrow-proj {
+		visibility: hidden;
+	}
+}
+
 /* media query for ipad pro portrait */
 @media only screen and (min-width: 1024px) and (max-width: 1366px) and (min-resolution: 2dppx)  and (orientation: portrait) {
 	.projectsCta {

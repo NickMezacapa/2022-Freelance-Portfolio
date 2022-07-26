@@ -67,7 +67,7 @@
 /* ****************************** */
 /* Begin media queries medium screen */
 /* **************************** */
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 768px) {
     .separator {
         width: 95%;
         height: 1px;
@@ -132,6 +132,25 @@
     }
     .faq-body {
         height: 130vh;
+    }
+}
+
+/* media queries iphone xs max */
+@media only screen and (min-device-width: 414px) 
+and (max-device-width: 414px)
+and (min-device-height: 896px)
+and (max-device-height: 896px) {
+    .faq-body {
+        height: 150vh;
+    }
+    .card-flip-row-1,
+    .card-flip-row-2,
+    .card-flip-row-3 {
+        margin-top: 1rem;
+        margin-left: auto;
+        gap: 1rem;
+        flex-direction: column;
+        width: 100%;
     }
 }
 

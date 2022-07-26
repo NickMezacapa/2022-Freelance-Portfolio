@@ -282,7 +282,7 @@
 /* ********************************** */
 /* Begin media queries medium screen */
 /* ******************************** */
-@media screen and (max-width: 768px) {
+@media screen /* and (min-width: 768px) */ and (max-width: 768px) {
 
     .process-scroll-wrap h2 {
         position: absolute;
@@ -455,6 +455,44 @@
     }
 }
 
+/* media query iphone xs max */
+@media only screen and (min-device-width: 414px) 
+and (max-device-width: 414px)
+and (min-device-height: 896px)
+and (max-device-height: 896px) {
+    .process-scroll-wrap {
+        height: 340vh;
+    }
+
+    #dev_process_h2 {
+        font-size: 2rem;
+    }
+
+    .process-scroll-wrap #hassle-free {
+        font-size: 1.5rem;
+        margin-top: -2rem;
+    }
+
+    .header-workflow {
+        margin-left: -14.5rem;
+        margin-top: 0.5rem;
+    }
+
+    .cards-wrap {
+        margin-top: 0rem;
+        transform: scale(0.8);
+    }
+
+    .process-card1,
+    .process-card2,
+    .process-card3,
+    .process-card4,
+    .process-card5 {
+        width: 120%;
+        margin-left: -2rem;
+    }
+}
+
 /* media queries for ipad pro 12.9 portrait */
 @media only screen and (min-width: 1024px) and (max-width: 1366px) and (min-resolution: 2dppx)  and (orientation: portrait) {
     .header-workflow {
@@ -478,7 +516,11 @@
 }
 
 /* media query ipad pro 11 */
-@media only screen and (min-width: 834px) and (max-width: 1023px) and (orientation: portrait) and (min-resolution: 2dppx) {
+@media only screen and (min-device-width: 834px) and 
+(max-device-width: 834px) 
+and (min-device-height: 1023px)
+and (max-device-height: 1023px)
+and (orientation: portrait) and (min-resolution: 2dppx) {
     .header-workflow {
         margin-left: 2rem;
         margin-top: 2rem;

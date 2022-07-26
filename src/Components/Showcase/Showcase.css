@@ -855,6 +855,19 @@
 	}
 }
 
+/* media query iphone xs max */
+@media only screen and (min-device-width: 414px) 
+and (max-device-width: 414px)
+and (min-device-height: 896px)
+and (max-device-height: 896px) {
+	.showcaseCta {
+		margin-top: -10rem;
+	}
+	.responsive img {
+		transform: scale(1.06);
+	}
+}
+
 /* media queries for ipad pro 12.9 */
 @media only screen and (min-width: 1024px) and (max-width: 1366px) and (min-resolution: 2dppx)  and (orientation: portrait) {
 	.animations-heroContent {

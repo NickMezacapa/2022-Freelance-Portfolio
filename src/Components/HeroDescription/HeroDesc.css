@@ -213,7 +213,7 @@ and (orientation: portrait) */ {
 		margin-top: -6rem;
 		padding: 0;
 		height: 40vh;
-		z-index: 9999999999999999999999999999999999999999999999999;
+/* 		z-index: 9999999999999999999999999999999999999999999999999; */
 	}
 	.descriptionsCta {
 		height: 40vh;
@@ -253,7 +253,7 @@ and (orientation: portrait) */ {
 		animation: intro-gradient 7.5s infinite ease both;
 		-webkit-animation: intro-gradient 7.5s infinite ease both;
 		-moz-animation: intro-gradient 7.5s infinite ease both;
-		z-index: 999999999999999999999999999999999999999999999999999999999999999999999999999999999;
+/* 		z-index: 999999999999999999999999999999999999999999999999999999999999999999999999999999999; */
 		opacity: 1;
 	}
 	.second h2 {
@@ -262,7 +262,7 @@ and (orientation: portrait) */ {
 		width: 110%;
 		display: block;
 		margin-left: -0.5rem;
-		z-index: 999999999999999999999999999999999999999999999999999999999999999999999999999999999;
+/* 		z-index: 999999999999999999999999999999999999999999999999999999999999999999999999999999999; */
 	}
 }
 

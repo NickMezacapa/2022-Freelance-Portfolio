@@ -542,7 +542,7 @@
 /* ************************************************* */
 /*  Begin media queries for iphone xr */
 /* ************************************************* */
-@media screen and (min-width: 412px) and (max-width: 414px) {
+@media screen and (min-width: 412px) and (max-width: 413px) {
 	.title {
 		text-align: center;
 		padding-top: 0rem;
@@ -701,20 +701,26 @@ and (device-width: 414px) /* and (max-width: 414px) */
 and (device-height: 896px) /* and (max-height: 896px) */
 /* and (-webkit-min-device-pixel-ratio: 3)
 and (orientation: portrait) */ {
-/* 	.glimpseCta {
-		height: 150vh;
-		border: 1px solid red;
-	} */
+
 	.title {
-		margin-left: -7rem;
+		margin-left: -9.75rem;
 		margin-top: 5rem;
 	}
 	.description {
-		margin-left: -2.5rem;
-		/* margin-top: -2rem; */
+		display: block;
+		opacity: 1;
+		transform: translateX(0px);
+		font-size: 32px;
+		text-align: center;
+		position: relative;
+		top: -1rem;
+		right: 11.25rem;
+		width: 155%;
+		letter-spacing: -0.045em;
+		padding-bottom: 1rem;
 	}
 	.container {
-		margin-top: 8rem;
+		margin-top: 0;
 		margin-left: 0;
 		margin-right: 0;
 		/* border: 1px solid blue; */
@@ -722,6 +728,13 @@ and (orientation: portrait) */ {
 		height: 90%;
 		display: flex;
 		flex-direction: column;
+	}
+	.bioTitle {
+		width: 95%;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 30px;
 	}
 	.bio {
 		/* border: 1px solid pink; */

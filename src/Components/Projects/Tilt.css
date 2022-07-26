@@ -83,3 +83,13 @@
         transform: scale(0.7);
     }
 }
+
+/* media queries iphone xs max */
+@media only screen and (min-device-width: 414px) 
+and (max-device-width: 414px)
+and (min-device-height: 896px)
+and (max-device-height: 896px) {
+    .Tilt-TiltInner_hoverSpan_wrapper {
+        transform: scale(0.7);
+    }
+}
