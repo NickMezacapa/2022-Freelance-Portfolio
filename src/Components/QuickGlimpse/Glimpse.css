@@ -825,10 +825,10 @@ and (orientation: portrait) {
 
 }
 
-@media screen and (min-width: 415px) and (max-width: 684px) {
-	.container {
+ @media screen and (min-width: 415px) and (max-width: 684px) {
+ 	.container {
 		color: green;
-	}
+	} 
 	.title, .description {
 		margin-left: -6rem;
 	}
@@ -876,13 +876,21 @@ and (orientation: portrait) {
 		margin-top: 0.5rem;
 	}
 
-}
+} 
 
 /* media queries ipad pro 12.9 */ 
 @media only screen and (min-width: 1024px) and (max-width: 1366px) and (min-resolution: 2dppx)  and (orientation: portrait) {
 	.glimpseCta {
 		height: 65vh;
 		margin-left: -1rem;
+	}
+	.card1 .card1-info .card1-number,
+	.card2 .card2-info .card2-number,
+	.card3 .card3-info .card3-number {
+		font-size: 4rem;
+	}
+	.card4 .card4-info .card4-number {
+		font-size: 4rem;
 	}
 }
 @media only screen and (min-width: 1366px) and (max-height: 1025px) and (min-resolution: 2dppx)  and (orientation: landscape) {
