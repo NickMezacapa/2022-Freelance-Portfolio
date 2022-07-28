@@ -892,6 +892,10 @@ and (orientation: portrait) {
 	.card4 .card4-info .card4-number {
 		font-size: 4rem;
 	}
+	.card1 .card1-info .card1-desc,
+	.card2 .card2-info .card2-desc {
+		margin-top: 10px;
+	}
 }
 @media only screen and (min-width: 1366px) and (max-height: 1025px) and (min-resolution: 2dppx)  and (orientation: landscape) {
 	.glimpseCta {
