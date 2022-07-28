@@ -696,11 +696,13 @@
 
 /* media queries iphone xs max */
 @media only screen 
-and (device-width: 414px) /* and (max-width: 414px) */
-and (device-height: 896px) /* and (max-height: 896px) */
-/* and (-webkit-min-device-pixel-ratio: 3)
-and (orientation: portrait) */ {
-
+and (device-width: 414px) and (max-device-width: 414px)
+and (device-height: 896px) and (max-device-height: 896px)
+and (-webkit-min-device-pixel-ratio: 3) and (min-resolution: 3dppx)
+and (orientation: portrait) {
+	.glimpseCta {
+		height: 150vh;
+	}
 	.title {
 		margin-left: -9.75rem;
 		margin-top: 5rem;

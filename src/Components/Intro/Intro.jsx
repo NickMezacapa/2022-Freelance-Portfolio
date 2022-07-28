@@ -94,8 +94,8 @@ const Intro = () => {
                 transform: "scale(1)",
                 willChange: "transform",
                 transformStyle: "preserve-3d",
-                webkitBoxAlign: "center",
-                webkitAlignItems: "center"
+                WebkitBoxAlign: "center",
+                WebkitAlignItems: "center"
               }}
             >
 
@@ -139,17 +139,17 @@ const Intro = () => {
                   media="(max-width: 414px), (min-width: 414px)" className="mobileHero" />
                 </Plx>
                 <div className='heroCta'>
-                  <div class="heroWrapper">
+                  <div className="heroWrapper">
 
-                    <div class="hero-img-container">
-                      <img src={require("./nm.png")} /* loading="eager" */ /* sizes="(max-width: 479px) 100vw, (max-width: 767px) 648px, (max-width: 991px) 100vw, 65vw" */ alt="Headshot of Nick Mezacapa" class="hero-img" />
+                    <div className="hero-img-container">
+                      <img src={require("./nm.png")} /* loading="eager" */ /* sizes="(max-width: 479px) 100vw, (max-width: 767px) 648px, (max-width: 991px) 100vw, 65vw" */ alt="Headshot of Nick Mezacapa" className="hero-img" />
                     </div>
 
-                    <div id="hero-img-shadow-1" class="hero-img-shadow-wrap">
-                      <div class="hero-img-shadow"></div>
+                    <div id="hero-img-shadow-1" className="hero-img-shadow-wrap">
+                      <div className="hero-img-shadow"></div>
                     </div>
-                    <div id="hero-img-shadow-2" class="hero-img-shadow-wrap     hero-img-shadow-wrap--intro">
-                      <div class="hero-img-shadow"></div>
+                    <div id="hero-img-shadow-2" className="hero-img-shadow-wrap     hero-img-shadow-wrap--intro">
+                      <div className="hero-img-shadow"></div>
                     </div>
 
                   </div>
