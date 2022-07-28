@@ -316,7 +316,7 @@
 /* ************************************************* */
 /*  Begin media queries for medium screen */
 /* ************************************************* */
-/* @media screen and (min-width: 685px) and (max-width: 800px) {
+@media screen and (min-width: 685px) and (max-width: 800px) {
 	.glimpseCta {
 		height: 140vh;
 		width: 100%;
@@ -406,7 +406,7 @@
 	.title {
 		margin-left: -4rem;
 	}
-} */
+}
 
 /* ************************************************* */
 /*  End media queries for medium screen */
@@ -416,7 +416,7 @@
 /*  Begin media queries for iPhone SE */
 /* ************************************************* */
 
-/* @media screen and (max-width: 375px) {
+@media screen and (max-width: 375px) {
 	.glimpseCta {
 		height: 200vh;
 		width: 100%;
@@ -536,12 +536,12 @@
 	}
 
 
-} */
+}
 
 /* ************************************************* */
 /*  Begin media queries for iphone xr */
 /* ************************************************* */
-/* @media screen and (min-width: 412px) and (max-width: 413px) {
+@media screen and (min-width: 412px) and (max-width: 413px) {
 	.title {
 		text-align: center;
 		padding-top: 0rem;
@@ -592,12 +592,12 @@
 		left: 9.5%;
 		width: 80%;
 	}
-} */
+}
 
 /* ************************************************* */
 /*  Begin media queries for iphone 12 pro */
 /* ************************************************* */
-/* @media screen and (min-width: 390px) and (max-width: 393px) {
+@media screen and (min-width: 390px) and (max-width: 393px) {
 	.title {
 		text-align: center;
 		padding-top: 0rem;
@@ -692,7 +692,7 @@
 	.card4 {
 		margin-top: -3rem;
 	}
-} */
+}
 
 /* media queries iphone xs max */
 @media only screen 
@@ -776,12 +776,12 @@ and (orientation: portrait) {
 	}
 }
 
-/* @media screen and (max-width: 1600px) {
+@media screen and (max-width: 1600px) {
 	.glimpseCta {
 		height: 150vh;
 	}
-} */
-/* @media screen and (min-width: 801px) and (max-width: 1110px) {
+}
+@media screen and (min-width: 801px) and (max-width: 1110px) {
 	.title, .description {
 		margin-left: -4rem;
 	}
@@ -823,9 +823,9 @@ and (orientation: portrait) {
 		margin-top: 2rem;
 	}
 
-} */
+}
 
-/* @media screen and (min-width: 415px) and (max-width: 684px) {
+@media screen and (min-width: 415px) and (max-width: 684px) {
 	.container {
 		color: green;
 	}
@@ -876,7 +876,7 @@ and (orientation: portrait) {
 		margin-top: 0.5rem;
 	}
 
-} */
+}
 
 /* media queries ipad pro 12.9 */ 
 @media only screen and (min-width: 1024px) and (max-width: 1366px) and (min-resolution: 2dppx)  and (orientation: portrait) {
