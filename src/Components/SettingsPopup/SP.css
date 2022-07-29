@@ -409,6 +409,6 @@ and (max-device-width: 414px)
 and (min-device-height: 896px)
 and (max-device-height: 896px) {
     .SP_popup-inner {
-        height: 80%;
+        height: 83%;
     }
 }

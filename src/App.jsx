@@ -28,15 +28,6 @@ function App() {
 	const popup = document.querySelector('.popup');
 	const pop_inner = document.querySelector('.popup-inner');
 
-	
-	window.onscroll = function() {
-		// disable horizontal scroll on x axis
-		if (window.scrollX !== 0) {
-			window.scrollTo(0, window.scrollX);
-		}
-	}
-
-
 	// When the user clicks inside pop_inner, close the popup.
 	window.addEventListener('click', (e) => {
 		if (e.target === pop_inner) {
