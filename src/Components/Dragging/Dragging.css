@@ -78,3 +78,11 @@
         height: 45%;
     }
 }
+@media only screen and (min-device-width: 414px) 
+and (max-device-width: 414px)
+and (min-device-height: 896px)
+and (max-device-height: 896px) {
+    .Dragging {
+        height: 45%;
+    }
+}
