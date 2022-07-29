@@ -83,6 +83,6 @@ and (max-device-width: 414px)
 and (min-device-height: 896px)
 and (max-device-height: 896px) {
     .Dragging {
-        height: 45%;
+        height: 50%;
     }
 }
