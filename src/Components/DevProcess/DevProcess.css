@@ -461,7 +461,7 @@ and (max-device-width: 414px)
 and (min-device-height: 896px)
 and (max-device-height: 896px) {
     .process-scroll-wrap {
-        height: 420vh;
+        height: 435vh;
     }
 
     #dev_process_h2 {

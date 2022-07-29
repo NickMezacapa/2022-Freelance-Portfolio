@@ -866,6 +866,9 @@ and (max-device-height: 896px) {
 	.responsive img {
 		transform: scale(1.06);
 	}
+	.responsive h2 {
+		margin-left: -0.9rem;
+	}
 }
 
 /* media queries for ipad pro 12.9 */
