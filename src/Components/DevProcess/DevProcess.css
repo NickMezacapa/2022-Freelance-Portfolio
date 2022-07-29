@@ -461,7 +461,7 @@ and (max-device-width: 414px)
 and (min-device-height: 896px)
 and (max-device-height: 896px) {
     .process-scroll-wrap {
-        height: 340vh;
+        height: 360vh;
     }
 
     #dev_process_h2 {
@@ -474,7 +474,7 @@ and (max-device-height: 896px) {
     }
 
     .header-workflow {
-        margin-left: -14.5rem;
+        margin-left: -8rem;
         margin-top: 0.5rem;
     }
 
