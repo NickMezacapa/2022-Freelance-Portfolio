@@ -85,24 +85,24 @@ const ContactForm = () => {
                     <div className="small-inputs">
 
                         <div className="contact-name contact-inputs">
-                            <label id="contact-form-name-label" className="label-c" for="contact-form-name-input">Name:</label>
+                            <label id="contact-form-name-label" className="label-c" htmlFor="contact-form-name-input">Name:</label>
                             <input type="text" name="user_name" id='contact-form-name-input' className='contact-input-item name-contact-input' />
                         </div>
 
                         <div className="contact-emailBack contact-inputs">
-                            <label id="contact-form-email-label" className="label-c"  for="contact-form-email-input">Email:</label>
+                            <label id="contact-form-email-label" className="label-c"  htmlFor="contact-form-email-input">Email:</label>
                             <input type="email" name="user_email" id="contact-form-email-input" className='contact-input-item email-contact-input' />
                         </div>
 
                         <div className="contact-subject-of-email contact-inputs">
-                            <label id="contact-subject-label" className="label-c"  for="contact-subject-input">Subject:</label>
+                            <label id="contact-subject-label" className="label-c"  htmlFor="contact-subject-input">Subject:</label>
                             <input type="text" name="subject" id='contact-subject-input' className='contact-input-item' placeholder='(optional)' />
                         </div>
 
                     </div>
                     <div className="contact-textarea">
                         <div className="contact-message-label-cta">
-                            <label className="contact-message-label label-c" for="contact-form-message-input">Message</label>
+                            <label className="contact-message-label label-c" htmlFor="contact-form-message-input">Message</label>
                         </div>
                         <div className="contact-message-enterText">
                                 <div className="contact-message-content">

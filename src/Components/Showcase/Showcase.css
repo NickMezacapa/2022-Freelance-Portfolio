@@ -867,7 +867,8 @@ and (max-device-height: 896px) {
 		transform: scale(1.06);
 	}
 	.responsive h2 {
-		margin-left: -0.9rem;
+		margin-left: -1rem;
+		margin-top: 2rem;
 	}
 }
 

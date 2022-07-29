@@ -272,6 +272,16 @@ footer {
     }
 }
 
+/* media queries iphone xs max */ 
+@media only screen and (min-device-width: 414px) 
+and (max-device-width: 414px)
+and (min-device-height: 896px)
+and (max-device-height: 896px) {
+    .last-avatar {
+        top: 80%;
+    }
+}
+
 /* media query ipad pro 11 */
 @media only screen and (min-width: 834px) and (max-width: 1023px) and (orientation: portrait) and (min-resolution: 2dppx) {
     .last-body {

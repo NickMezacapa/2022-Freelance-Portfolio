@@ -270,5 +270,15 @@
     }
 }
 
+/* iphone xs max */
+@media only screen and (min-device-width: 414px) 
+and (max-device-width: 414px)
+and (min-device-height: 896px)
+and (max-device-height: 896px) {
+    .contact-form-cta {
+        margin-top: -3rem;
+    }
+}
+
 
 
