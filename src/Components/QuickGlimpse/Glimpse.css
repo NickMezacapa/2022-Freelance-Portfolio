@@ -721,12 +721,12 @@ and (orientation: portrait) {
 		padding-bottom: 1rem;
 	}
 	.container {
-		margin-top: 0;
+		margin-top: -1.5rem;
 		margin-left: 0;
 		margin-right: 0;
 		/* border: 1px solid blue; */
 		width: 100%;
-		height: 90%;
+		height: 105%;
 		display: flex;
 		flex-direction: column;
 	}
@@ -757,7 +757,7 @@ and (orientation: portrait) {
 		position: inherit;
 	}
 	.cardsCta {
-		margin-top: -18rem;
+		margin-top: -20rem;
 		width: 100%;
 		height: 30%;
 	}
@@ -766,7 +766,7 @@ and (orientation: portrait) {
 	}
 	.card1-desc,
 	.card2-desc {
-		margin-top: 31rem;
+		margin-top: 35rem;
 	}
 	.card4-number {
 		font-size: 56px;

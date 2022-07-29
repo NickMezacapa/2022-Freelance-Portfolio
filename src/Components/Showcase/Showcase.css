@@ -861,7 +861,7 @@ and (max-device-width: 414px)
 and (min-device-height: 896px)
 and (max-device-height: 896px) {
 	.showcaseCta {
-		margin-top: -10rem;
+		margin-top: -0.8rem;
 	}
 	.responsive img {
 		transform: scale(1.06);
