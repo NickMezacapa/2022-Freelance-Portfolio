@@ -27,19 +27,15 @@ import Volume from './Components/Volume/Volume';
 function App() {
 	const popup = document.querySelector('.popup');
 	const pop_inner = document.querySelector('.popup-inner');
-	const body = document.querySelector('body');
 
-	// if window.innerWidth === 414px and window.innerHeight === 896px, run the code below
-	if (window.innerWidth === 414 && window.innerHeight === 896) {
-	body.bind('scroll', function() {
-		if (body.scrollLeft() !== 0) {
-			body.scrollLeft(0);
+	
+	window.onscroll = function() {
+		// disable horizontal scroll on x axis
+		if (window.scrollX !== 0) {
+			window.scrollTo(0, window.scrollX);
 		}
-		if (body.scrollRight() !== 0) {
-			body.scrollRight(0);
-		}
-	})
-}
+	}
+
 
 	// When the user clicks inside pop_inner, close the popup.
 	window.addEventListener('click', (e) => {

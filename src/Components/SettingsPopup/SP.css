@@ -404,3 +404,11 @@ input[type='range'] {
         height: 80%;
     }
 }
+@media only screen and (min-device-width: 414px) 
+and (max-device-width: 414px)
+and (min-device-height: 896px)
+and (max-device-height: 896px) {
+    .SP_popup-inner {
+        height: 80%;
+    }
+}
