@@ -86,11 +86,11 @@ and (max-device-height: 896px) {
         flex-direction: column;
     }
     .ProjectShowcase-Row_secondRow {
-        margin-top: 18.5rem;
+        margin-top: 16.5rem;
     }
     .ProjectShowcase-Row_thirdRow {
-        margin-top: 18.5rem;
-        height: 64%;
+        margin-top: 19.5rem;
+        height: 68%;
     }
 /*     .PS-Wrapper {
         height: 100vh;
