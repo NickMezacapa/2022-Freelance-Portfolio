@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/2022-Freelance-Portfolio/static/css/main.554fa297.css",
-    "main.js": "/2022-Freelance-Portfolio/static/js/main.930108c0.js",
+    "main.css": "/2022-Freelance-Portfolio/static/css/main.c32fe9ef.css",
+    "main.js": "/2022-Freelance-Portfolio/static/js/main.2cda84e2.js",
     "static/media/earth-recording-threeJS.mov": "/2022-Freelance-Portfolio/static/media/earth-recording-threeJS.30bcc9959760aa7f4559.mov",
     "static/media/nm.png": "/2022-Freelance-Portfolio/static/media/nm.20d23bdfca92ee84befe.png",
     "static/media/media-ip.png": "/2022-Freelance-Portfolio/static/media/media-ip.ead28d56abb4ed4aa2b0.png",
@@ -25,11 +25,11 @@
     "static/media/brainTab.png": "/2022-Freelance-Portfolio/static/media/brainTab.68a9548e9cee5429d321.png",
     "static/media/tab.png": "/2022-Freelance-Portfolio/static/media/tab.770975e7ec5713565b84.png",
     "index.html": "/2022-Freelance-Portfolio/index.html",
-    "main.554fa297.css.map": "/2022-Freelance-Portfolio/static/css/main.554fa297.css.map",
-    "main.930108c0.js.map": "/2022-Freelance-Portfolio/static/js/main.930108c0.js.map"
+    "main.c32fe9ef.css.map": "/2022-Freelance-Portfolio/static/css/main.c32fe9ef.css.map",
+    "main.2cda84e2.js.map": "/2022-Freelance-Portfolio/static/js/main.2cda84e2.js.map"
   },
   "entrypoints": [
-    "static/css/main.554fa297.css",
-    "static/js/main.930108c0.js"
+    "static/css/main.c32fe9ef.css",
+    "static/js/main.2cda84e2.js"
   ]
 }
