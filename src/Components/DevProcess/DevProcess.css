@@ -479,7 +479,7 @@ and (max-device-height: 896px) {
     }
 
     .cards-wrap {
-        margin-top: 0rem;
+        margin-top: -10rem;
         transform: scale(0.8);
     }
 
