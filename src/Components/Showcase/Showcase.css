@@ -872,6 +872,28 @@ and (max-device-height: 896px) {
 	}
 }
 
+/* iphone 13 */
+@media only screen and 
+(min-device-width: 390px) and 
+(max-device-width: 390px) and 
+(min-device-height: 844px) and 
+(max-device-height: 844px) and 
+(-webkit-min-device-pixel-ratio: 3) and 
+(min-resolution: 3dppx) and 
+(orientation: portrait) {
+	.showcaseCta {
+		margin-top: -4.5rem;
+	}
+	.responsive h2 {
+		margin-top: 2.5rem;
+		font-size: 1.75rem;
+		margin-left: -1rem;
+	}
+	.showcase1 {
+		margin-top: 2.5rem;
+	}
+}
+
 /* media queries for ipad pro 12.9 */
 @media only screen and (min-width: 1024px) and (max-width: 1366px) and (min-resolution: 2dppx)  and (orientation: portrait) {
 	.animations-heroContent {

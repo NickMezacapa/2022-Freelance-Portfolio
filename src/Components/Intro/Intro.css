@@ -598,6 +598,49 @@ and (orientation: portrait) */ {
 		display: none;
 	}
 }
+/* iphone 13 */
+@media only screen and 
+(min-device-width: 390px) and 
+(max-device-width: 390px) and 
+(min-device-height: 844px) and 
+(max-device-height: 844px) and 
+(-webkit-min-device-pixel-ratio: 3) and 
+(min-resolution: 3dppx) and 
+(orientation: portrait) {
+	.mobileHero {
+		display: block;
+		width: 16.9em;
+		position: absolute;
+		top: 10%;
+		margin-top: -17rem;
+		left: -4%;
+		transform: scale(3);
+	}
+	.hero-ui {
+		display: none;
+	}
+	.heroWrapper {
+		transform: scale(0.8);
+		margin-top: -6rem;
+	}
+	.hero-eyebrow {
+		font-size: 22px;
+		margin-top: 1rem;
+	}
+	.hero-heading {
+		font-size: 68px;
+	}
+	.heroHeading_active {
+		background-color: transparent;
+	}
+	.hero-link-text {
+		font-size: 20px;
+	}
+	.letsLaunchArrowRt {
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+}
 
 /* ************************ */
 /* Media queires 13 inch macbook pro */
