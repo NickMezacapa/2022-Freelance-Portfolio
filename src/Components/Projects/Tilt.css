@@ -106,4 +106,10 @@ and (max-device-height: 896px) {
     .Tilt-TiltInner_hoverSpan_wrapper {
         transform: scale(0.7);
     }
+    .Tilt-HoverSpan {
+        display: none;
+    }
+    .Tilt-HoverSpan:hover {
+        transform: none;
+    }
 }

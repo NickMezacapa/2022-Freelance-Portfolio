@@ -172,6 +172,9 @@ and (max-device-height: 896px) {
         flex-direction: column;
         width: 100%;
     }
+    .faq-body {
+        height: 155vh;
+    }
 }
 
 /* ****************************** */
@@ -183,7 +186,7 @@ and (max-device-height: 896px) {
         margin-top: -3rem;
     }
     .faq-body {
-        height: 135vh;
+        height: 155vh;
     }
 }
 
