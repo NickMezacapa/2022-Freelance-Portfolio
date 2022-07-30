@@ -114,10 +114,10 @@ and (max-device-height: 896px) {
         flex-direction: column;
     }
     .ProjectShowcase-Row_secondRow {
-        margin-top: 18.5rem;
+        margin-top: 16.5rem;
     }
     .ProjectShowcase-Row_thirdRow {
-        margin-top: 20rem;
+        margin-top: 17.5rem;
         height: 70%;
     }
 }
