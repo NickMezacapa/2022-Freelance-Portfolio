@@ -612,7 +612,7 @@ and (orientation: portrait) */ {
 		width: 16.9em;
 		position: absolute;
 		top: 10%;
-		margin-top: -17rem;
+		margin-top: -16rem;
 		left: -4%;
 		transform: scale(3);
 	}
@@ -620,12 +620,15 @@ and (orientation: portrait) */ {
 		display: none;
 	}
 	.heroWrapper {
-		transform: scale(0.8);
-		margin-top: -6rem;
+		transform: scale(0.75);
+		margin-top: -5rem;
 	}
 	.hero-eyebrow {
 		font-size: 22px;
-		margin-top: 1rem;
+		margin-top: 2rem;
+	}
+	.hero__header {
+		margin-top: -2rem;
 	}
 	.hero-heading {
 		font-size: 68px;

@@ -412,3 +412,15 @@ and (max-device-height: 896px) {
         height: 83%;
     }
 }
+@media only screen and 
+(min-device-width: 390px) and 
+(max-device-width: 390px) and 
+(min-device-height: 844px) and 
+(max-device-height: 844px) and 
+(-webkit-min-device-pixel-ratio: 3) and 
+(min-resolution: 3dppx) and 
+(orientation: portrait) {
+    .SP_popup-inner {
+        height: 89%;
+    }
+}

@@ -112,4 +112,7 @@ and (max-device-height: 896px) {
     .Tilt-HoverSpan:hover {
         transform: none;
     }
+    .Tilt-TiltInner_hoverSpan_wrapper:hover {
+        transform: revert;
+    }
 }

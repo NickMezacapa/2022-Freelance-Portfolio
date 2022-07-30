@@ -76,7 +76,7 @@ and (max-device-height: 896px) {
 (min-resolution: 3dppx) and 
 (orientation: portrait) {
     #smaller-font-card-flip {
-        font-size: 1px;
+        font-size: 11px;
     }
 }
 
@@ -85,7 +85,7 @@ and (max-device-height: 896px) {
         font-size: 13px;
     }
     .card-flip-front {
-        font-size: 15px;
+        font-size: 13px;
     }
     #smaller-font-card-flip {
         font-size: 10.5px;

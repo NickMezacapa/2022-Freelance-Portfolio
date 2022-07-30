@@ -423,7 +423,7 @@
 /* **************************** */
 @media screen and (min-width: 390px) and (max-width: 393px) {
     .process-scroll-wrap {
-        height: 435vh;
+        height: 450vh;
     }
 
     #dev_process_h2 {
@@ -441,7 +441,7 @@
     }
 
     .cards-wrap {
-        margin-top: 0rem;
+        margin-top: 3rem;
         transform: scale(0.8);
     }
 
@@ -503,7 +503,7 @@ and (max-device-height: 896px) {
 (min-resolution: 3dppx) and 
 (orientation: portrait) {
     .process-scroll-wrap {
-        height: 435vh;
+        height: 535vh;
     }
 }
 
