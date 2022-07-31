@@ -298,6 +298,7 @@ and (max-device-height: 896px) {
     footer {
         margin-bottom: -0.5rem;
         transform: scale(0.7);
+        margin-left: 0.4rem;
     }
 }
 
