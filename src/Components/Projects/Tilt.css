@@ -104,7 +104,7 @@ and (max-device-height: 896px) {
 (min-resolution: 3dppx) and 
 (orientation: portrait) {
     .Tilt-TiltInner_hoverSpan_wrapper {
-        transform: scale(0.7);
+        transform: scale(0.65);
     }
     .Tilt-HoverSpan {
         display: none;
@@ -113,6 +113,6 @@ and (max-device-height: 896px) {
         transform: none;
     }
     .Tilt-TiltInner_hoverSpan_wrapper:hover {
-        transform: scale(0.7);
+        transform: scale(0.65);
     }
 }

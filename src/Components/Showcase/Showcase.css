@@ -882,7 +882,7 @@ and (max-device-height: 896px) {
 (min-resolution: 3dppx) and 
 (orientation: portrait) {
 	.showcaseCta {
-		margin-top: -4.5rem;
+		margin-top: -4.75rem;
 	}
 	.responsive h2 {
 		margin-top: 2.5rem;
