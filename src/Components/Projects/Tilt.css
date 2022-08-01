@@ -72,10 +72,15 @@
     .Tilt-TiltInner_hoverSpan_wrapper {
         transform: scale(0.85);
     }
-/*     .Tilt-TiltContainer {
-        border: 2px solid orange;
-        height: 100%;
-    } */
+    .Tilt-HoverSpan {
+        display: none;
+    }
+    .Tilt-HoverSpan:hover {
+        transform: none;
+    }
+    .Tilt-TiltInner_hoverSpan_wrapper:hover {
+        transform: scale(0.85);
+    }
 }
 
 @media only screen and (min-width: 834px) and (max-width: 1023px) and (orientation: portrait) and (min-resolution: 2dppx) {
@@ -90,6 +95,15 @@ and (max-device-width: 414px)
 and (min-device-height: 896px)
 and (max-device-height: 896px) {
     .Tilt-TiltInner_hoverSpan_wrapper {
+        transform: scale(0.7);
+    }
+    .Tilt-HoverSpan {
+        display: none;
+    }
+    .Tilt-HoverSpan:hover {
+        transform: none;
+    }
+    .Tilt-TiltInner_hoverSpan_wrapper:hover {
         transform: scale(0.7);
     }
 }
