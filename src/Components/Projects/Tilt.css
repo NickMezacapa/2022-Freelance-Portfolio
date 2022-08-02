@@ -130,3 +130,28 @@ and (max-device-height: 896px) {
         transform: scale(0.65);
     }
 }
+
+/* ****** larger iphones ******* */
+/* iphone 13 pro max */
+/* iphone 12 pro max */
+@media only screen and 
+(min-device-width: 428px) and 
+(max-device-width: 428px) and 
+(min-device-height: 926px) and 
+(max-device-height: 926px) and 
+(-webkit-min-device-pixel-ratio: 3) and
+(min-resolution: 3dppx) and
+(orientation: portrait) {
+    .Tilt-TiltInner_hoverSpan_wrapper {
+        transform: scale(0.7);
+    }
+    .Tilt-HoverSpan {
+        display: none;
+    }
+    .Tilt-HoverSpan:hover {
+        transform: none;
+    }
+    .Tilt-TiltInner_hoverSpan_wrapper:hover {
+        transform: scale(0.7);
+    }
+}

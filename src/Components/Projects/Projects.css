@@ -1430,7 +1430,7 @@
 
 /* media queries iphone xs max */
 @media only screen and (min-device-width: 414px) 
-and (max-device-width: 414px)
+and (max-device-width: 430px)
 and (min-device-height: 896px)
 and (max-device-height: 896px) {
 	.link-moreProjects {
@@ -1484,6 +1484,52 @@ and (max-device-height: 896px) {
 		visibility: hidden;
 	}
 
+}
+
+/* ****** larger iphones ******* */
+/* iphone 13 pro max */
+/* iphone 12 pro max */
+@media only screen and 
+(min-device-width: 428px) and 
+(max-device-width: 428px) and 
+(min-device-height: 926px) and 
+(max-device-height: 926px) and 
+(-webkit-min-device-pixel-ratio: 3) and
+(min-resolution: 3dppx) and
+(orientation: portrait) {
+	.projectsCta {
+		height: 410vh;
+	}
+	.proj-intro-summary {
+		width: 115%;
+		transform: scale(0.9);
+		margin-left: -3rem;
+	}
+	.proj-mainTitle {
+		margin-top: -8rem;
+		z-index: 500;
+		/* font-size: 3.5rem; */
+	}
+	.ip-hero {
+		right: -1rem;
+		top: -1.5rem;
+		z-index: -1;
+	}
+	.link-moreProjects {
+		margin-top: -2rem;
+		width: 110%;
+		font-size: 15px;
+	}
+	.Projects-SeeMore_cta {
+		width: 120%;
+		margin-left: -2.2rem;
+	}
+	.Projects-SeeMore_linkClick {
+		margin-top: 14rem;
+	}
+	.arrow-proj {
+		visibility: hidden;
+	}
 }
 
 /* media query for ipad pro portrait */

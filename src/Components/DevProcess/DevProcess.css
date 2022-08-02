@@ -507,6 +507,28 @@ and (max-device-height: 896px) {
     }
 }
 
+/* ****** larger iphones ******* */
+/* iphone 13 pro max */
+/* iphone 12 pro max */
+@media only screen and 
+(min-device-width: 428px) and 
+(max-device-width: 428px) and 
+(min-device-height: 926px) and 
+(max-device-height: 926px) and 
+(-webkit-min-device-pixel-ratio: 3) and
+(min-resolution: 3dppx) and
+(orientation: portrait) {
+    .header-workflow {
+        margin-left: -16rem;
+    }
+    #hassle-free {
+        margin-top: -4rem;
+    }
+    .process-scroll-wrap {
+        height: 395vh;
+    }
+}
+
 /* media queries for ipad pro 12.9 portrait */
 @media only screen and (min-width: 1024px) and (max-width: 1366px) and (min-resolution: 2dppx)  and (orientation: portrait) {
     .header-workflow {
