@@ -321,6 +321,62 @@ and (orientation: portrait) */ {
 	}
 }
 
+/* ****** larger iphones ******* */
+/* iphone 13 pro max */
+/* iphone 12 pro max */
+@media only screen and 
+(min-device-width: 428px) and 
+(max-device-width: 428px) and 
+(min-device-height: 926px) and 
+(max-device-height: 926px) and 
+(-webkit-min-device-pixel-ratio: 3) and
+(min-resolution: 3dppx) and
+(orientation: portrait) {
+	.heroDescriptions {
+		height: 40vh;
+	}
+	.descriptionsCta {
+		height: 40vh;
+	}
+	.first h2 {
+		min-width: 110%;
+		font-size: 30px;
+		margin-top: -6rem;
+		width: 90%;
+		margin-left: -1rem;
+		line-height: 1.05;
+		text-align: center;
+		background: linear-gradient(
+			91.36deg,
+			#52f0c8 0%,
+			#49d6b3 13.02%,
+			#63c9d6 25.52%,
+			#a58de3 37.5%,
+			#56abec 49.48%,
+			#737eb7 63.02%,
+			rgb(73, 185, 189) 72.92%,
+			#57acdd 84.38%,
+			#515fdf 97.92%
+		);
+		background-size: 200% 200%;
+		-webkit-background-clip: text;
+		background-clip: text;
+		letter-spacing: -0.045em;
+		-webkit-text-fill-color: transparent;
+		animation: intro-gradient 7.5s infinite ease both;
+		-webkit-animation: intro-gradient 7.5s infinite ease both;
+		-moz-animation: intro-gradient 7.5s infinite ease both;
+		opacity: 1;
+	}
+	.second h2 {
+		font-size: 22px;
+		margin-top: 0;
+		width: 110%;
+		display: block;
+		margin-left: -0.6rem;
+	}
+}
+
 
 /* media query ipad pro 12.9 */
 @media only screen and (min-width: 1024px) and (max-width: 1366px) and (min-resolution: 2dppx)  and (orientation: portrait) {

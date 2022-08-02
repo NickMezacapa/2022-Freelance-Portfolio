@@ -893,6 +893,64 @@ and (max-device-height: 896px) {
 		margin-top: 2.5rem;
 	}
 }
+/* ****** larger iphones ******* */
+/* iphone 13 pro max */
+/* iphone 12 pro max */
+@media only screen and 
+(min-device-width: 428px) and 
+(max-device-width: 428px) and 
+(min-device-height: 926px) and 
+(max-device-height: 926px) and 
+(-webkit-min-device-pixel-ratio: 3) and
+(min-resolution: 3dppx) and
+(orientation: portrait) {
+	.showcaseCta {
+		margin-top: -0.75rem;
+	}
+	.animations-subheading {
+		margin-top: -1rem;
+		width: 65%;
+	}
+	.animations-hero {
+		width: 90%;
+	}
+	.animations-heroContent {
+		height: 180px;
+		margin-top: -1rem;
+	}
+	.loadTimes {
+		height: 510px;
+	}
+	.loadTimes img {
+		transform: scale(1.1);
+		margin-left: -4rem;
+		margin-top: 1.75rem;
+	}
+	.loadTimes h2 {
+		margin-left: 1.75rem;
+	}
+	.latest-tech {
+		height: 320px;
+	}
+	.latest-tech h2 {
+		margin-top: 2rem;
+		font-size: 1.75rem;
+	}
+	.responsive h2 {
+		margin-left: 0.7rem;
+		margin-top: 2rem;
+	}
+	.responsive img {
+		transform: scale(1.1);
+		width: 98%;
+		margin-top: 3rem;
+		padding-bottom: 2rem;
+		height: auto;
+		position: relative;
+		top: 0;
+		left: 0;
+	}
+}
 
 /* media queries for ipad pro 12.9 */
 @media only screen and (min-width: 1024px) and (max-width: 1366px) and (min-resolution: 2dppx)  and (orientation: portrait) {
