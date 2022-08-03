@@ -142,7 +142,7 @@ const Intro = () => {
                   <div className="heroWrapper">
 
                     <div className="hero-img-container">
-                      <img src={require("./nm.png")} /* loading="eager" */ /* sizes="(max-width: 479px) 100vw, (max-width: 767px) 648px, (max-width: 991px) 100vw, 65vw" */ alt="Headshot of Nick Mezacapa" className="hero-img" />
+                      <img src="https://raw.githubusercontent.com/NickMezacapa/2022-Freelance-Portfolio/master/src/Images/profile-pics/nm.png" /* loading="eager" */ /* sizes="(max-width: 479px) 100vw, (max-width: 767px) 648px, (max-width: 991px) 100vw, 65vw" */ alt="Headshot of Nick Mezacapa" className="hero-img" />
                     </div>
 
                     <div id="hero-img-shadow-1" className="hero-img-shadow-wrap">
