@@ -11,9 +11,9 @@ input, textarea {
   }
 
 @media screen and (max-width: 375px) {
-    .navbar {
+/*     .navbar {
         position: fixed;
-    }
+    } */
     body {
         overflow-x: hidden !important;
         overflow-y: scroll !important;
