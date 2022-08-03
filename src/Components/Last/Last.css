@@ -2,7 +2,7 @@
     height: 90vh;
     background-color: #1d1d1f;
     position: relative;
-    z-index: 300000000;
+    z-index: 300;
 }
 .overflow-container {
 	width: 100%;
@@ -46,7 +46,7 @@
     width: 100%;
     position: absolute;
     top: 28%;
-    z-index: 10000;
+    z-index: 9000;
     max-width: 980px;
 }
 .contact-container {

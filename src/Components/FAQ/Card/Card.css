@@ -2,7 +2,7 @@
     height: 120px;
     width: 480px;
     background-color: #1d1d1f;
-    z-index: 10000;
+    z-index: 9000;
     color: #fff;
     display: flex;
     align-items: center;
@@ -18,7 +18,7 @@
     border: 1.5px solid var(--blue-dark);
 }
 .card-flip-icon {
-    z-index: 10000;
+    z-index: 9000;
     position: absolute;
     right: 5%;
 }

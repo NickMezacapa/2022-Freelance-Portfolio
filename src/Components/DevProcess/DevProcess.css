@@ -6,13 +6,13 @@
     height: 370vh;
     background-color: black;
     color: white;
-    z-index: 300000000;
+    z-index: 300;
 }
 
 .sticky-wrap {
     position: sticky;
     top: 0;
-    z-index: 300000000;
+    z-index: 300;
 }
 
 .process-section {
@@ -604,6 +604,6 @@ and (orientation: portrait) and (min-resolution: 2dppx) {
         z-index: -1;
     }
     .navbar {
-        z-index: 999999999999999999999999999999999999999999999999999999999999999999;
+        z-index: 9999;
     }
 }

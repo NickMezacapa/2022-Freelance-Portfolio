@@ -3,7 +3,7 @@
     background-color: black;
     color: #ffffff;
     position: relative;
-    z-index: 300000000;
+    z-index: 300;
 }
 .overflow-container {
 	width: 100%;
@@ -20,7 +20,7 @@
 .separator {
     width: 90%;
     height: 1px;
-    z-index: 300000000;
+    z-index: 300;
     max-width: 980px;
     margin-right: auto;
     margin-bottom: 140px;

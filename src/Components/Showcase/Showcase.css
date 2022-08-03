@@ -3,7 +3,7 @@
 	height: 225vh;
 	background-color: black;
 	color: var(--textColor-dark);
-	z-index: 300000000;
+	z-index: 300;
 }
 
 .showcase-animations {

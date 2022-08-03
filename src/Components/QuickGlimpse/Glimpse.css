@@ -2,7 +2,7 @@
 	height: 110vh;
 	background-color: black;
 	position: relative;
-	z-index: 300000000;
+	z-index: 300;
 }
 
 .title {
