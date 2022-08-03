@@ -19,6 +19,8 @@ const Glimpse = () => {
     }
     window.addEventListener('scroll', handleScroll_slideTrigger);
 
+
+
     return (
         <div className='glimpseCta'>
             <div className="overflow-cta">

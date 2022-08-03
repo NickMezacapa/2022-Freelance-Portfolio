@@ -1112,6 +1112,27 @@ and (max-device-height: 896px) {
 (min-resolution: 3dppx) and
 (orientation: portrait) {
 	.showcaseCta {
-		margin-top: -3.5rem;
+		margin-top: -3rem;
+		z-index: 1;
+	}
+	.loadTimes {
+		height: 450px;
+	}
+	.loadTimes img {
+		transform: scale(1.1);
+		margin-top: 2rem;
+		margin-left: -4rem;
+	}
+	.responsive h2 {
+		font-size: 1.7rem;
+		margin-top: 2rem;
+	}
+	.responsive img {
+		transform: scale(0.85);
+		margin-left: -1.25rem;
+		margin-top: 5.5rem;
+		min-width: 113%;
+		max-width: 113%;
+		padding-bottom: 1.5rem;
 	}
 }

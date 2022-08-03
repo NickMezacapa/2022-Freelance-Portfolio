@@ -1123,6 +1123,7 @@ and (orientation: portrait) {
 (orientation: portrait) {
 	.glimpseCta {
 		height: 150vh;
+		z-index: 1;
 	}
 	.bio:hover,
 	.card1:hover,
@@ -1195,10 +1196,24 @@ and (orientation: portrait) {
 	}
 	.card1-number,
 	.card2-number {
-		margin-left: -0.75rem;
+		margin-left: -1.1rem;
+	}
+	.card3-number {
+		margin-left: 1.5rem;
 	}
 	.card4 .card4-info .card4-number {
 		font-size: 3rem;
 		margin-left: 1.3rem;
+	}
+
+	.card2 .card2-subheading {
+		margin-bottom: 0.9rem;
+	}
+
+	.card1 .card1-subheading,
+	.card2 .card2-subheading,
+	.card3 .card3-subheading,
+	.card4 .card4-subheading {
+		font-size: 13px;
 	}
 }

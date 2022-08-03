@@ -298,5 +298,43 @@ and (max-device-height: 896px) {
     }
 }
 
+	/* media query for smaller iphones */
+/* iphone xs, 13/12 mini, 11 pro, xs, x */
+@media only screen and 
+(min-device-width: 375px) and 
+(max-device-width: 375px) and 
+(min-device-height: 812px) and 
+(max-device-height: 812px) and
+(-webkit-min-device-pixel-ratio: 3) and
+(min-resolution: 3dppx) and
+(orientation: portrait) {
+    .small-inputs {
+        margin-top: -4rem;
+        height: 50%;
+    }
+    .contact-textarea {
+        margin-top: -5rem;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+    .contact-form-wrapper {
+        height: 600px;
+    }
+    .contact-form-cta {
+        margin-top: -10rem;
+    }
+    .contact-form-c2 {
+        margin-top: -15rem;
+        margin-left: 1rem;
+    }
+    .contact-submit input {
+        transform: scale(1.05);
+        font-size: 14px;
+    }
+ 
+}
+
 
 
