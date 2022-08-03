@@ -1110,3 +1110,95 @@ and (orientation: portrait) {
 		margin-left: -0.5rem;
 	}
 }
+
+/* media query for smaller iphones */
+/* iphone xs, 13/12 mini, 11 pro, xs, x */
+@media only screen and 
+(min-device-width: 375px) and 
+(max-device-width: 375px) and 
+(min-device-height: 812px) and 
+(max-device-height: 812px) and
+(-webkit-min-device-pixel-ratio: 3) and
+(min-resolution: 3dppx) and
+(orientation: portrait) {
+	.glimpseCta {
+		height: 150vh;
+	}
+	.bio:hover,
+	.card1:hover,
+	.card2:hover,
+	.card3:hover,
+	.card4:hover {
+		transform: none;
+	}
+	.title {
+		margin-left: -5.9rem;
+	}
+	.description {
+		display: block;
+		opacity: 0;
+		transform: translateX(0px);
+		font-size: 32px;
+		text-align: center;
+		position: relative;
+		top: 4.5rem;
+		right: 10.3rem;
+		width: 155%;
+		letter-spacing: -0.045em;
+		padding-bottom: 1rem;
+	}
+	.container {
+		margin-top: 5rem;
+		margin-left: 0;
+		margin-right: 0;
+		width: 100%;
+		height: 105%;
+		display: flex;
+		flex-direction: column;
+	}
+	.bioTitle {
+		width: 96%;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 26px;
+		margin-top: 3rem;
+	}
+	.bio {
+		margin-top: -21rem;
+		width: 100%;
+		height: 40%;
+	}
+	.bioContent {
+		margin: 0;
+		width: 98%;
+		margin-left: 4%;
+		margin-top: 2.5rem;
+		font-size: 16px;
+		padding-left: 5%;
+		padding-right: 5%;
+		display: block;
+	}
+	.secondThought {
+		margin: 0;
+		position: inherit;
+		display: inline;
+	}
+	.cardsCta {
+		margin-top: -20rem;
+		width: 100%;
+		height: 30%;
+	}
+	.card1-desc,
+	.card2-desc {
+		margin-top: 28.9rem;
+	}
+	.card1-number,
+	.card2-number {
+		margin-left: -0.75rem;
+	}
+	.card4 .card4-info .card4-number {
+		font-size: 3rem;
+		margin-left: 1.3rem;
+	}
+}

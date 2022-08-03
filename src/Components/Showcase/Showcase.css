@@ -1100,3 +1100,18 @@ and (max-device-height: 896px) {
 			margin-top: 4rem;
 		}
 	}
+
+	/* media query for smaller iphones */
+/* iphone xs, 13/12 mini, 11 pro, xs, x */
+@media only screen and 
+(min-device-width: 375px) and 
+(max-device-width: 375px) and 
+(min-device-height: 812px) and 
+(max-device-height: 812px) and
+(-webkit-min-device-pixel-ratio: 3) and
+(min-resolution: 3dppx) and
+(orientation: portrait) {
+	.showcaseCta {
+		margin-top: -3.5rem;
+	}
+}
