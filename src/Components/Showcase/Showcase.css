@@ -1136,3 +1136,11 @@ and (max-device-height: 896px) {
 		padding-bottom: 1.5rem;
 	}
 }
+
+/* new */
+/* @media only screen and (max-width: 1600px) and (max-resolution: 1dppx) {
+	.showcaseCta {
+		margin-top: -24rem;
+		border: 1px solid red;
+	}
+} */
