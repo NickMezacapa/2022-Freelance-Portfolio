@@ -11,6 +11,7 @@ import Responsive from '../../Images/Showcase/responsive.png';
 
 const Showcase = () => {
 
+    /* Update this tobe a scroll based css animation rather than the plx package. Responsivity */
 
     const handleScroll3 = () => {
         const trigger = document.querySelector('#dd-trigger');
